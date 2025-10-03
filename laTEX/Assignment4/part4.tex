@@ -1,0 +1,87 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{booktabs}  
+\usepackage{caption}
+\usepackage{amsmath}   
+\usepackage{pgfplots}
+\usepackage{array}     
+\pgfplotsset{compat=1.18} 
+\begin{document}
+
+\title{Statistical Data Summary and Visualization}
+\date{\today}
+\maketitle
+
+\section{Summary of Global Population Trends (1950--2050)}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{
+        >{\centering\arraybackslash}p{1.5cm} 
+        >{\centering\arraybackslash}p{2.5cm} 
+        >{\centering\arraybackslash}p{2.5cm} 
+        >{\centering\arraybackslash}p{3.0cm} 
+        >{\centering\arraybackslash}p{3.0cm} 
+    }
+        \toprule
+        \textbf{Year} & \textbf{World Population (Billions)} & \textbf{Annual Growth Rate (\%)} & \textbf{Annual Numerical Increase (Millions)} & \textbf{Major Growth Region} \\
+        \midrule
+        1950 & 2.53 & 1.8 & 45.5 & Asia \\
+        1960 & 3.03 & 1.9 & 57.6 & Asia \\
+        1970 & 3.70 & 2.1 & 77.7 & Africa \\
+        1980 & 4.44 & 1.7 & 75.5 & Africa \\
+        1990 & 5.33 & 1.6 & 85.3 & Africa \\
+        2000 & 6.14 & 1.2 & 73.7 & Africa \\
+        2010 & 6.95 & 1.2 & 83.4 & Africa \\
+        2020 & 7.79 & 1.0 & 77.9 & Africa \\
+        2030 & 8.51 & 0.8 & 68.1 & Africa \\
+        2040 & 9.15 & 0.7 & 64.0 & Africa \\
+        2050 & 9.74 & 0.6 & 58.4 & Africa \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Visualization of Vietnam's GDP Growth Rate}
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            title={Vietnam Annual Real GDP Growth Rate (2018-2022)},
+            xlabel={Year},
+            ylabel={GDP Growth Rate (\%)} ,
+            ymin=0,
+            ymajorgrids=true,
+            xtick={2018, 2019, 2020, 2021, 2022},
+            xticklabel style={font=\normalsize},
+            yticklabel style={font=\normalsize},
+            enlargelimits=0.15,
+            legend style={at={(0.5,-0.2)},anchor=north},
+            line width=1.5pt, 
+            mark=*, 
+        ]
+
+        \addplot[
+            color=blue!70!black,
+            ]
+            coordinates {
+            (2018, 7.08)
+            (2019, 7.02)
+            (2020, 2.91)
+            (2021, 2.58) 
+            (2022, 8.02) 
+            };
+        \addlegendentry{Annual GDP Growth}
+
+        \node[align=center, draw=none, fill=red!10, rounded corners] at (axis cs:2020.5, 5) {Pandemic Years\\(2020-2021)};
+
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Line plot illustrating the fluctuation in Vietnam's annual Real GDP growth rate from 2018 to 2022. The sharp decline in 2020 and 2021 reflects the global economic slowdown and pandemic-related restrictions, followed by a strong rebound in 2022.}
+    \label{fig:vietnam_gdp}
+\end{figure}
+
+\end{document}

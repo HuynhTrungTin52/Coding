@@ -1,18 +1,15 @@
 \documentclass{article}
 \usepackage[utf8]{vietnam}
 \usepackage{graphicx}
-\usepackage{amsmath} % Required for better math support
-\usepackage{subcaption} % Required for subfigures
+\usepackage{amsmath}
+\usepackage{subcaption} 
 
 \begin{document}
 
 \section*{1. Reproduced Table}
-% Reproducing the table from part1.tex with aligned columns and borders
 
 \begin{table}[h!]
 \centering
-% The 'c' alignment specifier is used for centered text, matching the original.
-% '|' is used for vertical borders.
 \begin{tabular}{||c|c|c||} 
  \hline
  \textbf{Country} & \textbf{Capital City} & \textbf{Population} \\ [0.5ex] 
@@ -29,7 +26,6 @@
 \end{table}
 
 \section*{2. Table with Mathematical Notation}
-% Adding a second table that includes mathematical notation inside cells
 
 \begin{table}[h!]
 \centering
@@ -48,24 +44,19 @@
 \end{table}
 
 \section*{3. Figure Demonstrating Scaling and Positioning}
-% Creating a figure that demonstrates scaling and positioning 
-% (using subcaption package for side-by-side figures)
 
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        % Original width is 0.75\textwidth from the source. 
-        % Here we use a smaller width (0.4\textwidth) for the subfigure.
         \includegraphics[width=0.4\textwidth]{vietnam.png}
         \caption{Vietnam's map (0.4\\textwidth)}
         \label{fig:vietnam_original}
     \end{subfigure}
-    \hfill % Puts horizontal space between the two subfigures
+    \hfill 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        % Resizing the same image to 50% of the first subfigure's width
-        \includegraphics[width=0.5\linewidth]{vietnam.png} % \linewidth refers to the width of the subfigure
+        \includegraphics[width=0.5\linewidth]{vietnam.png} 
         \caption{Vietnam's map (50\% width of subfigure)}
         \label{fig:vietnam_scaled}
     \end{subfigure}

@@ -4,12 +4,12 @@
 \usepackage{amsmath}
 \usepackage{geometry}
 \geometry{a4paper, margin=1in}
-\usepackage{array} % For controlling table column padding/alignment
-\usepackage{multirow} % For multirow command
-\usepackage{multicol} % For multicolumn command
-\usepackage{tikz} % For drawing the diagram
+\usepackage{array} 
+\usepackage{multirow} 
+\usepackage{multicol} 
+\usepackage{tikz} 
 \usetikzlibrary{shapes, arrows.meta, positioning}
-\usepackage{caption} % For figure/table captions
+\usepackage{caption} 
 
 \title{Analysis of Vietnam's Economic Structure}
 \date{\today}
@@ -27,7 +27,6 @@ The critical relationship and flow of resources between these three major sector
 
 \subsection{Sectoral Breakdown and Sample Data}
 
-% --- 1. Multirow and Multicolumn Table ---
 \begin{table}[h!]
     \centering
     \caption{Summary of Vietnam's Key Economic Sectors (Sample Data)}
@@ -57,7 +56,6 @@ The critical relationship and flow of resources between these three major sector
 
 \subsection{Inter-sectoral Linkage Diagram}
 
-% --- 2. TikZ Figure ---
 \begin{figure}[h!]
     \centering
     \begin{tikzpicture}[
@@ -67,19 +65,16 @@ The critical relationship and flow of resources between these three major sector
         node distance=1.5cm
         ]
 
-        % Nodes
         \node (Agri) [block] {1. Agriculture (Raw Materials)};
         \node (Ind) [block, below=of Agri] {2. Industry \& Manufacturing (Processing)};
         \node (Serv) [block, below=of Ind] {3. Services (Trade, Finance, Logistics)};
         \node (Export) [rectangle, draw, fill=green!20, below=of Serv, minimum height=1cm] {Global Export Market};
 
 
-        % Arrows
         \draw [line] (Agri.south) -- (Ind.north) node [midway, right, align=center] {Raw Input $\rightarrow$ \\(e.g., Coffee, Seafood)};
         \draw [line] (Ind.south) -- (Serv.north) node [midway, right, align=center] {Processed Goods $\rightarrow$ \\(e.g., Electronics, Garments)};
         \draw [line] (Serv.south) -- (Export.north) node [midway, right, align=center] {Export/Trade Services $\rightarrow$};
 
-        % Feedback Loop / Support
         \draw [feedback] (Serv.east) -- ++(1.5, 0) |- (Agri.east) node [pos=0.25, right, align=left] {Financial \& \\Logistical Support};
 
     \end{tikzpicture}
