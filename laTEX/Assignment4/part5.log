@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  3 OCT 2025 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.3)  3 OCT 2025 23:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Coding/laTEX/Assignment4/part5
-(c:/Coding/laTEX/Assignment4/part5.tex
+**c:/Users/HOME/Desktop/Coding/laTEX/Assignment4/part5
+(c:/Users/HOME/Desktop/Coding/laTEX/Assignment4/part5.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-08-13>
+L3 programming layer <2025-09-02>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (c:/texlive/2025/texmf-dist/tex/latex/base/size10.clo
@@ -233,7 +233,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
@@ -265,7 +265,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 ) (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count288
 )) (c:/texlive/2025/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
@@ -623,70 +623,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-[]|\T5/cmr/m/n/5 (+20) Repu-
- []
-
-
-Underfull \hbox (badness 4316) in paragraph at lines 81--81
-\T5/cmr/m/n/5 (+20) blic of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-\T5/cmr/m/n/5 (+20) Viet-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-[]|\T5/cmr/m/n/5 (+20) Demo-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-\T5/cmr/m/n/5 (+20) cratic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-\T5/cmr/m/n/5 (+20) Re-pub-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-\T5/cmr/m/n/5 (+20) lic of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-\T5/cmr/m/n/5 (+20) Viet-
- []
-
-
-Overfull \hbox (10.88231pt too wide) in paragraph at lines 77--87
- [][] 
- []
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 77.
 <gdppercapita.png, id=72, 501.875pt x 354.32375pt>
 File: gdppercapita.png Graphic file (type png)
 <use gdppercapita.png>
-Package pdftex.def Info: gdppercapita.png  used on input line 94.
-(pdftex.def)             Requested size: 51.7479pt x 36.53197pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-[]|\T5/cmr/m/n/10 (+20) GDP per
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-\T5/cmr/m/n/10 (+20) capita de-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-\T5/cmr/m/n/10 (+20) vel-op-ment
- []
-
+Package pdftex.def Info: gdppercapita.png  used on input line 93.
+(pdftex.def)             Requested size: 86.25pt x 60.88843pt.
 
 
 [3 <./gdppercapita.png>]
@@ -697,11 +640,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--95
 
 [6]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
 [7]
 
 [8]
+<250px-Sa_Pa_Rice_Terrace_IV.jpg, id=150, 60.225pt x 40.2303pt>
+File: 250px-Sa_Pa_Rice_Terrace_IV.jpg Graphic file (type jpg)
+<use 250px-Sa_Pa_Rice_Terrace_IV.jpg>
+Package pdftex.def Info: 250px-Sa_Pa_Rice_Terrace_IV.jpg  used on input line 199.
+(pdftex.def)             Requested size: 60.22484pt x 40.2302pt.
+<Latte_and_dark_coffee.jpg, id=151, 250.9375pt x 156.585pt>
+File: Latte_and_dark_coffee.jpg Graphic file (type jpg)
+<use Latte_and_dark_coffee.jpg>
+Package pdftex.def Info: Latte_and_dark_coffee.jpg  used on input line 203.
+(pdftex.def)             Requested size: 125.46843pt x 78.2923pt.
+<CashewSnack.jpg, id=154, 250.9375pt x 187.70125pt>
+File: CashewSnack.jpg Graphic file (type jpg)
+<use CashewSnack.jpg>
+Package pdftex.def Info: CashewSnack.jpg  used on input line 208.
+(pdftex.def)             Requested size: 125.46843pt x 93.85039pt.
 
-[9]
+
+[9
+
+ <./250px-Sa_Pa_Rice_Terrace_IV.jpg> <./Latte_and_dark_coffee.jpg> <./CashewSnack.jpg>]
 
 [10]
 
@@ -709,49 +674,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--95
 
 [12]
 
-[13
+[13]
+
+[14
 
 ]
-
-[14]
 
 [15]
 
 [16]
+<Vietnamese-Exports-2004.svg.png, id=227, 501.875pt x 257.96375pt>
+File: Vietnamese-Exports-2004.svg.png Graphic file (type png)
+<use Vietnamese-Exports-2004.svg.png>
+Package pdftex.def Info: Vietnamese-Exports-2004.svg.png  used on input line 457.
+(pdftex.def)             Requested size: 250.93687pt x 128.98155pt.
 
-[17]
+
+[17 <./Vietnamese-Exports-2004.svg.png>]
 
 [18]
 
-[19
+[19]
+
+[20
 
 ]
 
-[20]
-
 [21]
 
-[22] (./part5.aux)
+[22]
+
+[23] (./part5.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-08-13>
+L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `part5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14107 strings out of 469738
- 223613 string characters out of 5481597
- 680325 words of memory out of 5000000
- 42137 multiletter control sequences out of 15000+600000
- 644875 words of font info for 141 fonts, out of 8000000 for 9000
+ 14187 strings out of 469686
+ 225166 string characters out of 5476674
+ 710524 words of memory out of 5000000
+ 42237 multiletter control sequences out of 15000+600000
+ 649359 words of font info for 159 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 69i,15n,79p,1806b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb>
-Output written on part5.pdf (22 pages, 195235 bytes).
+ 69i,15n,79p,1825b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/HOME/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb>
+Output written on part5.pdf (23 pages, 315935 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 500000)
- 36870 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 43034 words of extra memory for PDF output out of 51595 (max. 10000000)
 

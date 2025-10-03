@@ -15,7 +15,7 @@
 \usepackage[table]{xcolor}
 \usepackage{array}
 \usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
-
+\usepackage{graphicx}
 
 \AtBeginDocument{
     \renewcommand{\refname}{References}
@@ -71,25 +71,24 @@ The separation distorted the basic Vietnamese economy by overly stressing region
 When the North and South were \href{https://en.wikipedia.org/wiki/Geneva_Conference_(1954)}{divided politically in 1954}, they also adopted different economic ideologies: socialism in the North and capitalism in the South. Destruction caused by the \href{https://en.wikipedia.org/wiki/Second_Indochina_War}{Second Indochina War} from 1955 to 1975 seriously strained the economy. The situation was worsened by the country's 1.5 million military and civilian deaths, and the subsequent exodus of 1 million refugees, including tens of thousands of professionals, intellectuals, technicians and skilled workers out of the millions of war refugees.\textsuperscript{[Citation needed]}
 \begin{figure}[H]
     \centering 
-    \tiny
-    \begin{minipage}[t]{0.75\textwidth}
+    \small
+    \begin{minipage}[t]{\textwidth}
         \centering % Center the table within the minipage
-        \begin{tabular}{|m{0.8cm}|c|c|c|c|c|c|c|c|c|}
+        \begin{tabular}{|p{1.75cm}|*{9}{c|}}
         \hline
-        \textbf{Year} &  1956 & 1958 & 1960 & 1962 & 1964 & 1966 & 1968 & 1970 & 1972 \\
+        \textbf{Year} &  19\-56 & 19\-58 & 19\-60 & 19\-62 & 19\-64 & 19\-66 & 19\-68 & 19\-70 & 19\-72 \\
         \hline
-        Repu\-blic of Vietnam & 62 & 88 & 105 & 100 & 118 & 100 & 85 & 81 & 90 \\
+        Republic of Vietnam & 62 & 88 & 105 & 100 & 118 & 100 & 85 & 81 & 90 \\
         \hline
-        Demo\-cratic Republic of Vietnam & 40 & 50 & 51 & 68 & 59 & 60 & 55 & 60 & 65 \\
+        \tiny Democratic Rep\-ublic of Vietnam & 40 & 50 & 51 & 68 & 59 & 60 & 55 & 60 & 65 \\
         \hline
-        
         \end{tabular}
         \captionof*{table}{GDP per capita in Vietnam, 1956-1974 (in US\$/year)} % Caption for the table
-        \label{tab:gdp_data} % Label for the table
+        \label{tab:gdp_data} 
         
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{0.15\textwidth} % Adjusted width slightly to give room
+    \begin{minipage}[t]{0.25\textwidth} 
         \centering
         \includegraphics[width=\linewidth]{gdppercapita.png} % Use \linewidth for better scaling
         \caption*{GDP per capita development in Vietnam}
@@ -141,25 +140,72 @@ The following table shows the main economic indicators in 1990-2023 (with IMF st
 
 \begin{table}[h]
     \centering
-    Insert table here    
+    \caption{Economic Indicators (1990-2024)}
+    \label{tab:economic_indicators}
+    % \small % You can remove \small if resizebox makes it too small
+    \resizebox{\linewidth}{!}{ 
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Year} & \textbf{GDP growth} & \textbf{GDP} & \textbf{GDP} & \textbf{GDP per} & \textbf{GDP per} & \textbf{Inflation} & \textbf{Unemployment} & \textbf{Government} \\
+        & \textbf{(real)} & \textbf{(in Bil. US\$ nominal)} & \textbf{(in Bil. US\$ PPP)} & \textbf{capita} & \textbf{capita} & \textbf{rate} & \textbf{rate} & \textbf{debt} \\
+        & \textbf{(in percent)} & & & \textbf{(in US\$ nominal)} & \textbf{(in US\$ PPP)} & \textbf{(in Percent)} & \textbf{(in Percent)} & \textbf{(in \% of GDP)} \\
+        \hline
+        1990 & 5.0 & 8.2 & 77.7 & 121.7 & 1151.2 & 36.0 & 12.3 & n/a \\
+        1991 & 5.8 & 9.7 & 85.0 & 141.1 & 1238.3 & 81.8 & 10.4 & n/a \\
+        1992 & 8.7 & 12.5 & 94.5 & 179.0 & 1350.3 & 37.7 & 11.0 & n/a \\
+        1993 & 8.1 & 16.7 & 104.6 & 235.0 & 1468.3 & 8.4 & 10.6 & n/a \\
+        1994 & 8.8 & 20.7 & 116.2 & 286.0 & 1605.0 & 9.5 & 10.3 & n/a \\
+        1995 & 9.5 & 26.4 & 130.0 & 358.7 & 1765.7 & 16.9 & 5.8 & n/a \\
+        1996 & 9.3 & 31.4 & 144.8 & 419.1 & 1934.8 & 5.6 & 5.9 & n/a \\
+        1997 & 8.2 & 34.1 & 159.3 & 449.3 & 2095.7 & 3.1 & 6.0 & n/a \\
+        1998 & 5.8 & 34.6 & 170.3 & 448.1 & 2207.3 & 6.1 & 6.9 & n/a \\
+        1999 & 4.8 & 36.4 & 181.0 & 465.2 & 2310.3 & 4.1 & 6.7 & n/a \\
+        2000 & 6.8 & 39.6 & 197.6 & 498.6 & 2489.3 & -1.8 & 6.4 & 24.8 \\
+        2001 & 6.9 & 41.3 & 216.0 & 513.2 & 2684.5 & -0.3 & 6.3 & 25.4 \\
+        2002 & 7.1 & 44.6 & 234.9 & 546.6 & 2881.3 & 4.1 & 6.0 & 27.7 \\
+        2003 & 7.3 & 50.2 & 257.1 & 610.4 & 3124.4 & 3.3 & 5.8 & 26.8 \\
+        2004 & 7.8 & 62.9 & 284.8 & 757.0 & 3426.5 & 7.9 & 5.6 & 29.4 \\
+        2005 & 7.5 & 73.2 & 315.7 & 875.3 & 3785.8 & 8.4 & 5.3 & 28.7 \\
+        2006 & 7.0 & 84.3 & 348.1 & 996.3 & 4114.3 & 7.5 & 4.8 & 30.2 \\
+        2007 & 7.1 & 98.4 & 383.0 & 1152.3 & 4484.3 & 8.3 & 4.6 & 32.2 \\
+        2008 & 5.7 & 124.8 & 412.5 & 1446.6 & 4782.9 & 23.1 & 2.4 & 31.0 \\
+        2009 & 5.4 & 129.0 & 437.5 & 1481.4 & 5023.9 & 6.7 & 2.9 & 36.3 \\
+        2010 & 6.4 & 143.2 & 471.2 & 1628.0 & 5357.1 & 9.2 & 2.9 & 36.8 \\
+        2011 & 6.4 & 171.3 & 511.9 & 1949.8 & 5826.2 & 18.7 & 2.2 & 35.8 \\
+        2012 & 5.5 & 195.2 & 568.4 & 2197.6 & 6400.2 & 9.1 & 2.0 & 38.3 \\
+        2013 & 5.6 & 212.7 & 607.9 & 2370.0 & 6762.7 & 6.6 & 2.2 & 41.4 \\
+        2014 & 6.4 & 232.9 & 660.8 & 2566.9 & 7281.2 & 4.1 & 2.1 & 43.6 \\
+        2015 & 7.0 & 236.8 & 700.3 & 2581.9 & 7635.3 & 0.6 & 2.3 & 46.1 \\
+        2016 & 6.7 & 252.1 & 770.9 & 2720.2 & 8316.2 & 2.7 & 2.3 & 47.5 \\
+        2017 & 6.9 & 277.1 & 851.1 & 2957.9 & 9085.6 & 3.5 & 2.2 & 46.3 \\
+        2018 & 7.2 & 303.1 & 934.1 & 3201.7 & 9867.4 & 3.5 & 2.2 & 43.7 \\
+        2019 & 7.2 & 331.8 & 1021.3 & 3439.1 & 10584.7 & 2.8 & 2.2 & 40.8 \\
+        2020 & 2.9 & 346.3 & 1064.4 & 3548.9 & 10907.8 & 3.2 & 2.5 & 41.1 \\
+        2021 & 2.6 & 370.1 & 1141.0 & 3756.9 & 11589.3 & 1.8 & 3.2 & 39.0 \\
+        2022 & 8.0 & 408.0 & 1321.3 & 4101.7 & 13284.2 & 3.2 & 2.3 & 34.6 \\
+        2023 & 5.1 & 433.7 & 1438.5 & 4324.0 & 14324.4 & 3.3 & 2.0 & 34.0 \\
+        2024 & 7.1 & 476.4 & 1558.9 & 4622.5 & 15489.9 & 3.7 & 2.1 & 33.5 \\
+        \hline
+    \end{tabular}
+    }
 \end{table}
-
+\clearpage
 \section*{Economic sectors}
 \subsection*{Agriculture, fishery and forestry}
 
 \begin{wrapfigure}{r}{.45\textwidth}
+    \centering
     \begin{framed}
-    Insert picture of Rice terraces in \href{https://en.wikipedia.org/wiki/Sa_Pa}{Sa Pa}.
+   \includegraphics{250px-Sa_Pa_Rice_Terrace_IV.jpg}
     \caption*{Vietnam is the world's third-largest rice exporter.}
-    \end{framed}
-    
+       \end{framed}
     \begin{framed}
-    Insert picture of coffees
+    \includegraphics[width=30mm,scale=0.5]{Latte_and_dark_coffee.jpg}
     \caption*{Vietnam is the world's second-largest \href{https://en.wikipedia.org/wiki/Coffee}{coffee} producer and exporter.}
     \end{framed}
     
     \begin{framed}
-    Insert picture of cashew
+    \includegraphics[width=25mm,scale=0.5]{CashewSnack.jpg}
     \caption*{Vietnam is the world's largest \href{https://en.wikipedia.org/wiki/Cashew}{cashew exporter}}    
     \end{framed}
     
@@ -365,16 +411,51 @@ Since Đổi Mới in 1986, Vietnam has increased trading, growing both exports 
 
 The account deficit has since decreased. In 2012, Vietnam recorded a trade surplus of US\$780 million, the first trade surplus since 1993. Total trade reached US\$228.13 billion, an increase of 12.1\% from 2011.\textsuperscript{[Citation needed]} In 2013, Vietnam recorded the second year of trade surplus of US\$863 million. In 2014, Vietnam recorded the third year of trade surplus of US\$2.14 billion, the largest trade surplus ever in history.\textsuperscript{[Citation needed]} Three years later, in 2017, it surpassed itself with a record of \$2.92 billion.
 
-\begin{table}[h]
-    \centering
-    Insert table of foreign trade of Vietnam
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Trade Data and Account Balance (2001–2024)}}
+\label{tab:TradeData_Fixed}
+\tiny % Keep font size tiny
+
+% Use p{width} columns to allow text wrapping in the headers
+% and | to add vertical lines between columns
+\begin{tabular}{| r | p{1.3cm} | p{1.5cm} | p{1.65cm} | p{1.5cm} | p{0.8cm} | p{1.55cm} |}
+\toprule
+\textbf{Year} & \textbf{T\-o\-t\-a\-l t\-r\-a\-d\-e (U\-S\$ b\-i\-l\-l\-i\-o\-n\-s)} & \textbf{Export (US\$ billions)} & \textbf{Export change (\%)} & \textbf{Import (US\$ billions)} & \textbf{Import change (\%)} & \textbf{Account balance (US\$ billions)} \\
+\midrule
+2001 & 31.20 & 15.00 & & 16.20 & & -1.2 \\
+2002 & 36.40 & 16.70 & 11.3 & 19.70 & 21.6 & -3.0 \\
+2003 & 45.20 & 20.2 & 21.0 & 25.2 & 27.9 & -5.1 \\
+2004 & 58.50 & 26.5 & 31.2 & 32.0 & 27.0 & -5.4 \\
+2005 & 69.40 & 32.4 & 22.3 & 37.0 & 5.7 & -4.5 \\
+2006 & 84.70 & 39.8 & 22.8 & 44.9 & 21.4 & -5.1 \\
+2007 & 111.30 & 48.6 & 22.1 & 62.7 & 39.6 & -14.1 \\
+2008 & 143.40 & 62.7 & 29.0 & 80.7 & 28.7 & -18.0 \\
+2009 & 127.00 & 57.1 & -8.9 & 69.9 & -13.4 & -12.9 \\
+2010 & 157.00 & 72.2 & 26.4 & 84.8 & 21.3 & -12.6 \\
+2011 & 203.41 & 96.91 & 34.2 & 106.75 & 25.8 & -9.84$^{[111]}$ \\
+2012 & 228.57 & 114.57 & 18.2 & 113.79 & 6.6 & 0.780$^{[112]}$ \\
+2013 & 263.47 & 132.17 & 15.4 & 131.30 & 15.4 & 0.863 \\
+2014 & 298.23 & 150.19 & 13.7 & 148.04 & 12.1 & 2.14 \\
+2015 & 327.76 & 162.11 & 7.9 & 165.65 & 12 & -3.54$^{[113]}$ \\
+2016 & 349.20 & 175.94 & 8.6 & 173.26 & 4.6 & 2.68 \\
+2017 & 425.12 & 214.01 & 21.2 & 211.1 & 20.8 & 2.92$^{[114]}$ \\
+2018 & 480.17 & 243.48 & 13.2 & 236.69 & 11.1 & 6.8$^{[115]}$ \\
+2019 & 517.26 & 264.189 & 8.4 & 253.071 & 6.8 & 11.12$^{[116]}$ \\
+2020 & 545.36 & 282.65 & 7 & 262.7 & 3.7 & 19.95$^{[117]}$ \\
+2024 & 786.29 & 405.53 & 14.3 & 380.76 & 16.7 & 24.77$^{[118]}$ \\
+\bottomrule
+\end{tabular}
 \end{table}
+
 
 \subsubsection*{Exports}
 
-\begin{wrapfigure}{r}{.35\textwidth}
+\begin{wrapfigure}{r}{.5\textwidth}
+    \centering
     \begin{framed}
-    Insert the map of Vietnamese export destinations, 2004
+    \includegraphics[width=35mm,scale=0.5]{Vietnamese-Exports-2004.svg.png}
+    \caption*{A map of Vietnamese export destinations, 2004}
     \end{framed}
 \end{wrapfigure}
 
