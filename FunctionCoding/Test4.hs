@@ -1,0 +1,1 @@
+getLast xs = head(reverse(xs))

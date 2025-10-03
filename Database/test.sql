@@ -1,0 +1,1 @@
+SELECT * FROM employee WHERE DEPT_NAME LIKE '%_t%'

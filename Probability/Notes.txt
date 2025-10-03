@@ -1,0 +1,23 @@
+Note for Group 6(Sample space and events & Venn Diagramms and The Algebra of events)
+* Experiment : Any action or process whose outcome is subject to uncertainty/randomness
+* Sample Space : Set that contains all the outcomes of the possibiility(i.e a dice has a SS of{1,2,3,4,5,6})
+* Algebra of events : 
+	- Complement of E : The set of all outcomes in S that are not contained in E
+	- Union of A and B : denoted by a weird U, is the event of consisting of all outcomes that are either in A or B or in both Events
+	- Intersection of A and B : Denoted by a weird upside down U, consists of both events that occurs in both A and B
+	- Weird crossed O : Null event
+	- Intersect A and B = O -> Mutually exclusive or disjointed events 
+	- Union A and B = O -> Exhaustive events 
+* Null events : "Empty" set, consisting of impossible outcomes
+* Exhaustive : All outcome(Like sample space)
+* Disjoint : unrelated bs
+
+Note for Group 4(Axioms of Probability)
+* Probability of an Event E : P(function) From sample space -> R(eal numbers) *P : A -> R
+If 1>=P(E)>=0 and countable
+* Can also be defined as in terms of its relative frequency, i.e, when the same experiment is repeatedly performed for n times under exactly the same conditions then :
+P(E) = limn->inf(#of times that E occurs /n)
+
+Given any event A,B belonging to S:
+If A is subset of B, then p(A)<=P(B)
+Addition law : (A union B) =P(A) + P(B) - P(A intersect B or just AB)

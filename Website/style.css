@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 70px;
+    height: 2000px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.section {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.static-example .box {
+    background-color: #3498db;
+}
+
+.relative-example .container {
+    border: 2px dashed #9b59b6;
+    padding: 20px;
+    background-color: #f3e8f7;
+    margin-bottom: 40px;
+}
+
+.relative-example .relative-box {
+    background-color: #9b59b6;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.relative-example .sibling-box {
+    height: auto;
+    background-color: #be8ad3;
+    margin-top: 10px;
+}
+
+.absolute-example .parent {
+    width: 400px;
+    height: 200px;
+    background-color: #e6f9e6;
+    border: 2px solid #27ae60;
+    position: relative;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.absolute-example .absolute-box {
+    width: 100px;
+    height: auto;
+    background-color: #27ae60;
+    opacity: 0.5;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+.absolute-example .content-around {
+    background-color: #d1eccf;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.other-element {
+    position: absolute;
+    background-color: #57df4b;
+    top: 165%;
+    width: 150px;
+    height: auto;
+}
+
+.fixed-header {
+    width: 100%;
+    height: 60px;
+    background-color: #c0392b;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-section {
+    height: 500px;
+    overflow-y: auto;
+    border: 2px solid #f1c40f;
+    background-color: #fff9e6;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 700px;
+}
+
+.sticky-header-inner {
+    background-color: #f1c40f;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid #e6b200;
+}
+
+.sticky-section p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+    background-color: #fdf5e2;
+    padding: 8px;
+    border-left: 2px solid #f1c40f;
+}

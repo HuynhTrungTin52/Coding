@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ về các định vị trong CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="fixed-header">
+        Đây là phần tử fixed đặt là tiêu đề
+    </div>
+
+    <h1>Ví dụ về các định vị trong CSS</h1>
+
+    <div class="section static-example">
+        <h2>1. `position: static;` (Hành vi mặc định)</h2>
+        <div class="box" style="background-color: #3498db;">Hộp Static 1</div>
+        <div class="box" style="background-color: #3498db;">Hộp Static 2</div>
+    </div>
+
+    <div class="section relative-example">
+        <h2>2. `position: relative;`</h2>
+        <div class="container">
+            <p>Nội dung bên trong vùng chứa trước hộp relative.</p>
+            <div class="box relative-box">Hộp Relative (đã dịch chuyển)</div>
+            <div class="box sibling-box">Hộp Đồng cấp (vẫn bị ảnh hưởng bởi khoảng trống *ban đầu* của hộp relative)</div>
+        </div>
+    </div>
+
+    <div class="section absolute-example">
+        <h2>3. `position: absolute;`</h2>
+        <div class="parent">
+            <div class="content-around">Đây là nội dung bên trong phần tử cha `position: relative;`.</div>
+            <div class="box absolute-box">Hộp Absolute (top:15px, right:15px từ phần tử cha)</div>
+            <div class="content-around">Thêm nội dung bên trong phần tử cha. Lưu ý cách hộp absolute chồng lên và không gian của nó biến mất.</div>
+        </div>
+    
+    </div>
+<div class="box other-element">Một phần tử vị trí absolute mà không có phần tử cha.</div>
+    <div class="section fixed-position-info">
+        <h2>4. `position: fixed;`</h2>
+        <p>Nhìn lên</p>
+       
+    </div>
+
+    <div class="section sticky-example">
+        <h2>5. `position: sticky;`</h2>
+        <div class="sticky-section">
+            <p>Đây là nội dung trước tiêu đề sticky</p>
+            <div class="sticky-header-inner">
+                Đây là Tiêu đề STICKY (Cuộn *bên trong* hộp màu vàng này!)
+            </div>
+            <div style="padding-bottom: 5000px;"></div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+</body>
+</html>

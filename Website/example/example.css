@@ -1,0 +1,16 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    top: 50px;
+    left: 50px;
+    transition: top 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.box.moved {
+   
+    top: 150px;
+ 
+}

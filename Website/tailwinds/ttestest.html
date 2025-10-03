@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" 
+    rel="stylesheet">
+	<title>Test</title>
+</head>
+<body>
+	
+    <div class="bg-blue-500 text-white p-4 text-center">
+        <h1 class="text-3xl font-bold">Sau đây là ví dụ của Tailwind CSS<h1>
+        <p class="text-lg mt-2">Thể hiện các chức năng cơ bản của nó</p>
+    </div>
+
+    <div class="mt-8 mx-auto p-6 bg-gray-100 rounded-lg shadow-md max-w-sm">
+        <p class="text-gray-700">
+            Thay vì chủ yếu dựa vào CSS, ta có thể gọi lên các class theo một cách nhanh gọn lẹ
+        </p>
+        <p class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">
+            Và nếu cần thêm điều chỉnh, thì Tailwind cho nhiều chức năng khác cho ý muốn của bạn
+		</p>
+    </div>
+<script>
+    getUser(userId, (user) => {
+    getOrders(user, (orders) => {
+        processOrders(orders, (processed) => {
+            sendEmail(processed, (confirmation) => {
+                console.log("Order Processed:", confirmation);
+            });
+        });
+    });
+});
+</script>
+</body>
+</html>

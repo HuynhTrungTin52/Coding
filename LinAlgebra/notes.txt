@@ -1,0 +1,104 @@
+-Linear System : Hệ phuonwgt trình
+-Solution : Nghiệm
+											Elementary Row Operations 
+A linear equation's general form : a1x1+a2x2+...+anxn=b
+ai and bi are real constants
+xi are unknowns
+if a are all zero, we call it a zero equation
+
+N : Natural(0-10)w/o floating point
+Z/ : Integer(N + Negative)
+Q : Rational(a/b,2.5)
+I : Irrational Number(Numbers that can't be expressed via numbers)
+R : Real(Contains Q and I)
+C : Complex(i)
+
+Examples of linear equations :
+3 variables : x +y +z =3
+4 variables : x1-x2+x3-x4=2
+OR : w-x+y=4z
+
+Some equations that are not Linear :
+xy=2
+x^2+2x+6=y
+y=log2(x)+3
+six+cos^2(y)=2.5
+
+Definition(Solution(Nghiệm))
+If the equation is satisfied when we subsitute s1 into :
+a1x1+a2x2+...aixi=b
+
+Solution Set(Tập nghiệm)
+S={}
+General Solution(Nghiệm Chung)
+{x=
+{y=
+{z=
+
+Infinitely Many!(Infinite Solution)
+Unique Solution(1 Solution)
+No Solution(No Solution)
+*Genereal Solution are not Unique!
+
+How to write a general solution(for an example) :
+2y+x=2
+Gen->{x=t 
+	 {y=...(according to x) long as t belongs to R 
+
+	 {y=s 
+	 {x=...(according to x) long as r belongs to R 
+
+When it comes to 3 variables, there is more parameters to the General solution :
+For an example, x-2y+3z=1
+General -> {x=1+2s-3t
+		   {y=s 
+		   {z=t, long as s and t belong to R 
+
+
+														Linear System
+A finite set of linear equations in the variables xi is called a System Of Linear Equations(Or Linear System)
+{a11x1+a12x2+...+A1nXn=b1
+{a21x1+a22x2+...+A2nXn=b2
+{:		:			:
+{Am1x1+Am2x2+...+AmnXn=bm
+(m : Index of the line;n : index of x)
+The a and b are real constants
+
+Definition(Solution(Nghiệm))
+is when a solution satisfied every Equations of the linear system 
+
+Definition(Consistent-Inconsistent)
+if(Solution>=1) Consistent
+else if(Solution==0) Inconsistent
+
+If(Consistent) -> Non-empty
+else -> empty set (O with a line crossing in the middle)
+
+Every linear system will have either no solution, exactly one solution, or Infinitely many solutions
+(So there is no linear system with exactly 3 solutions)
+if(linearSystemSolution>=2) linearSystem has Infinitely Many Solutions
+
+													Matrix
+A linear system -> can be represented by a rectangular array of numbers via 
+Augmented Matrix , such as shown below :
+( a11 a12 ... ... A1n | b1)
+( a21 a12 ... ... A1n | b1)
+( ::: ::: ... ... ::: | :)
+( Am1 Am2 ... ... A1n | b1)
+(m is row;n is columns)
+*There is one more additional columns due to b -> n+1
+
+Ex:Slide 33-34
+( 4 5 -1 | 1)
+( 0 2 2  | 0)
+( 3 -1 -9| -1)
+(1  0  -2| 3)
+
+									Elementary Row Operations(ERO)
+1)Multiply a row by a non-zero constants
+2)Interchanging two rows
+3) Adding multiple 1 row to another
+(Can be applied to any matrix in general)
+
+
+(Reminder to self : Check again, and also write all of this in a notebook)

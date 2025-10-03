@@ -1,0 +1,57 @@
+select from where
+select from join where
+
+select from where stuff in
+
+SELECT S
+FROM R1,...,Rn
+WHERE C1
+GROUP BY a1,...,ak
+HAVING C2
+
+From-Where apply condition C on attributes in R1,...,R2
+HAVING apply condiition C2 on a1,...,ak
+
+Group by can also replace Nestes Query
+
+SELECT name
+from author
+where author.login==wrote.login
+group by author.name 
+having count(wrote.url) >10
+
+Quantifiers(look into more closely)
+
+no info || unspecific info ->null
+NULL in a numerical operations -> NULL
+NULL in a boolean operations -> UNKNOWN
+
+i'm fine mentally
+INNER JOINS can leads to LOST DATA
+OUTER JOINS returns tuples from joined relations that don't have a corresponding tuple in the other relations
+
+SELECT MName
+from Magazine
+where MID not in (
+	select mid 
+	from article
+	where topic<>'motorcycles'
+)
+
+COUNT > 1
+
+Domain relational calculus (DRC).
+Tuple relational calculus (TRC).
+^ : OR 
+v : AND
+backwards E : Exists
+v with a line : For all
+=> : Implies
+
+Query -> Table
+Yeah no remind me to get a notebook for this, a txtfile AIN'T GONNA WORK ANYMORE
+
+You didn't remind me, bruh
+TODO : GET A NOTEBOOK
+
+1C 2B 3C 4D 5C 6C 7C 8D 9D 10D 11C 12C 13B 14C 15B 16B 17B 18C

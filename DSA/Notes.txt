@@ -1,0 +1,147 @@
+19/08/2025(I'm scared)
+[LinkedList]
+- *Data Structure : A collection of Items and we have 3 basic Operations :
+-- Insertion : Chèn vào
+-- Deletion : Xóa
+-- Retrieval : Truy vấn
+- Support : Frequencies of an item(s) occuring in a dataset
+-- Support(x) : Numbers of items that contain x / Numbers of items in the dataset
+- Confidence : How likely item Y would appear in combination with X in an item, evaluating the strength of association between two items
+-- Confidence(X->Y) = Support(X U Y)/ Support(X)
+- List is an abstract data structure(at most 1 item after each one)(o->o->o->o)
+-- Ex : LinkedList,Vector,Array
+- Attribute(?)
+- Interface : A group of related functionalities for an Object
+
+- Generic<E> : A placeholder for Data Structure
+
+- IsEmpty : "If and only if"(iff) when a List has no items
+- Size : The numbers of Items in a DS
+- getFirst : Get the first item in a List(DON'T MESS AROUND WITH TREE)
+- contains : When an item exists in a List 
+- ADT : Abstract Data Types
+- Implementations : IMP of a list ADT (Một cách cài đặt)
+- Declaring no allocate but instantinize allocate
+
+- Drawback of Array :
+-- Memory Slot makes array has fixed size(no more "adding/subtracting" allocating/instantinize memory) : Fixed-Size List != Variable-Size List
+-- It is difficult to find Consecutive Memory Slot to allocate Array
+-- There are often unsed Memory Slot in an Array(Memory Wasting)
+
+- **List using Array need to allocate and manage memory(Which uses Polymorphism)
+- We hide difficult and complex commands using interface/abstraction
+- Time Complexity : Big O Notaion
+- Variable-size list : Allows to allocate and remove memory slot
+- Primary Memory : RAM
+- External Memory Device(USB)
+- Node : Unit to form a linked list(Made of Data Item and "Next"(in referring to the next node))
+- Linked : Pointer in C(Every Object Refrence type is a Pointer(rip))
+- Class Diagram has many classes, can be drown as rectangles ontop of eachother <- UML(####)
+-- Starts with Node
+-- next has Data Item and "Next:Node"
+-- 
+
+- Object Refrence Type(OPT) variables are Pointers
+-- Meaning two OPTs are not ==
+
+-**Benefit of List :
+-- Variable-size List() 
+-- Can allocate anywhere on the memory slot without needing it to be Consecutive
+-- Store files in file system 
+-- Don't need to waste time moving the order of items, rather just destroying the Next Node and connect to a different new Node
+--- If you want to connect an item in a linked list, you just need to delete the connecttion between the first two and connect the first over the second
+
+- ***Solid : Inherit; Dotted : Implements
+
+- LinkedList's first Node : Head. Only need to instantinize the Head for the LL(if lost, we lose the whole list)
+-- In order to check if a List is empty, check if(head==NULL)
+-- Linked List is composed of Node(No Node -> No LL)
+--  
+
+*TODO : Rewrite all of these in a notebook, run the codes in the slides, research again of Java and C(Also each lectures start with a Quiz). Godspeed
+
+16/09/2025
+* Recursion is the process of __repeating__ items in a __self-similar__ way but with __smaller size__.
+* Divide & Conquer :
+- Divide : Break down a problem into sub-problems of the same type
+- Conquer : Solve the problem with the use of a function that calls itself to solve each sub-problem 
+* Take note of the precondition
+* Each recursion appears, it's called a recursive step
+* Recipe for Recursion :
+1. Find the general case 
+2. Base Case 
+3. Make sure we actually get to the base case 
+* Placing Recursion affects the output regarding the order of items to be handled
+
+Funtion signature
+Homework : backtracking, tailed recursion, mutual recursion
+
+Algorithm is a step-by-step procedure for solving a specific problem 
+4 properties of an Algorithm :
+1. Exact
+2. Terminate
+3. Effective
+4. General(used in various situations)
+
+Anal ysis of algorithms 
+* Provide tools for contrasting the effiency of different methods of solutions
+* and Complexity of algorithms
+
+There's 2 types of Complexity : Time and Space
+*Time Complexity is the number of primitive operations 
+-Problem size : n->Item of Collection of data 
+-Shown as Polynomial 
+
+When f(n) is 
+
+23/09/2025
+Always think about the worst case when calculating the big O 
+
+Sorting is to arange items in an expected order
+Selection Short : For each pass, we swap the smallest item in the unsorted region with the first item in the region. N item -> n-1 pass
+Takes n^2 time Complexity
+Bubble sort : For each pass, travel from the beginning to the end of the unsorted region, we check for overlap pairs, and if there is an inversion then we swap
+Takes n^2 time complexity
+If there is no inversion in the pairs, the array is SORTED and we should STOP
+We can improve Bubble Sort via adding a flag to assume the array is sorted, if the assumption is correct then we return flag. Otherwise, if the flag is wrong then we swap and assume the flag is correct once we move on
+Insertion Sort : Start from index 1, pick a key and move back to the beginning of the array. If we catch a larger number, then shift it to the right and if we catch a smaller number then STOP and INSERT THE KEY there
+Insertion Sort takes n^2 big O  
+Comparison based Sorts : Directly compare A to B to determine their relative order 
+Iterative Algorithm : Implemented using loop statements 
+
+30/09/2025
+Keep the book in your backpack
+
+Merge Sort is a part of divide-and-conquer sorting algorithms family
+Includes the Divide step and Conquer step(uses the idea of recursions)
+In the Divide step, we divide the array into 2 halves. 
+For the recursion step, we keep dividing them by half until they are only 1 item left(base-step) and sort the two halves. 
+Finally conquer, we recursively merge the 2 sorted sub-arrays to form a sorted array. The items are aranged in the merging progress
+Time Complexity O: nlog(n)
+Space Complexity O: n
+For each n-steps in the recursive trees, there is n writing steps
+
+Quick Sort is a part of divide-and-conquer sorting algorithms family
+Uses the concept of pivot(trung vị)
+Given an array, we pick the first item to be the pivot, then we parition the array into 2 parts so items >= pivot go right, <= pivot go left
+Reuse the quick sort recursively to handle the two parts then we can get the sorted algorithms.
+*Note that left.length()!=right.length()
+While paritioning, when we want to check a value of the unknown then there is two cases :
+if(?>=pi) {
+	k++;(refer to the pic you draw today)
+} else {
+	m++;
+	swap(x,y);
+	k++;
+}
+Time Complexity worst case : O(n^2); best case : O(nlogn)
+
+Radix sort : We extract digits to determine their relative order, no comparsion based
+Supposed the maximum of digits is d, loop d passes and for each passes extract the i-th digit and put the digits into the corresponding queues. After that, we dequeue from 0 to 9 and arange the values
+Time : O(n*d)
+
+In-Place Sort : Space Complexity : O(1)
+Stable Sort : Preserve the relative order of the items with the same key
+
+Out-place Sort : Merge and Radix
+Unstable Sort : Selection and Quick

@@ -1,0 +1,192 @@
+DEFINE CONSTANT error_cond = 101.0
+
+FUNCTION remove_newline(str)
+    FOR each character in str
+        IF character is '\n' OR character is '\r'
+            SET character to '\0'
+    END FOR
+END FUNCTION
+
+FUNCTION uniletters(str)
+    FOR each character in str
+        SET character to lowercase of character
+    END FOR
+END FUNCTION
+
+FUNCTION count_newline(str, file)
+    SET counter to 0
+    WHILE read line from file into str
+        IF last character in str is '\n' OR '\r'
+            INCREMENT counter
+        END IF
+    END WHILE
+    RETURN counter
+END FUNCTION
+
+FUNCTION decprintf(result, file)
+    IF result has decimal part
+        PRINT result formatted to 2 decimal places to file
+    ELSE
+        PRINT result as integer to file
+    END IF
+END FUNCTION
+
+FUNCTION str_to_num(operation, size)
+    INITIALIZE num as array of doubles with size
+    SET i to 0
+    TOKENIZE operation into token
+    
+    IF token is NULL
+        SET num[0] to error_cond
+        RETURN num
+    END IF
+
+    WHILE token is not NULL
+        IF token contains invalid number format
+            SET num[0] to error_cond
+            RETURN num
+        END IF
+        CONVERT token to double and store in num[i]
+        
+        IF num[i] is out of range OR invalid token
+            SET num[0] to error_cond
+            BREAK
+        END IF
+
+        INCREMENT i
+        TOKENIZE to next token
+    END WHILE
+
+    IF size is 2 AND i is not 2
+        SET num[0] to error_cond
+    ELSE
+        SET size to i
+    END IF
+
+    RETURN num
+END FUNCTION
+
+FUNCTION ari_time(operation, file)
+    INITIALIZE num as array of doubles
+    SET symbly to 0
+    SET size to 2
+    TOKENIZE operation into tari
+
+    DETERMINE operation type (addition, subtraction, etc.) and set symbly
+    
+    CALL str_to_num with operation and size
+    
+    IF num[0] is error_cond
+        PRINT "error" to file
+        RETURN
+    END IF
+
+    PERFORM operation based on symbly and print result
+    FREE num
+END FUNCTION
+
+FUNCTION avg_time(operation, file)
+    INITIALIZE num as array of doubles
+    SET size to 10
+    CALL str_to_num with operation and size
+    
+    IF num[0] is error_cond
+        PRINT "error" to file
+        RETURN
+    END IF
+
+    CALCULATE average of numbers in num and print
+    FREE num
+END FUNCTION
+
+FUNCTION max_min(operation, file)
+    INITIALIZE num as array of doubles
+    SET size to 10
+    CALL str_to_num with operation and size
+    
+    IF num[0] is error_cond
+        PRINT "error" to file
+        RETURN
+    END IF
+
+    DETERMINE if finding max or min
+    COMPUTE max or min of numbers in num and print
+    FREE num
+END FUNCTION
+
+FUNCTION sumoddeven(operation, file)
+    INITIALIZE sum to 0
+    DETERMINE if summing odd or even numbers
+    
+    IF invalid input
+        PRINT "error" to file
+        RETURN
+    END IF
+    
+    SUM odd or even numbers up to n and print result
+END FUNCTION
+
+FUNCTION pcount(operation, file)
+    INITIALIZE counter to 0
+    CALL str_to_num with operation
+    
+    IF n[0] is error_cond
+        PRINT "error" to file
+        RETURN
+    END IF
+
+    COUNT prime numbers in num and update counter
+    PRINT counter to file
+END FUNCTION
+
+FUNCTION dec2bin(operation, file)
+    INITIALIZE n, result, and other variables
+    
+    TOKENIZE operation and validate input
+    
+    IF input is invalid
+        PRINT "error" to file
+        RETURN
+    END IF
+
+    CONVERT decimal to binary and print result
+END FUNCTION
+
+FUNCTION map(operation, file)
+    CALL str_to_num with operation
+    
+    IF n[0] is error_cond
+        PRINT "error" to file
+        RETURN
+    END IF
+
+    APPLY transformation (double, square, absolute) to each number and print
+END FUNCTION
+
+FUNCTION is_valid(operation)
+    COUNT spaces and words in operation
+    RETURN whether the input is valid based on counts
+END FUNCTION
+
+FUNCTION main()
+    INITIALIZE variables and open input/output files
+    
+    IF files cannot be opened
+        PRINT "error" to output
+        RETURN
+
+    COUNT newlines in input
+    REWIND file
+    
+    WHILE read line from input into operation
+        REMOVE newlines and convert to lowercase
+        
+        IF operation is invalid
+            PRINT "error" and continue
+        END IF
+        
+        TOKENIZE operation and call the corresponding function based on the first token
+
+    CLOSE files
+    RETURN 0
+END FUNCTION

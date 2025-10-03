@@ -1,0 +1,113 @@
+@mixin gapsBetweenTexts {
+		$gap:2.5%;
+		margin-block-start: $gap;
+		margin-block-end: $gap;
+	}
+
+body {
+	background-image: linear-gradient(to bottom right,#fff9ee,#EEF4FF);
+	margin:0;
+	min-height: 100vh;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Lucida Handwriting", cursive;
+}
+
+.container {
+	display: grid;
+	width: 50%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: [genInfo] 1fr [achment] 3fr [endCol];
+	grid-template-rows: [contactInfo] auto [skills] auto [hobbies] auto [endRow];
+	background-color: #ffe6b8;
+	color: #7d5932;
+}
+
+.container--content {
+	width: auto;
+	padding: 5% 5% 5% 5%;
+	text-align: center;
+	
+	
+	h3 {
+		text-decoration-line: underline; 
+		@include gapsBetweenTexts();
+		font-weight: bold;
+
+	}
+	li {
+
+		// word-wrap: break-word;
+		text-align: start;
+	}
+
+	border: 1px solid #7d5932;
+}
+
+.container__basicInfo {
+	grid-column-start: genInfo;
+	grid-column-end: achment;
+
+	grid-row-start: contactInfo;
+	grid-row-end: skills;
+
+	@extend .container--content;
+	
+	img {
+		width: 75%;
+		height: auto;
+		margin-block-end: 8px;
+	}
+	h4 {
+		@include gapsBetweenTexts();
+	}
+	
+}
+.container__skills {
+	grid-column-start: genInfo;
+	grid-column-end: achment;
+
+	grid-row-start: skills;
+	grid-row-end: hobbies;
+
+	@extend .container--content;
+}
+.container_hobbies {
+	grid-column-start: genInfo;
+	grid-column-end: achment;
+
+	grid-row-start: hobbies;
+	grid-row-end:endRow;
+
+	@extend .container--content;
+}
+
+.container_education {
+	grid-column-start: achment;
+	grid-column-end: endCol;
+
+	grid-row-start:contactInfo;
+	grid-row-end:hobbies;
+
+	h1 {
+		@include gapsBetweenTexts();
+		font-family: initial;
+		text-decoration: underline;
+		font-size: 40px;
+	}
+	h3 {
+		font-weight: bolder;
+		font-style:italic;
+		font-size:1.5em;
+	}
+	@extend .container--content;
+}
+
+#starter {
+	text-align: center;
+	font-style: italic;
+}

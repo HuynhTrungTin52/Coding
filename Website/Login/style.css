@@ -1,0 +1,168 @@
+/* General */
+.ForBody {
+	background-color: #D2E4FA;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	transform: translate(-50%, -50%);
+	flex-direction: row;
+	padding: 5% 5% 5% 5%;
+	border-radius: 25px;
+	background-color: white;
+	display: flex;
+	gap:5%;	
+	
+	
+}
+
+.container__image {
+	@media (min-width:1501px) {
+	max-width: 450px;
+	width: 100%;	
+	}
+	@media (max-width:1500px) {
+		display: none;
+	}
+}
+
+.container__content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container__content__logo {
+	min-width: 47.5px;
+	width: 15%;
+	height: auto;
+}
+
+.container_content__header {
+	@media (min-width:538px) {
+		font-size: x-large;
+		}
+	@media (max-width:537px) {
+		font-size: large;
+	}
+	font-weight: 745;
+	color: #4493B9;
+	margin-block-start: 2px;
+	margin-block-end: 8px;
+}
+
+.container__content__subheader {
+	text-align: center;
+	color: #CCD0D0;
+	margin-block-start: 0px;
+	@media (min-width:538px) {
+	font-size: smaller;
+	}
+	@media (max-width:537px) {
+		font-size: x-small;
+	}
+}
+
+.container__content__tabName {
+	color: #B1AAA9;
+	font-weight: 400;
+	align-self: flex-start;
+	@media (max-width:537px) {
+		font-size: small;
+	}
+}
+
+.container__content__forgotten {
+	color: #9f9f9f;
+	margin-block-start: 12px;
+	margin-block-end: 15px;
+	font-weight: 550;
+	align-self: flex-end;
+	text-decoration: underline;
+	@media (min-width:538px) {
+	font-size: small;
+	}
+	@media (max-width:537px) {
+	font-size: smaller;
+	}
+}
+
+.container__content__forgotten:hover {
+	color: #6d6c6c;
+}
+
+.container__content__signin {
+	background-color: #066AC9;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 0px;
+}
+
+.container__content__signin:hover {
+	background-color: #01407a ;
+}
+
+.container__content__others {
+	text-decoration: underline;
+	color: #C8C8C8;
+}
+
+.container__content__others:hover {
+	color: #818f90;
+}
+
+.revealer {
+	@media (max-width:537px) {
+		font-size: small;
+	}
+}
+/* Tags */
+p {
+	margin-block-start: 12px;
+	margin-block-end: 12px;
+}
+
+input {
+	align-self: flex-start;
+	border: 1px solid rgba(196,196,196,0.4);
+	padding: 5px 5px 5px 5px;
+	border-radius: 4px;
+	width: 98%;
+}
+a {
+	color: inherit;
+}
+input:focus	{
+	outline: 1px solid rgba(57, 57, 57, 0.6);
+}
+
+input::placeholder{
+	opacity: 0.3;
+	font-weight: 600;
+	color: black;
+} 
+
+
+/* Animation */
+
+.revealer {
+	align-self: flex-start;
+	transform:translate(0,-30px);
+	background-color:white;
+	width: 100%;
+	position: relative;
+	transition: transform 0.5s linear;
+}
+
+.revealer.moved {
+	transform:translate(0,0px);
+}

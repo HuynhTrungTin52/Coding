@@ -1,0 +1,1 @@
+tinhTong a b = a + b

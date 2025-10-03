@@ -1,0 +1,46 @@
+* Image := f(x), subset of Y(codomain)
+* graph belongs to X*Y(cartesian product)
+* range is the set of images
+*Absolute Value Function -> R^+ union {0}
+
+* Exponential Function : a^x, x belongs to R 
+-
+
+* Definition of Polynomials P(x) : AnX^n+A(n-1)X^(n-1)+A(n-2)X^(n-2)+A(n-3)X^(n-3)+...+A1X^n+A0
+	- Degree
+	- Coefficient
+
+* Definition of Rational Functions R(x) : R(x)=P(x)/Q(x)
+	- P and Q are Polynomials, with Q(x) !=0
+
+* Definition of Algebraic Functions A(x) : Functions from POLY using algebraic operations such as 
+	- +,-,*,/, taking roots, composite
+	- Square root functions are not POLY or rational, 
+
+* Definition of Trigonometric Functions T(x) : The ratios of the sides of a right angle triangle 
+	- sec(x) = 1/cos(x)
+	- csec(x) = 1/sin(x)
+	- sin2@ = 2sin@cos@
+	- cos2@ = cos(@)^2 - sin(@)^2
+	- sec(0)^2 - tan(0)^2 =1
+	- csc(0)^2 - cot(0)^2=1
+	- sin(@ +2pi) = sin(@)
+	- cos(@ +2pi) = cos(@)
+	- tan(@+pi) = tan(@)
+
+* 1-to-1 Function : A function where each elements from Domain D is assign to only one element in codomain
+
+* Inverse Function F(x) : Let f be a 1-to-1 function with domain A and range B, then F(x) would be f^(-1) with domain B and range A, and 
+f(x)^-1=x <=> y=f(x)
+
+
+
+Homework : 
+- Find inverse function of 
+a) f(x)=sin(x)
+b) f(x)=1/x 
+
+y=ax+b(a is the SLOPE)
+
+Definition of limit : if f(x) is arbitrarily close to L by taking x to be sufficiently close(but not equal) to a, then we can write
+										lim(x->a)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+</head>
+<body>
+	<h1>Đây là một cái trang</h1>
+	<div id="demo">
+	<div>Đây là nội dung</div>
+	<div>
+	<button onclick="loadImage(0)">Điều gì sẽ xảy ra nếu nút này được bấm</button>
+	</div>
+</div>
+	<script>
+		function loadImage(x) {
+		var req = new XMLHttpRequest();
+		req.onload = function() {
+			const lines = this.responseText.split('\n');
+			let setter = document.getElementById("demo");
+			const newImg=document.createElement('img');
+			newImg.src=lines[x];
+			newImg.className=setter.className;
+			setter.parentNode.replaceChild(newImg, setter);
+			newImg.id="demo";
+			newImg.setAttribute("ondblclick","loadImage(0)");
+			newImg.onload=function() {
+				const newImge=document.getElementById("demo");
+				newImge.addEventListener("click", function() {
+					loadImage(1);
+				}); 
+			}
+		}
+		req.open('GET','imagefetcher.txt');
+		req.send();
+		
+	}
+	
+	</script>
+</body>
+</html>

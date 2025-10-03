@@ -1,0 +1,103 @@
++ 10 10
+max 0
+max 10 20
+max 100 50 90 80 20 30 40 70 60 0
+sum odd 1
+sum odd 10
+sum odd 20
+sum even 1
+sum even 20
+count 10 23 49 11 50 100
+count 0
+dec2bin 10
+dec2bin 128
+dec2bin 100
+map double 1
+map double 9 5 2
+map double -4 100
+map square 9
+map square -9
+map square 2 3 4
+map absolute -3
+map absolute -3 -8 20 100
+count 5 7 10
+dec2bin 100
+sum odd 100- 10 10
+** -2 3
+** 3 -1+ 10 5
++ 10  5
+    + 10 5
++ 10 5      - 100 50
+- 100 50 50
+- 100 + 50
+-- 100 50* 10 10
+*** 5 5
+%% 10 3
+// 10 4
+/ 5 0
++ 10
+% 290
+* 2 5
+* 2 5.0
+* 2.0 5
+* 2.0 5.0
+* 2. 5
+* 2 5.
+* 2. 5.
++ 1.2345 6.7890
++ 1.0 2.00
+* +3 +4
+* -3 -4
+* +2.0 -4.5
+* +3. -5.
+* ++2 --4
+* 2+4
+* 2+4 4* 2.. 4
+* 2..0 4
+* 2?0 4
+* 2@ 4
+* 20 4@
+* 20 4%
+* 20 4** 10 10+
+/
+()
+%
+add 10 10
+subtract 10 10
+multiply 10 10
+power 10 10
++ -1.2345 +1.2345
+/ 20 3
+** 13 -1min
+min 1 2 3 4 5 6 7 8 9 10 11
+min -10
+max 6- 7-
+max -5 -4 -2 -2 -2 -2 -1
+sum 3
+odd 3
+even 3
+sum odd
+sum even
+SUM ODD 10
+Sum Even 10
+count 7 7
+dec2bin 0
+dec2bin  10
+map double
+map square
+map absolute
+/ 10 10
+map map double 10 20
+square 10 20 30
+% 10 4** 2 5+ 4 6
+- 4 6
+* 4 6
+/ 4 6
+% 4 6
+** 4 6
+avg 1
+avg 1 2 3
+avg 1 2 3 4 5 6 7 8 9 10min 1
+min 1 2
+min -1 2 1
+min 0 1 2 3 4 5 6 7 8 9

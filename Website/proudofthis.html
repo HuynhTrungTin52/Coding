@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thay đổi Kiểu dáng DOM</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="changeStyle()">Thay đổi kiểu dáng</button>
+
+    <script>
+        function changeStyle() {
+            const box = document.getElementById('box');
+			if(box.style.backgroundColor=='lightcoral') {
+				box.style=document.getElementById('box');
+			} else 
+			{
+			box.style.backgroundColor = 'lightcoral';
+            box.style.width = '200px';
+            box.style.borderRadius = '10px';
+        }
+	}
+    </script>
+</body>
+</html>

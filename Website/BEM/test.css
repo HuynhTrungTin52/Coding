@@ -1,0 +1,34 @@
+.card {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+}
+
+.card__title {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card__description {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.card__button {
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.card__button--primary {
+  background-color: #28a745;
+}
+
+.card__button--secondary {
+  background-color: #6c757d; 
+}

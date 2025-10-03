@@ -1,0 +1,33 @@
+\contentsline {section}{\numberline {0.1}History}{4}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Before 1858}{4}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}1858-1975}{5}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}1975-1997}{6}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {0.1.4}Development since 1997}{8}{subsection.0.1.4}%
+\contentsline {section}{\numberline {0.2}Data}{10}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Economic sectors}{10}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Agriculture, fishery and forestry}{10}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {0.3.2}Energy, mining and minerals}{12}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {0.3.3}Industry and manufacturing}{13}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {0.3.4}Services and tourism}{14}{subsection.0.3.4}%
+\contentsline {subsubsection}{Tourism}{14}{subsubsection*.9}%
+\contentsline {subsection}{\numberline {0.3.5}Export of labour}{15}{subsection.0.3.5}%
+\contentsline {subsection}{\numberline {0.3.6}Banking and fiance}{16}{subsection.0.3.6}%
+\contentsline {subsubsection}{Banking}{16}{subsubsection*.11}%
+\contentsline {subsubsection}{Fiance}{16}{subsubsection*.14}%
+\contentsline {section}{\numberline {0.4}Currency, exchange rate and inflation}{16}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Exchange rate}{16}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {0.4.2}Inflation}{17}{subsection.0.4.2}%
+\contentsline {section}{\numberline {0.5}Merges and acquisitions}{17}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Trade}{18}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Foreign Trade}{19}{subsection.0.6.1}%
+\contentsline {subsubsection}{Exports}{19}{subsubsection*.19}%
+\contentsline {subsubsection}{Imports}{20}{subsubsection*.21}%
+\contentsline {subsection}{\numberline {0.6.2}External debt, foreign aid and foreign investment}{20}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {0.6.3}Free trade agreements}{22}{subsection.0.6.3}%
+\contentsline {section}{\numberline {0.7}Economic development strategy}{23}{section.0.7}%
+\contentsline {subsection}{\numberline {0.7.1}Trade liberalization}{23}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {0.7.2}Domestic Reform}{23}{subsection.0.7.2}%
+\contentsline {subsection}{\numberline {0.7.3}Human and physical capital investment}{24}{subsection.0.7.3}%
+\contentsline {subsection}{\numberline {0.7.4}Sustainable growth}{24}{subsection.0.7.4}%
+\contentsline {section}{\numberline {0.8}Economic indicators and international rankings}{25}{section.0.8}%
+\contentsline {section}{\numberline {0.9}Notes}{25}{section.0.9}%

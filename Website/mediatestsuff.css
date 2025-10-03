@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+@media (min-width: 701px) {
+  body {
+    background-color: lightgreen; 
+  }
+
+  h1 {
+    color: darkgreen; 
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: lightcoral;
+  }
+
+  h1 {
+    color: darkred; 
+  }
+}

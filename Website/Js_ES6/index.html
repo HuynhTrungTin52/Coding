@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>vd ES6</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+
+		input,
+		button {
+			padding: 10px;
+			margin-right: 10px;
+		}
+
+		#results {
+			margin-top: 20px;
+			border: 1px solid #ccc;
+			padding: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Chức năng của Js ES6</h1>
+
+	<input type="number" id="numberInput" placeholder="Enter a number (e.g., 6)">
+	<button id="calculateButton">Calculate</button>
+
+	<div id="results">
+		<h2>Results:</h2>
+		<p><strong>Input Number:</strong> <span id="displayInput"></span></p>
+		<p><strong>Squared:</strong> <span id="squaredResult"></span></p>
+		<p><strong>Factorial:</strong> <span id="factorialResult"></span></p>
+		<p><strong>Spread Example:</strong> <span id="spreadExample"></span></p>
+	</div>
+
+	<script type="module">
+
+		import { square, factorial, sumAll } from './utils.js';
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const numberInput = document.getElementById('numberInput');
+			const calculateButton = document.getElementById('calculateButton');
+			const displayInput = document.getElementById('displayInput');
+			const squaredResult = document.getElementById('squaredResult');
+			const factorialResult = document.getElementById('factorialResult');
+			const spreadExample = document.getElementById('spreadExample');
+
+			calculateButton.addEventListener('click', () => {
+				const inputVal = numberInput.value;
+				const num = parseInt(inputVal);
+
+
+				const [a, b, ...restOfNumbers] = [num, num + 1, num + 2, num + 3, num + 4];
+
+				displayInput.textContent = num;
+				squaredResult.textContent = square(num);
+				factorialResult.textContent = factorial(num);
+
+
+				const numbersToSum = [a, b, ...restOfNumbers];
+				spreadExample.textContent = `Sum of ${numbersToSum.join(', ')} is ${sumAll(...numbersToSum)}.`;
+			});
+		});
+	</script>
+</body>
+
+</html>

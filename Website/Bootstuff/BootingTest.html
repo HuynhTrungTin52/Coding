@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test for Booting</title>
+	<link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+</head>
+ <style>
+    .visible-box {
+      border: 3px solid black; 
+      padding: 15px; 
+      margin-bottom: 15px; 
+      align-items: center;
+      justify-content: center;
+      text-align:center;
+      font-size:20px;
+    }
+
+    .row-1-box { background-color: cyan; } 
+    .row-2-box { background-color: lightgreen; } 
+    .row-3-box { background-color: pink; } 
+  </style>
+<body>
+<div class="container">
+  <h2>12 Column Grid của bootstrap</h2>
+  <p>Với sự giúp đỡ của CSS, ta có thể thấy cái column được đặt ra bởi Bootstrap</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="visible-box row-1-box">Column 1 (md-4)</div>
+    </div>
+    <div class="col-md-4">
+      <div class="visible-box row-1-box">Column 2 (md-4)</div>
+    </div>
+    <div class="col-md-4">
+      <div class="visible-box row-1-box">Column 3 (md-4)</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="visible-box row-2-box">Column 1 (lg-6)</div>
+    </div>
+    <div class="col-lg-6">
+      <div class="visible-box row-2-box">Column 2 (lg-6)</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="visible-box row-3-box">Column 1 (col)</div>
+    </div>
+    <div class="col-6">
+      <div class="visible-box row-3-box">Column 2 (col-6)</div>
+    </div>
+    <div class="col">
+      <div class="visible-box row-3-box">Column 3 (col)</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

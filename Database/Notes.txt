@@ -1,0 +1,45 @@
+19/8/2025
+- Can be used for e-banking, primarily logging info for users
+- There are many DBMS : Oracle, SQL Server, Sybase, SQLite, MySQL
+- Use main principles and apply them to the DBMS above
+- SQL : Structured Query Language 
+-- Contains 3 groups : Data Definition Language(DTL); Data Manipulation Language(DML); Data Control Language(DCL)
+* DTL+DML are what we are learning now, DCL later
+- Database in DBMS : Easier to control and manipulate; in folder : Primarily for storage(like video, music)
+- Each type of Data has one type of Data
+- DB Application :
+-- Integrity*(Important) : The data must be the same always
+-- Distributed and Concurrent Access 
+- ACID Properties(Look into) :
+-- Recovery :
+--- Atomicity
+- A DB Application manages homogeneous collections containing large amouts of persistent structured data that are shared among distributed users and processes and whose Integrity must be contained
+- Design : ERM, RM and Normalization with Functional Dependecies
+- Programming : Theory of Query Languages : Algebra and Calculi; SQL; SQL(again) and Programming Languages(C,Java, Javascript)
+
+- DB desgining process :
+-- Collect and analyze the requirements
+-- From there, we draw the conceptual design 
+-- There, we can choose DBMS depending on the size of the database
+-- Use DBMS and translate the data model(Logical Model)*
+-- Finally we can make a physical design using the Language
+-- Install and Adjust
+- Following each steps is not advised, in the course we start with *
+
+- Relation Model(RM), known as Logical Model : Use math to describe and represent records and the collection of records 
+
+26/8/2025
+- Table's commands :
+-- CREATE
+-- DROP
+-- ALTER
+- Data's commands :
+-- INSERT
+-- DELETE
+-- UPDATE
+
+- IC(Integrity Constraints) : Constraints/Rules forced onto an attribute
+--
+
+- Main principles :
+-- 

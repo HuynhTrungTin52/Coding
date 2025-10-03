@@ -1,0 +1,339 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Assignment 3: Mathematical Formulae in LaTeX}
+\author{Huỳnh Trung Tín \\ 524k0033}
+\date{\today}
+\maketitle
+
+\section*{Some Important Mathematical Formulae}
+
+\subsection*{Geometry}
+\text{Circle} \quad : \text{Area} = $\pi r^2$; \text{Circumference} = $2 \pi r$. \\
+\text{Square} \quad : \text{Area} = $x^2$; \text{Perimeter} = $4x$. \\
+\text{Rectangle} \quad : \text{Area} = xy; \text{Perimeter} = 2(x+y). \\
+\text{Triangle} \quad : \text{Area} = $\frac{1}{2} \times \text{base} \times \text{height}$; \text{Perimeter} = $a+b+c$. \\
+$\text{Area of equilateral triangle} = \frac{\sqrt{3}}{4} a^2.$ \\
+\\
+\text{Sphere} \quad : \text{Surface Area} = $4 \pi r^2$; \text{Volume} = $\frac{4}{3} \pi r^3$. \\
+\text{Cube} \quad : \text{Surface Area} = $6a^2$; \text{Volume} = $a^3$. \\
+\text{Cone} \quad : \text{Curved Surface Area} = $\pi r l$; \text{Volume} = $\frac{1}{3} \pi r^2 h$ \\
+\text{Total surface area} = $\pi r l + \pi r^2$. \\
+\text{Cuboid} \quad : \text{Total surface area} = 2(ab+bh+lh); \text{Volume} = lbh. \\
+\text{Cylinder} \quad : \text{Curved surface area} = $2 \pi r h$; \text{Volume} = $\pi r^2 h$ \\
+\text{Total surface area (open)} = $2 \pi r h$; \\
+\text{Total surface area (closed)} = $2 \pi r h + 2 \pi r^2$.
+
+\subsection*{Algebraic Formulae}
+\begin{enumerate}
+\item $(a+b)^{2}=a^{2}+2ab+b^{2}.$
+\item $(a-b)^{2}=a^{2}-2ab+b^{2}.$
+\item $(a+b)^{3}=a^{3}+b^{3}+3ab(a+b).$
+\item $(a-b)^{3}=a^{3}-b^{3}-3ab(a-b).$
+\item $(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+2ab+2bc+2ca.$
+\item $(a+b+c)^{3}=a^{3}+b^{3}+c^{3}+3a^{2}b+3a^{2}c+3b^{2}c+3b^{2}a+3c^{2}a+3c^{2}a+6abc.$
+\item $a^{2}-b^{2}=(a+b)(a-b).$
+\item $a^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2}).$
+\item $a^{3}+b^{3}=(a+b)(a^{2}-ab+b^{2}).$
+\item $(a+b)^{2}+(a-b)^{2}=4ab.$
+\item $(a+b)^{2}-(a-b)^{2}=2(a^{2}+b^{2}).$
+\item If $a+b+c=0$, then $a^{3}+b^{3}+c^{3}=3abc.$
+\end{enumerate}
+
+\subsection*{Indices and Surds}
+\begin{enumerate}
+\item $a^{m}a^{n}=a^{m+n}$
+\item $\frac{a^{m}}{a^{n}}=a^{m-n}$
+\item $(a^{m})^{n}=a^{mn}$
+\item $(ab)^{m}=a^{m}b^{m}$
+\item $(\frac{a}{b})^{m}=\frac{a^{m}}{b^{m}}$
+\item $a^{0}=1, a\ne 0.$
+\item $a^{-m}=\frac{1}{a^{m}}$
+\item $a^{x}=a^{y}\Rightarrow x=y$
+\item $a^{x}=b^{x}\Rightarrow a=b$
+\item $\sqrt{a\pm2\sqrt{b}}=\sqrt{x}\pm\sqrt{y}$, where $x+y=a$ and $xy=b$.
+\end{enumerate}
+
+\subsection*{Logarithms}
+$a^{x}=m\Rightarrow \log_{a}m=x(a>0~and~a\ne1)$
+\begin{enumerate}
+\item $\log_{a}mn=\log m+\log n.$
+\item $\log(\frac{m}{n})=\log m-\log n$
+\item $\log_{a}m^{n}=n~\log m.$
+\item $\log_{b}a=\frac{\log a}{\log b}$
+\item $\log_{a}a=1$
+\item $\log_{a}1=0$
+\item $\log_{b}a=\frac{1}{\log_{a}b}$
+\item $\log_{a}1=0$.
+\item $\log(m+n)\ne \log m+\log n$
+\item $e^{\log x}=x.$
+\item $\log_{a}a^{x}=x.$
+\end{enumerate}
+
+\subsection*{Progressions}
+
+\subsubsection*{Arithmetic Progression}
+$a, a+d, a+2d, \dots$ are in A.P $n^{th}$ term, $T_{n}=a+(n-1)d$
+\\Sum to n terms, $S_{n}=\frac{n}{2}[2a+(n-1)d]$
+If a, b, c are in A.P, then $2b=a+c$.
+
+\subsubsection*{Geometric Progression}
+$a, ar, ar^{2}, \dots$ are in G.P
+Sum to n terms, $S_{n}=\frac{a(1-r^{n})}{1-r}$ if $r<1$
+$S_{n}=\frac{a(r^{n}-1)}{r-1}$ if $r>1.$
+Sum to infinite terms of G.P, $S_{\infty}=\frac{a}{1-r}$
+If a, b, c are in G.P, then $b^{2}=ac$.
+
+\subsubsection*{Harmonic Progression}
+Reciprocals of the terms of A.P are in H.P
+$\frac{1}{a},\frac{1}{a+d},\frac{1}{a+2d},\dots$ are in H.P
+If a, b, c are in H.P, then $b=\frac{2ac}{a+c}$
+
+\subsection*{Mathematical Induction}
+\begin{align*}
+1+2+3+\dots+n &= \sum n = \frac{n(n+1)}{2} \\
+1^{2}+2^{2}+3^{2}+\dots+n^{2} &= \sum n^{2} = \frac{n(n+1)(2n+1)}{6} \\
+1^{3}+2^{3}+3^{3}+\dots+n^{3} &= \frac{n^{2}(n+1)^{2}}{4}
+\end{align*}
+
+\subsection*{Permutations and Combination}
+$n P_{r} = \frac{n!}{(n-r)!}$\\
+$nC_{r}=\frac{n!}{r!(n-r)!}$\\
+$n!=1 \cdot 2 \cdot 3 \dots n.$\\
+$nC_{r}=nC_{n-r}.$\\
+$nC_{r}+nC_{r-1}=(n+1)C_{r}$\\
+$(m+n)C_{r}=\frac{(m+n)!}{m!n!}$\\
+
+\subsection*{Binomial Theorem}
+$(x+a)^{n}=x^{n}+nC_{1}x^{n-1}a+nC_{2}x^{n-2}a^{2}+nC_{3}x^{n-3}a^{3}+\dots+nC_{n}a^{n}$
+$n^{th}$ term, $T_{r+1}=nC_{r}x^{n-r}a^{r}$.
+
+\subsection*{Partial Fractions}
+$\frac{f(x)}{g(x)}$ is a proper fraction if the $\deg(g(x))>\deg(f(x))$.
+\\$\frac{f(x)}{g(x)}$ is an improper fraction if the $\deg(g(x))\le \deg(f(x)).$
+\begin{enumerate}
+\item Linear non-repeated factors:
+$\frac{f(x)}{(ax+b)(cx+d)}=\frac{A}{ax+b}+\frac{B}{(cx+d)}$
+\item Linear repeated factors:
+$\frac{f(x)}{(ax+b)(cx+d)^{2}}=\frac{A}{ax+b}+\frac{B}{(cx+d)}+\frac{C}{(cx+d)^{2}}$
+\item Non-linear (quadratic which can not be factorized):
+$\frac{f(x)}{(ax^{2}+b)(cx^{2}+d)}=\frac{Ax+B}{ax^{2}+b}+\frac{Cx+D}{(cx^{2}+d)}$
+\end{enumerate}
+
+\subsection*{Analytical Geometry}
+\begin{enumerate}
+\item Distance between the two points $(x_{1},y_{1})$ and $(x_{2},y_{2})$ in the plane is
+$\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}$ OR $\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$.
+\item Section formula:\\
+$(\frac{mx_{2}+nx_{1}}{m+n},\frac{my_{2}+ny_{1}}{m+n})$ (for internal division)
+\\$(\frac{mx_{2}-nx_{1}}{m-n},\frac{my_{2}-ny_{1}}{m-n})$ (for external division).
+\item Mid point formula:
+$(\frac{x_{1}+x_{2}}{2},\frac{y_{1}+y_{2}}{2}).$
+\item Centroid formula:
+$(\frac{x_{1}+x_{2}+x_{3}}{3},\frac{y_{1}+y_{2}+y_{3}}{3}).$
+\item Area of triangle when their vertices are given:
+$\frac{1}{2}\sum x_{1}(y_{2}-y_{3}) = \frac{1}{2}[x_{1}(y_{2}-y_{3})+x_{2}(y_{3}-y_{1})+x_{3}(y_{1}-y_{2})]$
+\end{enumerate}
+
+\subsection*{Straight Line}
+Slope (or Gradient) of a line = tangent of an inclination = $\tan\theta$.
+\\Slope of a X- axis = 0
+\\Slope of a line parallel to X-axis = 0
+\\Slope of a Y- axis = $\infty$
+\\Slope of a line parallel to Y-axis = $\infty$
+\\Slope of a line joining $(x_{1},x_{2})$ and $(y_{1},y_{2})=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}$
+\\If two lines are parallel, then their slopes are equal $(m_{1}=m_{2})$
+\\If two lines are perpendicular, then their product of slopes is -1 ($m_{1}m_{2}=-1$).
+
+\subsubsection*{Equations of Straight Line}
+\begin{enumerate}
+\item $y=mx+c$ (slope-intercept form)
+\\$y-y_{1}=m(x-x_{1})$ (point-slope form)
+\\ $y-y_{1}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}(x-x_{1})$ (two point form)
+\\ $\frac{x}{a}+\frac{y}{b}=1$ (intercept form)
+\\ $x \cos\alpha +y \sin\alpha = P$ (normal form)
+\\ Equation of a straight line in the general form is $ax^{2}+bx+c=0$.
+\\ Slope of $ax^{2}+bx+c=0$ is $-(\frac{a}{b})$.
+\item Angle between two straight lines is given by, $\tan\theta=|\frac{m_{1}-m_{2}}{1+m_{1}m_{2}}|$
+\\Length of the perpendicular from a point $(x_{1},y_{1})$ to the straight line $ax+by+c=0$ is
+\[
+|\frac{ax_{1}+by_{1}+c}{\sqrt{a^{2}+b^{2}}}|
+\]
+\\Equation of a straight line passing through intersection of two lines $a_{1}x+b_{1}y+c_{1}=0$ and $a_{2}x+b_{2}y+c_{2}=0$ is $a_{1}x+b_{1}y+c_{1}+K(a_{2}x+b_{2}y+c_{2})=0$ where K is any constant.
+\\Two lines meeting a point are called intersecting lines.
+\\More than two lines meeting a point are called concurrent lines.
+\\Equation of bisector of angle between the lines $a_{1}x+b_{1}y+c_{1}=0$ and $a_{2}x+b_{2}y+c_{2}=0$ is
+\[
+\frac{a_{1}x+b_{1}y+c_{1}}{\sqrt{{a_{1}}^{2}+{b_{1}}^{2}}}=\pm\frac{a_{2}x+b_{2}y+c_{2}}{\sqrt{{a_{2}}^{2}+{b_{2}}^{2}}}
+\]
+
+\end{enumerate}
+
+
+\subsection*{Pair of Straight Lines}
+\begin{enumerate}
+\item An equation $ax^{2}+2hxy+by^{2}=0$ represents a pair of lines passing through the origin. The angle between these is given by
+\[
+\tan\theta=|\frac{2\sqrt{h^{2}-ab}}{a+b}|
+\]
+$ax^{2}+2hxy+by^{2}=0$ represents a pair of coincident lines, if $h^{2}=ab$ and the same represents a pair of perpendicular lines, if $a+b=0$.
+If $m_{1}$ and $m_{2}$ are the slopes of the lines $ax^{2}+2hxy+by^{2}=0$ then $m_{1}+m_{2}=-\frac{2h}{b}$ and $m_{1}m_{2}=\frac{a}{b}$
+\item An equation $ax^{2}+2hxy+by^{2}+2gx+2fy+c=0$ is called the general second order equation. It represents a pair of lines if it satisfies the condition
+\[
+abc+2fgh-af^{2}-bg^{2}-ch^{2}=0.
+\]
+The angle between the lines $ax^{2}+2hxy+by^{2}+2gx+2fy+c=0$ is given by
+\[
+\tan\theta=|\frac{2\sqrt{h^{2}-ab}}{a+b}|
+\]
+$ax^{2}+2hxy+by^{2}+2gx+2fy+c=0$ represents a pair of parallel lines, if $h^{2}=ab$ and $af^{2}=bg^{2};$ and the distance between the parallel lines is
+\[
+\frac{2\sqrt{g^{2}-ac}}{a(a+b)}
+\]
+$ax^{2}+2hxy+by^{2}+2gx+2fy+c=0$ represents a pair of perpendicular lines, if $a+b=0$.
+\end{enumerate}
+
+\subsection*{Trignometry}
+Area of a sector of a circle = $\frac{1}{2}r^{2}\theta.$
+Arc length, $S=r\theta$
+$sin\theta=\frac{opp}{hyp}$, $\cos\theta=\frac{adj}{hyp}$ $\tan\theta=\frac{opp}{adj}$
+$\cot\theta=\frac{adj}{opp}$ $\sec\theta=\frac{hyp}{adj}$ $\csc\theta=\frac{hyp}{opp}.$
+$\sin\theta=\frac{1}{\csc\theta}$ or $\csc\theta=\frac{1}{\sin\theta}$
+$\cos\theta=\frac{1}{\sec\theta}$ or $\sec\theta=\frac{1}{\cos\theta},$
+$\tan\theta=\frac{1}{\cot\theta}$ or $\cot\theta=\frac{1}{\tan\theta},$
+$\tan\theta=\frac{\sin\theta}{\cos\theta}$
+$\cot\theta=\frac{\cos\theta}{\sin\theta}.$
+$\sin^{2}\theta+\cos^{2}\theta=1$ ;$\Rightarrow \sin^{2}\theta=1-\cos^{2}\theta;$ $\cos^{2}\theta=1-\sin^{2}\theta$
+$\sec^{2}\theta-\tan^{2}\theta=1$ $\Rightarrow \sec^{2}\theta=1+\tan^{2}\theta;$ $\tan^{2}\theta=\sec^{2}\theta-1$;
+$\csc^{2}\theta-\cot^{2}\theta=1$ ;$\Rightarrow \csc^{2}\theta=1+\cot^{2}\theta$ $\cot^{2}\theta=\csc^{2}\theta-1$
+
+\subsubsection*{Allied Angles}
+If the transformation begins at $90^{\circ}$ or $270^{0},$ the trigonometric functions change as \\$\sin\leftrightarrow \cos$ \\ $\tan\leftrightarrow \cot$ \\ $\sec\leftrightarrow \csc$.
+\\Whereas the transformation begins at $180^{\circ}$ or $360^{\circ},$ the same trigonometric functions will be retained.
+
+\subsubsection*{Compound Angles}
+$\sin(A+B)=\sin A\cos B+\cos A\sin B$.\\
+$\sin(A-B)=\sin A\cos B-\cos A\sin B$.\\
+$\cos(A+B)=\cos A\cos B-\sin A\sin B$\\
+$\cos(A-B)=\cos A\cos B+\sin A\sin B.$\\
+$\tan(A+B)=\frac{\tan A+\tan B}{1-\tan A\tan B}$\\
+$\tan(A-B)=\frac{\tan A-\tan B}{1+\tan A\tan B}$\\
+$\tan(\frac{\pi}{4}+A)=\frac{1+\tan A}{1-\tan A}$\\
+$\tan(\frac{\pi}{4}-A)=\frac{1-\tan A}{1+\tan A}$\\
+$\tan(A+B+C)=\frac{\tan A+\tan B+\tan C-\tan A\tan B\tan C}{1-(\tan A\tan B+\tan B\tan C+\tan C\tan A)}$\\
+$\sin(A+B)\sin(A-B)=\sin^{2}A-\sin^{2}B=\cos^{2}B-\cos^{2}A$\\
+$\cos(A+B)\cos(A-B)=\cos^{2}A-\sin^{2}B$
+
+\subsubsection*{Multiple Angles}
+\begin{enumerate}
+\item $\sin 2A=2\sin A\cos A.$
+\item $\sin 2A=\frac{2\tan A}{1+\tan^{2}A}$
+\item $\cos 2A=\cos^{2}A-\sin^{2}A = 1-2\sin^{2}A = 2\cos^{2}A-1 = \frac{1-\tan^{2}A}{1+\tan^{2}A}$
+\item $\tan 2A=\frac{2\tan A}{1-\tan^{2}A}$
+\item $1+\cos 2A=2\cos^{2}A$,
+\item $\cos^{2}A=\frac{1}{2}(1+\cos 2A).$
+\item $1-\cos 2A=2\sin^{2}A$
+\item $\sin^{2}A=\frac{1}{2}(1-\cos 2A).$
+\item $1+\sin 2A=(\sin A+\cos A)^{2}$,
+\item $1-\sin 2A=(\cos A-\sin A)^{2}=(\sin A-\cos A)^{2},$
+\item $\cos 3A=4\cos^{3}A-3\cos A$
+\item $\sin 3A=3\sin A-4\sin^{3}A$,
+\item $\tan 3A=\frac{3\tan A-\tan^{3}A}{1-3\tan^{2}A}$
+\end{enumerate}
+
+\subsubsection*{Half Angle Formulae}
+\begin{enumerate}
+\item $\sin \theta=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}.$
+\item $\sin \theta=\frac{2\tan(\frac{\theta}{2})}{1+\tan^{2}(\frac{\theta}{2})}.$
+\item $\cos \theta=\cos^{2}\frac{\theta}{2}-\sin^{2}\frac{\theta}{2}$
+\item $\cos \theta=1-2\sin^{2}\frac{\theta}{2}$
+\item $\cos \theta=2\cos^{2}\frac{\theta}{2}-1$
+\item $\cos \theta=\frac{1-\tan^{2}(\frac{\theta}{2})}{1+\tan^{2}(\frac{\theta}{2})}.$
+\item $\tan \theta=\frac{2\tan(\frac{\theta}{2})}{1-\tan^{2}(\frac{\theta}{2})}.$
+\item $1+\cos \theta=2\cos^{2}\frac{\theta}{2}$
+\item $1-\cos \theta=2\sin^{2}\frac{\theta}{2}$
+\end{enumerate}
+
+\subsubsection*{Product to Sum}
+$2\sin A\cos B=\sin(A+B)+\sin(A-B).$\\
+$2\cos A\sin B=\sin(A+B)-\sin(A-B).$\\
+$2\cos A\cos B=\cos(A+B)+\cos(A-B).$\\
+$2\sin A\sin B=\cos(A+B)-\cos(A-B).$
+
+\subsubsection*{Sum to Product}
+$\sin C+\sin D=2\sin(\frac{C+D}{2})\cos(\frac{C-D}{2}).$\\
+$\sin C-\sin D=2\cos(\frac{C+D}{2})\sin(\frac{C-D}{2}).$\\
+$\cos C+\cos D=2\cos(\frac{C+D}{2})\cos(\frac{C-D}{2}).$\\
+$\cos C-\cos D=-2\sin(\frac{C+D}{2})\sin(\frac{C-D}{2})$\\
+OR\\
+$\cos C-\cos D=2\sin(\frac{D+C}{2})\sin(\frac{D-C}{2}).$
+
+\subsubsection*{Properties and Solutions of Triangle}
+Sine Rule: $\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}=2R$ where R is the circum radius of the triangle.
+\\Cosine Rule:
+$a^{2}=b^{2}+c^{2}-2bc \cos A$ or $\cos A=\frac{b^{2}+c^{2}-a^{2}}{2bc}.$
+
+$b^{2}=a^{2}+c^{2}-2ac \cos B$ or $\cos B=\frac{a^{2}+c^{2}-b^{2}}{2ac}.$
+
+$c^{2}=a^{2}+b^{2}-2ab \cos C$ or $\cos C=\frac{a^{2}+b^{2}-c^{2}}{2ab}.$
+\\Projection Rule:
+$a=b\cos C+c\cos B$
+
+$b=c\cos A+a\cos C$
+
+$c=a\cos B+b\cos A$
+\\Tangents Rule:
+$\tan(\frac{B-C}{2})=\frac{b-c}{b+c}\cot(\frac{A}{2}),$
+
+$\tan(\frac{C-A}{2})=\frac{c-a}{c+a}\cot(\frac{B}{2}),$
+
+$\tan(\frac{A-B}{2})=\frac{a-b}{a+b}\cot(\frac{C}{2}).$
+\\Half angle formula:
+$\sin(\frac{A}{2})=\sqrt{\frac{(s-b)(s-c)}{bc}},$ $\cos(\frac{A}{2})=\sqrt{\frac{s(s-a)}{bc}},$ $\tan(\frac{A}{2})=\sqrt{\frac{(s-b)(s-c)}{s(s-a)}}.$
+
+$\sin(\frac{B}{2})=\sqrt{\frac{(s-a)(s-c)}{ac}},$ $\cos(\frac{B}{2})=\sqrt{\frac{s(s-b)}{ac}},$ $\tan(\frac{B}{2})=\sqrt{\frac{(s-a)(s-c)}{s(s-b)}}.$
+
+$\sin(\frac{C}{2})=\sqrt{\frac{(s-a)(s-b)}{ab}},$ $\cos(\frac{C}{2})=\sqrt{\frac{s(s-c)}{ab}},$ $\tan(\frac{C}{2})=\sqrt{\frac{(s-a)(s-b)}{s(s-c)}}.$
+\\Area of triangle $ABC=\sqrt{s(s-a)(s-b)(s-c)}$
+\\Area of triangle $ABC=\frac{1}{2}bc\sin A=\frac{1}{2}ac\sin B=\frac{1}{2}ab\sin C$
+
+\subsection*{Limits}
+\begin{enumerate}
+\item If $f(-x)=f(x)$, then $f(x)$ is called Even Function.
+\item If $f(-x)=-f(x)$, then $f(x)$ is called Odd Function.
+\item If P is the smallest +ve real number such that if $f(x+P)=f(x)$, then $f(x)$ is called a periodic function with period P.
+\item Right Hand Limit (RHL) $= \lim_{x\rightarrow a^{+}}(f(x))=\lim_{h\rightarrow0}(f(a+h))$
+\\Left Hand Limit (LHL) $= \lim_{x\rightarrow a^{-}}(f(x))=\lim_{h\rightarrow0}(f(a-h))$
+\\If $RHL=LHL$ then $\lim_{x\rightarrow a}(f(x))$ exists and $\lim_{x\rightarrow a}(f(x))=RHL=LHL$
+\item $Lt_{n\rightarrow\infty}\frac{1}{n^{p}}=0$ if $p>0$ and $Lt_{n\rightarrow\infty}n^{p}=\infty$ if $p>0$
+\item $Lt_{x\rightarrow0}\frac{\sin x}{x}=Lt_{x\rightarrow0}\frac{\tan x}{x}(x \text{ in radians})=Lt_{x\rightarrow0}\frac{x}{\sin x}=Lt_{x\rightarrow0}\frac{x}{\tan x}=1$
+\item $Lt_{x\rightarrow0}\frac{\sin x^{0}}{x}=Lt_{x\rightarrow0}\frac{\tan x^{0}}{x}=\frac{\pi}{180}$
+\item $Lt_{x\rightarrow\frac{\pi}{2}}\frac{\sin x}{x}=\frac{2}{\pi}$
+\item $\lim_{x\rightarrow0}\frac{\sin^{-1}x}{x}=1=\lim_{x\rightarrow0}\frac{\tan^{-1}x}{x}$
+\item $\lim_{x\rightarrow a}\frac{x^{n}-a^{n}}{x-a}=na^{n-1}$, where n is an integer or a fraction.
+\item $\lim_{x\rightarrow0}\frac{a^{x}-1}{x}=\log a,$ $\lim_{x\rightarrow0}\frac{e^{x}-1}{x}=\log e=1$
+\item $\lim_{n\rightarrow\infty}(1+\frac{1}{n})^{n}=e,$ $\lim_{x\rightarrow0}(1+n)^{\frac{1}{n}}=e$
+\item $\lim_{x\rightarrow a}[kf(x)]=k\lim_{x\rightarrow a}f(x)$
+\item $\lim_{x\rightarrow a}[f(x)\pm g(x)]=\lim_{x\rightarrow a}f(x)\pm \lim_{x\rightarrow a}g(x)$
+\item $\lim_{x\rightarrow a}f(x).g(x)=\lim_{x\rightarrow a}f(x).\lim_{x\rightarrow a}g(x)$
+\\ $\lim_{x\rightarrow a}(\frac{f(x)}{g(x)})=\frac{\lim_{x\rightarrow a}f(x)}{\lim_{x\rightarrow a}g(x)}$ provided $\lim_{x\rightarrow a}g(x)\ne0$
+\item A function $f(x)$ is said to be continuous at the point $x=a$ if
+\begin{enumerate}
+\item $\lim_{x\rightarrow a}f(x)$ exists
+\item $f(a)$ is defined
+\item $\lim_{x\rightarrow a}f(x)=f(a)$
+\end{enumerate}
+\item A function $f(x)$ is said to be discontinuous or not continuous at $x=a$ if
+\begin{enumerate}
+\item $f(x)$ is not defined at $x=a$
+\item $\lim_{x\rightarrow a}f(x)$ does not exist at $x=a$
+\item $\lim_{x\rightarrow a+0}f(x)\ne \lim_{x\rightarrow a-0}f(x)\ne f(a)$
+\end{enumerate}
+\item If two functions $f(x)$ and $g(x)$ are continuous then $f(x)+g(x)$ is continuous.
+
+\end{enumerate}
+
+
+\end{document}
