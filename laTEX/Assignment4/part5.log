@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.3)  3 OCT 2025 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  5 OCT 2025 23:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/HOME/Desktop/Coding/laTEX/Assignment4/part5
-(c:/Users/HOME/Desktop/Coding/laTEX/Assignment4/part5.tex
+**c:/Coding/laTEX/Assignment4/part5
+(c:/Coding/laTEX/Assignment4/part5.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+L3 programming layer <2025-08-13>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (c:/texlive/2025/texmf-dist/tex/latex/base/size10.clo
@@ -233,7 +233,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
@@ -265,7 +265,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 ) (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count288
 )) (c:/texlive/2025/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
@@ -669,62 +669,216 @@ Package pdftex.def Info: CashewSnack.jpg  used on input line 208.
  <./250px-Sa_Pa_Rice_Terrace_IV.jpg> <./Latte_and_dark_coffee.jpg> <./CashewSnack.jpg>]
 
 [10]
-
-[11]
-
-[12]
-
-[13]
-
-[14
-
-]
-
-[15]
-
-[16]
-<Vietnamese-Exports-2004.svg.png, id=227, 501.875pt x 257.96375pt>
-File: Vietnamese-Exports-2004.svg.png Graphic file (type png)
-<use Vietnamese-Exports-2004.svg.png>
-Package pdftex.def Info: Vietnamese-Exports-2004.svg.png  used on input line 457.
-(pdftex.def)             Requested size: 250.93687pt x 128.98155pt.
+<Bird's_eye_view_of_installation_works_at_PV_Arrays.png, id=178, 376.40625pt x 209.28188pt>
+File: Bird's_eye_view_of_installation_works_at_PV_Arrays.png Graphic file (type png)
+<use Bird's_eye_view_of_installation_works_at_PV_Arrays.png>
+Package pdftex.def Info: Bird's_eye_view_of_installation_works_at_PV_Arrays.png  used on input line 251.
+(pdftex.def)             Requested size: 376.40532pt x 209.28134pt.
 
 
-[17 <./Vietnamese-Exports-2004.svg.png>]
+[11
+
+ <./Bird's_eye_view_of_installation_works_at_PV_Arrays.png>]
+<VinFast_VF8,_front_NYIAS_2022.jpg, id=192, 501.875pt x 261.97874pt>
+File: VinFast_VF8,_front_NYIAS_2022.jpg Graphic file (type jpg)
+<use VinFast_VF8,_front_NYIAS_2022.jpg>
+Package pdftex.def Info: VinFast_VF8,_front_NYIAS_2022.jpg  used on input line 290.
+(pdftex.def)             Requested size: 501.87376pt x 261.9781pt.
+
+
+[12 <./VinFast_VF8,_front_NYIAS_2022.jpg>]
+<Halong_bay_vietnam.JPG, id=205, 331.2375pt x 220.825pt>
+File: Halong_bay_vietnam.JPG Graphic file (type jpg)
+<use Halong_bay_vietnam.JPG>
+Package pdftex.def Info: Halong_bay_vietnam.JPG  used on input line 315.
+(pdftex.def)             Requested size: 165.61833pt x 110.41222pt.
+<Hoi_An_(42681823051).jpg, id=206, 331.2375pt x 220.825pt>
+File: Hoi_An_(42681823051).jpg Graphic file (type jpg)
+<use Hoi_An_(42681823051).jpg>
+Package pdftex.def Info: Hoi_An_(42681823051).jpg  used on input line 321.
+(pdftex.def)             Requested size: 165.61833pt x 110.41222pt.
+
+
+[13 <./Halong_bay_vietnam.JPG> <./Hoi_An_(42681823051).jpg>]
+
+[14]
+<500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg, id=220, 501.875pt x 382.42876pt>
+File: 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg Graphic file (type jpg)
+<use 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg>
+Package pdftex.def Info: 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg  used on input line 344.
+(pdftex.def)             Requested size: 250.93687pt x 191.2139pt.
+<Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg, id=221, 501.875pt x 317.185pt>
+File: Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg Graphic file (type jpg)
+<use Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg>
+Package pdftex.def Info: Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg  used on input line 350.
+(pdftex.def)             Requested size: 250.93687pt x 158.5921pt.
+
+
+[15
+
+ <./500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg> <./Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg>]
+<Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png, id=228, 963.6pt x 499.8675pt>
+File: Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png Graphic file (type png)
+<use Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png>
+Package pdftex.def Info: Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png  used on input line 370.
+(pdftex.def)             Requested size: 481.79883pt x 249.93314pt.
+<Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png, id=231, 963.6pt x 499.8675pt>
+File: Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png Graphic file (type png)
+<use Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png>
+Package pdftex.def Info: Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png  used on input line 376.
+(pdftex.def)             Requested size: 481.79883pt x 249.93314pt.
+
+
+[16
+
+ <./Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png> <./Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png>]
+<SaigonPort1.JPG, id=241, 501.875pt x 376.40625pt>
+File: SaigonPort1.JPG Graphic file (type jpg)
+<use SaigonPort1.JPG>
+Package pdftex.def Info: SaigonPort1.JPG  used on input line 418.
+(pdftex.def)             Requested size: 250.93687pt x 188.20265pt.
+
+
+[17 <./SaigonPort1.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+[]|\T5/cmr/bx/n/9 (+20) T-o-t-a-l
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T5/cmr/bx/n/9 (+20) t-r-a-d-e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T5/cmr/bx/n/9 (+20) (U-S$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T5/cmr/bx/n/9 (+20) b-i-l-l-i-o-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+[]|\T5/cmr/bx/n/9 (+20) Export
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T5/cmr/bx/n/9 (+20) (US$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T5/cmr/bx/n/9 (+20) bil-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+[]|\T5/cmr/bx/n/9 (+20) Export
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T5/cmr/bx/n/9 (+20) change
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+[]|\T5/cmr/bx/n/9 (+20) Import
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T5/cmr/bx/n/9 (+20) (US$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+[]|\T5/cmr/bx/n/9 (+20) Import
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T5/cmr/bx/n/9 (+20) change
+ []
+
+
+Overfull \hbox (1.57242pt too wide) in paragraph at lines 444--445
+[]|\T5/cmr/bx/n/9 (-20) Account
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+\T5/cmr/bx/n/9 (+20) bal-ance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+\T5/cmr/bx/n/9 (+20) (US$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+\T5/cmr/bx/n/9 (+20) bil-
+ []
+
+
 
 [18]
 
 [19]
+<Vietnamese-Exports-2004.svg.png, id=258, 501.875pt x 257.96375pt>
+File: Vietnamese-Exports-2004.svg.png Graphic file (type png)
+<use Vietnamese-Exports-2004.svg.png>
+Package pdftex.def Info: Vietnamese-Exports-2004.svg.png  used on input line 478.
+(pdftex.def)             Requested size: 250.93687pt x 128.98155pt.
+
 
 [20
 
-]
+ <./Vietnamese-Exports-2004.svg.png>]
 
 [21]
 
 [22]
+<ASEAN–China_Free_Trade_Area.svg.png, id=274, 496.85625pt x 331.2375pt>
+File: ASEAN–China_Free_Trade_Area.svg.png Graphic file (type png)
+<use ASEAN–China_Free_Trade_Area.svg.png>
+Package pdftex.def Info: ASEAN–China_Free_Trade_Area.svg.png  used on input line 527.
+(pdftex.def)             Requested size: 248.4275pt x 165.61833pt.
 
-[23] (./part5.aux)
+
+[23
+
+ <./ASEAN–China_Free_Trade_Area.svg.png>]
+
+[24]
+
+[25]
+
+[26] (./part5.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `part5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14187 strings out of 469686
- 225166 string characters out of 5476674
- 710524 words of memory out of 5000000
- 42237 multiletter control sequences out of 15000+600000
- 649359 words of font info for 159 fonts, out of 8000000 for 9000
+ 14240 strings out of 469738
+ 228857 string characters out of 5481597
+ 710531 words of memory out of 5000000
+ 42250 multiletter control sequences out of 15000+600000
+ 647060 words of font info for 151 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 69i,15n,79p,1825b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/HOME/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb>
-Output written on part5.pdf (23 pages, 315935 bytes).
+ 69i,15n,79p,1806b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb>
+Output written on part5.pdf (26 pages, 1207754 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 43034 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 357 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 41036 words of extra memory for PDF output out of 42996 (max. 10000000)
 
