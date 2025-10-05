@@ -1,5 +1,3 @@
-package lab02_524k0033;
-
 import java.util.EmptyStackException;
 
 public class MyStack<E> extends MyLinkedList<E> implements StackInterface<E> {
