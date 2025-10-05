@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  5 OCT 2025 23:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  5 OCT 2025 23:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,16 +707,16 @@ File: 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_
 <use 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg>
 Package pdftex.def Info: 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg  used on input line 344.
 (pdftex.def)             Requested size: 250.93687pt x 191.2139pt.
-<Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg, id=221, 501.875pt x 317.185pt>
-File: Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg Graphic file (type jpg)
-<use Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg>
-Package pdftex.def Info: Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg  used on input line 350.
+<sogiadich.jpg, id=221, 501.875pt x 317.185pt>
+File: sogiadich.jpg Graphic file (type jpg)
+<use sogiadich.jpg>
+Package pdftex.def Info: sogiadich.jpg  used on input line 350.
 (pdftex.def)             Requested size: 250.93687pt x 158.5921pt.
 
 
 [15
 
- <./500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg> <./Sở_giao_dịch_Chứng_khoáng-phường_Nguyễn_Thái_Bình,_Quận_1,_TPHCM,_Việt_Nam_-_panoramio.jpg>]
+ <./500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg> <./sogiadich.jpg>]
 <Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png, id=228, 963.6pt x 499.8675pt>
 File: Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png Graphic file (type png)
 <use Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png>
@@ -868,7 +868,7 @@ Package rerunfilecheck Info: File `part5.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  14240 strings out of 469738
- 228857 string characters out of 5481597
+ 228192 string characters out of 5481597
  710531 words of memory out of 5000000
  42250 multiletter control sequences out of 15000+600000
  647060 words of font info for 151 fonts, out of 8000000 for 9000
