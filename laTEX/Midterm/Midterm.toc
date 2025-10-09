@@ -1,0 +1,34 @@
+\contentsline {chapter}{\numberline {1}Economy of Vietnam}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}History}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Before 1858}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}1858-1975}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}1975-1997}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Development since 1997}{7}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Data}{10}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Economic sectors}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Agriculture, fishery and forestry}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Energy, mining and minerals}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Industry and manufacturing}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Services and tourism}{15}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Tourism}{16}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Export of labour}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Banking and fiance}{17}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Banking}{17}{subsection.4.6.1}%
+\contentsline {subsubsection}{Fiance}{17}{subsubsection*.14}%
+\contentsline {chapter}{\numberline {5}Currency, exchange rate and inflation}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Exchange rate}{18}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Inflation}{19}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Merges and acquisitions}{20}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Trade}{21}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Foreign Trade}{22}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Exports}{22}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Imports}{23}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}External debt, foreign aid and foreign investment}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Free trade agreements}{25}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Economic development strategy}{26}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Trade liberalization}{26}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Domestic Reform}{26}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Human and physical capital investment}{27}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Sustainable growth}{27}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Economic indicators and international rankings}{29}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Notes}{30}{chapter.10}%
