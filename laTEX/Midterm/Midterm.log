@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  9 OCT 2025 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.3)  11 OCT 2025 05:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Coding/laTEX/Midterm/Midterm
-(c:/Coding/laTEX/Midterm/Midterm.tex
+**c:/Users/HOME/Desktop/Coding/laTEX/Midterm/Midterm
+(c:/Users/HOME/Desktop/Coding/laTEX/Midterm/Midterm.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-08-13>
+L3 programming layer <2025-09-02>
 (c:/texlive/2025/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
 (c:/texlive/2025/texmf-dist/tex/latex/base/bk10.clo
@@ -234,7 +234,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
@@ -266,7 +266,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 ) (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count289
 )) (c:/texlive/2025/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
@@ -534,45 +534,391 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip77
-) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
+\LTleft=\skip78
+\LTright=\skip79
+\LTpre=\skip80
+\LTpost=\skip81
+\LTchunksize=\count318
+\LTcapwidth=\dimen199
+\LT@head=\box106
+\LT@firsthead=\box107
+\LT@foot=\box108
+\LT@lastfoot=\box109
+\LT@gbox=\box110
+\LT@cols=\count319
+\LT@rows=\count320
+\c@LT@tables=\count321
+\c@LT@chunks=\count322
+\LT@p@ftn=\toks28
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen256
+\TX@old@table=\dimen257
+\TX@old@col=\dimen258
+\TX@target=\dimen259
+\TX@delta=\dimen260
+\TX@cols=\count323
+\TX@ftn=\toks29
+) (c:/texlive/2025/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-09-02 L3 programming layer (loader) 
+ (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count318
-) (./Midterm.aux)
+\l__color_backend_stack_int=\count324
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+) (c:/texlive/2025/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
+ (c:/texlive/2025/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (c:/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count325
+Package zref Info: New property: abspage on input line 67.
+) (c:/texlive/2025/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+)
+\mdf@templength=\skip82
+\c@mdf@globalstyle@cnt=\count326
+\mdf@skipabove@length=\skip83
+\mdf@skipbelow@length=\skip84
+\mdf@leftmargin@length=\skip85
+\mdf@rightmargin@length=\skip86
+\mdf@innerleftmargin@length=\skip87
+\mdf@innerrightmargin@length=\skip88
+\mdf@innertopmargin@length=\skip89
+\mdf@innerbottommargin@length=\skip90
+\mdf@splittopskip@length=\skip91
+\mdf@splitbottomskip@length=\skip92
+\mdf@outermargin@length=\skip93
+\mdf@innermargin@length=\skip94
+\mdf@linewidth@length=\skip95
+\mdf@innerlinewidth@length=\skip96
+\mdf@middlelinewidth@length=\skip97
+\mdf@outerlinewidth@length=\skip98
+\mdf@roundcorner@length=\skip99
+\mdf@footenotedistance@length=\skip100
+\mdf@userdefinedwidth@length=\skip101
+\mdf@needspace@length=\skip102
+\mdf@frametitleaboveskip@length=\skip103
+\mdf@frametitlebelowskip@length=\skip104
+\mdf@frametitlerulewidth@length=\skip105
+\mdf@frametitleleftmargin@length=\skip106
+\mdf@frametitlerightmargin@length=\skip107
+\mdf@shadowsize@length=\skip108
+\mdf@extratopheight@length=\skip109
+\mdf@subtitleabovelinewidth@length=\skip110
+\mdf@subtitlebelowlinewidth@length=\skip111
+\mdf@subtitleaboveskip@length=\skip112
+\mdf@subtitlebelowskip@length=\skip113
+\mdf@subtitleinneraboveskip@length=\skip114
+\mdf@subtitleinnerbelowskip@length=\skip115
+\mdf@subsubtitleabovelinewidth@length=\skip116
+\mdf@subsubtitlebelowlinewidth@length=\skip117
+\mdf@subsubtitleaboveskip@length=\skip118
+\mdf@subsubtitlebelowskip@length=\skip119
+\mdf@subsubtitleinneraboveskip@length=\skip120
+\mdf@subsubtitleinnerbelowskip@length=\skip121
+ (c:/texlive/2025/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box111
+\mdf@footnotebox=\box112
+\mdf@splitbox@one=\box113
+\mdf@splitbox@two=\box114
+\mdf@splitbox@save=\box115
+\mdfsplitboxwidth=\skip122
+\mdfsplitboxtotalwidth=\skip123
+\mdfsplitboxheight=\skip124
+\mdfsplitboxdepth=\skip125
+\mdfsplitboxtotalheight=\skip126
+\mdfframetitleboxwidth=\skip127
+\mdfframetitleboxtotalwidth=\skip128
+\mdfframetitleboxheight=\skip129
+\mdfframetitleboxdepth=\skip130
+\mdfframetitleboxtotalheight=\skip131
+\mdffootnoteboxwidth=\skip132
+\mdffootnoteboxtotalwidth=\skip133
+\mdffootnoteboxheight=\skip134
+\mdffootnoteboxdepth=\skip135
+\mdffootnoteboxtotalheight=\skip136
+\mdftotallinewidth=\skip137
+\mdfboundingboxwidth=\skip138
+\mdfboundingboxtotalwidth=\skip139
+\mdfboundingboxheight=\skip140
+\mdfboundingboxdepth=\skip141
+\mdfboundingboxtotalheight=\skip142
+\mdf@freevspace@length=\skip143
+\mdf@horizontalwidthofbox@length=\skip144
+\mdf@verticalmarginwhole@length=\skip145
+\mdf@horizontalspaceofbox=\skip146
+\mdfsubtitleheight=\skip147
+\mdfsubsubtitleheight=\skip148
+\c@mdfcountframes=\count327
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count328
+\c@mdf@env@i=\count329
+\c@mdf@env@ii=\count330
+\c@mdf@zref@counter=\count331
+Package zref Info: New property: mdf@pagevalue on input line 895.
+) (c:/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
+ (c:/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen261
+\pgfutil@tempdimb=\dimen262
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box116
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen263
+\pgf@y=\dimen264
+\pgf@xa=\dimen265
+\pgf@ya=\dimen266
+\pgf@xb=\dimen267
+\pgf@yb=\dimen268
+\pgf@xc=\dimen269
+\pgf@yc=\dimen270
+\pgf@xd=\dimen271
+\pgf@yd=\dimen272
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count332
+\c@pgf@countb=\count333
+\c@pgf@countc=\count334
+\c@pgf@countd=\count335
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count336
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count337
+\pgfsyssoftpath@bigbuffer@items=\count338
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen273
+\pgfmath@count=\count339
+\pgfmath@box=\box117
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count340
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen274
+\pgf@picmaxx=\dimen275
+\pgf@picminy=\dimen276
+\pgf@picmaxy=\dimen277
+\pgf@pathminx=\dimen278
+\pgf@pathmaxx=\dimen279
+\pgf@pathminy=\dimen280
+\pgf@pathmaxy=\dimen281
+\pgf@xx=\dimen282
+\pgf@xy=\dimen283
+\pgf@yx=\dimen284
+\pgf@yy=\dimen285
+\pgf@zx=\dimen286
+\pgf@zy=\dimen287
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen288
+\pgf@path@lasty=\dimen289
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen290
+\pgf@shorten@start@additional=\dimen291
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box118
+\pgf@hbox=\box119
+\pgf@layerbox@main=\box120
+\pgf@picture@serial@count=\count341
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen292
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen293
+\pgf@pt@y=\dimen294
+\pgf@pt@temp=\dimen295
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen296
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen297
+\pgf@sys@shading@range@num=\count342
+\pgf@shadingcount=\count343
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box121
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box122
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen298
+\pgf@nodesepend=\dimen299
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen300
+\pgffor@skip=\dimen301
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count344
+\pgfplotmarksize=\dimen302
+)
+\tikz@lastx=\dimen303
+\tikz@lasty=\dimen304
+\tikz@lastxsaved=\dimen305
+\tikz@lastysaved=\dimen306
+\tikz@lastmovetox=\dimen307
+\tikz@lastmovetoy=\dimen308
+\tikzleveldistance=\dimen309
+\tikzsiblingdistance=\dimen310
+\tikz@figbox=\box123
+\tikz@figbox@bg=\box124
+\tikz@tempbox=\box125
+\tikz@tempbox@bg=\box126
+\tikztreelevel=\count345
+\tikznumberofchildren=\count346
+\tikznumberofcurrentchild=\count347
+\tikz@fig@count=\count348
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count349
+\pgfmatrixcurrentcolumn=\count350
+\pgf@matrix@numberofcolumns=\count351
+)
+\tikz@expandcount=\count352
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks42
+\verbatim@line=\toks43
+\verbatim@in@stream=\read3
+) (c:/texlive/2025/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (c:/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks44
+)
+\tcb@titlebox=\box127
+\tcb@upperbox=\box128
+\tcb@lowerbox=\box129
+\tcb@phantombox=\box130
+\c@tcbbreakpart=\count353
+\c@tcblayer=\count354
+\c@tcolorbox@number=\count355
+\l__tcobox_tmpa_box=\box131
+\l__tcobox_tmpa_dim=\dimen311
+\tcb@temp=\box132
+\tcb@temp=\box133
+\tcb@temp=\box134
+\tcb@temp=\box135
+) (./Midterm.aux
+
+LaTeX Warning: Label `2' multiply defined.
+
+)
 \openout1 = `Midterm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
  (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count319
-\scratchdimen=\dimen199
-\scratchbox=\box106
-\nofMPsegments=\count320
-\nofMParguments=\count321
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count322
-\MPscratchDim=\dimen256
-\MPnumerator=\count323
-\makeMPintoPDFobject=\count324
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count356
+\scratchdimen=\dimen312
+\scratchbox=\box136
+\nofMPsegments=\count357
+\nofMParguments=\count358
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count359
+\MPscratchDim=\dimen313
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
+\everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -581,38 +927,39 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 39.
-Package microtype Info: Applying patch `item' on input line 39.
-Package microtype Info: Applying patch `toc' on input line 39.
-Package microtype Info: Applying patch `eqnum' on input line 39.
-Package microtype Info: Applying patch `footnote' on input line 39.
-Package microtype Info: Applying patch `verbatim' on input line 39.
-LaTeX Info: Redefining \microtypesetup on input line 39.
+LaTeX Info: Redefining \microtypecontext on input line 43.
+Package microtype Info: Applying patch `item' on input line 43.
+Package microtype Info: Applying patch `toc' on input line 43.
+Package microtype Info: Applying patch `eqnum' on input line 43.
+Package microtype Info: Applying patch `footnote' on input line 43.
+Package microtype Info: Applying patch `verbatim' on input line 43.
+LaTeX Info: Redefining \microtypesetup on input line 43.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `alltext-nott'.
-Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No font expansion.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package hyperref Info: Link coloring ON on input line 39.
+Package hyperref Info: Link coloring ON on input line 43.
  (./Midterm.out) (./Midterm.out)
-\@outlinefile=\write3
-\openout3 = `Midterm.out'.
+\@outlinefile=\write4
+\openout4 = `Midterm.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 42.
+(Font)              <12> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 42.
+(Font)              <8> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 42.
+(Font)              <6> on input line 46.
 
 
 [1
@@ -638,28 +985,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [4
 
 ])
-\tf@toc=\write4
-\openout4 = `Midterm.toc'.
+\tf@toc=\write5
+\openout5 = `Midterm.toc'.
 
 
 
 [5]
 Chapter 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 70.
+<Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg, id=203, 501.875pt x 331.2375pt>
+File: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg Graphic file (type jpg)
+<use Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg>
+Package pdftex.def Info: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg  used on input line 61.
+(pdftex.def)             Requested size: 250.93687pt x 165.61833pt.
 
-Underfull \hbox (badness 2922) in paragraph at lines 70--70
-[]|\T5/cmr/m/n/9 (+20) AFTA, WTO, APEC,
+Underfull \hbox (badness 1275) in paragraph at lines 77--78
+\T5/cmr/m/n/9 ket econ-omy[][][[]] . It is the [][]33rd-
  []
 
 
-Overfull \hbox (0.7623pt too wide) in paragraph at lines 70--70
-[]|\T5/cmr/m/n/9 (-20) Developing/Emerging| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]|\T5/cmr/m/n/9 (+20) Socialist-oriented
+Underfull \hbox (badness 4621) in paragraph at lines 77--78
+[][]\T5/cmr/m/n/9 nom-i-nal gross do-mes-tic prod-uct[][]
  []
 
 
@@ -667,135 +1012,459 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--70
 [1
 
 
-]
+ <./Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg>]
+Underfull \hbox (badness 1057) in paragraph at lines 132--133
+\T5/cmr/m/n/10 wa-ter-house-C-oop-ers[][] in Febru-ary
+ []
 
-[2]
+
+Underfull \hbox (badness 2426) in paragraph at lines 132--133
+\T5/cmr/m/n/10 2017,$[]$ Viet-nam may
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 132--133
+\T5/cmr/m/n/10 be the fastest-growing of the
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 132--133
+\T5/cmr/m/n/10 world's economies, with a po-
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 132--133
+\T5/cmr/m/n/10 of about 5.1 per-cent, which
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 132--133
+\T5/cmr/m/n/10 would make its econ-omy the
+ []
+
+
+Underfull \hbox (badness 4713) in paragraph at lines 132--133
+\T5/cmr/m/n/10 10th-largest in the world by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T5/cmr/m/n/10 2050.$[]$
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 132--133
+\T5/cmr/m/n/10 Viet-nam has also been named
+ []
+
+
+
+[2
+
+]
 Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T5/cmr/bx/n/9 Average gross
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T5/cmr/bx/n/9 Main ex-port
+ []
+
+
+Overfull \hbox (13.39589pt too wide) in paragraph at lines 170--170
+[]|[]|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T5/cmr/bx/n/9 Main im-port
+ []
+
+
+Overfull \hbox (33.94641pt too wide) in paragraph at lines 170--170
+[]|[]|  
+ []
+
+
+Overfull \hbox (96.19435pt too wide) in paragraph at lines 170--170
+[]|[]|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T5/cmr/bx/n/9 Current ac-
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 170--170
+[]|\T5/cmr/bx/n/9 Gross ex-ter-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T5/cmr/bx/n/9 Government
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T5/cmr/bx/n/9 Foreign re-
+ []
+
+
+Overfull \hbox (6.77725pt too wide) in paragraph at lines 170--170
+[]|[]|  
+ []
+
+
+Overfull \hbox (65.2202pt too wide) in alignment at lines 170--170
+[][] 
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 173--174
+\T5/cmr/m/n/10 built on agri-cul-ture. The feu-
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 173--174
+[][]\T5/cmr/m/n/10 agri-cul-ture[][] as the main eco-
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 173--174
+\T5/cmr/m/n/10 thoughts have been pred-i-cated
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 173--174
+\T5/cmr/m/n/10 was reg-u-lated, and such large-
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 173--174
+\T5/cmr/m/n/10 ther-more, the court pro-hib-ited
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 173--174
+\T5/cmr/m/n/10 slaugh-ter-ing wa-ter buf-falo and
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 173--174
+\T5/cmr/m/n/10 related cer-e-monies. Hand-i-crafts
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 173--174
+\T5/cmr/m/n/10 ness-men were called by the
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 173--174
+\T5/cmr/m/n/10 Fur-ther arche-o-log-i-cal ev-i-dence
+ []
+
 
 
 [3
 
 ]
+Underfull \hbox (badness 2608) in paragraph at lines 175--176
+\T5/cmr/m/n/10 the [][]L¶[][]-[][]M¤c[][] pe-riod, the state
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 175--176
+\T5/cmr/m/n/10 250 years.$[]$ Cities
+ []
+
+
+Underfull \hbox (badness 2529) in paragraph at lines 175--176
+\T5/cmr/m/n/10 such as [][]Dong Kinh[][], [][]Hëi An[][]
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 175--176
+\T5/cmr/m/n/10 rapid ur-ban-iza-tion. They were
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 177--178
+\T5/cmr/m/n/10 peak as the coun-try was the
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 177--178
+\T5/cmr/m/n/10 re-bel-lion which dev-as-tated the
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 177--178
+\T5/cmr/m/n/10 which banned all Viet-namese
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 177--178
+\T5/cmr/m/n/10 over-seas busi-ness and stopped
+ []
+
+
 
 [4]
 
-[5
+[5]
+
+[6
 
 ]
-
-[6]
 
 [7]
 
 [8]
+Overfull \hbox (5.78946pt too wide) in paragraph at lines 239--240
+\T5/cmr/m/n/10 that 28% of sur-vey re-spon-dents cited poverty as their main problem.$[]$
+ []
+
+
+Overfull \hbox (1.59604pt too wide) in paragraph at lines 239--240
+\T5/cmr/m/n/10 to 81% in 2017, with strongest gains in the ru-ral pop-u-la-tion groups.$[]$ 
+ []
+
+
+Overfull \hbox (127.17648pt too wide) in paragraph at lines 241--242
+\T5/cmr/m/n/10 nam as 113th worst out of 176 coun-tries and re-gions for per-cep-tions of corruption.$[]$
+ []
+
+
+Overfull \hbox (66.63293pt too wide) in paragraph at lines 241--242
+\T5/cmr/m/n/10 owned op-er-a-tions to re-duce cor-rup-tion and in-crease efficiency.$[]$ 
+ []
+
+
 
 [9]
+
+[10]
 Chapter 3.
-
-
-[10
-
-]
-Chapter 4.
 
 
 [11
 
 ]
+Chapter 4.
 
-[12]
+Underfull \hbox (badness 1117) in paragraph at lines 285--286
+[]\T5/cmr/m/n/10 Vietnam's [][]fish-ing in-dus-try[][], which has
+ []
 
-[13]
 
-[14]
 
-[15
+[12
 
 ]
 
-[16]
+[13]
+Underfull \hbox (badness 4013) in paragraph at lines 324--325
+\T5/cmr/m/n/10 en-ergy (ex-clud-ing [][]biomass[][]). Viet-
+ []
 
-[17
+
+
+[14]
+
+[15]
+
+[16
+
+]
+Underfull \hbox (badness 1231) in paragraph at lines 376--377
+[]\T5/cmr/m/n/10 Insert photo of Ha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
+[]|[][]\T5/cmr/m/n/10 Hëi An An-cient
+ []
+
+
+Underfull \hbox (badness 7722) in paragraph at lines 383--384
+[]\T5/cmr/m/n/10 In 2012, Viet-nam re-
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 383--384
+\T5/cmr/m/n/10 ceived 6.8 mil-lion in-
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 383--384
+\T5/cmr/m/n/10 ter-na-tional vis-i-tors and
+ []
+
+
+
+[17]
+
+[18
 
 ]
 Chapter 5.
 
 
-[18
+[19
 
 ]
 
-[19
+[20
 
 ]
 Chapter 6.
 
 
-[20
+[21
 
 ]
 Chapter 7.
 
 
-[21
+[22
 
 ]
+Underfull \hbox (badness 1024) in paragraph at lines 513--514
+\T5/cmr/m/n/10 val-ued at US$26.5 bil-lion, and were grow-ing
+ []
 
-[22]
+
+Underfull \hbox (badness 1102) in paragraph at lines 513--514
+\T5/cmr/m/n/10 Aus-tralia (6.9%), Sin-ga-pore (5.2%), Ger-many
+ []
+
+
 
 [23]
+Overfull \hbox (3.88715pt too wide) in paragraph at lines 533--534
+\T5/cmr/m/n/10 In 2004, ex-ter-nal debt amounted to US$16.6 bil-lion, or 37% of GDP.$[]$ 
+ []
+
+
 
 [24]
 
-[25
+[25]
+Underfull \hbox (badness 3128) in paragraph at lines 551--552
+[][][]\T5/cmr/m/n/10 ASEAN-Aus-tra-li-a-New Zea-land
+ []
 
-]
-Chapter 8.
+
+Underfull \hbox (badness 1147) in paragraph at lines 557--558
+\T5/cmr/m/n/10 ro-pean Union, Japan, Ko-rea,
+ []
+
+
+Overfull \hbox (47.7109pt too wide) in paragraph at lines 565--566
+[]\T5/cmr/m/n/10 ASEAN-China Free Trade Area (ACFTA), in ef-fect as of 1 Jan-uary 2010$[]$ 
+ []
+
+
+Overfull \hbox (48.2941pt too wide) in paragraph at lines 568--569
+[]\T5/cmr/m/n/10 ASEAN-Korea Free Trade Area (AK-FTA), in ef-fect as of 1 Jan-uary 2010$[]$ 
+ []
+
 
 
 [26
 
 ]
-
-[27]
-
-[28]
-Chapter 9.
+Chapter 8.
 
 
-[29
+[27
 
 ]
-Chapter 10.
+
+[28]
+
+[29]
+Chapter 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--608
+[]|\T5/cmr/m/n/9 World Eco-nomic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--608
+[]|\T5/cmr/m/n/9 Global Com-pet-i-tive-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--612
+\T5/cmr/m/n/9 dation/The Wall
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--612
+[]|\T5/cmr/m/n/9 Index of Eco-nomic
+ []
+
 
 
 [30
 
 ]
+Chapter 10.
+
 
 [31
 
-] (./Midterm.aux)
+]
+Underfull \hbox (badness 1231) in paragraph at lines 629--630
+\T5/cmr/m/n/9 "Is the World Bank com-pat-i-ble with the "Socialist-oriented mar-ket econ-
+ []
+
+
+Overfull \hbox (24.83694pt too wide) in paragraph at lines 631--632
+[]\T5/cmr/m/n/9 International Mon-e-tary Fund https://www.imf.org/external/datamapper/profile/VNM.
+ []
+
+
+
+[32
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.637 \end{document}
+                    ] (./Midterm.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-08-13>
+L3 programming layer <2025-09-02>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Midterm.out' has not changed.
 (rerunfilecheck)             Checksum: 7726438DA5285E2E3EA662CF4AB03A5C;4892.
  ) 
 Here is how much of TeX's memory you used:
- 14304 strings out of 469738
- 225394 string characters out of 5481597
- 670712 words of memory out of 5000000
- 42205 multiletter control sequences out of 15000+600000
- 653485 words of font info for 187 fonts, out of 8000000 for 9000
+ 27311 strings out of 469686
+ 520773 string characters out of 5476674
+ 954553 words of memory out of 5000000
+ 55229 multiletter control sequences out of 15000+600000
+ 650332 words of font info for 73 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 69i,21n,79p,1804b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb>
-Output written on Midterm.pdf (36 pages, 214086 bytes).
+ 102i,22n,106p,1823b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/HOME/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> <c:/Users/HOME/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti9.pfb>
+Output written on Midterm.pdf (37 pages, 299967 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
- 90 named destinations out of 1000 (max. 500000)
- 51465 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 639 PDF objects out of 1000 (max. 8388607)
+ 554 compressed objects within 6 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 14618 words of extra memory for PDF output out of 17280 (max. 10000000)
 

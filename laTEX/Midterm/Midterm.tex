@@ -9,13 +9,17 @@
 \usepackage{framed}
 \usepackage{float}
 \usepackage{caption}
-\usepackage{microtype}
+\usepackage[expansion=false]{microtype}
 \usepackage{ragged2e}
 \usepackage{caption}
 \usepackage{multicol}
 \usepackage[table]{xcolor}
 \usepackage{array}
-\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black, citecolor=blue]{hyperref}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{mdframed}
+\usepackage{tcolorbox}
 
 \makeatletter
 \renewcommand\mainmatter{%
@@ -51,36 +55,121 @@ This report is the cumulation of knowledge gained from previous assignments, alo
 \chapter{Economy of Vietnam}
 
 \begin{wrapfigure}{r}{.55\textwidth}
-	\begin{framed}
-		\small
-		\centering
-		% scale the tabular to the available wrapfigure width
-		\resizebox{\linewidth}{!}{%
-			\begin{tabular}{@{}p{0.38\linewidth} p{0.58\linewidth}@{}}
-				Currency & Vietnamese đồng (VND; đ) \\
-				Fiscal Year & Calendar year \\
-				Trade organisations & AFTA, WTO, APEC, ASEAN, RCEP, CPTPP, FAO \\
-				Country group & \begin{tabular}[t]{@{}p{3cm}@{}}
-													Developing/Emerging\\
-													Lower-middle income country\\
-													Socialist-oriented market economy
-												\end{tabular} \\
-				\multicolumn{2}{c}{Statistics}
-			\end{tabular}%
-		}
-	\end{framed}
+    \vspace{-40pt}
+    \caption*{\textbf{Economy of Vietnam}}
+    \begin{tcolorbox}[bottomrule=0pt]
+        \includegraphics[width=55mm,scale=0.5]{Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg}
+        \caption*{\small \centering \href{https://en.wikipedia.org/wiki/Ho_Chi_Minh_City}{Ho Chi Minh City}, the economic capital of Vietnam}
+        \small
+        \setlength{\tabcolsep}{4pt}
+        \begin{tabularx}{\linewidth}{@{} p{2.5cm} >{\raggedright\arraybackslash}X@{}}
+
+            \textbf{Currency}            & {Vietnamese đồng (VND; ₫)}                                                                                                                                                    \\
+            {\textbf{Fiscal year}}       & {Calendar year}                                                                                                                                                               \\
+            \textbf{Trade organisations} & {AFTA, WTO, APEC, ASEAN, RCEP, CPTPP, FAO}                                                                                                                                    \\
+            \\
+            \textbf{Country group}       & { \begin{tabular}[l]{@{}p{2.8cm}@{}}\raggedright Developing/\newline Emerging\\ Lower-middle income\newline country\\ Socialist-oriented\newline market economy\end{tabular}} \\
+        \end{tabularx}
+    \end{tcolorbox}
 \end{wrapfigure}
-The economy of Vietnam is a \href{https://en.wikipedia.org/wiki/Developing_economy}{developing} \href{https://en.wikipedia.org/wiki/Mixed_economy}{mixed} \href{https://en.wikipedia.org/wiki/Socialist-oriented_market_economy}{socialist-oriented market economy}.\textsuperscript{[Citation needed]} It is the \href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)}{33rd-largest economy} in the world by \href{https://en.wikipedia.org/wiki/Nominal_gross_domestic_product}{nominal gross domestic product} (GDP) and the \href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)}{26th-largest economy} in the world by \href{https://en.wikipedia.org/wiki/Purchasing_power_parity}{purchasing power parity} (PPP). It is an upper-middle income country with a low cost of living. \href{https://en.wikipedia.org/wiki/Vietnam}{Vietnam} is a member of the \href{https://en.wikipedia.org/wiki/Asia-Pacific_Economic_Cooperation}{Asia-Pacific Economic Cooperation}, the \href{https://en.wikipedia.org/wiki/Association_of_Southeast_Asian_Nations}{Association of Southeast Asian Nations} and the \href{https://en.wikipedia.org/wiki/World_Trade_Organization}{World Trade Organization}.
 
-Since the mid-1980s, through the \href{https://en.wikipedia.org/wiki/%C4%90%E1%BB%95i_M%E1%BB%9Bi}{Đổi Mới} reform period, Vietnam has made a shift from a \href{https://en.wikipedia.org/wiki/Centralization}{highly centralized} \href{https://en.wikipedia.org/wiki/Planned_economy}{planned economy} to a \href{https://en.wikipedia.org/wiki/Mixed_economy}{mixed economy}. Before, \href{https://en.wikipedia.org/wiki/North_Vietnam}{South Vietnam} was reliant on U.S. aid,\textsuperscript{[Citation needed]} while North Vietnam and reunified Vietnam relied on communist aid until the \href{https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union}{Soviet Union's dissolution}.\textsuperscript{[Citation needed]}
+\begin{small}
+    The economy of Vietnam is a \href{https://en.wikipedia.org/wiki/Developing_economy}{developing} \href{https://en.wikipedia.org/wiki/Mixed_economy}{mixed} \href{https://en.wikipedia.org/wiki/Socialist-oriented_market_economy}{socialist-oriented market economy}\cite{3} . It is the \href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)}{33rd-largest economy} in the world by \href{https://en.wikipedia.org/wiki/Nominal_gross_domestic_product}{nominal gross domestic product} (GDP) and the \href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)}{26th-largest economy} in the world by \href{https://en.wikipedia.org/wiki/Purchasing_power_parity}{purchasing power parity} (PPP). It is an upper-middle income country with a low cost of living. \href{https://en.wikipedia.org/wiki/Vietnam}{Vietnam} is a member of the \href{https://en.wikipedia.org/wiki/Asia-Pacific_Economic_Cooperation}{Asia-Pacific Economic Cooperation}, the \href{https://en.wikipedia.org/wiki/Association_of_Southeast_Asian_Nations}{Association of Southeast Asian Nations} and the \href{https://en.wikipedia.org/wiki/World_Trade_Organization}{World Trade Organization}.
 
+\end{small}
+
+
+\begin{sloppypar}
+    Since the mid-1980s, through the
+    \href{https://en.wikipedia.org/wiki/%C4%90%E1%BB%95i_M%E1%BB%9Bi}{Đổi Mới} reform period, Vietnam has made a shift from a 
+    \href{https://en.wikipedia.org/wiki/Centralization}{highly centralized}
+    \href{https://en.wikipedia.org/wiki/Planned_economy}{planned economy} to a
+    \href{https://en.wikipedia.org/wiki/Mixed_economy}{mixed economy}.
+
+    Before, \href{https://en.wikipedia.org/wiki/North_Vietnam}{South Vietnam} was reliant on U.S. aid,\textsuperscript{[Citation needed]}
+    while North Vietnam and reunified Vietnam relied on communist aid until the
+    \href{https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union}{Soviet Union's dissolution}.\textsuperscript{[Citation needed]}
+\end{sloppypar}
+
+\clearpage
+\begin{wrapfigure}{r}{.55\textwidth}
+    \begin{tcolorbox}[toprule=0pt , bottomrule=0pt]
+        \small
+        \setlength{\tabcolsep}{4pt}
+        \begin{tabularx}{\linewidth}{@{}p{2.8cm} >{\raggedright\arraybackslash}X@{}}
+            \multicolumn{2}{@{}>{\centering\arraybackslash}p{\dimexpr\linewidth\relax}@{}}{\cellcolor[HTML]{ADD8E6}\textbf{Statistics}}                                                                    \\
+            \textbf{Population}                     & 101,598,527 (2025)                                                                                                                                   \\
+            \\
+            {\textbf{GDP}}                          & \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}} \$490.97 billion (nominal; 2025)\\ \$1.762 trillion (PPP; 2025)\end{tabular}        \\
+            \\
+            \textbf{GDP rank}                       & {\begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}33rd (nominal; 2025)\\ 23rd (PPP; 2025)\end{tabular}}                               \\
+
+            \textbf{GDP growth}                     & \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}} 7.09\% (2024)\\  5.8\% (2025\\ 4\% (2026\end{tabular}                               \\
+
+            \textbf{GDP per capita}                 & \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}\$4,806 (nominal; 2\-0\-2\-5 e\-s\-t.)\\\$17,484 (PPP; 2025 est.\end{tabular}        \\
+            \\
+            \textbf{GDP per capita rank}            & {\begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}119th (nominal; 2025)\\ 104th (PPP; 2025)\end{tabular}}                             \\
+            \textbf{GDP by sector}                  & { \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}Agriculture: 11\%\\ Industry: 38.1\%\\ Services: 42.5\%\\ (2023 est.\end{tabular}} \\
+            \\
+            {\textbf{Inflation (CPI)}}              & 3.45\% (Nov 2023)                                                                                                                                    \\
+            \\
+            \fussy \textbf{Population below poverty line}  & 22\% on less than \$8.30/day (2022)                                                                                                                   \\
+            \\
+            {\textbf{Gini coefficient}}             & 36.1 medium (2022)                                                                                                                                   \\
+            \\
+            \textbf{Human Development Index}    & \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}\# 0.766 high (2023 (93th)\\ \# 0.641 medium IHDI (75rd) (2023\end{tabular}          \\
+            \\
+            \fussy \textbf{Corruption P\-e\-r\-c\-e\-p\-t\-i\-o\-n\-s Index} & 40 out of 100 points (2024, 88th rank)                                                                                                            \\
+            \\
+            \textbf{Labour force}                   & \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}57,249,411 (2019)\\ 74.7\% employment rate (2018)\end{tabular}                         \\
+            \end{tabularx}
+    \end{tcolorbox}
+\end{wrapfigure}
 The economy uses both directive and \href{https://en.wikipedia.org/wiki/Indicative_planning}{indicative planning} through \href{https://en.wikipedia.org/wiki/Five-Year_Plans_of_Vietnam}{five-year plans}, with support from an open \href{https://en.wikipedia.org/wiki/Market_economy}{market-based economy}. Over that period, the economy has experienced rapid growth. In the 21st century, Vietnam is in a period of being integrated into the global economy. Almost all Vietnamese enterprises are small and medium enterprises (\href{https://en.wikipedia.org/wiki/Small_and_medium_enterprises}{SMEs}). Vietnam has become a leading agricultural exporter and served as an attractive destination for foreign investment in \href{https://en.wikipedia.org/wiki/Southeast_Asia}{Southeast Asia}.
 
+
+\begin{sloppypar}\setlength\emergencystretch{2em}
 According to a forecast by \href{https://en.wikipedia.org/wiki/PricewaterhouseCoopers}{PricewaterhouseCoopers} in February 2017,\textsuperscript{[needs update]} Vietnam may be the fastest-growing of the world's economies, with a potential annual GDP growth rate of about 5.1 percent, which would make its economy the 10th-largest in the world by 2050.\textsuperscript{[Citation needed][needs update]} Vietnam has also been named among the so-called \href{https://en.wikipedia.org/wiki/Jim_O%27Neill,_Baron_O%27Neill_of_Gatley#Next_Eleven}{Next Eleven} and \href{https://en.wikipedia.org/wiki/CIVETS}{CIVETS} countries.
+\end{sloppypar}
 
 \chapter{History}
+
 \section{Before 1858}
 
+\begin{wrapfigure}{r}{.55\textwidth}
+    \vspace{-80pt}
+    \begin{tcolorbox}[toprule=0pt,bottomrule=0pt]
+        \small
+        \setlength{\tabcolsep}{4pt}
+        \begin{tabularx}{\linewidth}{@{}p{2.6cm} >{\raggedright\arraybackslash}p{3.2cm}@{}}
+            \\
+            \textbf{Labour force by occupation}     & { \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}Agriculture: 27.5\%\\ Industry: 33.4\%\\ Services: 39\%\\ (2022\end{tabular}}      \\
+            \\
+            \textbf{Unemployment}                   & \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}3.3\% (2020 est.\\ 6.9\% youth unemployment (15 to 24 year-olds; 2019\end{tabular}   \\
+            \textbf{Average gross salary} & ₫ 7,600,000 / \$300 monthly (Q1 2024                                                                                                                                                                                                          \\
+            \textbf{Main industries}      & { Electronics, machinery, steel, food processing, wood industry, textile, footwear, vehicle, rice, coffee, cashews, seafood, vegetable and tourism}                                                                                           \\
+            \multicolumn{2}{c}{\cellcolor[HTML]{ADD8E6}\textbf{External}}                                                                                                                                                                                                                 \\
+            \textbf{Exports}              & \$405.5 billion (2024                                                                                                                                                                                                                         \\
+            \textbf{Export goods}         & { Electronics, textiles products, machinery, footwear products, transportation products, wooden products, seafood products, steel, crude oil, pepper, rice and coffee}                                                                        \\
+            \textbf{Main export partners} & \begin{tabular}[c]{@{}l@{}}\# United States 29.5\%\\ \# China 18.2\%\\ \# Hong Kong 3.1\%\\ \# European Union 13.7\%\\ \# ASEAN 9.1\%\\ \# South Korea 6.3\%\\ \# Japan 6.1\% (2024\end{tabular}                                              \\
+            \textbf{Imports}              & \$380.8 billion (2024                                                                                                                                                                                                                         \\
+            \textbf{Import goods}         & { Machinery and industrial equipment, electronics, petroleum products, raw materials for the clothing and shoe industries, plastics, automobiles, metal, and chemical products}                                                               \\
+            \textbf{Main import partners} & \begin{tabular}[c]{@{}l@{}}\# China 37.8\%\\ \# South Korea 14.7\%\\ \# ASEAN 12.4\%\\ \# Taiwan 6.0\%\\ \# Japan 5.7\%\\ \# European Union 4.4\% (2024\end{tabular}                                                                          \\
+            { \textbf{FDI stock}}         & \begin{tabular}[c]{@{}l@{}}\$129.5 billion (31 December 2017 est.)[21]\\ Abroad: \$19.75 billion (31 December 2015 est.\end{tabular}                                                                                                          \\
+            { \textbf{Current account}}   & \# \$5.401 billion (2017 est.                                                                                                                                                                                                                 \\
+            \textbf{Gross external debt}  & \$96.58 billion (31 December 2017 est.                                                                                                                                                                                                        \\
+            \multicolumn{2}{c}{\cellcolor[HTML]{ADD8E6}\textbf{Public finances}}                                                                                                                                                                                                          \\
+            { \textbf{Government debt}}   & 37\% of GDP (2023 est.{[}note 1{]}                                                                                                                                                                                                            \\
+            { \textbf{Foreign reserves}}  & \$86.4 billion (Feb 2023 est.                                                                                                                                                                                                                 \\
+            { \textbf{Budget balance}}    & -6.7\% (of GDP) (2017 est.                                                                                                                                                                                                                    \\
+            \textbf{Revenues}             & 54.59 billion (2017 est.                                                                                                                                                                                                                      \\
+            \textbf{Expenses}             & 69.37 billion (2017 est.                                                                                                                                                                                                                      \\
+            \textbf{Economic aid}         & \$2.174 billion (2016)                                                                                                                                                                                                                        \\
+            { \textbf{Credit rating}}     & { \begin{tabular}[c]{@{}l@{}}Standard \& Poor's:{[}24{]}\\ BB+ (domestic)\\ BB+ (foreign)\\ BB+ (T\&C assessment)\\ Outlook: stable{[}25{]}\\ Moody's:{[}25{]}\\ Ba2\\ Outlook: Stable\\ Fitch:{[}25{]}\\ BB+\\ Outlook: stable\end{tabular}} \\
+            \multicolumn{2}{c}{\cellcolor[HTML]{ADD8E6}\textit{All values, unless otherwise stated, are in US dollars.}}
+        \end{tabularx}
+    \end{tcolorbox}
+\end{wrapfigure}
 Civilization in Vietnam had been built on agriculture. The feudal dynasties always considered \href{https://en.wikipedia.org/wiki/Agriculture}{agriculture} as the main economic base, and their economic thoughts have been predicated on \href{https://en.wikipedia.org/wiki/Physiocracy}{physiocracy}. Land ownership was regulated, and such large-scale works as \href{https://en.wikipedia.org/wiki/Dike_(construction)}{dykes} were constructed in the \href{https://en.wikipedia.org/wiki/Red_River_Delta}{Red River Delta} to facilitate wet rice cultivation. In peaceful times, soldiers were sent home to do farm work. Furthermore, the court prohibited slaughtering water buffalo and cattle and held many agriculture-related ceremonies. Handicrafts and art were valued, but commerce was deprecated, and businessmen were called by the derogatory term con buôn. Thang Long (\href{https://en.wikipedia.org/wiki/Hanoi}{Hanoi}) was the main handicraft manufacturing center of the country. Chinese noted that the Vietnamese were doing business just like the same with in the Chinese \href{https://en.wikipedia.org/wiki/Song_dynasty}{Song dynasty}.\textsuperscript{[Citation needed]} From the 9th to 13th century, the Vietnamese traded ceramics and silks with regional powers such as China, \href{https://en.wikipedia.org/wiki/Champa}{Champa}, \href{https://en.wikipedia.org/wiki/Western_Xia}{Western Xia}, \href{https://en.wikipedia.org/wiki/Java}{Java} among others.\textsuperscript{[Citation needed]} Further archeological evidence suggests that Muslim traders had lived in Hanoi from around the 9th to 10th centuries, based on Muslim ceramics found in the Old Quarter of Hanoi.\textsuperscript{[Citation needed]}
 
 However, from the 16th century, \href{https://en.wikipedia.org/wiki/Confucianism}{Confucianism} was losing its influence on Vietnamese society and a monetary pre-capitalism economy began to develop. During the \href{https://en.wikipedia.org/wiki/L%C3%AA_dynasty}{Lê}-\href{https://en.wikipedia.org/wiki/M%E1%BA%A1c_dynasty}{Mạc} period, the state encouraged semi-industrial business and sea-traders, as the Vietnamese economy would mainly depended on them for the next 250 years.\textsuperscript{[Citation needed]} Cities such as \href{https://en.wikipedia.org/wiki/Dong_Kinh}{Dong Kinh}, \href{https://en.wikipedia.org/wiki/H%E1%BB%99i_An}{Hội An} and others grew quickly under rapid urbanization. They were later constrained when foreign nations saw them as an economic threat.\textsuperscript{[Citation needed]}
@@ -95,26 +184,25 @@ The separation distorted the basic Vietnamese economy by overly stressing region
 When the North and South were \href{https://en.wikipedia.org/wiki/Geneva_Conference_(1954)}{divided politically in 1954}, they also adopted different economic ideologies: socialism in the North and capitalism in the South. Destruction caused by the \href{https://en.wikipedia.org/wiki/Second_Indochina_War}{Second Indochina War} from 1955 to 1975 seriously strained the economy. The situation was worsened by the country's 1.5 million military and civilian deaths, and the subsequent exodus of 1 million refugees, including tens of thousands of professionals, intellectuals, technicians and skilled workers out of the millions of war refugees.\textsuperscript{[Citation needed]}
 \begin{figure}[H]
     \justify{
-    \begin{minipage}[t]{0.5\textwidth}
-        \begin{tabular}{c}
-        \fbox{
-            \parbox{0.8\textwidth}{
-                Insert table of GDP per capita in Vietnam, 1956-1974 }
-        }
-        
-    \end{tabular}
-    \caption*{Table 2.1}
-    \end{minipage}
-    \hspace{0pt}
-    \begin{minipage}[t]{0.4\textwidth}
-        \centering
-        \fbox{
-        \parbox{0.5\textwidth}{
-            Insert chart of GDP per capita development in Vietnam
-        }
-    }
-    \caption*{Graph 2.1}
-    \end{minipage}
+        \begin{minipage}[t]{0.5\textwidth}
+            \begin{tabular}{c}
+                \fbox{
+                    \parbox{0.8\textwidth}{
+                        Insert table of GDP per capita in Vietnam, 1956-1974 }
+                }
+            \end{tabular}
+            \caption*{Table 2.1}
+        \end{minipage}
+        \hspace{0pt}
+        \begin{minipage}[t]{0.4\textwidth}
+            \centering
+            \fbox{
+                \parbox{0.5\textwidth}{
+                    Insert chart of GDP per capita development in Vietnam
+                }
+            }
+            \caption*{Graph 2.1}
+        \end{minipage}
     }
 \end{figure}
 
@@ -164,7 +252,7 @@ The following table shows the main economic indicators in 1990-2023 (with IMF st
 \begin{table}[h]
     \centering
     Insert table here
-    \caption*{Table 3.1}    
+    \caption*{Table 3.1}
 \end{table}
 
 \chapter{Economic sectors}
@@ -172,23 +260,23 @@ The following table shows the main economic indicators in 1990-2023 (with IMF st
 
 \begin{wrapfigure}{r}{.45\textwidth}
     \begin{framed}
-    Insert picture of Rice terraces in \href{https://en.wikipedia.org/wiki/Sa_Pa}{Sa Pa}.
-    \caption*{Vietnam is the world's third-largest rice exporter.}
-    \caption*{Figure 4.1}
+        Insert picture of Rice terraces in \href{https://en.wikipedia.org/wiki/Sa_Pa}{Sa Pa}.
+        \caption*{Vietnam is the world's third-largest rice exporter.}
+        \caption*{Figure 4.1}
     \end{framed}
-    
+
     \begin{framed}
-    Insert picture of coffees
-    \caption*{Vietnam is the world's second-largest \href{https://en.wikipedia.org/wiki/Coffee}{coffee} producer and exporter.}
-    \caption*{Figure 4.2}
+        Insert picture of coffees
+        \caption*{Vietnam is the world's second-largest \href{https://en.wikipedia.org/wiki/Coffee}{coffee} producer and exporter.}
+        \caption*{Figure 4.2}
     \end{framed}
-    
+
     \begin{framed}
-    Insert picture of cashew
-    \caption*{Vietnam is the world's largest \href{https://en.wikipedia.org/wiki/Cashew}{cashew exporter}}    
-    \caption*{Figure 4.3}
+        Insert picture of cashew
+        \caption*{Vietnam is the world's largest \href{https://en.wikipedia.org/wiki/Cashew}{cashew exporter}}
+        \caption*{Figure 4.3}
     \end{framed}
-    
+
 \end{wrapfigure}
 
 
@@ -227,9 +315,9 @@ In 2018, Vietnam was the world's 5th largest producer of \href{https://en.wikipe
 
 \begin{wrapfigure}{r}{.5\textwidth}
     \begin{framed}
-    Insert picture of Dau Tieng Solar Power Complex
-    \caption*{\href{https://en.wikipedia.org/wiki/Dau_Tieng_Solar_Power_Project}{Dau Tieng Solar Power Complex} is the largest solar farm in \href{https://en.wikipedia.org/wiki/Southeast_Asia}{Southeast Asia}.}
-    \caption*{Figure 4.4}
+        Insert picture of Dau Tieng Solar Power Complex
+        \caption*{\href{https://en.wikipedia.org/wiki/Dau_Tieng_Solar_Power_Project}{Dau Tieng Solar Power Complex} is the largest solar farm in \href{https://en.wikipedia.org/wiki/Southeast_Asia}{Southeast Asia}.}
+        \caption*{Figure 4.4}
     \end{framed}
 \end{wrapfigure}
 
@@ -246,17 +334,17 @@ Vietnam's \href{https://en.wikipedia.org/wiki/Anthracite}{anthracite} coal reser
 From 2019 onwards, renewable energy deployment in Vietnam accelerated, by far surpassing the other Southeast Asian countries.\textsuperscript{[Citation needed]} Most of the newly deployed renewable energy was in the form of solar and wind power plants. By 2023, however, this development had slowed down, mainly due to limited electrical grid capacity and reduced government support.\textsuperscript{[Citation needed]}
 \clearpage
 \begin{table}
-Insert table of Total energy consumption in \href{https://en.wikipedia.org/wiki/Terrawatt-hour}{Terrawatt-hours} (\textbf{TWh})
-\caption*{Table 4.1}
+    Insert table of Total energy consumption in \href{https://en.wikipedia.org/wiki/Terrawatt-hour}{Terrawatt-hours} (\textbf{TWh})
+    \caption*{Table 4.1}
 \end{table}
 
 \section{Industry and manufacturing}
 
 \begin{wrapfigure}{r}{.5\textwidth}
     \begin{framed}
-    Insert picture of VinFast VF8
-    \caption*{\href{https://en.wikipedia.org/wiki/VinFast}{VinFast}, Vietnam's first global automaker has its manufacturing facility in \href{https://en.wikipedia.org/wiki/Haiphong}{Hải Phòng}.}
-    \caption*{Figure 4.5}
+        Insert picture of VinFast VF8
+        \caption*{\href{https://en.wikipedia.org/wiki/VinFast}{VinFast}, Vietnam's first global automaker has its manufacturing facility in \href{https://en.wikipedia.org/wiki/Haiphong}{Hải Phòng}.}
+        \caption*{Figure 4.5}
     \end{framed}
 \end{wrapfigure}
 
@@ -276,20 +364,20 @@ In 2004, services accounted for 38.2\% of gross domestic product (GDP). From 199
 
 
 \begin{wrapfigure}{r}{.65\textwidth}
-    
+
     \begin{framed}
-    \begin{minipage}[t]{0.5\textwidth}
-        Insert photo of Ha Long Bay
-        \caption*{Hạ Long Bay was recognised as a World Heritage Site in 1994.}
-        \caption*{Figure 4.6}
-    \end{minipage}
-    \hspace{5pt}
-    \begin{minipage}[t]{0.45\textwidth}
-        Insert photo of Ha Nột Ancient town
-        \caption*{\href{https://en.wikipedia.org/wiki/Hoi_An}{Hội An Ancient Town}}
-        \caption*{Figure 4.7}
-    \end{minipage}
-\end{framed}
+        \begin{minipage}[t]{0.5\textwidth}
+            Insert photo of Ha Long Bay
+            \caption*{Hạ Long Bay was recognised as a World Heritage Site in 1994.}
+            \caption*{Figure 4.6}
+        \end{minipage}
+        \hspace{5pt}
+        \begin{minipage}[t]{0.45\textwidth}
+            Insert photo of Ha Nột Ancient town
+            \caption*{\href{https://en.wikipedia.org/wiki/Hoi_An}{Hội An Ancient Town}}
+            \caption*{Figure 4.7}
+        \end{minipage}
+    \end{framed}
 \end{wrapfigure}
 
 In 2012, Vietnam received 6.8 million international visitors and the number is expected to reach over 7 million in 2013. Vietnam keeps emerging as an attractive destination. In TripAdvisor's list of top 25 destinations Asia 2013 by travelers' choice, there are four cities of Vietnam, namely Hanoi, Ho Chi Minh City, Hoi An and Ha Long.\textsuperscript{[citation needed]}
@@ -308,15 +396,15 @@ The export of labour, that is the sending of Vietnamese workers to work in other
 
 \begin{wrapfigure}{r}{.45\textwidth}
     \begin{framed}
-    Insert picture of state bank of Vietnam.
-    \caption*{State Bank of Vietnam in Ho Chi Minh City (Saigon)}
-    \caption*{Figure 4.8}
+        Insert picture of state bank of Vietnam.
+        \caption*{State Bank of Vietnam in Ho Chi Minh City (Saigon)}
+        \caption*{Figure 4.8}
     \end{framed}
-    
+
     \begin{framed}
-    Insert picture of Ho Chi Minh's exchange tower
-    \caption*{Ho Chi Minh City Stock Exchange}
-    \caption*{Figure 4.9}
+        Insert picture of Ho Chi Minh's exchange tower
+        \caption*{Ho Chi Minh City Stock Exchange}
+        \caption*{Figure 4.9}
     \end{framed}
     \vspace{-50pt}
 \end{wrapfigure}
@@ -334,14 +422,14 @@ Vietnam has two stock trading centers, the \href{https://en.wikipedia.org/wiki/H
 \begin{wrapfigure}{r}{.45\textwidth}
     \vspace{-35pt}
     \begin{framed}
-    
-    Insert picture of Countries or territories by GDP (nominal) per capita in 2022.
-    \caption*{Figure 4.10}
+
+        Insert picture of Countries or territories by GDP (nominal) per capita in 2022.
+        \caption*{Figure 4.10}
     \end{framed}
-    
+
     \begin{framed}
-    Insert picture of Countries or territories by GDP (PPP) per capita in 2022.
-    \caption*{Figure 4.11}
+        Insert picture of Countries or territories by GDP (PPP) per capita in 2022.
+        \caption*{Figure 4.11}
     \end{framed}
     \vspace{-35pt}
 \end{wrapfigure}
@@ -385,9 +473,9 @@ With 1,120 inbound deals with a cumulated value of almost 15 billion USD, there 
 
 \begin{wrapfigure}{r}{.35\textwidth}
     \begin{framed}
-    Insert picture of Saigon Port
-    \caption*{\href{https://en.wikipedia.org/wiki/Saigon_Port}{Saigon Port} is the \href{https://en.wikipedia.org/wiki/List_of_busiest_container_ports}{busiest container port} in Vietnam. It is capable of accommodating \href{https://en.wikipedia.org/wiki/Panamax}{post-Panamax} ships.}
-    \caption*{Figure 7.1}
+        Insert picture of Saigon Port
+        \caption*{\href{https://en.wikipedia.org/wiki/Saigon_Port}{Saigon Port} is the \href{https://en.wikipedia.org/wiki/List_of_busiest_container_ports}{busiest container port} in Vietnam. It is capable of accommodating \href{https://en.wikipedia.org/wiki/Panamax}{post-Panamax} ships.}
+        \caption*{Figure 7.1}
     \end{framed}
 \end{wrapfigure}
 
@@ -416,10 +504,10 @@ The account deficit has since decreased. In 2012, Vietnam recorded a trade surpl
 
 \begin{wrapfigure}{r}{.35\textwidth}
     \begin{framed}
-    Insert the map of Vietnamese export destinations, 2004
-    \caption*{Figure 7.2}    
+        Insert the map of Vietnamese export destinations, 2004
+        \caption*{Figure 7.2}
     \end{framed}
-    
+
 \end{wrapfigure}
 
 In 2004, Vietnam's exports of merchandise were valued at US\$26.5 billion, and were growing rapidly along with imports. Vietnam's principal exports were crude oil (22.1\%), textiles and garments (17.1\%), footwear (10.5\%), fisheries products (9.4\%) and electronics (4.1\%). The main destinations of Vietnam's exports were the United States (18.8\%), Japan (13.2\%), China (10.3\%), Australia (6.9\%), Singapore (5.2\%), Germany (4.0\%), and the United Kingdom (3.8\%).\textsuperscript{[Citation needed]}
@@ -455,45 +543,45 @@ In 2023, Vietnam realised foreign direct investment in the amount of US\$23.2 bi
 \clearpage
 \section{Free trade agreements}
 
-    \begin{figure}[ht!] 
-        \begin{minipage}{0.49\textwidth}
-            \centering
-            \begin{itemize} 
-                \item \href{https://en.wikipedia.org/wiki/ASEAN_Free_Trade_Area}{ASEAN Free Trade Area} (AF\-TA)
-                \item \href{https://en.wikipedia.org/wiki/ASEAN%E2%80%93Australia%E2%80%93New_Zealand_Free_Trade_Area}{ASEAN-Aus\-tra\-li\-a-New Zea\-land Free Trade A\-rea} (A\-A\-N\-Z\-F\-T\-A) is a free trade a\-rea be\-tween A\-SEAN and A\-N\-Z\-C\-E\-R\-T\-A, sign\-ed on 27 Feb\-ruary 20\-09\textsuperscript{[Citation needed]} and com\-ing into ef\-fect on 1 Jan\-uary 20\-10.\textsuperscript{[Citation needed]} De\-tails of the A\-A\-N\-Z\-F\-T\-A agree\-ment are a\-vail\-able on\-line.\textsuperscript{[Citation needed]}
-                \end{itemize}
-        \end{minipage}
-        \hfill 
-        \begin{minipage}{0.45\textwidth}
-            \begin{framed}    
+\begin{figure}[ht!]
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \begin{itemize}
+            \item \href{https://en.wikipedia.org/wiki/ASEAN_Free_Trade_Area}{ASEAN Free Trade Area} (AF\-TA)
+            \item \href{https://en.wikipedia.org/wiki/ASEAN%E2%80%93Australia%E2%80%93New_Zealand_Free_Trade_Area}{ASEAN-Aus\-tra\-li\-a-New Zea\-land Free Trade A\-rea} (A\-A\-N\-Z\-F\-T\-A) is a free trade a\-rea be\-tween A\-SEAN and A\-N\-Z\-C\-E\-R\-T\-A, sign\-ed on 27 Feb\-ruary 20\-09\textsuperscript{[Citation needed]} and com\-ing into ef\-fect on 1 Jan\-uary 20\-10.\textsuperscript{[Citation needed]} De\-tails of the A\-A\-N\-Z\-F\-T\-A agree\-ment are a\-vail\-able on\-line.\textsuperscript{[Citation needed]}
+        \end{itemize}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \begin{framed}
             Insert photo of A map of A\-SEAN-China Free Trade Area including Vietnam, other free trade deals are with the European Union, Japan, Korea, the Eurasian Economic U\-nion (Russia), India, Australia, New Zealand, Canada, México, Peru and Chile
-        \caption*{Figure 7.3}
+            \caption*{Figure 7.3}
         \end{framed}
-        \end{minipage}
-    \end{figure}
+    \end{minipage}
+\end{figure}
 
-    \begin{itemize}
-        \vspace{-5pt}
-                \item ASEAN-China Free Trade Area (ACFTA), in effect as of 1 January 2010\textsuperscript{[Citation needed]}
-                \item ASEAN-India Free Trade Area (AIFTA), in effect as of 1 January 20\-10\textsuperscript{[Citation needed]}
-                \item ASEAN-Japan Comprehensive Economic Partnership (AJCEP)
-                \item ASEAN-Korea Free Trade Area (AKFTA), in effect as of 1 January 2010\textsuperscript{[Citation needed]}
-                \item Comprehensive Economic Partnership for East Asia
-                \item Comprehensive and Progressive Agreement for Trans-Pacific Partnership.
-                \item On 29 May 2015, Vietnam signed a Free Trade Agreement (FTA) with Eurasian Economic Union.\textsuperscript{[Citation needed]}
-                \item European Union-Vietnam Free Trade Agreement (EVFTA) came into effect on 1 August 2020.
-                \item Vietnam-Chile Free Trade Agreement (VCFTA) came into effect on 1 January 2014.\textsuperscript{[Citation needed]}
-                \item Vietnam-Korea Free Trade Agreement (VKFTA) came into effect on 20 December 2015.\textsuperscript{[Citation needed]}
-                \item Japan-Vietnam Economic Partnership Agreement came into effect on 1 October 2009.\textsuperscript{[Citation needed]}
-                \item United Kingdom-Vietnam Free Trade Agreement came into effect on 1 January 2021.\textsuperscript{[Citation needed]}
-    \end{itemize}    
+\begin{itemize}
+    \vspace{-5pt}
+    \item ASEAN-China Free Trade Area (ACFTA), in effect as of 1 January 2010\textsuperscript{[Citation needed]}
+    \item ASEAN-India Free Trade Area (AIFTA), in effect as of 1 January 20\-10\textsuperscript{[Citation needed]}
+    \item ASEAN-Japan Comprehensive Economic Partnership (AJCEP)
+    \item ASEAN-Korea Free Trade Area (AKFTA), in effect as of 1 January 2010\textsuperscript{[Citation needed]}
+    \item Comprehensive Economic Partnership for East Asia
+    \item Comprehensive and Progressive Agreement for Trans-Pacific Partnership.
+    \item On 29 May 2015, Vietnam signed a Free Trade Agreement (FTA) with Eurasian Economic Union.\textsuperscript{[Citation needed]}
+    \item European Union-Vietnam Free Trade Agreement (EVFTA) came into effect on 1 August 2020.
+    \item Vietnam-Chile Free Trade Agreement (VCFTA) came into effect on 1 January 2014.\textsuperscript{[Citation needed]}
+    \item Vietnam-Korea Free Trade Agreement (VKFTA) came into effect on 20 December 2015.\textsuperscript{[Citation needed]}
+    \item Japan-Vietnam Economic Partnership Agreement came into effect on 1 October 2009.\textsuperscript{[Citation needed]}
+    \item United Kingdom-Vietnam Free Trade Agreement came into effect on 1 January 2021.\textsuperscript{[Citation needed]}
+\end{itemize}
 
 
-    
+
 \chapter{Economic development strategy}
 \section{Trade liberalization}
 \small{
-Over the past 30 years, Vietnam has signed numerous trade agreements with different partners, promoting the country as one of the main manufacturing hubs in the world. In 1995, Vietnam joined the ASEAN community. In 2000, it signed a free trade agreement with the United States, to be followed by admission to the World Trade Organisation in 2007. Since then, the country has further integrated itself into the world economy with bilateral agreements with other ASEAN countries, China, India, Japan, and Korea, to name a few. Vietnam has actively working with other partners on ratifying the Trans-Pacific Partnership to form CP TPP, or TPP-11, after the withdrawal of the US, in order to promote economic cooperation, regional connectivity and promote economic growth between member countries. The World Bank estimates that the CP TPP would help the country's GDP to grow by 1.1\% by 2030 with a boost to productivity. The overall impact of these efforts was the lowering of tariffs on both imports and exports to and from Viet Nam, and an improved trade balance with a surplus of \$2.8 billion during the first eight months of 2018 (Vietnam Custom Department).\textsuperscript{[Citation needed]} Most recently, on June 30, 2019, Vietnam signed the Free Trade Agreement and Investment Protection Agreement with the EU after 10 years of negotiation, making it only the fourth country in Asia which managed to sign such agreement with the western bloc (after Japan, South Korea, and Singapore)
+    Over the past 30 years, Vietnam has signed numerous trade agreements with different partners, promoting the country as one of the main manufacturing hubs in the world. In 1995, Vietnam joined the ASEAN community. In 2000, it signed a free trade agreement with the United States, to be followed by admission to the World Trade Organisation in 2007. Since then, the country has further integrated itself into the world economy with bilateral agreements with other ASEAN countries, China, India, Japan, and Korea, to name a few. Vietnam has actively working with other partners on ratifying the Trans-Pacific Partnership to form CP TPP, or TPP-11, after the withdrawal of the US, in order to promote economic cooperation, regional connectivity and promote economic growth between member countries. The World Bank estimates that the CP TPP would help the country's GDP to grow by 1.1\% by 2030 with a boost to productivity. The overall impact of these efforts was the lowering of tariffs on both imports and exports to and from Viet Nam, and an improved trade balance with a surplus of \$2.8 billion during the first eight months of 2018 (Vietnam Custom Department).\textsuperscript{[Citation needed]} Most recently, on June 30, 2019, Vietnam signed the Free Trade Agreement and Investment Protection Agreement with the EU after 10 years of negotiation, making it only the fourth country in Asia which managed to sign such agreement with the western bloc (after Japan, South Korea, and Singapore)
 }
 \section{Domestic Reform}
 The government has made real effort in changing its mindset toward a more open market economy, lowering the cost of doing business, and putting regulation in place to ensure rights and orders. In 1986 the government passed its first Law on Foreign Investment, allowing foreign companies to operate in Vietnam. Between 1981 and 2005, Vietnam created a new intellectual property law that gradually moved away from the Soviet-style concept of collective ownership.\textsuperscript{[Citation needed]} A milestone in this evolution was the Copyright Agreement that Vietnam concluded with the US in 1997, serving primarily the US interest of preventing Vietnam from becoming an international center for illegal copying.\textsuperscript{[Citation needed]} The constitution has come a long way since, with the law being revised regularly to cater for a more investor-friendly business environment while aiming to reduce red-tape and accelerate foreign investment into the country. The Global Competitiveness Report\textsuperscript{[Citation needed]} by World Economic Forum placed Vietnam at 55th in 2017, rising from 77th place in 2006. In the World Bank's Ease of Doing Business rankings,\textsuperscript{[Citation needed]} Vietnam also rose from 104th place in 2007 to 68th place in 2017. The Bank commended Vietnam on progress made in enforcing contracts, increasing access to credit and basic infrastructure, and trading, among other factors.
@@ -508,43 +596,42 @@ In 2017, with the help of the United Nations, Vietnam official started the groun
 \chapter{Economic indicators and international rankings}
 
 \begin{center}
-\begin{tabular}{|m {2.75cm} | m{3.3cm} | c | m{2.05cm}|} 
-\hline
-\rowcolor{gray!30}
- Organization & Title & Year & Ranking \\ [0.5ex] 
-\hline
-BSA (The Software Alliance) & The IT Industry Competitiveness Index & 2011 & 53 out of 66 \\ 
-\hline
- International Monetary Fund & Gross Domestic Product (PPP) & 2020 & 23 out of 190 \\
-\hline
- World Economic Forum & Global Competitiveness & 2019 & 67 out of 141 \\
-\hline
- World Bank & Ease of Doing Business & 2018 & 68 out of 190 \\
-\hline
- The Heritage Foun\-dation/The Wall St\-reet Journal & Index of Economic Freedom & 2019 & 128 out of 180-mostly unfree (2019)\\ 
-\hline
- Transparency International & Corruption Perceptions Index & 2019 & 96 out of 177 \\ 
-\hline
-\end{tabular}
+    \begin{tabular}{|m {2.75cm} | m{3.3cm} | c | m{2.05cm}|}
+        \hline
+        \rowcolor{gray!30}
+        Organization                                        & Title                                 & Year & Ranking                             \\ [0.5ex]
+        \hline
+        BSA (The Software Alliance)                         & The IT Industry Competitiveness Index & 2011 & 53 out of 66                        \\
+        \hline
+        International Monetary Fund                         & Gross Domestic Product (PPP)          & 2020 & 23 out of 190                       \\
+        \hline
+        World Economic Forum                                & Global Competitiveness                & 2019 & 67 out of 141                       \\
+        \hline
+        World Bank                                          & Ease of Doing Business                & 2018 & 68 out of 190                       \\
+        \hline
+        The Heritage Foun\-dation/The Wall St\-reet Journal & Index of Economic Freedom             & 2019 & 128 out of 180-mostly unfree (2019) \\
+        \hline
+        Transparency International                          & Corruption Perceptions Index          & 2019 & 96 out of 177                       \\
+        \hline
+    \end{tabular}
 \end{center}
 \centering Table 8.1
 
 \chapter{Notes}
 
-1. \^\ official data; data cover general government debt and include debt instruments issued (or owned) by government entities other than the treasury; the data include treasury debt held by foreign entities; the data include debt issued by subnational entities, as well as intragovernmental debt; intragovernmental debt consists of treasury borrowings from surpluses in the social funds, such as for retirement, medical care, and unemployment; debt instruments for the social funds are not sold at public auctions
+1. official data; data cover general government debt and include debt instruments issued (or owned) by government entities other than the treasury; the data include treasury debt held by foreign entities; the data include debt issued by subnational entities, as well as intragovernmental debt; intragovernmental debt consists of treasury borrowings from surpluses in the social funds, such as for retirement, medical care, and unemployment; debt instruments for the social funds are not sold at public auctions
 
 \backmatter
-Reserved for references or bibliography.
-% \begin{thebibliography}{99}
+\begin{thebibliography}{99}
 
-    % \bibitem{Developing/Emerging}"WEO Groups and Aggregates Information April 2020",\emph{World Economic and Financial Surveys World Economic Outlook Database},International Monetary Fund,6 May 2020.
-    % \bibitem{Upper-middle income country} "World Bank Country and Lending Groups", World Bank, 10 October 2023.
-    % \bibitem{Socialist-oriented Market} Cling, Jean-Pierre; Razafindrakoto, Mireille; Roubaud, Francois (Spring 2013), "Is the World Bank compatible with the "Socialist-oriented market economy"?", \textit{Revue de la régulation: Capitalisme, institutions, pouvoirs.} \textbf{13} (13), doi:10.4000/regulation.10081.
-    % \bibitem{Statistics Office of Vietnam}  General Statistics Office of Vietnam (2023). \textit{Niên giám Thống kê Việt Nam năm 2022 [Statistical Yearbook of Vietnam 2022]} (PDF). Statistical Publishing House (Vietnam). p. 103. Archived (PDF) from the original on 2023-07-10. Retrieved 2023-07-10.
-    
+\bibitem{1}"WEO Groups and Aggregates Information April 2020",\emph{World Economic and Financial Surveys World Economic Outlook Database},International Monetary Fund,6 May 2020.
+\bibitem{2} "World Bank Country and Lending Groups", World Bank, 10 October 2023.
+\bibitem{2} Cling, Jean-Pierre; Razafindrakoto, Mireille; Roubaud, Francois (Spring 2013), "Is the World Bank compatible with the "Socialist-oriented market economy"?", \textit{Revue de la régulation: Capitalisme, institutions, pouvoirs.} \textbf{13} (13), doi:10.4000/regulation.10081.
+\bibitem{3}  General Statistics Office of Vietnam (2023). \textit{Niên giám Thống kê Việt Nam năm 2022 [Statistical Yearbook of Vietnam 2022]} (PDF). Statistical Publishing House (Vietnam). p. 103. Archived (PDF) from the original on 2023-07-10. Retrieved 2023-07-10.
+\bibitem{4}  International Monetary Fund https://www.imf.org/external/datamapper/profile/VNM. {{cite web}}: Missing or empty |title= (help)
 
 
-% \end{thebibliography}
+\end{thebibliography}
 \dots
 
 \end{document}
