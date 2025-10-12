@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {4.5}Export of labour}{17}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Banking and fiance}{18}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Banking}{18}{subsection.4.6.1}%
-\contentsline {subsubsection}{Fiance}{18}{subsubsection*.16}%
+\contentsline {subsubsection}{Fiance}{18}{subsubsection*.17}%
 \contentsline {chapter}{\numberline {5}Currency, exchange rate and inflation}{19}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Exchange rate}{19}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Inflation}{20}{section.5.2}%

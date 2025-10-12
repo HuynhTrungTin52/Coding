@@ -9,18 +9,21 @@
 \usepackage{framed}
 \usepackage{float}
 \usepackage{caption}
-\usepackage[expansion=false]{microtype}
+\usepackage[protrusion=false,expansion=false]{microtype}
 \usepackage{ragged2e}
 \usepackage{caption}
 \usepackage{multicol}
 \usepackage[table]{xcolor}
 \usepackage{array}
+\usepackage{xurl}
 \usepackage[colorlinks=true, urlcolor=blue, linkcolor=black, citecolor=blue]{hyperref}
 \usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{mdframed}
 \usepackage{tcolorbox}
-
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage[super,square]{natbib}
 \makeatletter
 \renewcommand\mainmatter{%
     \clearpage
@@ -62,7 +65,7 @@ This report is the cumulation of knowledge gained from previous assignments, alo
         \caption*{\small \centering \href{https://en.wikipedia.org/wiki/Ho_Chi_Minh_City}{Ho Chi Minh City}, the economic capital of Vietnam}
         \small
         \setlength{\tabcolsep}{4pt}
-        \begin{tabularx}{\linewidth}{@{} p{2.5cm} >{\raggedright\arraybackslash}X@{}}
+        \begin{tabularx}{\linewidth}{@{} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}X@{}}
 
             \textbf{Currency}            & {Vietnamese đồng (VND; ₫)}                                                                                                                                                    \\
             {\textbf{Fiscal year}}       & {Calendar year}                                                                                                                                                               \\
@@ -73,10 +76,11 @@ This report is the cumulation of knowledge gained from previous assignments, alo
     \end{tcolorbox}
 \end{wrapfigure}
 
-\begin{small}
-    The economy of Vietnam is a \href{https://en.wikipedia.org/wiki/Developing_economy}{developing} \href{https://en.wikipedia.org/wiki/Mixed_economy}{mixed} \href{https://en.wikipedia.org/wiki/Socialist-oriented_market_economy}{socialist-oriented market economy}\cite{3} . It is the \href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)}{33rd-largest economy} in the world by \href{https://en.wikipedia.org/wiki/Nominal_gross_domestic_product}{nominal gross domestic product} (GDP) and the \href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)}{26th-largest economy} in the world by \href{https://en.wikipedia.org/wiki/Purchasing_power_parity}{purchasing power parity} (PPP). It is an upper-middle income country with a low cost of living. \href{https://en.wikipedia.org/wiki/Vietnam}{Vietnam} is a member of the \href{https://en.wikipedia.org/wiki/Asia-Pacific_Economic_Cooperation}{Asia-Pacific Economic Cooperation}, the \href{https://en.wikipedia.org/wiki/Association_of_Southeast_Asian_Nations}{Association of Southeast Asian Nations} and the \href{https://en.wikipedia.org/wiki/World_Trade_Organization}{World Trade Organization}.
 
-\end{small}
+\begin{sloppypar}\RaggedRight
+The economy of Vietnam is a \href{https://en.wikipedia.org/wiki/Developing_economy}{developing} \href{https://en.wikipedia.org/wiki/Mixed_economy}{mixed} \href{https://en.wikipedia.org/wiki/Socialist-oriented_market_economy}{socialist-oriented market economy}\cite{3}. It is the \href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)}{33rd-largest economy} in the world by \href{https://en.wikipedia.org/wiki/Nominal_gross_domestic_product}{nominal gross domestic product} (GDP) and the \href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)}{26th-largest economy} in the world by \href{https://en.wikipedia.org/wiki/Purchasing_power_parity}{purchasing power parity} (PPP). It is an upper-middle income country with a low cost of living. \href{https://en.wikipedia.org/wiki/Vietnam}{Vietnam} is a member of the \href{https://en.wikipedia.org/wiki/Asia-Pacific_Economic_Cooperation}{Asia-Pacific Economic Cooperation}, the \href{https://en.wikipedia.org/wiki/Association_of_Southeast_Asian_Nations}{Association of Southeast Asian Nations} and the \href{https://en.wikipedia.org/wiki/World_Trade_Organization}{World Trade Organization}.
+\end{sloppypar}
+
 
 
 \begin{sloppypar}
@@ -86,9 +90,9 @@ This report is the cumulation of knowledge gained from previous assignments, alo
     \href{https://en.wikipedia.org/wiki/Planned_economy}{planned economy} to a
     \href{https://en.wikipedia.org/wiki/Mixed_economy}{mixed economy}.
 
-    Before, \href{https://en.wikipedia.org/wiki/North_Vietnam}{South Vietnam} was reliant on U.S. aid,\textsuperscript{[Citation needed]}
+    Before, \href{https://en.wikipedia.org/wiki/North_Vietnam}{South Vietnam} was reliant on U.S. aid,\cite{26}
     while North Vietnam and reunified Vietnam relied on communist aid until the
-    \href{https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union}{Soviet Union's dissolution}.\textsuperscript{[Citation needed]}
+    \href{https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union}{Soviet Union's dissolution}.\cite{27}
 \end{sloppypar}
 
 \clearpage
@@ -128,8 +132,8 @@ This report is the cumulation of knowledge gained from previous assignments, alo
 The economy uses both directive and \href{https://en.wikipedia.org/wiki/Indicative_planning}{indicative planning} through \href{https://en.wikipedia.org/wiki/Five-Year_Plans_of_Vietnam}{five-year plans}, with support from an open \href{https://en.wikipedia.org/wiki/Market_economy}{market-based economy}. Over that period, the economy has experienced rapid growth. In the 21st century, Vietnam is in a period of being integrated into the global economy. Almost all Vietnamese enterprises are small and medium enterprises (\href{https://en.wikipedia.org/wiki/Small_and_medium_enterprises}{SMEs}). Vietnam has become a leading agricultural exporter and served as an attractive destination for foreign investment in \href{https://en.wikipedia.org/wiki/Southeast_Asia}{Southeast Asia}.
 
 
-\begin{sloppypar}\setlength\emergencystretch{2em}
-According to a forecast by \href{https://en.wikipedia.org/wiki/PricewaterhouseCoopers}{PricewaterhouseCoopers} in February 2017,\textsuperscript{[needs update]} Vietnam may be the fastest-growing of the world's economies, with a potential annual GDP growth rate of about 5.1 percent, which would make its economy the 10th-largest in the world by 2050.\textsuperscript{[Citation needed][needs update]} Vietnam has also been named among the so-called \href{https://en.wikipedia.org/wiki/Jim_O%27Neill,_Baron_O%27Neill_of_Gatley#Next_Eleven}{Next Eleven} and \href{https://en.wikipedia.org/wiki/CIVETS}{CIVETS} countries.
+\begin{sloppypar}\RaggedRight
+According to a forecast by \href{https://en.wikipedia.org/wiki/PricewaterhouseCoopers}{PricewaterhouseCoopers} in February 2017, \href{https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items}{\textsuperscript{[needs update]}} Vietnam may be the fastest-growing of the world's economies, with a potential annual GDP growth rate of about 5.1 percent, which would make its economy the 10th-largest in the world by 2050.\cite{28}\href{https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items}{\textsuperscript{[needs update]}}Vietnam has also been named among the so-called \href{https://en.wikipedia.org/wiki/Jim_O%27Neill,_Baron_O%27Neill_of_Gatley#Next_Eleven}{Next Eleven} and \href{https://en.wikipedia.org/wiki/CIVETS}{CIVETS} countries.
 \end{sloppypar}
 
 \chapter{History}
@@ -137,11 +141,11 @@ According to a forecast by \href{https://en.wikipedia.org/wiki/PricewaterhouseCo
 \section{Before 1858}
 
 \begin{wrapfigure}{r}{.55\textwidth}
-    \vspace{-80pt}
+    \vspace{-135pt}
     \begin{tcolorbox}[toprule=0pt,bottomrule=0pt]
         \small
         \setlength{\tabcolsep}{4pt}
-        \begin{tabularx}{\linewidth}{@{}p{2.6cm} >{\raggedright\arraybackslash}p{3.2cm}@{}}
+        \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}X@{}}
             \\
             \textbf{Labour force by occupation}     & { \begin{tabular}[c]{@{}>{\raggedright\arraybackslash}p{2.5cm}@{}}Agriculture: 27.5\%\\ Industry: 33.4\%\\ Services: 39\%\\ (2022\end{tabular}}      \\
             \\
@@ -149,28 +153,40 @@ According to a forecast by \href{https://en.wikipedia.org/wiki/PricewaterhouseCo
             \textbf{Average gross salary} & ₫ 7,600,000 / \$300 monthly (Q1 2024                                                                                                                                                                                                          \\
             \textbf{Main industries}      & { Electronics, machinery, steel, food processing, wood industry, textile, footwear, vehicle, rice, coffee, cashews, seafood, vegetable and tourism}                                                                                           \\
             \multicolumn{2}{c}{\cellcolor[HTML]{ADD8E6}\textbf{External}}                                                                                                                                                                                                                 \\
-            \textbf{Exports}              & \$405.5 billion (2024                                                                                                                                                                                                                         \\
+            \textbf{Exports}              & \$405.5 billion (2024)                                                                                                                                                                                                                         \\
             \textbf{Export goods}         & { Electronics, textiles products, machinery, footwear products, transportation products, wooden products, seafood products, steel, crude oil, pepper, rice and coffee}                                                                        \\
-            \textbf{Main export partners} & \begin{tabular}[c]{@{}l@{}}\# United States 29.5\%\\ \# China 18.2\%\\ \# Hong Kong 3.1\%\\ \# European Union 13.7\%\\ \# ASEAN 9.1\%\\ \# South Korea 6.3\%\\ \# Japan 6.1\% (2024\end{tabular}                                              \\
-            \textbf{Imports}              & \$380.8 billion (2024                                                                                                                                                                                                                         \\
-            \textbf{Import goods}         & { Machinery and industrial equipment, electronics, petroleum products, raw materials for the clothing and shoe industries, plastics, automobiles, metal, and chemical products}                                                               \\
-            \textbf{Main import partners} & \begin{tabular}[c]{@{}l@{}}\# China 37.8\%\\ \# South Korea 14.7\%\\ \# ASEAN 12.4\%\\ \# Taiwan 6.0\%\\ \# Japan 5.7\%\\ \# European Union 4.4\% (2024\end{tabular}                                                                          \\
-            { \textbf{FDI stock}}         & \begin{tabular}[c]{@{}l@{}}\$129.5 billion (31 December 2017 est.)[21]\\ Abroad: \$19.75 billion (31 December 2015 est.\end{tabular}                                                                                                          \\
-            { \textbf{Current account}}   & \# \$5.401 billion (2017 est.                                                                                                                                                                                                                 \\
-            \textbf{Gross external debt}  & \$96.58 billion (31 December 2017 est.                                                                                                                                                                                                        \\
-            \multicolumn{2}{c}{\cellcolor[HTML]{ADD8E6}\textbf{Public finances}}                                                                                                                                                                                                          \\
-            { \textbf{Government debt}}   & 37\% of GDP (2023 est.{[}note 1{]}                                                                                                                                                                                                            \\
-            { \textbf{Foreign reserves}}  & \$86.4 billion (Feb 2023 est.                                                                                                                                                                                                                 \\
-            { \textbf{Budget balance}}    & -6.7\% (of GDP) (2017 est.                                                                                                                                                                                                                    \\
-            \textbf{Revenues}             & 54.59 billion (2017 est.                                                                                                                                                                                                                      \\
-            \textbf{Expenses}             & 69.37 billion (2017 est.                                                                                                                                                                                                                      \\
-            \textbf{Economic aid}         & \$2.174 billion (2016)                                                                                                                                                                                                                        \\
-            { \textbf{Credit rating}}     & { \begin{tabular}[c]{@{}l@{}}Standard \& Poor's:{[}24{]}\\ BB+ (domestic)\\ BB+ (foreign)\\ BB+ (T\&C assessment)\\ Outlook: stable{[}25{]}\\ Moody's:{[}25{]}\\ Ba2\\ Outlook: Stable\\ Fitch:{[}25{]}\\ BB+\\ Outlook: stable\end{tabular}} \\
-            \multicolumn{2}{c}{\cellcolor[HTML]{ADD8E6}\textit{All values, unless otherwise stated, are in US dollars.}}
-        \end{tabularx}
+          \end{tabularx}
     \end{tcolorbox}
+    \vspace{125pt}
 \end{wrapfigure}
 Civilization in Vietnam had been built on agriculture. The feudal dynasties always considered \href{https://en.wikipedia.org/wiki/Agriculture}{agriculture} as the main economic base, and their economic thoughts have been predicated on \href{https://en.wikipedia.org/wiki/Physiocracy}{physiocracy}. Land ownership was regulated, and such large-scale works as \href{https://en.wikipedia.org/wiki/Dike_(construction)}{dykes} were constructed in the \href{https://en.wikipedia.org/wiki/Red_River_Delta}{Red River Delta} to facilitate wet rice cultivation. In peaceful times, soldiers were sent home to do farm work. Furthermore, the court prohibited slaughtering water buffalo and cattle and held many agriculture-related ceremonies. Handicrafts and art were valued, but commerce was deprecated, and businessmen were called by the derogatory term con buôn. Thang Long (\href{https://en.wikipedia.org/wiki/Hanoi}{Hanoi}) was the main handicraft manufacturing center of the country. Chinese noted that the Vietnamese were doing business just like the same with in the Chinese \href{https://en.wikipedia.org/wiki/Song_dynasty}{Song dynasty}.\textsuperscript{[Citation needed]} From the 9th to 13th century, the Vietnamese traded ceramics and silks with regional powers such as China, \href{https://en.wikipedia.org/wiki/Champa}{Champa}, \href{https://en.wikipedia.org/wiki/Western_Xia}{Western Xia}, \href{https://en.wikipedia.org/wiki/Java}{Java} among others.\textsuperscript{[Citation needed]} Further archeological evidence suggests that Muslim traders had lived in Hanoi from around the 9th to 10th centuries, based on Muslim ceramics found in the Old Quarter of Hanoi.\textsuperscript{[Citation needed]}
+
+\begin{wrapfigure}{r}{.55\textwidth}
+    \vspace{-185pt}
+    \begin{tcolorbox}[toprule=0pt]
+        \small
+        \setlength{\tabcolsep}{4pt}
+        \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}X@{}}
+            \textbf{Import goods}         & { Machinery and industrial equipment, electronics, petroleum products, raw materials for the clothing and shoe industries, plastics, automobiles, metal, and chemical products}                                                               \\
+            \\
+            \textbf{Main import partners} & \begin{tabular}[c]{@{}l@{}} China 37.8\%\\  South Korea 14.7\%\\  ASEAN 12.4\%\\  Taiwan 6.0\%\\ Japan 5.7\%\\  European Union 4.4\% (2024\end{tabular}                                                                          \\
+            \\
+            {\textbf{FDI stock}}         & \begin{tabular}[c]{@{}l@{}}\$129.5 billion (31 December 2017 est.)[21]\\ Abroad: \$19.75 billion (31 December 2015 est.\end{tabular}                                                                                                          \\
+            {\textbf{Current account}}   &  \$5.401 billion (2017 est.                                                                                                                                                                                                                 \\
+            \textbf{Gross external debt}  & \$96.58 billion (31 December 2017 est.                                                                                                                                                                                                        \\
+            \multicolumn{2}{@{}>{\centering\arraybackslash}p{\dimexpr\linewidth\relax}@{}}{\cellcolor[HTML]{ADD8E6}\textbf{Public finances}}                                                                                                                                                                                                          \\
+            {\textbf{Government debt}}   & 37\% of GDP (2023 est.)                                                                                                                                                                                                           \\
+            {\textbf{Foreign reserves}}  & \$86.4 billion (Feb 2023 est.)                                                                                                                                                                                                                 \\
+            {\textbf{Budget balance}}    & -6.7\% (of GDP) (2017 est.)                                                                                                                                                                                                                    \\
+            \textbf{Revenues}             & 54.59 billion (2017 est.)                                                                                                                                                                                                                      \\
+            \textbf{Expenses}             & 69.37 billion (2017 est.)                                                                                                                                                                                                                      \\
+            \textbf{Economic aid}         & \$2.174 billion (2016)                                                                                                                                                                                                                        \\
+            { \textbf{Credit rating}}     & { \begin{tabular}[c]{@{}l@{}}Standard \& Poor's:{[}24{]}\\ BB+ (domestic)\\ BB+ (foreign)\\ BB+ (T\&C assessment)\\ Outlook: stable{[}25{]}\\ Moody's:{[}25{]}\\ Ba2\\ Outlook: Stable\\ Fitch:{[}25{]}\\ BB+\\ Outlook: stable\end{tabular}} \\
+            \multicolumn{2}{@{}>{\centering\arraybackslash}p{\dimexpr\linewidth\relax}@{}}{\cellcolor[HTML]{ADD8E6}\textbf{All values, unless otherwise stated, are in US dollars.}}
+        \end{tabularx}
+    \end{tcolorbox}
+    \vspace{-70pt}
+\end{wrapfigure}
 
 However, from the 16th century, \href{https://en.wikipedia.org/wiki/Confucianism}{Confucianism} was losing its influence on Vietnamese society and a monetary pre-capitalism economy began to develop. During the \href{https://en.wikipedia.org/wiki/L%C3%AA_dynasty}{Lê}-\href{https://en.wikipedia.org/wiki/M%E1%BA%A1c_dynasty}{Mạc} period, the state encouraged semi-industrial business and sea-traders, as the Vietnamese economy would mainly depended on them for the next 250 years.\textsuperscript{[Citation needed]} Cities such as \href{https://en.wikipedia.org/wiki/Dong_Kinh}{Dong Kinh}, \href{https://en.wikipedia.org/wiki/H%E1%BB%99i_An}{Hội An} and others grew quickly under rapid urbanization. They were later constrained when foreign nations saw them as an economic threat.\textsuperscript{[Citation needed]}
 
@@ -596,7 +612,7 @@ In 2017, with the help of the United Nations, Vietnam official started the groun
 \chapter{Economic indicators and international rankings}
 
 \begin{center}
-    \begin{tabular}{|m {2.75cm} | m{3.3cm} | c | m{2.05cm}|}
+    \begin{tabular}{|>{\raggedright\arraybackslash}m{2.75cm} | >{\raggedright\arraybackslash}m{3.3cm} | c | >{\raggedright\arraybackslash}m{2.05cm}|}
         \hline
         \rowcolor{gray!30}
         Organization                                        & Title                                 & Year & Ranking                             \\ [0.5ex]
@@ -622,16 +638,159 @@ In 2017, with the help of the United Nations, Vietnam official started the groun
 1. official data; data cover general government debt and include debt instruments issued (or owned) by government entities other than the treasury; the data include treasury debt held by foreign entities; the data include debt issued by subnational entities, as well as intragovernmental debt; intragovernmental debt consists of treasury borrowings from surpluses in the social funds, such as for retirement, medical care, and unemployment; debt instruments for the social funds are not sold at public auctions
 
 \backmatter
-\begin{thebibliography}{99}
+\begingroup\sloppy
+\begin{multicols}{2}
+\begin{thebibliography}{99}\RaggedRight
 
 \bibitem{1}"WEO Groups and Aggregates Information April 2020",\emph{World Economic and Financial Surveys World Economic Outlook Database},International Monetary Fund,6 May 2020.
 \bibitem{2} "World Bank Country and Lending Groups", World Bank, 10 October 2023.
-\bibitem{2} Cling, Jean-Pierre; Razafindrakoto, Mireille; Roubaud, Francois (Spring 2013), "Is the World Bank compatible with the "Socialist-oriented market economy"?", \textit{Revue de la régulation: Capitalisme, institutions, pouvoirs.} \textbf{13} (13), doi:10.4000/regulation.10081.
-\bibitem{3}  General Statistics Office of Vietnam (2023). \textit{Niên giám Thống kê Việt Nam năm 2022 [Statistical Yearbook of Vietnam 2022]} (PDF). Statistical Publishing House (Vietnam). p. 103. Archived (PDF) from the original on 2023-07-10. Retrieved 2023-07-10.
-\bibitem{4}  International Monetary Fund https://www.imf.org/external/datamapper/profile/VNM. {{cite web}}: Missing or empty |title= (help)
+\bibitem{3} Cling, Jean-Pierre; Razafindrakoto, Mireille; Roubaud, François (Spring 2013), ``Is the World Bank compatible with the socialist-oriented market economy?'', \textit{Revue de la régulation: Capitalisme, institutions, pouvoirs}, \textbf{13} (13). \url{https://doi.org/10.4000/regulation.10081}.\par
+\bibitem{4}  General Statistics Office of Vietnam (2023). \textit{Niên giám Thống kê Việt Nam năm 2022 [Statistical Yearbook of Vietnam 2022]} (PDF). Statistical Publishing House (Vietnam). p. 103. Archived (PDF) from the original on 2023-07-10. Retrieved 2023-07-10.
+\bibitem{5} International Monetary Fund. \url{https://www.imf.org/external/datamapper/profile/VNM}.
+\bibitem{6} "The outlook is uncertain again amid financial sector turmoil, high inflation, ongoing effects of Russia's invasion of Ukraine, and three years of COVID". International Monetary Fund. April 11, 2023.
+\bibitem{7} "Vietnam's gross domestic product (GDP) growth is forecast to moderate to 5.8\% in 2025 due to increased trade policy uncertainty, according to the World Bank (WB)'s latest East Asia and Pacific Economic Update". VneExpress International. April 15, 2025.
+\bibitem{8} "In the long-term, the Vietnam GDP Annual Growth Rate is projected to trend around four percent in 2026". International Monetary Fund. April 2025.
+\bibitem{9} "Vietnam". CIA World Factbook.
+\bibitem{10} "World Economic Outlook Database, October 2022". IMF.org. International Monetary Fund. Retrieved 2023-01-04.
+\bibitem{11} "Poverty headcount ratio at \$8.30 a day (2021 PPP) (\% of population) - Vietnam". World Bank. Retrieved 13 August 2025.
+\bibitem{12} "GINI index (World Bank estimate)". World Bank. Retrieved 21 March 2020.
+\bibitem{13} "Human Development Report 2025". United Nations Development Programme. 6 June 2025.
+\bibitem{14} "Labor force, total - Vietnam". World Bank. Retrieved 11 January 2020.
+\bibitem{15} "Employment to population ratio, 15+, total (\%) (national estimate) - Vietnam". World Bank. Retrieved 11 January 2020.
+\bibitem{16} General Statistics Office of Vietnam (2023). Niên giám Thống kê Việt Nam năm 2022 [Statistical Yearbook of Vietnam 2022] (PDF). Statistical Publishing House (Vietnam). pp. 99-100. Archived (PDF) from the original on 2023-07-10. Retrieved 2023-07-10.
+\bibitem{17} "Unemployment, youth total (\% of total labor force ages 15-24) (national estimate) - Vietnam". World Bank \& ILO. Retrieved 7 July 2020.
+\bibitem{18} "Report on Labor Force Survey Quarter 1 2024". Vietnam General Statistics Office. First Quarter 2024.
+\bibitem{19} General Department of Vietnam Customs (2024). Statistics of Exports by Country/Territory (PDF). General Department of Vietnam Customs. Retrieved 25 February 2025.
+\bibitem{20} General Department of Vietnam Customs (2024). Statistics of Imports by Country/Territory (PDF). General Department of Vietnam Customs. Retrieved 25 February 2025.
+\bibitem{21} "The World Factbook". CIA.gov. Central Intelligence Agency. Retrieved 15 March 2019.
+\bibitem{22} "Viet Nam's public debt falls to 37\% in 2023". National Institute for Finance. 1 January 2024.
+\bibitem{23} "Vietnam Foreign Exchange Reserves". CEIC. Retrieved 28 February 2020.
+\bibitem{24} "Sovereigns rating list". Standard \& Poor's. Archived from the original on 3 January 2013. Retrieved 18 February 2013.
+\bibitem{25} Rogers, Simon; Sedghi, Ami (15 April 2011). "How Fitch, Moody's and S\&P rate each country's credit rating". Reuters. Archived from the original on 1 May 2013. Retrieved 28 September 2012.
+\bibitem{26} Shriek, David K. (27 January 1974). "South Vietnam, a U. S. Subsidiary". The New York Times. ISSN 0362-4331. Retrieved 29 September 2023.
+\bibitem{27} Prybyla, Jan S. (1966). "Soviet and Chinese Economic Aid to North Vietnam". The China Quarterly. 27. Cambridge University Press: 84-100. doi:10.1017/S0305741000021706.
+\bibitem{28} "The World in 2050" (PDF). PricewaterhouseCoopers. February 2017. Retrieved 24 April 2017.
+\bibitem{29} Ngô Sĩ Liên 1993, Đại Việt sử ký toàn thư, vol 4.
+\bibitem{30} "10th-century Egyptian and Muslim ceramics found in Hanoi". Hoàng thành Thăng Long. 8 August 2013.
+\bibitem{31} Hoàng Anh Tuấn (2007). Silk for Silver: Dutch-Vietnamese Relations, 1637-1700. Brill. ISBN 978-90-04-15601-2.
+\bibitem{32} "Urbanization: expanding opportunities, but deeper divides". United Nations Department of Economic and Social Affairs. Retrieved 2023-06-28.
+\bibitem{33} "Rise of Industrial America, 1876-1900: City Life in the Late 19th Century". U.S. History Primary Source Timeline. Classroom Materials at the Library of Congress. Library of Congress. Retrieved 2023-06-28.
+\bibitem{34} Lockard, Craig A. (Fall 1994). "Meeting Yesterday Head-on: The Vietnam War in Vietnamese, American, and World History". Journal of World History. 5 (2): 227-270. ISSN 1045-6007. JSTOR 20078600.
+\bibitem{35} Nguyen, Thi Ha Thanh (2009). "European Trade on the Far East and the Mercantile Relationship with Vietnam from the 16th to 19th Century". Higashi Ajia bunka kōshō kenkyū \begin{CJK*}{UTF8}{min}東アジア文化交渉研究\end{CJK*} [Cultural Approaches to East Asian Studies]. 2009 (2): 353-366.
+\bibitem{36} Ronald J. Cima, ed. (1989). Vietnam: A Country Study. Library of Congress Country Studies. hdl:loc.gdc/cntrystd.vn. LCCN 88600482.
+\bibitem{37} Cosslett, Tuyet L.; Shaw, William R. (1989). "The Economy - Historical Background". In Ronald J. Cima (ed.). Vietnam: A Country Study. Library of Congress Country Studies. Retrieved 3 March 2015.
+\bibitem{38} "Overview: Vietnam". World Bank. April 14, 2023. Archived from the original on June 28, 2023. Retrieved June 28, 2023.
+\bibitem{39} Krueger, Anne O. "The World Economy at the Start of the 21st Century". International Monetary Fund. Retrieved 2023-06-28.
+\bibitem{40} Ronald J. Cima, ed. (1987). "The Economy". Vietnam: A Country Study. Library of Congress Country Studies. Washington DC: Library of Congress. Retrieved 3 March 2015.
+\bibitem{41} Council Of Ministers (March 1989). "Vietnam's New Fertility Policy". Population and Development Review. 15 (1): 169-172. doi:10.2307/1973424. JSTOR 1973424.
+\bibitem{42} Fforde, A. (2016). "Vietnam: Economic Strategy and Economic Reality". Journal of Current Southeast Asian Affairs. 35 (2): 3-30. doi:10.1177/186810341603500201.
+\bibitem{43} Mesa-Lago, Carmelo (2025). Comparing Socialist Approaches: Economics and Social Security in Cuba, China, and Vietnam. Pitt Latin American Series. Pittsburgh, PA: University of Pittsburgh Press. ISBN 9780822948476.
+\bibitem{44} "Accessions: Viet Nam". World Trade Organization. Retrieved 2022-11-20.
+\bibitem{45} Baccini, Leonardo; Impullitti, Giammario; Malesky, Edmund J. (2019). "Globalization and state capitalism: Assessing Vietnam's accession to the WTO" (PDF). Journal of International Economics. 119: 75-92. doi:10.1016/j.jinteco.2019.02.004. S2CID 158525166.
+\bibitem{46} Vuong, Quan-Hoang (February 2010). Financial Markets in Vietnam's Transition Economy: Facts, Insights, Implications. Saarbrücken: VDM Verlag. ISBN 978-3-639-23383-4.
+\bibitem{47} "Recovery from the Asian Crisis and the Role of the IMF". International Monetary Fund. IMF Issues Briefs. May 2000. Retrieved 2023-07-14.
+\bibitem{48} "Economic Growth of Viet Nam". Nerd Economics. 18 July 2020. Retrieved 2023-06-28.
+\bibitem{49} "Approval of the extension of nondiscriminatory treatment with respect to the products of the Socialist Republic of Vietnam". United States House of Representatives. 5 September 2001. House Report 107-198. Retrieved 2023-06-28.
+\bibitem{50} Virmani, Arvind (July 2012). "Accelerating And Sustaining Growth: Economic and Political Lessons" (PDF). IMF Working Paper 12/185. Archived (PDF) from the original on June 28, 2023.
+\bibitem{51} Vuong, Quan Hoang; Tran, Tri Dung (15 June 2009). "Financial Turbulences in Vietnam's Emerging Economy: Transformation over 1991-2008 Period". Contemporary Issues in Finance. SSRN 1486204.
+\bibitem{52} "Accessions: Viet Nam". World Trade Organization.
+\bibitem{53} "Global Trade Liberalization and the Developing Countries". International Monetary Fund. IMF Issues Briefs. November 2001. Retrieved 2023-06-28.
+\bibitem{54} "Vietnam will struggle to meet 2012 growth target". Business Week. Bloomberg. 22 October 2012. Archived from the original on 2012-10-26. Retrieved November 4, 2012.
+\bibitem{55} Vuong, Quan-Hoang (16 May 2014). "Vietnam's political economy: a discussion on the 1986-2016 period". Working Papers CEB.
+\bibitem{56} "Report paints brighter picture of corruption control in Vietnam". VnExpress International. Retrieved 2018-04-08.
+\bibitem{57} Jennings, Ralph (19 December 2017). "Vietnam's Corruption Crackdown Is All About Protecting Its Economic Miracle From Its SOEs". Forbes.
+\bibitem{58} "Vietnam's economy expands 7.38\%, best rate in a decade". The Business Times. 30 March 2018. Archived from the original on 23 September 2018. Retrieved 23 September 2018.
+\bibitem{59} "Vietnam, Asia's newest 'tiger' economy, roars in 2018: QNB". Gulf Times. 11 August 2018. Archived from the original on 23 September 2018. Retrieved 23 September 2018.
+\bibitem{60} "Vietnam's Economy Could Soon Be Bigger Than Singapore's". Bloomberg. 28 May 2019. Retrieved 28 May 2019.
+\bibitem{61} Lee, Yen Nee (2021-01-28). "This is Asia's top-performing economy in the Covid pandemic — it's not China". CNBC. Retrieved 2022-01-21.
+\bibitem{62} "Vietnam is emerging as a winner from the era of deglobalisation". The Economist. ISSN 0013-0613. Retrieved 2022-10-04.
+\bibitem{63} "Room remains for growth in luxury hotel segment". Vietnam Investment Review. August 26, 2016. Archived from the original on December 20, 2019. Retrieved December 20, 2019.
+\bibitem{64} "World Economic Outlook Database, April 2024". International Monetary Fund. Retrieved 2024-09-15.
+\bibitem{65} Rosen, Elisabeth (24 April 2014). "Why Can't Vietnam Grow Better Rice?". The Diplomat. Retrieved 26 April 2014.
+\bibitem{66} "Coffee Exports by Country". World's Top Exports. Retrieved 3 March 2015.
+\bibitem{67} "Crops and livestock products". FAOSTAT. Food and Agriculture Organization of the United Nations. Retrieved 2022-11-20.
+\bibitem{68} Nguyen, Phuong Anh; Abbott, Malcolm; Nguyen, Thanh Loan T. (1 April 2019). "The development and cost of renewable energy resources in Vietnam". Utilities Policy. 57: 59-66. Bibcode:2019UtPol..57...59N. doi:10.1016/j.jup.2019.01.009. ISSN 0957-1787. Retrieved 5 February 2025.
+\bibitem{69} Klochko, Katerina (January 2021). "Mineral Commodity Summaries 2021" (PDF). Mineral Commodity Summaries. Reston: United States Geological Survey. pp. 22-23. doi:10.3133/mcs2021. ISBN 978-1-4113-4398-6.
+\bibitem{70} Merrill, Adam (January 2021). "Mineral Commodity Summaries 2021" (PDF). Mineral Commodity Summaries. Reston: United States Geological Survey. pp. 172-173. doi:10.3133/mcs2021. ISBN 978-1-4113-4398-6.
+\bibitem{71} Bray, E. Lee (January 2021). "Mineral Commodity Summaries 2021" (PDF). Mineral Commodity Summaries. Reston: United States Geological Survey. pp. 30-31. doi:10.3133/mcs2021. ISBN 978-1-4113-4398-6.
+\bibitem{72} Gambogi, Joseph (January 2021). "Mineral Commodity Summaries 2021" (PDF). Mineral Commodity Summaries. Reston: United States Geological Survey. pp. 176-177. doi:10.3133/mcs2021. ISBN 978-1-4113-4398-6.
+\bibitem{73} Schnebele, Emily K. (January 2021). "Mineral Commodity Summaries 2021" (PDF). Mineral Commodity Summaries. Reston: United States Geological Survey. pp. 104-105. doi:10.3133/mcs2021. ISBN 978-1-4113-4398-6.
+\bibitem{74} Jasinski, Stephen M. (January 2021). "Mineral Commodity Summaries 2021" (PDF). Mineral Commodity Summaries. Reston: United States Geological Survey. pp. 122-123. doi:10.3133/mcs2021. ISBN 978-1-4113-4398-6.
+\bibitem{75} "What did Viet Nam export in 1996?". The Atlas Of Economic Complexity. Harvard University. Retrieved 23 July 2016.
+\bibitem{76} "Sẽ khởi công xây dựng nhà máy lọc dầu Nghi Sơn vào tháng 5/2013". 17 November 2012. Archived from the original on 13 April 2014. Retrieved 23 July 2016.
+\bibitem{77} Do, Thang Nam; Burke, Paul J.; Nguyen, Hoang Nam; Overland, Indra; Suryadi, Beni; Swandaru, Akbar; Yurnaidi, Zulfikar (2021-12-01). "Vietnam's solar and wind power success: Policy implications for the other ASEAN countries". Energy for Sustainable Development. 65: 1-11. Bibcode:2021ESusD..65....1D. doi:10.1016/j.esd.2021.09.002. hdl:1885/248804. ISSN 0973-0826.
+\bibitem{78} "Primary energy consumption". Our World in Data.
+\bibitem{79} "Energy use per person". Our World in Data.
+\bibitem{80} "Why Samsung of South Korea is the biggest firm in Vietnam". The Economist. 12 April 2018.
+\bibitem{81} Nagy, Anton D. (30 October 2019). "More Samsung and LG phones will be made in China in 2020". PocketNow.com.
+\bibitem{82} "Samsung Electronics ends mobile phone production in China". Reuters. 2 October 2019. Archived from the original on 2 October 2019.
+\bibitem{83} Mayersen, Isaiah (6 October 2019). "Samsung closes its last Chinese manufacturing plant as sales plummet". Techspot.
+\bibitem{84} "Samsung is done building smartphones in China". Engadget. 2 October 2019. Archived from the original on 11 November 2020. Retrieved 20 December 2019.
+\bibitem{85} "Samsung admits defeat in China's vast smartphone market". CNN. 4 October 2019.
+\bibitem{86} "LG Electronics to shut South Korea phone plant, move production to Vietnam". Reuters. 25 April 2019 - via mobile.reuters.com.
+\bibitem{87} "Manufacturing in Vietnam 2024: Ultimate Guide". the-shiv. 2024-08-13. Retrieved 2024-08-26.
+\bibitem{88} "Samsung contributes 22.7 percent to Vietnam's exports". VietnamPlus. 2017-01-14. Retrieved 2024-08-26.
+\bibitem{89} "Hơn 10 triệu lượt khách quốc tế đến Việt Nam trong năm 2016". Tổng cục Du lịch Việt Nam (in Vietnamese). Archived from the original on September 26, 2022. Retrieved 2017-01-02.
+\bibitem{90} "UNWTO World Tourism Barometer and Statistical Annex, December 2020". UNWTO World Tourism Barometer (English Version). 18 (7). World Tourism Organization: 1-36. 18 December 2020. \url{https://doi.org/10.18111/wtobarometereng.2020.18.1.7}. S2CID 241989515.
+\bibitem{91} Dat Nguyen (31 August 2020). "Covid-19 resurgence exacts tourism toll". VnExpress International.
+\bibitem{92} "Vietnam Tourism Tracker: Last Updated July 2024 [data set]". the-shiv. 2024-08-01. Retrieved 2024-08-18.
+\bibitem{93} "Vietnam's target of sending 90,000 workers abroad in 2022 within reach". VOV World. 25 June 2022. Retrieved 2022-06-26.
+\bibitem{94} "The Vietnam Stock Exchange: Ultimate Guide 2024". the-shiv. 12 August 2024. Retrieved 26 August 2024.
+\bibitem{95} "Banking in Vietnam: Industry Overview 2024". the-shiv. 8 August 2024. Retrieved 26 August 2024.
+\bibitem{96} Vuong, Quan Hoang (2003). "Essays on Vietnam's Financial Reforms: Foreign Exchange Statistics and Evidence of Long-Run Equilibrium" (PDF). Economic Studies Review. 43 (6-8). doi:10.2139/ssrn.445080. S2CID 153742102. SSRN 445080.
+\bibitem{97} Riedel, James; Turley, William S. (1999-09-01). The Politics and Economics of Transition to an Open Market Economy in Viet Nam (PDF). OECD Development Centre Working Papers. Vol. 154. Paris: OECD Development Centre. doi:10.1787/634117557525. eISSN 1815-1949.
+\bibitem{98} Anh, Nguyen Thi Tue; Duc, Luu Minh; Chieu, Trinh Duc (2015-08-18). "The Evolution of Vietnamese Industry" (PDF). Learning to Compete. WIDER Working Paper. 15. doi:10.35188/UNU-WIDER/2014/797-4. ISBN 978-92-9230-797-4. ISSN 1798-7237.
+\bibitem{99} Napier, Nancy K.; Vuong, Quan-Hoang (October 2013). What we see, why we worry, why we hope: Vietnam going forward. Boise State University: CCI Press. ISBN 978-0-9855305-8-7.
+\bibitem{100} "Vietnam's economy expands 6.5 percent in first half". Associated Press. July 2008.
+\bibitem{101} "Kinh tế - Việt Nam: lạm phát 2011 ở mức 18,6\%". BBC Vietnamese (in Vietnamese). 23 December 2011. Retrieved 3 March 2015.
+\bibitem{102} "Lạm phát cả năm 2012 khoảng 7,5\%". VnExpress (in Vietnamese). November 2012. Archived from the original on 2013-02-02. Retrieved 3 March 2015.
+\bibitem{103} "Vietnam's top 10 economic events of 2013". Tuoitre News. 6 May 2014. Archived from the original on 2 December 2020. Retrieved 19 December 2015.
+\bibitem{104} "Vietnam's inflation rate to hit over 4 percent in 2014". Daily Times Pakistan. Archived from the original on 22 December 2015. Retrieved 19 December 2015.
+\bibitem{105} "Barriers to mergers and acquisitions business in Vietnam". 108x. Archived from the original on 2011-06-15. Retrieved 2011-08-12.
+\bibitem{106} "M\&A Statistics by Countries". IMAA-Institute. Retrieved 2018-02-23.
+\bibitem{107} "The ASEAN Economic Community's Progress". - InvestAsian. 15 January 2015. Retrieved 3 March 2015.
+\bibitem{108} "Vietnam Reportedly Seeking Military Aid From Both Moscow and Washington". VOA. 2023-09-25. Retrieved 2023-09-29.
+\bibitem{109} "Opinion: How will Vietnam's upgraded US partnership impact its ties with China, Russia?". South China Morning Post. 2023-09-17. Retrieved 2023-09-29.
+\bibitem{110} Bank, Asian Development (2007-09-01). ASEAN+3 or ASEAN+6: Which Way Forward?. Asian Development Bank.
+\bibitem{111} "Vietnam sees 2012 trade surplus as economy slows". Daily Times. Archived from the original on 16 April 2013. Retrieved 3 March 2015.
+\bibitem{112} "SƠ BỘ TÌNH HÌNH XUẤT KHẨU, NHẬP KHẨU HÀNG HOÁ CỦA VIỆT NAM THÁNG 12 VÀ 12 THÁNG NĂM 2014". ThongKeHaiQuan: Hải Quan Việt Nam. Archived from the original on 4 March 2016. Retrieved 23 July 2016.
+\bibitem{113} "TÌNH HÌNH XUẤT KHẨU, NHẬP KHẨU HÀNG HÓA CỦA VIỆT NAM THÁNG 12 VÀ 12 THÁNG NĂM 2011". TinHoatDong : Hải Quan Việt Nam. Archived from the original on 2 April 2015. Retrieved 3 March 2015.
+\bibitem{114} "Chốt con số xuất siêu 780 triệu USD năm 2012". VNEconomy. 17 January 2013. Archived from the original on 2013-02-22.
+\bibitem{115} "Tình hình xuất khẩu, nhập khẩu hàng hóa của Việt Nam tháng 12 và năm 2015". ThongKeHaiQuan: Hải Quan Việt Nam. Archived from the original on 10 June 2016. Retrieved 23 July 2016.
+\bibitem{116} "Số liệu chính thức: Năm 2017 xuất khẩu 214 tỷ USD, xuất siêu 2,92 tỷ USD". baodautu.vn. 16 January 2018.
+\bibitem{117} "Preliminary assessment of Vietnam international merchandise trade performance in whole year 2018". Vietnam Customs. Archived from the original on 2020-11-24. Retrieved 2019-12-20.
+\bibitem{118} "Vietnam 2019 trade surplus \$11.12 billion, beating \$9.94 billion forecast: customs". Reuters. Retrieved 6 June 2020.
+\bibitem{119} "Preliminary assessment of Vietnam international merchandise trade performance in whole year 2020". General Department of Vietnam Customs. Retrieved 2 April 2021.[permanent dead link]
+\bibitem{120} "Tình hình xuất khẩu, nhập khẩu hàng hóa của Việt Nam tháng 12 và năm 2024". Retrieved 4 March 2025.
+\bibitem{121} "Xuất, nhập khẩu của Việt Nam năm 2012 - kết quả và những vấn đề đặt ra". Tạp chí Cộng Sản (in Vietnamese). Archived from the original on 6 November 2014. Retrieved 3 March 2015.
+\bibitem{122} the-shiv (2025-01-28). "Vietnam Garment Manufacturing: Industry Overview 2025". the-shiv. Retrieved 2025-04-25.
+\bibitem{123} the-shiv (2025-01-28). "Vietnam Electronics Manufacturing: Industry Overview 2025". the-shiv. Retrieved 2025-04-25.
+\bibitem{124} the-shiv (2025-01-29). "Vietnam's Plastics Industry: Overview 2025". the-shiv. Retrieved 2025-04-25.
+\bibitem{125} the-shiv (2025-01-28). "Vietnam Furniture Manufacturing: Industry Overview 2025". the-shiv. Retrieved 2025-04-25.
+\bibitem{126} "Vietnam: Gross domestic product (GDP) per capita 2020". Statista. Retrieved 5 May 2017.
+\bibitem{127} Malesky, Edmund J.; Gueorguiev, Dimitar D.; Jensen, Nathan M. (2015). "Monopoly Money: Foreign Investment and Bribery in Vietnam, a Survey Experiment". American Journal of Political Science. 59 (2): 419-439. doi:10.1111/ajps.12126. ISSN 0092-5853. JSTOR 24363575.
+\bibitem{128} "Vietnam's Economy: Everything You Need to Know 2024". the-shiv. 2024-10-01. Retrieved 2024-10-02.
+\bibitem{129} "Joint Media Statement on the Signing of the Agreement Establishing the ASEAN-Australia-New Zealand Free Trade Area". Association of Southeast Asian Nations (Press release). 27 February 2009. Archived from the original on 8 March 2009. Retrieved 23 July 2016.
+\bibitem{130} "ASEAN, Australia and New Zealand Leaders' Statement: Entry into Force of the Agreement Establishing the ASEAN-Australia-New Zealand Free Trade Area 25 October 2009, Cha am Hua Hin, Thailand" (PDF). Archived from the original (PDF) on 29 September 2015. Retrieved 3 March 2015.
+\bibitem{131} "ASEAN - Australia - New Zealand Free Trade Agreement (AANZFTA) - ASEAN - Australia - New Zealand Free Trade Agreement". Archived from the original on 16 October 2015. Retrieved 3 March 2015.
+\bibitem{132} Pushpanathan, Sundram (22 December 2009). "ASEAN Charter: One year and going strong". The Jakarta Post. Retrieved 1 January 2010.
+\bibitem{133} "Vietnam: New Trade Agreement with Eurasia Economic Union - Global Legal Monitor". www.LOC.gov. 16 June 2015. Retrieved 5 May 2017.
+\bibitem{134} "Vietnam - Chile - WTO and International trade Policies". WTOCenter.vn. Archived from the original on 2017-05-13. Retrieved 5 May 2017.
+\bibitem{135} "Vietnam - Korea - WTO and International trade Policies". WTOCenter.vn. Archived from the original on 2017-05-20. Retrieved 5 May 2017.
+\bibitem{136} "Vietnam - Japan - WTO and International trade Policies". WTOCenter.vn. Archived from the original on 2017-05-13. Retrieved 5 May 2017.
+\bibitem{137} "UK strikes Singapore and Vietnam trade deals, start of new era of trade with Asia '". Gov.UK. 10 December 2020. Retrieved 4 July 2023.
+\bibitem{138} "Chuyên trang Thống kê Hải quan :: Hải quan Việt Nam". www.customs.gov.vn. Archived from the original on 2019-07-01. Retrieved 2019-07-01.
+\bibitem{139} Le, Van Anh (2023-10-23). "Soviet Legacy of Vietnam's Intellectual Property Law: Big Brother is (No Longer) Watching You". Asian Journal of Comparative Law. 19: 39-66. doi:10.1017/asjcl.2023.31. ISSN 2194-6078.
+\bibitem{140} "The Global Competitiveness Report 2017-2018". World Economic Forum.
+\bibitem{141} World Bank Group (2018). Doing Business 2018: Reforming to Create Jobs (PDF) (Report).
+\bibitem{142} "The Global Competitiveness Report 2019" (PDF). Africa Competitiveness 2013. Retrieved 4 March 2020.
+\bibitem{143} "Country Rankings". Archived from the original on 17 November 2010. Retrieved 4 March 2020.
 
 
 \end{thebibliography}
+\end{multicols}
+\endgroup
+\dots
 \dots
 
 \end{document}
