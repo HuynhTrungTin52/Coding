@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.3)  13 OCT 2025 03:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  13 OCT 2025 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/HOME/Desktop/Coding/laTEX/Midterm/Midterm
-(c:/Users/HOME/Desktop/Coding/laTEX/Midterm/Midterm.tex
+**c:/Coding/laTEX/Midterm/Midterm
+(c:/Coding/laTEX/Midterm/Midterm.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+L3 programming layer <2025-08-13>
 (c:/texlive/2025/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
 (c:/texlive/2025/texmf-dist/tex/latex/base/bk10.clo
@@ -36,6 +36,9 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \WF@box=\box53
 \WF@everypar=\toks17
 Package: wrapfig 2003/01/31  v 3.6
+) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count285
 ) (c:/texlive/2025/texmf-dist/tex/latex/vntex/vietnam.sty
 Package: vietnam 2009/07/12 v1.3 support for Vietnamese
  (c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
@@ -234,7 +237,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
@@ -250,12 +253,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen165
 \cmidrulekern=\dimen166
 \defaultaddspace=\dimen167
-\@cmidla=\count285
-\@cmidlb=\count286
+\@cmidla=\count286
+\@cmidlb=\count287
 \@aboverulesep=\dimen168
 \@belowrulesep=\dimen169
-\@thisruleclass=\count287
-\@lastruleclass=\count288
+\@thisruleclass=\count288
+\@lastruleclass=\count289
 \@thisrulewidth=\dimen170
 ) (c:/texlive/2025/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
@@ -265,10 +268,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 ) (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count289
-)) (c:/texlive/2025/texmf-dist/tex/latex/framed/framed.sty
+))) (c:/texlive/2025/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip56
 \fb@frw=\dimen171
@@ -565,7 +565,7 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 ) (c:/texlive/2025/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
  (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-09-02 L3 programming layer (loader) 
+Package: expl3 2025-08-13 L3 programming layer (loader) 
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count324
@@ -967,90 +967,90 @@ LaTeX Info: Redefining \cite on input line 694.
 ) (./Midterm.aux)
 \openout1 = `Midterm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
  (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count357
@@ -1083,13 +1083,13 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 46.
-Package microtype Info: Applying patch `item' on input line 46.
-Package microtype Info: Applying patch `toc' on input line 46.
-Package microtype Info: Applying patch `eqnum' on input line 46.
-Package microtype Info: Applying patch `footnote' on input line 46.
-Package microtype Info: Applying patch `verbatim' on input line 46.
-LaTeX Info: Redefining \microtypesetup on input line 46.
+LaTeX Info: Redefining \microtypecontext on input line 48.
+Package microtype Info: Applying patch `item' on input line 48.
+Package microtype Info: Applying patch `toc' on input line 48.
+Package microtype Info: Applying patch `eqnum' on input line 48.
+Package microtype Info: Applying patch `footnote' on input line 48.
+Package microtype Info: Applying patch `verbatim' on input line 48.
+LaTeX Info: Redefining \microtypesetup on input line 48.
 Package microtype Info: Generating PDF output.
 Package microtype Info: No character protrusion.
 Package microtype Info: No font expansion.
@@ -1099,17 +1099,17 @@ Package microtype Info: No adjustment of character kerning.
  (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package hyperref Info: Link coloring ON on input line 46.
+Package hyperref Info: Link coloring ON on input line 48.
  (./Midterm.out) (./Midterm.out)
 \@outlinefile=\write4
 \openout4 = `Midterm.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 49.
+(Font)              <12> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 49.
+(Font)              <8> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 49.
+(Font)              <6> on input line 51.
 
 
 [1
@@ -1145,7 +1145,7 @@ Chapter 1.
 <Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg, id=203, 501.875pt x 331.2375pt>
 File: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg Graphic file (type jpg)
 <use Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg>
-Package pdftex.def Info: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg  used on input line 64.
+Package pdftex.def Info: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg  used on input line 66.
 (pdftex.def)             Requested size: 250.93687pt x 165.61833pt.
 
 
@@ -1153,123 +1153,33 @@ Package pdftex.def Info: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg  used on input line
 
 
  <./Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 101--131
+[]
+ []
+
+
 
 [2
 
 ]
 Chapter 2.
 
-Underfull \hbox (badness 1708) in paragraph at lines 162--163
-\T5/cmr/m/n/10 built on agri-cul-ture. The feu-
- []
-
-
-Underfull \hbox (badness 4072) in paragraph at lines 162--163
-[][]\T5/cmr/m/n/10 agri-cul-ture[][] as the main eco-
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 162--163
-\T5/cmr/m/n/10 thoughts have been pred-i-cated
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 162--163
-\T5/cmr/m/n/10 ther-more, the court pro-hib-ited
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 162--163
-\T5/cmr/m/n/10 slaugh-ter-ing wa-ter buf-falo and
- []
-
-
-Underfull \hbox (badness 1314) in paragraph at lines 162--163
-\T5/cmr/m/n/10 related cer-e-monies. Hand-i-crafts
- []
-
-
-Underfull \hbox (badness 6300) in paragraph at lines 162--163
-\T5/cmr/m/n/10 ness-men were called by the
- []
-
-
-Underfull \hbox (badness 5711) in paragraph at lines 162--163
-\T5/cmr/m/n/10 Fur-ther arche-o-log-i-cal ev-i-dence
- []
-
-
 
 [3
 
 ]
-Overfull \hbox (37.73032pt too wide) in paragraph at lines 186--186
-[]|[]|  
- []
-
-
-Overfull \hbox (110.76729pt too wide) in paragraph at lines 186--186
-[]|[]|  
- []
-
-
-Overfull \hbox (21.35019pt too wide) in paragraph at lines 186--186
-[]|[]|  
- []
-
-
-Underfull \hbox (badness 2351) in paragraph at lines 191--192
-\T5/cmr/m/n/10 flu-ence on Viet-namese so-ci-ety
- []
-
-
-Underfull \hbox (badness 1062) in paragraph at lines 191--192
-\T5/cmr/m/n/10 and a mon-e-tary pre-capitalism
- []
-
-
-Underfull \hbox (badness 5878) in paragraph at lines 191--192
-\T5/cmr/m/n/10 250 years.$[]$ Cities
- []
-
-
-Underfull \hbox (badness 2529) in paragraph at lines 191--192
-\T5/cmr/m/n/10 such as [][]Dong Kinh[][], [][]Hëi An[][]
- []
-
-
-Underfull \hbox (badness 1527) in paragraph at lines 191--192
-\T5/cmr/m/n/10 rapid ur-ban-iza-tion. They were
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 191--192
-\T5/cmr/m/n/10 later con-strained when for-eign
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 193--194
-\T5/cmr/m/n/10 peak as the coun-try was the
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 193--194
-\T5/cmr/m/n/10 ant re-bel-lion which dev-as-tated
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 193--194
-[][]\T5/cmr/m/n/10 Gia Long[][] of the new [][]Nguy¹n
- []
-
-
-Underfull \hbox (badness 3460) in paragraph at lines 193--194
-\T5/cmr/m/n/10 namese over-seas busi-ness and
+Underfull \hbox (badness 10000) in paragraph at lines 166--189
+[]
  []
 
 
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 197--209
+[]
+ []
+
+
 
 [5]
 
@@ -1280,22 +1190,22 @@ Underfull \hbox (badness 3460) in paragraph at lines 193--194
 [7]
 
 [8]
-Overfull \hbox (5.78946pt too wide) in paragraph at lines 255--256
+Overfull \hbox (5.78946pt too wide) in paragraph at lines 273--274
 \T5/cmr/m/n/10 that 28% of sur-vey re-spon-dents cited poverty as their main problem.$[]$
  []
 
 
-Overfull \hbox (27.61746pt too wide) in paragraph at lines 255--256
+Overfull \hbox (27.61746pt too wide) in paragraph at lines 273--274
 \T5/cmr/m/n/10 nomic sit-u-a-tion would worsen in-creased from 13% in 2016 to 26% in 2017.$[]$
  []
 
 
-Overfull \hbox (1.59604pt too wide) in paragraph at lines 255--256
+Overfull \hbox (1.59604pt too wide) in paragraph at lines 273--274
 \T5/cmr/m/n/10 to 81% in 2017, with strongest gains in the ru-ral pop-u-la-tion groups.$[]$ 
  []
 
 
-Overfull \hbox (127.17648pt too wide) in paragraph at lines 257--258
+Overfull \hbox (127.17648pt too wide) in paragraph at lines 275--276
 \T5/cmr/m/n/10 nam as 113th worst out of 176 coun-tries and re-gions for per-cep-tions of corruption.$[]$
  []
 
@@ -1312,7 +1222,7 @@ Chapter 3.
 ]
 Chapter 4.
 
-Underfull \hbox (badness 1033) in paragraph at lines 301--302
+Underfull \hbox (badness 1033) in paragraph at lines 319--320
 []\T5/cmr/m/n/10 Vietnam's [][]fish-ing in-dus-try[][], which has
  []
 
@@ -1323,7 +1233,7 @@ Underfull \hbox (badness 1033) in paragraph at lines 301--302
 ]
 
 [13]
-Underfull \hbox (badness 2951) in paragraph at lines 340--341
+Underfull \hbox (badness 2951) in paragraph at lines 358--359
 \T5/cmr/m/n/10 en-ergy (ex-clud-ing [][]biomass[][]). Viet-
  []
 
@@ -1336,37 +1246,37 @@ Underfull \hbox (badness 2951) in paragraph at lines 340--341
 [16
 
 ]
-Underfull \hbox (badness 1231) in paragraph at lines 392--393
+Underfull \hbox (badness 1231) in paragraph at lines 410--411
 []\T5/cmr/m/n/10 Insert photo of Ha
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--393
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
 []|[][]\T5/cmr/m/n/10 Hëi An An-cient
  []
 
 
-Underfull \hbox (badness 6047) in paragraph at lines 399--400
+Underfull \hbox (badness 6047) in paragraph at lines 417--418
 []\T5/cmr/m/n/10 In 2012, Viet-nam re-
  []
 
 
-Underfull \hbox (badness 6078) in paragraph at lines 399--400
+Underfull \hbox (badness 6078) in paragraph at lines 417--418
 \T5/cmr/m/n/10 ceived 6.8 mil-lion in-
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 399--400
+Underfull \hbox (badness 1755) in paragraph at lines 417--418
 \T5/cmr/m/n/10 ter-na-tional vis-i-tors and
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 399--400
+Underfull \hbox (badness 1496) in paragraph at lines 417--418
 \T5/cmr/m/n/10 emerg-ing as an at-trac-
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 399--400
+Underfull \hbox (badness 5331) in paragraph at lines 417--418
 \T5/cmr/m/n/10 des-ti-na-tions Asia 2013
  []
 
@@ -1374,89 +1284,91 @@ Underfull \hbox (badness 5331) in paragraph at lines 399--400
 
 [17]
 
-[18
+[18]
+
+[19
 
 ]
 Chapter 5.
 
 
-[19
+[20
 
 ]
 
-[20
+[21
 
 ]
 Chapter 6.
 
 
-[21
+[22
 
 ]
 Chapter 7.
 
-Underfull \hbox (badness 2261) in paragraph at lines 493--493
+Underfull \hbox (badness 2261) in paragraph at lines 511--511
 \T5/cmr/m/n/10 Viet-nam. It is ca-pa-
  []
 
 
 
-[22
+[23
 
 ]
 
-[23]
-Overfull \hbox (3.88715pt too wide) in paragraph at lines 549--550
+[24]
+Overfull \hbox (3.88715pt too wide) in paragraph at lines 567--568
 \T5/cmr/m/n/10 In 2004, ex-ter-nal debt amounted to US$16.6 bil-lion, or 37% of GDP.$[]$ 
  []
 
 
 
-[24]
-
 [25]
-Underfull \hbox (badness 3128) in paragraph at lines 567--568
+
+[26]
+Underfull \hbox (badness 3128) in paragraph at lines 585--586
 [][][]\T5/cmr/m/n/10 ASEAN-Aus-tra-li-a-New Zea-land
  []
 
 
-Overfull \hbox (48.09082pt too wide) in paragraph at lines 581--582
+Overfull \hbox (48.09082pt too wide) in paragraph at lines 599--600
 []\T5/cmr/m/n/10 ASEAN-China Free Trade Area (ACFTA), in ef-fect as of 1 Jan-uary 2010$[]$ 
  []
 
 
-Overfull \hbox (48.67401pt too wide) in paragraph at lines 584--585
+Overfull \hbox (48.67401pt too wide) in paragraph at lines 602--603
 []\T5/cmr/m/n/10 ASEAN-Korea Free Trade Area (AK-FTA), in ef-fect as of 1 Jan-uary 2010$[]$ 
  []
 
 
 
-[26
+[27
 
 ]
 Chapter 8.
 
 
-[27
+[28
 
 ]
-
-[28]
 
 [29]
+
+[30]
 Chapter 9.
-
-
-[30
-
-]
-Chapter 10.
 
 
 [31
 
 ]
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 647.
+Chapter 10.
+
+
+[32
+
+]
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 665.
  (c:/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -1465,7 +1377,7 @@ File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
 
 
-[32
+[33
 
 ] (c:/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
@@ -1474,18 +1386,12 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-LaTeX Font Info:    Trying to load font information for C70+min on input line 679.
+LaTeX Font Info:    Trying to load font information for C70+min on input line 697.
  (c:/texlive/2025/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fd
 File: c70min.fd 2021/10/16 4.8.5
 ) (c:/texlive/2025/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fdx
 File: c70min.fdx 2021/10/16 4.8.5
 )
-
-
-
-
-
-[33]
 
 
 
@@ -1527,29 +1433,35 @@ File: c70min.fdx 2021/10/16 4.8.5
 
 
 
+[40]
 
 
-[40] (./Midterm.aux)
+
+
+
+
+
+[41] (./Midterm.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `Midterm.out' has not changed.
 (rerunfilecheck)             Checksum: 7726438DA5285E2E3EA662CF4AB03A5C;4892.
  ) 
 Here is how much of TeX's memory you used:
- 29660 strings out of 469686
- 549506 string characters out of 5476674
- 977844 words of memory out of 5000000
- 57331 multiletter control sequences out of 15000+600000
- 660859 words of font info for 114 fonts, out of 8000000 for 9000
+ 29667 strings out of 469738
+ 549696 string characters out of 5481597
+ 978819 words of memory out of 5000000
+ 57284 multiletter control sequences out of 15000+600000
+ 659963 words of font info for 114 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 102i,22n,106p,1823b,1277s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/HOME/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> <c:/Users/HOME/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjka.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkc.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkd.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkf.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjki.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkj.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on Midterm.pdf (45 pages, 362263 bytes).
+ 102i,23n,106p,1804b,1277s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjka.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkc.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkd.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkf.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjki.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkj.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt9.pfb>
+Output written on Midterm.pdf (46 pages, 364038 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 780 compressed objects within 8 object streams
- 246 named destinations out of 1000 (max. 500000)
+ 910 PDF objects out of 1000 (max. 8388607)
+ 790 compressed objects within 8 object streams
+ 248 named destinations out of 1000 (max. 500000)
  314 words of extra memory for PDF output out of 10000 (max. 10000000)
 
