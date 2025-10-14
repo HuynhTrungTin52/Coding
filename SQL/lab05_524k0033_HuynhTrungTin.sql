@@ -33,102 +33,6 @@ create table enrolled
 	foreign key(cname) references class(name)
 );
 
-INSERT INTO enrolled
-	(snum, cname)
-VALUES
-	(112348546, 'Database Systems'),
-	(115987938, 'Database Systems'),
-	(348121549, 'Database Systems'),
-	(322654189, 'Database Systems'),
-	(552455318, 'Database Systems'),
-	(455798411, 'Operating System Design'),
-	(552455318, 'Operating System Design'),
-	(567354612, 'Operating System Design'),
-	(112348546, 'Operating System Design'),
-	(115987938, 'Operating System Design'),
-	(322654189, 'Operating System Design'),
-	(567354612, 'Data Structures'),
-	(552455318, 'Communication Networks'),
-	(455798411, 'Optical Electronics'),
-	(301221823, 'Perception'),
-	(301221823, 'Social Cognition'),
-	(301221823, 'American Political Parties'),
-	(556784565, 'Air Quality Engineering'),
-	(099354543, 'Patent Law'),
-	(574489456, 'Urban Economics');
-
-INSERT INTO class
-	(name, meets_at, room, fid)
-VALUES
-	('Data Structures', 'MWF 10', 'R128', 489456522),
-	('Database Systems', 'MWF 12:30-1:45', '1320 DCL', 142519864),
-	('Operating System Design', 'TuTh 12-1:20', '20 AVW', 489456522),
-	('Archaeology of the Incas', 'MWF 3-4:15', 'R128', 248965255),
-	('Aviation Accident Investigation', 'TuTh 1-2:50', 'Q3', 011564812),
-	('Air Quality Engineering', 'TuTh 10:30-11:45', 'R15', 011564812),
-	('Introductory Latin', 'MWF 3-4:15', 'R12', 248965255),
-	('American Political Parties', 'TuTh 2-3:15', '20 AVW', 619023588),
-	('Social Cognition', 'Tu 6:30-8:40', 'R15', 159542516),
-	('Perception', 'MTuWTh 3', 'Q3', 489221823),
-	('Multivariate Analysis', 'TuTh 2-3:15', 'R15', 090873519),
-	('Patent Law', 'F 1-2:50', 'R128', 090873519),
-	('Urban Economics', 'MWF 11', '20 AVW', 489221823),
-	('Organic Chemistry', 'TuTh 12:30-1:45', 'R12', 489221823),
-	('Marketing Research', 'MW 10-11:15', '1320 DCL', 489221823),
-	('Seminar in American Art', 'M 4', 'R15', 489221823),
-	('Orbital Mechanics', 'MWF 8', '1320 DCL', 011564812),
-	('Dairy Herd Management', 'TuTh 12:30-1:45', 'R128', 356187925),
-	('Communication Networks', 'MW 9:30-10:45', '20 AVW', 141582651),
-	('Optical Electronics', 'TuTh 12:30-1:45', 'R15', 254099823),
-	('Intoduction to Math', 'TuTh 8-9:30', 'R128', 489221823);
-
-INSERT INTO faculty
-	(fid, fname, deptid)
-VALUES
-	(142519864, 'Ivana Teach', 20),
-	(242518965, 'James Smith', 68),
-	(141582651, 'Mary Johnson', 20),
-	(011564812, 'John Williams', 68),
-	(254099823, 'Patricia Jones', 68),
-	(356187925, 'Robert Brown', 12),
-	(489456522, 'Linda Davis', 20),
-	(287321212, 'Michael Miller', 12),
-	(248965255, 'Barbara Wilson', 12),
-	(159542516, 'William Moore', 33),
-	(090873519, 'Elizabeth Taylor', 11),
-	(486512566, 'David Anderson', 20),
-	(619023588, 'Jennifer Thomas', 11),
-	(489221823, 'Richard Jackson', 33),
-	(548977562, 'Ulysses Teach', 20);
-
-INSERT INTO student
-	(snum, sname, major, standing, age)
-VALUES
-	(051135593, 'Maria White', 'English', 'SR', 21),
-	(060839453, 'Charles Harris', 'Architecture', 'SR', 22),
-	(099354543, 'Susan Martin', 'Law', 'JR', 20),
-	(112348546, 'Joseph Thompson', 'Computer Science', 'SO', 19),
-	(115987938, 'Christopher Garcia', 'Computer Science', 'JR', 20),
-	(132977562, 'Angela Martinez', 'History', 'SR', 20),
-	(269734834, 'Thomas Robinson', 'Psychology', 'SO', 18),
-	(280158572, 'Margaret Clark', 'Animal Science', 'FR', 18),
-	(301221823, 'Juan Rodriguez', 'Psychology', 'JR', 20),
-	(318548912, 'Dorthy Lewis', 'Finance', 'FR', 18),
-	(320874981, 'Daniel Lee', 'Electrical Engineering', 'FR', 17),
-	(322654189, 'Lisa Walker', 'Computer Science', 'SO', 17),
-	(348121549, 'Paul Hall', 'Computer Science', 'JR', 18),
-	(351565322, 'Nancy Allen', 'Accounting', 'JR', 19),
-	(451519864, 'Mark Young', 'Finance', 'FR', 18),
-	(455798411, 'Luis Hernandez', 'Electrical Engineering', 'FR', 17),
-	(462156489, 'Donald King', 'Mechanical Engineering', 'SO', 19),
-	(550156548, 'George Wright', 'Education', 'SR', 21),
-	(552455318, 'Ana Lopez', 'Computer Engineering', 'SR', 19),
-	(556784565, 'Kenneth Hill', 'Civil Engineering', 'SR', 21),
-	(567354612, 'Karen Scott', 'Computer Engineering', 'FR', 18),
-	(573284895, 'Steven Green', 'Kinesiology', 'SO', 19),
-	(574489456, 'Betty Adams', 'Economics', 'JR', 20),
-	(578875478, 'Edward Baker', 'Veterinary Medicine', 'SR', 21);
-
 
 --1)Find the names of all Juniors (level = JR) who are enrolled in a class taught by I. Teach. 
 SELECT DISTINCT s.sname
@@ -147,7 +51,7 @@ WHERE s.standing = 'JR' AND s.snum IN (
 
 -- 2)Find the age of the oldest student who is either a History major or enrolled in a course taught by I.Teach
 
-SELECT MAX(s.age) as oldest_age 
+SELECT MAX(s.age) as oldest_age
 FROM student S
 WHERE s.major='History' OR s.snum IN (
 	--Find all of the students enrolled in I.Teach's class
@@ -161,24 +65,95 @@ WHERE s.major='History' OR s.snum IN (
 	)
 )
 
+-- 3)Find the names of all classes that either meet in room R128 or have five or more students enrolled
+SELECT c.name
+FROM class C
+WHERE c.room='R128' OR c.name IN (
+	SELECT c.name
+	FROM class C, enrolled E
+	WHERE c.name=e.cname
+	GROUP BY c.name
+	HAVING COUNT(e.snum)>=5
+	
+)
 
-SELECT s.sname, s.age, s.major
-FROM student S
-where s.major='History' OR s.snum in (
-	Select e.snum 
-	from enrolled E
-JOIN class C on c.name=e.cname
-JOIN faculty F on c.fid = f.fid
-where f.fname = 'Ivana Teach'
-)  
+--4)Find the names of all students who are enrolled in two classes that meet at the same time
+SELECT student.sname
+FROM student
+WHERE student.snum
+IN(
+    SELECT e1.snum
+FROM enrolled e1
+	JOIN class c1 ON c1.name = e1.cname
+WHERE c1.meets_at IN (
+    SELECT c2.meets_at
+FROM class c2
+WHERE c1.name <> c2.name
+    )
+)
 
-SELECT MAX(s.age) AS oldest_age
+-- 5)Find the names of faculty members who teach in every room in which some class is taught.
+SELECT f.fname
+FROM faculty f
+JOIN class c ON c.fid = f.fid
+GROUP BY f.fid, f.fname
+HAVING COUNT(DISTINCT c.room) = (SELECT COUNT(DISTINCT room) FROM class);
+
+-- 6)Find the names of faculty members for whom the combined enrollment of the courses that they teach is less than five.
+SELECT f.fname
+FROM faculty f
+LEFT JOIN class c ON c.fid = f.fid
+LEFT JOIN enrolled e ON e.cname = c.name
+GROUP BY f.fid, f.fname
+HAVING COUNT(e.snum) < 5;
+
+-- 7)For each level, print the level and the average age of students for that level. 
+SELECT standing AS level,
+	ROUND(AVG(CAST(age AS FLOAT)), 2) AS avg_age
+FROM student
+GROUP BY standing
+ORDER BY standing;
+
+-- 8)For all levels except JR, print the level and the average age of students for that level. 
+SELECT standing AS level,
+	ROUND(AVG(CAST(age AS FLOAT)), 2) AS avg_age
+FROM student
+WHERE standing <> 'JR'
+GROUP BY standing
+ORDER BY standing;
+-- 9)For each faculty member that has taught classes only in room R128, print the faculty member’s name and the total number of classes she or he has taught. 
+SELECT f.fname,
+	COUNT(c.name) AS total_classes
+FROM faculty f
+JOIN class c ON c.fid = f.fid
+GROUP BY f.fid, f.fname
+HAVING COUNT(*) > 0
+   AND SUM(CASE WHEN c.room <> 'R128' THEN 1 ELSE 0 END) = 0;
+
+-- 10)Find the names of students enrolled in the maximum number of classes. 
+SELECT s.sname
 FROM student s
-WHERE s.major = 'History'
-	OR s.snum IN (
-	  SELECT e.snum
-	  FROM enrolled e
-	  JOIN class c ON e.cname = c.name
-	  JOIN faculty f ON c.fid = f.fid
-	  WHERE f.fname = 'Ivana Teach'
-	);
+JOIN (
+	SELECT snum, COUNT(*) AS class_count,
+				 RANK() OVER (ORDER BY COUNT(*) DESC) AS rnk
+	FROM enrolled
+	GROUP BY snum
+) ec ON s.snum = ec.snum
+WHERE ec.rnk = 1;
+
+-- 11)Find the names of students not enrolled in any class. 
+SELECT s.sname
+FROM student s
+LEFT JOIN enrolled e ON s.snum = e.snum
+WHERE e.snum IS NULL;
+
+-- 12) For each age value that appears in Students, find the level value that appears most often. For example, if there are more FR level students aged 18 than SR, JR, or SO students aged 18, you should print the pair (18, FR).
+SELECT age, standing
+FROM (
+	SELECT age, standing, COUNT(*) AS cnt,
+				 RANK() OVER (PARTITION BY age ORDER BY COUNT(*) DESC) AS rnk
+	FROM student
+	GROUP BY age, standing
+) t
+WHERE rnk = 1
+ORDER BY age;

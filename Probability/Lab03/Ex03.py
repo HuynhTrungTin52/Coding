@@ -26,5 +26,4 @@ A2=[s for s in B if sum('K' in card for card in s)>0]
 print("d)",len(A2))
 
 #e
-print(Fraction(4800,52))
 print("e) P(A1)=",P(A1,B),", P(A2)=",P(A2,B))
