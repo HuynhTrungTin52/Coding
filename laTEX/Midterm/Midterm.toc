@@ -11,24 +11,24 @@
 \contentsline {section}{\numberline {4.3}Industry and manufacturing}{16}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Services and tourism}{17}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Tourism}{17}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Export of labour}{17}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Export of labour}{18}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Banking and fiance}{19}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Banking}{19}{subsection.4.6.1}%
 \contentsline {subsubsection}{Fiance}{19}{subsubsection*.18}%
 \contentsline {chapter}{\numberline {5}Currency, exchange rate and inflation}{20}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Exchange rate}{20}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Inflation}{21}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Merges and acquisitions}{22}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Trade}{23}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Foreign Trade}{24}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Exports}{24}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Imports}{25}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}External debt, foreign aid and foreign investment}{25}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Free trade agreements}{27}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Economic development strategy}{28}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Trade liberalization}{28}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Domestic Reform}{28}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Human and physical capital investment}{29}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Sustainable growth}{29}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Economic indicators and international rankings}{31}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Notes}{32}{chapter.10}%
+\contentsline {section}{\numberline {5.2}Inflation}{22}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Merges and acquisitions}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Trade}{25}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Foreign Trade}{26}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Exports}{27}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Imports}{28}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}External debt, foreign aid and foreign investment}{28}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Free trade agreements}{30}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Economic development strategy}{32}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Trade liberalization}{32}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Domestic Reform}{32}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Human and physical capital investment}{33}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Sustainable growth}{33}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Economic indicators and international rankings}{35}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Notes}{36}{chapter.10}%
