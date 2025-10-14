@@ -35,9 +35,11 @@
 \AtBeginDocument{
     \renewcommand{\bibname}{References}
     \renewcommand{\chaptername}{Chapter}
+    \renewcommand{\contentsname}{Table of contents}
     }
 \setlength\parskip{1em plus 2pt}
 \setlength{\droptitle}{-8ex}
+% \setlength{\intextsep}{0pt}
 \titleformat{\section}
   {\normalfont\Large\bfseries}{\thesection}{0.5em}{\vspace{-9pt}}[{\vspace{-10pt}\rule{0.5\textwidth}{0.8pt}}]
 
@@ -217,27 +219,30 @@ The separation distorted the basic Vietnamese economy by overly stressing region
 \clearpage
 When the North and South were \href{https://en.wikipedia.org/wiki/Geneva_Conference_(1954)}{divided politically in 1954}, they also adopted different economic ideologies: socialism in the North and capitalism in the South. Destruction caused by the \href{https://en.wikipedia.org/wiki/Second_Indochina_War}{Second Indochina War} from 1955 to 1975 seriously strained the economy. The situation was worsened by the country's 1.5 million military and civilian deaths, and the subsequent exodus of 1 million refugees, including tens of thousands of professionals, intellectuals, technicians and skilled workers out of the millions of war refugees.\textsuperscript{[Citation needed]}
 \begin{figure}[H]
-    \justify{
-        \begin{minipage}[t]{0.5\textwidth}
-            \begin{tabular}{c}
-                \fbox{
-                    \parbox{0.8\textwidth}{
-                        Insert table of GDP per capita in Vietnam, 1956-1974 }
-                }
-            \end{tabular}
-            \caption*{Table 2.1}
-        \end{minipage}
-        \hspace{0pt}
-        \begin{minipage}[t]{0.4\textwidth}
-            \centering
-            \fbox{
-                \parbox{0.5\textwidth}{
-                    Insert chart of GDP per capita development in Vietnam
-                }
-            }
-            \caption*{Graph 2.1}
-        \end{minipage}
-    }
+    \centering 
+    \small
+    \begin{minipage}[t]{\textwidth}
+        \centering 
+        \begin{tabular}{|>{\raggedright\arraybackslash}p{1.75cm}|*{9}{c|}}
+        \hline
+        \textbf{Year} &  19\-56 & 19\-58 & 19\-60 & 19\-62 & 19\-64 & 19\-66 & 19\-68 & 19\-70 & 19\-72 \\
+        \hline
+        Republic of Vietnam & 62 & 88 & 105 & 100 & 118 & 100 & 85 & 81 & 90 \\
+        \hline
+        \tiny Democratic Rep\-ublic of Vietnam & 40 & 50 & 51 & 68 & 59 & 60 & 55 & 60 & 65 \\
+        \hline
+        \end{tabular}
+        \captionof*{table}{GDP per capita in Vietnam, 1956-1974 (in US\$/year)} 
+        \label{tab:gdp_data} 
+        
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.25\textwidth} 
+        \centering
+        \includegraphics[width=\linewidth]{gdppercapita.png} 
+        \caption*{GDP per capita development in Vietnam}
+        \label{fig:gdp} 
+    \end{minipage}
 \end{figure}
 
 \section{1975-1997}
@@ -270,9 +275,9 @@ On November 7, 2006, the General Council at the World Trade Organization (\href{
 
 Vietnam's economy continues to expand at an annual rate in excess of 7\%, one of the fastest-growing in the world, but it grew from an extremely low base, as it suffered the crippling effect of the \href{https://en.wikipedia.org/wiki/Vietnam_War}{Vietnam War} from the 1950s to the 1970s, the punitive embargoes of the United States and its allies, as well as the austerity measures introduced in its aftermath.\textsuperscript{[Citation needed]} In 2012, the communist party was forced to apologise about the mismanagement of the economy after a large number of SOEs went bankrupt and inflation rose. The main danger has been over the bad debt in the banks totalling to 15\% and forecast growth is 5.2\% for 2012 but this is also due to the global economic crisis.\textsuperscript{[Citation needed]} The government has launched schemes to reform the economy, such as lifting foreign ownership cap from 49\% and partially privatizing the country's state-owned companies that have been responsible for the recent economic downturn. By the end of 2013, the government is expected to privatize 25-50\% of SOEs, only maintaining control on public services and military. The recent reforms have created a major boom in the Vietnamese stock market as confidence in the Vietnamese economy is returning.
 
-Vietnam's current economic turmoil has given rise to questions of a possible new period of changing political economy, however\textsuperscript{[Citation needed]} poverty remains to be the main concern on the national performance index as of 2018. The Provincial Governance and Public Administration Performance Index (PAPI) found that 28\% of survey respondents cited poverty as their main problem.\textsuperscript{[Citation needed]} Most respondents agreed with the statement that "[P]overty reduction is imperative to ensuring that Vietnam becomes an advanced, developed country. The percentage of the poorest Vietnamese respondents who believed that their economic situation would worsen increased from 13\% in 2016 to 26\% in 2017.\textsuperscript{[Citation needed]} The percentage of respondents with health insurance increased from 74\% in 2016 to 81\% in 2017, with strongest gains in the rural population groups.\textsuperscript{[Citation needed]}
+Vietnam's current economic turmoil has given rise to questions of a possible new period of changing political economy, however\cite{55} poverty remains to be the main concern on the national performance index as of 2018. The Provincial Governance and Public Administration Performance Index (PAPI) found that 28\% of survey respondents cited poverty as their main problem.\cite{56} Most respondents agreed with the statement that "[P]overty reduction is imperative to ensuring that Vietnam becomes an advanced, developed country. The percentage of the poorest Vietnamese respondents who believed that their economic situation would worsen increased from 13\% in 2016 to 26\% in 2017.\cite{56} The percentage of respondents with health insurance increased from 74\% in 2016 to 81\% in 2017, with strongest gains in the rural population groups.\cite{56}
 
-In 2017, Transparency International, a non-profit that tracks \href{https://en.wikipedia.org/wiki/Graft_(politics)}{graft} ranked Vietnam as 113th worst out of 176 countries and regions for perceptions of corruption.\textsuperscript{[Citation needed][failed verification]} Several \href{https://en.wikipedia.org/wiki/Graft_(politics)}{graft} cases found in 2016 and 2017 led to the corruption crackdown which prosecuted many bankers, businesspeople, and government officials under charges of corruption. PAPI found that bribery at public district hospital services decreased from 17\% in 2016 to 9\% in 2017.\textsuperscript{[Citation needed]} Reports of land seizures went down from an average of about 9\% before 2013, to less than 7\% in 2017. The number of respondents who believed that their land was sold at a fair market value decreased from 26\% in 2014 to 21\% in 2017.\textsuperscript{[Citation needed]} Land-use graft and petty graft, such as police officers accepting bribes, are common. According to \href{https://en.wikipedia.org/wiki/Ralph_Jennings}{Ralph Jennings}, Vietnam has been privatizing many of its state-owned operations to reduce corruption and increase efficiency.\textsuperscript{[Citation needed][undue weight? - discuss]}
+In 2017, Transparency International, a non-profit that tracks \href{https://en.wikipedia.org/wiki/Graft_(politics)}{graft} ranked Vietnam as 113th worst out of 176 countries and regions for perceptions of corruption.\cite{56}\textsuperscript{\href{https://en.wikipedia.org/wiki/Wikipedia:Verifiability}{[failed verification]}} Several \href{https://en.wikipedia.org/wiki/Graft_(politics)}{graft} cases found in 2016 and 2017 led to the corruption crackdown which prosecuted many bankers, businesspeople, and government officials under charges of corruption. PAPI found that bribery at public district hospital services decreased from 17\% in 2016 to 9\% in 2017.\textsuperscript{[Citation needed]} Reports of land seizures went down from an average of about 9\% before 2013, to less than 7\% in 2017. The number of respondents who believed that their land was sold at a fair market value decreased from 26\% in 2014 to 21\% in 2017.\textsuperscript{[Citation needed]} Land-use graft and petty graft, such as police officers accepting bribes, are common. According to \href{https://en.wikipedia.org/wiki/Ralph_Jennings}{Ralph Jennings}, Vietnam has been privatizing many of its state-owned operations to reduce corruption and increase efficiency.\textsuperscript{[Citation needed][undue weight? - discuss]}
 
 As of March 2018, Vietnam's economy continued to grow, achieving the best annual growth rate in over a decade; which has led media outlets to speculate if in the near future it could be one of the \href{https://en.wikipedia.org/wiki/Four_Asian_Tigers}{Asian tigers}.\textsuperscript{[Citation needed]}
 
@@ -283,40 +288,110 @@ In the early 2020s, despite trade wars with Vietnam's major trade partners, a pa
 \chapter{Data}
 The following table shows the main economic indicators in 1990-2023 (with IMF staff estimations in 2021-2027). Inflation below 5\% is in green.
 
-\begin{table}[h]
-    \centering
-    Insert table here
-    \caption*{Table 3.1}
+\begin{table}[htbp]
+\resizebox{\textwidth}{!}{
+\begin{tabular}{ccccccccc}
+\rowcolor[HTML]{EAECF0} 
+{\color[HTML]{202122} \textbf{Year}} & {\color[HTML]{202122} \textbf{\begin{tabular}[c]{@{}c@{}}GDP growth\\ (real)\end{tabular}}} & {\color[HTML]{202122} \textbf{\begin{tabular}[c]{@{}c@{}}GDP\\ (in Bil. US\$nominal)\end{tabular}}} & {\color[HTML]{202122} \textbf{\begin{tabular}[c]{@{}c@{}}GDP\\ (in Bil. US\$PPP)\end{tabular}}} & {\color[HTML]{202122} \textbf{\begin{tabular}[c]{@{}c@{}}GDP per capita\\ (in US\$ nominal)\end{tabular}}} & {\color[HTML]{202122} \textbf{\begin{tabular}[c]{@{}c@{}}GDP per capita\\ (in US\$ PPP)\end{tabular}}} & {\color[HTML]{202122} \textbf{\begin{tabular}[c]{@{}c@{}}Inflation rate\\ (in Percent)\end{tabular}}} & {\color[HTML]{202122} \textbf{\begin{tabular}[c]{@{}c@{}}Unemployment rate\\ (in Percent)\end{tabular}}} & {\color[HTML]{202122} \textbf{\begin{tabular}[c]{@{}c@{}}Government debt\\ (in \% of GDP)\end{tabular}}} \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1990}        & {\color[HTML]{202122} 5.0}                                                                  & {\color[HTML]{202122} 8.2}                                                                          & {\color[HTML]{202122} 77.7}                                                                     & {\color[HTML]{202122} 121.7}                                                                               & {\color[HTML]{202122} 1151.2}                                                                          & {\color[HTML]{202122} 36.0}                                                                           & {\color[HTML]{202122} 12.3}                                                                              & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1991}        & {\color[HTML]{202122} 5.8}                                                                  & {\color[HTML]{202122} 9.7}                                                                          & {\color[HTML]{202122} 85.0}                                                                     & {\color[HTML]{202122} 141.1}                                                                               & {\color[HTML]{202122} 1236.3}                                                                          & {\color[HTML]{202122} 81.8}                                                                           & {\color[HTML]{202122} 10.4}                                                                              & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1992}        & {\color[HTML]{202122} 8.7}                                                                  & {\color[HTML]{202122} 12.5}                                                                         & {\color[HTML]{202122} 94.5}                                                                     & {\color[HTML]{202122} 179.0}                                                                               & {\color[HTML]{202122} 1350.3}                                                                          & {\color[HTML]{202122} 37.7}                                                                           & {\color[HTML]{202122} 11.0}                                                                              & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1993}        & {\color[HTML]{202122} 8.1}                                                                  & {\color[HTML]{202122} 16.7}                                                                         & {\color[HTML]{202122} 104.6}                                                                    & {\color[HTML]{202122} 235.0}                                                                               & {\color[HTML]{202122} 1468.3}                                                                          & {\color[HTML]{202122} 8.4}                                                                            & {\color[HTML]{202122} 10.6}                                                                              & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1994}        & {\color[HTML]{202122} 8.8}                                                                  & {\color[HTML]{202122} 20.7}                                                                         & {\color[HTML]{202122} 116.2}                                                                    & {\color[HTML]{202122} 286.0}                                                                               & {\color[HTML]{202122} 1605.0}                                                                          & {\color[HTML]{202122} 9.5}                                                                            & {\color[HTML]{202122} 10.3}                                                                              & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1995}        & {\color[HTML]{202122} 9.5}                                                                  & {\color[HTML]{202122} 26.4}                                                                         & {\color[HTML]{202122} 130.0}                                                                    & {\color[HTML]{202122} 358.7}                                                                               & {\color[HTML]{202122} 1765.7}                                                                          & {\color[HTML]{202122} 16.9}                                                                           & {\color[HTML]{202122} 5.8}                                                                               & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1996}        & {\color[HTML]{202122} 9.3}                                                                  & {\color[HTML]{202122} 31.4}                                                                         & {\color[HTML]{202122} 144.8}                                                                    & {\color[HTML]{202122} 419.1}                                                                               & {\color[HTML]{202122} 1934.8}                                                                          & {\color[HTML]{202122} 5.6}                                                                            & {\color[HTML]{202122} 5.9}                                                                               & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1997}        & {\color[HTML]{202122} 8.2}                                                                  & {\color[HTML]{202122} 34.1}                                                                         & {\color[HTML]{202122} 159.3}                                                                    & {\color[HTML]{202122} 449.3}                                                                               & {\color[HTML]{202122} 2095.7}                                                                          & {\color[HTML]{202122} 3.1}                                                                            & {\color[HTML]{202122} 6.0}                                                                               & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1998}        & {\color[HTML]{202122} 5.8}                                                                  & {\color[HTML]{202122} 34.6}                                                                         & {\color[HTML]{202122} 170.3}                                                                    & {\color[HTML]{202122} 448.1}                                                                               & {\color[HTML]{202122} 2207.3}                                                                          & {\color[HTML]{202122} 8.1}                                                                            & {\color[HTML]{202122} 6.9}                                                                               & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 1999}        & {\color[HTML]{202122} 4.8}                                                                  & {\color[HTML]{202122} 36.4}                                                                         & {\color[HTML]{202122} 181.0}                                                                    & {\color[HTML]{202122} 465.2}                                                                               & {\color[HTML]{202122} 2310.3}                                                                          & {\color[HTML]{202122} 4.1}                                                                            & {\color[HTML]{202122} 6.7}                                                                               & {\color[HTML]{202122} n/a}                                                                               \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2000}        & {\color[HTML]{202122} 6.8}                                                                  & {\color[HTML]{202122} 39.6}                                                                         & {\color[HTML]{202122} 197.6}                                                                    & {\color[HTML]{202122} 498.6}                                                                               & {\color[HTML]{202122} 2489.3}                                                                          & {\color[HTML]{202122} -1.8}                                                                           & {\color[HTML]{202122} 6.4}                                                                               & {\color[HTML]{202122} 24.8}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2001}        & {\color[HTML]{202122} 6.9}                                                                  & {\color[HTML]{202122} 41.3}                                                                         & {\color[HTML]{202122} 216.0}                                                                    & {\color[HTML]{202122} 513.2}                                                                               & {\color[HTML]{202122} 2684.5}                                                                          & {\color[HTML]{202122} -0.3}                                                                           & {\color[HTML]{202122} 6.3}                                                                               & {\color[HTML]{202122} 25.4}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2002}        & {\color[HTML]{202122} 7.1}                                                                  & {\color[HTML]{202122} 44.6}                                                                         & {\color[HTML]{202122} 234.9}                                                                    & {\color[HTML]{202122} 546.6}                                                                               & {\color[HTML]{202122} 2881.3}                                                                          & {\color[HTML]{202122} 4.1}                                                                            & {\color[HTML]{202122} 6.0}                                                                               & {\color[HTML]{202122} 27.7}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2003}        & {\color[HTML]{202122} 7.3}                                                                  & {\color[HTML]{202122} 50.2}                                                                         & {\color[HTML]{202122} 257.1}                                                                    & {\color[HTML]{202122} 610.4}                                                                               & {\color[HTML]{202122} 3124.4}                                                                          & {\color[HTML]{202122} 3.3}                                                                            & {\color[HTML]{202122} 5.8}                                                                               & {\color[HTML]{202122} 29.8}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2004}        & {\color[HTML]{202122} 7.8}                                                                  & {\color[HTML]{202122} 62.9}                                                                         & {\color[HTML]{202122} 284.6}                                                                    & {\color[HTML]{202122} 757.0}                                                                               & {\color[HTML]{202122} 3426.5}                                                                          & {\color[HTML]{202122} 7.9}                                                                            & {\color[HTML]{202122} 5.6}                                                                               & {\color[HTML]{202122} 29.4}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2005}        & {\color[HTML]{202122} 7.5}                                                                  & {\color[HTML]{202122} 73.2}                                                                         & {\color[HTML]{202122} 315.7}                                                                    & {\color[HTML]{202122} 873.1}                                                                               & {\color[HTML]{202122} 3765.8}                                                                          & {\color[HTML]{202122} 8.4}                                                                            & {\color[HTML]{202122} 5.3}                                                                               & {\color[HTML]{202122} 28.7}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2006}        & {\color[HTML]{202122} 7.0}                                                                  & {\color[HTML]{202122} 84.3}                                                                         & {\color[HTML]{202122} 348.1}                                                                    & {\color[HTML]{202122} 996.3}                                                                               & {\color[HTML]{202122} 4114.3}                                                                          & {\color[HTML]{202122} 7.5}                                                                            & {\color[HTML]{202122} 4.8}                                                                               & {\color[HTML]{202122} 30.2}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2007}        & {\color[HTML]{202122} 7.1}                                                                  & {\color[HTML]{202122} 98.4}                                                                         & {\color[HTML]{202122} 383.0}                                                                    & {\color[HTML]{202122} 1152.3}                                                                              & {\color[HTML]{202122} 4484.3}                                                                          & {\color[HTML]{202122} 8.3}                                                                            & {\color[HTML]{202122} 4.6}                                                                               & {\color[HTML]{202122} 32.2}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2008}        & {\color[HTML]{202122} 5.7}                                                                  & {\color[HTML]{202122} 124.8}                                                                        & {\color[HTML]{202122} 412.5}                                                                    & {\color[HTML]{202122} 1446.6}                                                                              & {\color[HTML]{202122} 4782.9}                                                                          & {\color[HTML]{202122} 23.1}                                                                           & {\color[HTML]{202122} 2.4}                                                                               & {\color[HTML]{202122} 31.0}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2009}        & {\color[HTML]{202122} 5.4}                                                                  & {\color[HTML]{202122} 129.0}                                                                        & {\color[HTML]{202122} 437.5}                                                                    & {\color[HTML]{202122} 1481.4}                                                                              & {\color[HTML]{202122} 5023.9}                                                                          & {\color[HTML]{202122} 6.7}                                                                            & {\color[HTML]{202122} 2.9}                                                                               & {\color[HTML]{202122} 36.3}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2010}        & {\color[HTML]{202122} 6.4}                                                                  & {\color[HTML]{202122} 143.2}                                                                        & {\color[HTML]{202122} 471.2}                                                                    & {\color[HTML]{202122} 1628.0}                                                                              & {\color[HTML]{202122} 5357.1}                                                                          & {\color[HTML]{202122} 9.2}                                                                            & {\color[HTML]{202122} 2.9}                                                                               & {\color[HTML]{202122} 36.8}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2011}        & {\color[HTML]{202122} 6.4}                                                                  & {\color[HTML]{202122} 171.3}                                                                        & {\color[HTML]{202122} 511.9}                                                                    & {\color[HTML]{202122} 1949.8}                                                                              & {\color[HTML]{202122} 5826.2}                                                                          & {\color[HTML]{202122} 18.7}                                                                           & {\color[HTML]{202122} 2.2}                                                                               & {\color[HTML]{202122} 35.8}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2012}        & {\color[HTML]{202122} 5.5}                                                                  & {\color[HTML]{202122} 195.2}                                                                        & {\color[HTML]{202122} 568.4}                                                                    & {\color[HTML]{202122} 2197.6}                                                                              & {\color[HTML]{202122} 6400.2}                                                                          & {\color[HTML]{202122} 9.1}                                                                            & {\color[HTML]{202122} 2.0}                                                                               & {\color[HTML]{202122} 38.3}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2013}        & {\color[HTML]{202122} 5.6}                                                                  & {\color[HTML]{202122} 212.7}                                                                        & {\color[HTML]{202122} 607.0}                                                                    & {\color[HTML]{202122} 2370.0}                                                                              & {\color[HTML]{202122} 6762.7}                                                                          & {\color[HTML]{202122} 6.6}                                                                            & {\color[HTML]{202122} 2.2}                                                                               & {\color[HTML]{202122} 41.4}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2014}        & {\color[HTML]{202122} 6.4}                                                                  & {\color[HTML]{202122} 232.9}                                                                        & {\color[HTML]{202122} 660.6}                                                                    & {\color[HTML]{202122} 2566.9}                                                                              & {\color[HTML]{202122} 7281.2}                                                                          & {\color[HTML]{202122} 4.1}                                                                            & {\color[HTML]{202122} 2.1}                                                                               & {\color[HTML]{202122} 43.6}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2015}        & {\color[HTML]{202122} 7.0}                                                                  & {\color[HTML]{202122} 236.8}                                                                        & {\color[HTML]{202122} 700.3}                                                                    & {\color[HTML]{202122} 2581.9}                                                                              & {\color[HTML]{202122} 7635.3}                                                                          & {\color[HTML]{202122} 0.6}                                                                            & {\color[HTML]{202122} 2.3}                                                                               & {\color[HTML]{202122} 46.1}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2016}        & {\color[HTML]{202122} 6.7}                                                                  & {\color[HTML]{202122} 252.1}                                                                        & {\color[HTML]{202122} 770.9}                                                                    & {\color[HTML]{202122} 2720.2}                                                                              & {\color[HTML]{202122} 8316.2}                                                                          & {\color[HTML]{202122} 2.7}                                                                            & {\color[HTML]{202122} 2.3}                                                                               & {\color[HTML]{202122} 47.5}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2017}        & {\color[HTML]{202122} 6.9}                                                                  & {\color[HTML]{202122} 277.1}                                                                        & {\color[HTML]{202122} 851.1}                                                                    & {\color[HTML]{202122} 2957.9}                                                                              & {\color[HTML]{202122} 9085.6}                                                                          & {\color[HTML]{202122} 3.5}                                                                            & {\color[HTML]{202122} 2.2}                                                                               & {\color[HTML]{202122} 46.3}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2018}        & {\color[HTML]{202122} 7.2}                                                                  & {\color[HTML]{202122} 303.1}                                                                        & {\color[HTML]{202122} 934.1}                                                                    & {\color[HTML]{202122} 3201.7}                                                                              & {\color[HTML]{202122} 9867.4}                                                                          & {\color[HTML]{202122} 3.5}                                                                            & {\color[HTML]{202122} 2.2}                                                                               & {\color[HTML]{202122} 43.7}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2019}        & {\color[HTML]{202122} 7.2}                                                                  & {\color[HTML]{202122} 331.8}                                                                        & {\color[HTML]{202122} 1021.3}                                                                   & {\color[HTML]{202122} 3439.1}                                                                              & {\color[HTML]{202122} 10584.7}                                                                         & {\color[HTML]{202122} 2.8}                                                                            & {\color[HTML]{202122} 2.2}                                                                               & {\color[HTML]{202122} 40.8}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2020}        & {\color[HTML]{202122} 2.9}                                                                  & {\color[HTML]{202122} 346.3}                                                                        & {\color[HTML]{202122} 1064.4}                                                                   & {\color[HTML]{202122} 3548.9}                                                                              & {\color[HTML]{202122} 10907.8}                                                                         & {\color[HTML]{202122} 3.2}                                                                            & {\color[HTML]{202122} 2.5}                                                                               & {\color[HTML]{202122} 41.1}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2021}        & {\color[HTML]{202122} 2.6}                                                                  & {\color[HTML]{202122} 370.1}                                                                        & {\color[HTML]{202122} 1141.0}                                                                   & {\color[HTML]{202122} 3756.9}                                                                              & {\color[HTML]{202122} 11589.3}                                                                         & {\color[HTML]{202122} 1.8}                                                                            & {\color[HTML]{202122} 3.2}                                                                               & {\color[HTML]{202122} 39.0}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2022}        & {\color[HTML]{202122} 8.0}                                                                  & {\color[HTML]{202122} 408.0}                                                                        & {\color[HTML]{202122} 1321.3}                                                                   & {\color[HTML]{202122} 4101.7}                                                                              & {\color[HTML]{202122} 13284.2}                                                                         & {\color[HTML]{202122} 3.2}                                                                            & {\color[HTML]{202122} 2.3}                                                                               & {\color[HTML]{202122} 34.6}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+{\color[HTML]{202122} 2023}        & {\color[HTML]{202122} 5.1}                                                                  & {\color[HTML]{202122} 433.7}                                                                        & {\color[HTML]{202122} 1438.5}                                                                   & {\color[HTML]{202122} 4324.0}                                                                              & {\color[HTML]{202122} 14324.4}                                                                         & {\color[HTML]{202122} 3.3}                                                                            & {\color[HTML]{202122} 2.0}                                                                               & {\color[HTML]{202122} 34.0}                                                                              \\
+\rowcolor[HTML]{F8F9FA} 
+\end{tabular}
+}
 \end{table}
 
 \chapter{Economic sectors}
 \section{Agriculture, fishery and forestry}
 
 \begin{wrapfigure}{r}{.45\textwidth}
+    \vspace{-25pt}
+    \centering
     \begin{framed}
-        Insert picture of Rice terraces in \href{https://en.wikipedia.org/wiki/Sa_Pa}{Sa Pa}.
-        \caption*{Vietnam is the world's third-largest rice exporter.}
-        \caption*{Figure 4.1}
-    \end{framed}
-
+   \includegraphics{250px-Sa_Pa_Rice_Terrace_IV.jpg}
+    \caption*{Vietnam is the world's third-largest rice exporter.}
+       \end{framed}
     \begin{framed}
-        Insert picture of coffees
-        \caption*{Vietnam is the world's second-largest \href{https://en.wikipedia.org/wiki/Coffee}{coffee} producer and exporter.}
-        \caption*{Figure 4.2}
+    \includegraphics[width=30mm,scale=0.5]{Latte_and_dark_coffee.jpg}
+    \caption*{Vietnam is the world's second-largest \href{https://en.wikipedia.org/wiki/Coffee}{coffee} producer and exporter.}
     \end{framed}
-
+    
     \begin{framed}
-        Insert picture of cashew
-        \caption*{Vietnam is the world's largest \href{https://en.wikipedia.org/wiki/Cashew}{cashew exporter}}
-        \caption*{Figure 4.3}
+    \includegraphics[width=25mm,scale=0.5]{CashewSnack.jpg}
+    \caption*{Vietnam is the world's largest \href{https://en.wikipedia.org/wiki/Cashew}{cashew exporter}}    
     \end{framed}
-
+    \vspace{-50pt}
 \end{wrapfigure}
 
-
 In 2003, Vietnam produced an estimated 30.7 million cubic meters of wood. Production of sawn wood was a more modest 2,950 cubic meters. In 1992, in response to \href{https://en.wikipedia.org/wiki/Deforestation_in_Vietnam}{dwindling forests}, Vietnam imposed a ban on the export of logs and raw timber. In 1997, the ban was extended to all timber products except wooden artifacts. During the 1990s, Vietnam began to reclaim land for forests with a tree-planting program.\textsuperscript{[Citation needed]}
-
-Vietnam's \href{https://en.wikipedia.org/wiki/Fishing}{fishing industry}, which has abundant resources given the country's long coastline and extensive network of rivers and lakes, has generally experienced moderate growth. In 2003, the total catch was about 2.6 million tons. However, seafood exports increased fourfold between 1990 and 2002 to more than US\$2 billion, driven in part by \href{https://en.wikipedia.org/wiki/Shrimp}{shrimp} farms in the South and "catfish", which are a different species from their American counterparts, but are marketed in the United States under the same name. By selling vast quantities of shrimp and catfish to the U.S., Vietnam triggered antidumping complaints by the U.S., which imposed tariffs in the case of catfish and was considering doing the same for shrimp. In 2005, the seafood industry began to focus on domestic demand to compensate for declining exports.\textsuperscript{[Citation needed]}
+\begin{sloppypar}\raggedright
+Vietnam's \href{https://en.wikipedia.org/wiki/Fishing}{fishing industry}, which has abundant resources given the country's long coastline and extensive network of rivers and lakes, has generally experienced moderate growth. In 2003, the total catch was about 2.6 million tons. However, seafood exports increased fourfold between 1990 and 2002 to more than US\$2 billion, driven in part by \href{https://en.wikipedia.org/wiki/Shrimp}{shrimp} farms in the South and "catfish", which are a different species from their American counterparts, but are marketed in the United States under the same name. By selling vast quantities of shrimp and catfish to the U.S., Vietnam triggered antidumping complaints by the U.S., which imposed tariffs in the case of catfish and was considering doing the same for shrimp. In 2005, the seafood industry began to focus on domestic demand to compensate for declining exports.\cite{36}
+\end{sloppypar}
 
 Vietnam is one of the top rice exporting countries in the world, but the limited sophistication of small-scale Vietnamese farmers causes quality to suff\-er.\textsuperscript{[Citation needed]} Vietnam is also the world's second-largest exporter of coffee, trailing behind Brazil.\textsuperscript{[Citation needed]}
 
@@ -349,9 +424,9 @@ In 2018, Vietnam was the world's 5th largest producer of \href{https://en.wikipe
 
 \begin{wrapfigure}{r}{.5\textwidth}
     \begin{framed}
-        Insert picture of Dau Tieng Solar Power Complex
-        \caption*{\href{https://en.wikipedia.org/wiki/Dau_Tieng_Solar_Power_Project}{Dau Tieng Solar Power Complex} is the largest solar farm in \href{https://en.wikipedia.org/wiki/Southeast_Asia}{Southeast Asia}.}
-        \caption*{Figure 4.4}
+    \centering
+    \includegraphics[width=50mm,scale=1]{Bird's_eye_view_of_installation_works_at_PV_Arrays.png}
+    \caption*{\href{https://en.wikipedia.org/wiki/Dau_Tieng_Solar_Power_Project}{Dau Tieng Solar Power Complex} is the largest solar farm in \href{https://en.wikipedia.org/wiki/Southeast_Asia}{Southeast Asia}.}
     \end{framed}
 \end{wrapfigure}
 
@@ -658,7 +733,7 @@ In 2017, with the help of the United Nations, Vietnam official started the groun
 \backmatter
 \begingroup\sloppy
 \begin{multicols}{2}
-\begin{thebibliography}{99}\RaggedRight
+\begin{thebibliography}{999}\RaggedRight
 
 \bibitem{1}"WEO Groups and Aggregates Information April 2020",\emph{World Economic and Financial Surveys World Economic Outlook Database},International Monetary Fund,6 May 2020.
 \bibitem{2} "World Bank Country and Lending Groups", World Bank, 10 October 2023.
@@ -803,7 +878,6 @@ In 2017, with the help of the United Nations, Vietnam official started the groun
 \bibitem{141} World Bank Group (2018). Doing Business 2018: Reforming to Create Jobs (PDF) (Report).
 \bibitem{142} "The Global Competitiveness Report 2019" (PDF). Africa Competitiveness 2013. Retrieved 4 March 2020.
 \bibitem{143} "Country Rankings". Archived from the original on 17 November 2010. Retrieved 4 March 2020.
-
 
 \end{thebibliography}
 \end{multicols}
