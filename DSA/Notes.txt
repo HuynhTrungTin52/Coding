@@ -145,3 +145,100 @@ Stable Sort : Preserve the relative order of the items with the same key
 
 Out-place Sort : Merge and Radix
 Unstable Sort : Selection and Quick
+
+Hashing(14/10/2025)
+A type of an Array where we are given a key to where the data is and the data inside the object
+Keys are how we get the object ^
+Keys must be close to eachother, as in Key1-Key2-Key3-Key4(Dense)
+Drawbacks of direct addressing Hashing :
+- NO string as indices
+- HAVE to have keys that satisfies 3 requirements :
+-- >0, must be Natural
+-- Range keys must be small
+-- Must be DENSE
+
+This is where HashTable comes in
+Hashing :
+- Map large int to smaller int 
+- Map non-integer keys to integers
+Hashtable is a direct addressing table where we use the hash function to transform arbitrary(based on a personal whims) keys to  >0 small dense ints(called keys)
+
+* How to Hash
+* How to *resolve collisions(when two keys share the same hash value)
+
+*Criteria for a good hash functions :
+1. O(1)
+2. Scatter keys evenly throughout the hash table
+3. Fewer collisions(even 1% is a lot)
+4. Need fewer slots(less space)
+
+Perfect Hash Function : No collisions(impossible)
+
+Several Approaches making Hash Functions :
+- Uniform Hash Functions : Good for distributing keys across the hash table
+-- Formula : Let k =[0,X), hash(k) =[km/X]
+
+- Divison method : 
+-- Formula : hash(k) mod m
+
+
+How to pick m : PRIME and CLOSE TO POWER OF 2
+- Multiplication method 
+-- Formula : [m(kA-[kA])]
+--- A is a real number (0,1)
+--- Let A be the golden ratio is a good choice
+
+For String, we simply sum up the ASCII values of the characters
+
+Collisions are very common, thus you must learn how to handle them :
+- Separate Chaining
+- Linear Probing
+- Quadratic Probing
+- Double Hashing
+
+Alpha : Load Factor(n(numbers of keys in the hash map)/m(numbers of nodes in ll in hashmap))
+
+Linear Probing : When collision, put the data and key in the next empty slot
+
+Lazy Deletion : 
+- Occupied 
+- Occupied but mark as deleted
+- Empty
+
+With lazy deletion in Linear Probing, it can create many consecutive occupied slots and increasing the running time of find/insert/deletion
+--> This is called Primary Clustering
+
+The probe sequence of this linear probing is :
+hash(key)
+(hash(key)+1)%m 
+(hash(key)+n)%m
+
+To avoid primary clustering, we can
+hash(key)
+(hash(key)+1*d)%m
+(hash(key)+2*d)%m
+(hash(key)+3*d)%m
+(hash(key)+m*d)%m
+Let d be a co-prime to m 
+
+Quadratic Probing is the same, except we replace 1,2,3 to k^2
+...+1
+...+4
+...+9
+
+Problem of Quadratic Probing:
+Of two keys have the same initial position, their probe sequence are the same -> Secondary clustering(not as bad linear probing)
+DOUBLE HASHING 
+(hash(key)+1*hash2(key))%m
+(hash(key)+2*hash2(key))%m
+(hash(key)+3*hash2(key))%m
+(hash(key)+4*hash2(key))%m4
+...
+
+Hash2 MUST not be 0
+
+Criteria for good collision resolution :
+1. Minimize clustering 
+2. Always find an empty slot if it exists
+3. Give different probe sequence when 2 initial probes are the same(-> NO secondary clustering)
+4. Fast
