@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  15 OCT 2025 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  15 OCT 2025 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1302,76 +1302,69 @@ Package pdftex.def Info: Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.pn
  <./Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png> <./Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png>]
 
 [22]
+Chapter 6.
+
 
 [23
 
 ]
-Chapter 6.
-
 
 [24
 
 ]
-
-[25]
 Chapter 7.
-<SaigonPort1.JPG, id=872, 501.875pt x 376.40625pt>
+<SaigonPort1.JPG, id=868, 501.875pt x 376.40625pt>
 File: SaigonPort1.JPG Graphic file (type jpg)
 <use SaigonPort1.JPG>
 Package pdftex.def Info: SaigonPort1.JPG  used on input line 680.
 (pdftex.def)             Requested size: 250.93687pt x 188.20265pt.
 
 
-[26
+[25
 
- <./SaigonPort1.JPG>] [27] [28]
-<Vietnamese-Exports-2004.svg.png, id=935, 501.875pt x 257.96375pt>
+ <./SaigonPort1.JPG>] [26] [27]
+<Vietnamese-Exports-2004.svg.png, id=931, 501.875pt x 257.96375pt>
 File: Vietnamese-Exports-2004.svg.png Graphic file (type png)
 <use Vietnamese-Exports-2004.svg.png>
 Package pdftex.def Info: Vietnamese-Exports-2004.svg.png  used on input line 857.
 (pdftex.def)             Requested size: 250.93687pt x 128.98155pt.
 
 
-[29 <./Vietnamese-Exports-2004.svg.png>]
+[28 <./Vietnamese-Exports-2004.svg.png>]
+
+[29]
 
 [30]
-
-[31]
-<ASEAN-China_Free_Trade_Area.svg.png, id=957, 496.85625pt x 331.2375pt>
+<ASEAN-China_Free_Trade_Area.svg.png, id=987, 496.85625pt x 331.2375pt>
 File: ASEAN-China_Free_Trade_Area.svg.png Graphic file (type png)
 <use ASEAN-China_Free_Trade_Area.svg.png>
 Package pdftex.def Info: ASEAN-China_Free_Trade_Area.svg.png  used on input line 908.
 (pdftex.def)             Requested size: 248.4275pt x 165.61833pt.
 
-Overfull \hbox (13.90712pt too wide) in paragraph at lines 915--916
-[]\T5/cmr/m/n/9 ASEAN-India Free Trade Area (AIFTA), in ef-fect as of 1 Jan-uary 20-10$[]$ 
- []
 
-
-
-[32
+[31
 
  <./ASEAN-China_Free_Trade_Area.svg.png>]
 Chapter 8.
 
 
-[33
+[32
 
 ]
 
-[34]
+[33]
 
-[35]
+[34]
 Chapter 9.
 
 
-[36
+[35
 
 ]
 Chapter 10.
 
 
-[37
+[36
 
 ]
 LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 981.
@@ -1383,7 +1376,7 @@ File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
 
 
-[38
+[37
 
 ] (c:/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
@@ -1398,6 +1391,12 @@ File: c70min.fd 2021/10/16 4.8.5
 ) (c:/texlive/2025/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fdx
 File: c70min.fdx 2021/10/16 4.8.5
 )
+
+
+
+
+
+[38]
 
 
 
@@ -1439,15 +1438,9 @@ File: c70min.fdx 2021/10/16 4.8.5
 
 
 
-[45]
 
 
-
-
-
-
-
-[46] (./Midterm.aux)
+[45] (./Midterm.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
@@ -1456,18 +1449,18 @@ Package rerunfilecheck Info: File `Midterm.out' has not changed.
 (rerunfilecheck)             Checksum: 7726438DA5285E2E3EA662CF4AB03A5C;4892.
  ) 
 Here is how much of TeX's memory you used:
- 29815 strings out of 469738
- 554447 string characters out of 5481597
- 1048556 words of memory out of 5000000
+ 29814 strings out of 469738
+ 554441 string characters out of 5481597
+ 1048555 words of memory out of 5000000
  57424 multiletter control sequences out of 15000+600000
  659963 words of font info for 114 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 102i,26n,106p,1804b,1263s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,26n,106p,1753b,1256s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjka.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkc.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkd.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkf.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjki.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkj.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on Midterm.pdf (51 pages, 1406014 bytes).
+Output written on Midterm.pdf (50 pages, 1414402 bytes).
 PDF statistics:
- 1240 PDF objects out of 1440 (max. 8388607)
- 1022 compressed objects within 11 object streams
- 256 named destinations out of 1000 (max. 500000)
+ 1407 PDF objects out of 1440 (max. 8388607)
+ 1189 compressed objects within 12 object streams
+ 255 named destinations out of 1000 (max. 500000)
  389 words of extra memory for PDF output out of 10000 (max. 10000000)
 
