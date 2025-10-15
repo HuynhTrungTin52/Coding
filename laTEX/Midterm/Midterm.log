@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  15 OCT 2025 09:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.23)  15 OCT 2025 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -964,115 +964,116 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip150
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count356
+) (c:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip151
+\multirow@cntb=\count357
+\multirow@dima=\skip152
+\bigstrutjot=\dimen312
 ) (./Midterm.aux)
 \openout1 = `Midterm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
- (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
-\scratchdimen=\dimen312
+\scratchcounter=\count358
+\scratchdimen=\dimen313
 \scratchbox=\box137
-\nofMPsegments=\count358
-\nofMParguments=\count359
+\nofMPsegments=\count359
+\nofMParguments=\count360
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count360
-\MPscratchDim=\dimen313
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen314
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
 \everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (c:/texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
@@ -1083,13 +1084,13 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 50.
-Package microtype Info: Applying patch `item' on input line 50.
-Package microtype Info: Applying patch `toc' on input line 50.
-Package microtype Info: Applying patch `eqnum' on input line 50.
-Package microtype Info: Applying patch `footnote' on input line 50.
-Package microtype Info: Applying patch `verbatim' on input line 50.
-LaTeX Info: Redefining \microtypesetup on input line 50.
+LaTeX Info: Redefining \microtypecontext on input line 51.
+Package microtype Info: Applying patch `item' on input line 51.
+Package microtype Info: Applying patch `toc' on input line 51.
+Package microtype Info: Applying patch `eqnum' on input line 51.
+Package microtype Info: Applying patch `footnote' on input line 51.
+Package microtype Info: Applying patch `verbatim' on input line 51.
+LaTeX Info: Redefining \microtypesetup on input line 51.
 Package microtype Info: Generating PDF output.
 Package microtype Info: No character protrusion.
 Package microtype Info: No font expansion.
@@ -1099,17 +1100,17 @@ Package microtype Info: No adjustment of character kerning.
  (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package hyperref Info: Link coloring ON on input line 50.
+Package hyperref Info: Link coloring ON on input line 51.
  (./Midterm.out) (./Midterm.out)
 \@outlinefile=\write4
 \openout4 = `Midterm.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 53.
+(Font)              <12> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 53.
+(Font)              <8> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 53.
+(Font)              <6> on input line 54.
 
 
 [1
@@ -1145,7 +1146,7 @@ Chapter 1.
 <Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg, id=203, 501.875pt x 331.2375pt>
 File: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg Graphic file (type jpg)
 <use Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg>
-Package pdftex.def Info: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg  used on input line 68.
+Package pdftex.def Info: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg  used on input line 69.
 (pdftex.def)             Requested size: 250.93687pt x 165.61833pt.
 
 
@@ -1153,7 +1154,7 @@ Package pdftex.def Info: Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg  used on input line
 
 
  <./Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 103--133
+Underfull \hbox (badness 10000) in paragraph at lines 104--134
 []
  []
 
@@ -1168,14 +1169,14 @@ Chapter 2.
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 168--189
+Underfull \hbox (badness 10000) in paragraph at lines 169--190
 []
  []
 
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 197--215
+Underfull \hbox (badness 10000) in paragraph at lines 198--216
 []
  []
 
@@ -1186,10 +1187,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--215
 [6
 
 ]
-<gdppercapita.png, id=433, 501.875pt x 354.32375pt>
+<gdppercapita.png, id=443, 501.875pt x 354.32375pt>
 File: gdppercapita.png Graphic file (type png)
 <use gdppercapita.png>
-Package pdftex.def Info: gdppercapita.png  used on input line 246.
+Package pdftex.def Info: gdppercapita.png  used on input line 247.
 (pdftex.def)             Requested size: 86.25pt x 60.88843pt.
 
 
@@ -1211,20 +1212,20 @@ Chapter 3.
 
 ]
 Chapter 4.
-<250px-Sa_Pa_Rice_Terrace_IV.jpg, id=516, 60.225pt x 40.2303pt>
+<250px-Sa_Pa_Rice_Terrace_IV.jpg, id=598, 60.225pt x 40.2303pt>
 File: 250px-Sa_Pa_Rice_Terrace_IV.jpg Graphic file (type jpg)
 <use 250px-Sa_Pa_Rice_Terrace_IV.jpg>
-Package pdftex.def Info: 250px-Sa_Pa_Rice_Terrace_IV.jpg  used on input line 380.
+Package pdftex.def Info: 250px-Sa_Pa_Rice_Terrace_IV.jpg  used on input line 381.
 (pdftex.def)             Requested size: 60.22484pt x 40.2302pt.
-<Latte_and_dark_coffee.jpg, id=517, 250.9375pt x 156.585pt>
+<Latte_and_dark_coffee.jpg, id=601, 250.9375pt x 156.585pt>
 File: Latte_and_dark_coffee.jpg Graphic file (type jpg)
 <use Latte_and_dark_coffee.jpg>
-Package pdftex.def Info: Latte_and_dark_coffee.jpg  used on input line 384.
+Package pdftex.def Info: Latte_and_dark_coffee.jpg  used on input line 385.
 (pdftex.def)             Requested size: 125.46843pt x 78.2923pt.
-<CashewSnack.jpg, id=520, 250.9375pt x 187.70125pt>
+<CashewSnack.jpg, id=604, 250.9375pt x 187.70125pt>
 File: CashewSnack.jpg Graphic file (type jpg)
 <use CashewSnack.jpg>
-Package pdftex.def Info: CashewSnack.jpg  used on input line 389.
+Package pdftex.def Info: CashewSnack.jpg  used on input line 390.
 (pdftex.def)             Requested size: 125.46843pt x 93.85039pt.
 
 
@@ -1233,50 +1234,50 @@ Package pdftex.def Info: CashewSnack.jpg  used on input line 389.
  <./250px-Sa_Pa_Rice_Terrace_IV.jpg> <./Latte_and_dark_coffee.jpg> <./CashewSnack.jpg>]
 
 [14]
-<Bird's_eye_view_of_installation_works_at_PV_Arrays.png, id=547, 376.40625pt x 209.28188pt>
+<Bird's_eye_view_of_installation_works_at_PV_Arrays.png, id=660, 376.40625pt x 209.28188pt>
 File: Bird's_eye_view_of_installation_works_at_PV_Arrays.png Graphic file (type png)
 <use Bird's_eye_view_of_installation_works_at_PV_Arrays.png>
-Package pdftex.def Info: Bird's_eye_view_of_installation_works_at_PV_Arrays.png  used on input line 433.
-(pdftex.def)             Requested size: 142.26378pt x 79.1pt.
+Package pdftex.def Info: Bird's_eye_view_of_installation_works_at_PV_Arrays.png  used on input line 434.
+(pdftex.def)             Requested size: 128.0374pt x 71.19pt.
 
 
 [15 <./Bird's_eye_view_of_installation_works_at_PV_Arrays.png>]
 
 [16]
-<VinFast_VF8,_front_NYIAS_2022.jpg, id=592, 501.875pt x 261.97874pt>
+<VinFast_VF8,_front_NYIAS_2022.jpg, id=726, 501.875pt x 261.97874pt>
 File: VinFast_VF8,_front_NYIAS_2022.jpg Graphic file (type jpg)
 <use VinFast_VF8,_front_NYIAS_2022.jpg>
-Package pdftex.def Info: VinFast_VF8,_front_NYIAS_2022.jpg  used on input line 476.
+Package pdftex.def Info: VinFast_VF8,_front_NYIAS_2022.jpg  used on input line 479.
 (pdftex.def)             Requested size: 501.87376pt x 261.9781pt.
 
 
 [17
 
  <./VinFast_VF8,_front_NYIAS_2022.jpg>]
-<Halong_bay_vietnam.JPG, id=606, 331.2375pt x 220.825pt>
+<Halong_bay_vietnam.JPG, id=751, 331.2375pt x 220.825pt>
 File: Halong_bay_vietnam.JPG Graphic file (type jpg)
 <use Halong_bay_vietnam.JPG>
-Package pdftex.def Info: Halong_bay_vietnam.JPG  used on input line 501.
+Package pdftex.def Info: Halong_bay_vietnam.JPG  used on input line 504.
 (pdftex.def)             Requested size: 165.61833pt x 110.41222pt.
-<Hoi_An_(42681823051).jpg, id=607, 331.2375pt x 220.825pt>
+<Hoi_An_(42681823051).jpg, id=752, 331.2375pt x 220.825pt>
 File: Hoi_An_(42681823051).jpg Graphic file (type jpg)
 <use Hoi_An_(42681823051).jpg>
-Package pdftex.def Info: Hoi_An_(42681823051).jpg  used on input line 507.
+Package pdftex.def Info: Hoi_An_(42681823051).jpg  used on input line 510.
 (pdftex.def)             Requested size: 165.61833pt x 110.41222pt.
 
 
 [18 <./Halong_bay_vietnam.JPG> <./Hoi_An_(42681823051).jpg>]
 
 [19]
-<500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg, id=623, 501.875pt x 382.42876pt>
+<500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg, id=782, 501.875pt x 382.42876pt>
 File: 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg Graphic file (type jpg)
 <use 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg>
-Package pdftex.def Info: 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg  used on input line 532.
+Package pdftex.def Info: 500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg  used on input line 535.
 (pdftex.def)             Requested size: 250.93687pt x 191.2139pt.
-<sogiadich.jpg, id=624, 501.875pt x 317.185pt>
+<sogiadich.jpg, id=785, 501.875pt x 317.185pt>
 File: sogiadich.jpg Graphic file (type jpg)
 <use sogiadich.jpg>
-Package pdftex.def Info: sogiadich.jpg  used on input line 538.
+Package pdftex.def Info: sogiadich.jpg  used on input line 541.
 (pdftex.def)             Requested size: 250.93687pt x 158.5921pt.
 
 
@@ -1284,15 +1285,15 @@ Package pdftex.def Info: sogiadich.jpg  used on input line 538.
 
  <./500px-Banco_Nacional_de_Vietnam,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.jpg> <./sogiadich.jpg>]
 Chapter 5.
-<Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png, id=645, 963.6pt x 499.8675pt>
+<Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png, id=809, 963.6pt x 499.8675pt>
 File: Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png Graphic file (type png)
 <use Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png>
-Package pdftex.def Info: Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png  used on input line 557.
+Package pdftex.def Info: Map_of_countries_by_GDP_(nominal)_per_capita_in_2022.svg.png  used on input line 577.
 (pdftex.def)             Requested size: 481.79883pt x 249.93314pt.
-<Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png, id=648, 963.6pt x 499.8675pt>
+<Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png, id=812, 963.6pt x 499.8675pt>
 File: Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png Graphic file (type png)
 <use Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png>
-Package pdftex.def Info: Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png  used on input line 563.
+Package pdftex.def Info: Map_of_countries_by_GDP_(PPP)_per_capita_in_2022.svg.png  used on input line 583.
 (pdftex.def)             Requested size: 481.79883pt x 249.93314pt.
 
 
@@ -1314,55 +1315,43 @@ Chapter 6.
 
 [25]
 Chapter 7.
-<SaigonPort1.JPG, id=696, 501.875pt x 376.40625pt>
+<SaigonPort1.JPG, id=872, 501.875pt x 376.40625pt>
 File: SaigonPort1.JPG Graphic file (type jpg)
 <use SaigonPort1.JPG>
-Package pdftex.def Info: SaigonPort1.JPG  used on input line 659.
+Package pdftex.def Info: SaigonPort1.JPG  used on input line 680.
 (pdftex.def)             Requested size: 250.93687pt x 188.20265pt.
 
 
 [26
 
- <./SaigonPort1.JPG>]
-Overfull \hbox (457.45511pt too wide) in alignment at lines 678--681
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (457.45511pt too wide) in alignment at lines 681--683
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (457.45511pt too wide) in alignment at lines 683--727
- [] [] [] [] [] [] [] 
- []
-
-[27]
-<Vietnamese-Exports-2004.svg.png, id=714, 501.875pt x 257.96375pt>
+ <./SaigonPort1.JPG>] [27] [28]
+<Vietnamese-Exports-2004.svg.png, id=935, 501.875pt x 257.96375pt>
 File: Vietnamese-Exports-2004.svg.png Graphic file (type png)
 <use Vietnamese-Exports-2004.svg.png>
-Package pdftex.def Info: Vietnamese-Exports-2004.svg.png  used on input line 734.
+Package pdftex.def Info: Vietnamese-Exports-2004.svg.png  used on input line 857.
 (pdftex.def)             Requested size: 250.93687pt x 128.98155pt.
 
 
-[28 <./Vietnamese-Exports-2004.svg.png>]
-
-[29]
+[29 <./Vietnamese-Exports-2004.svg.png>]
 
 [30]
-<ASEAN-China_Free_Trade_Area.svg.png, id=735, 496.85625pt x 331.2375pt>
+
+[31]
+<ASEAN-China_Free_Trade_Area.svg.png, id=957, 496.85625pt x 331.2375pt>
 File: ASEAN-China_Free_Trade_Area.svg.png Graphic file (type png)
 <use ASEAN-China_Free_Trade_Area.svg.png>
-Package pdftex.def Info: ASEAN-China_Free_Trade_Area.svg.png  used on input line 785.
+Package pdftex.def Info: ASEAN-China_Free_Trade_Area.svg.png  used on input line 908.
 (pdftex.def)             Requested size: 248.4275pt x 165.61833pt.
 
+Overfull \hbox (13.90712pt too wide) in paragraph at lines 915--916
+[]\T5/cmr/m/n/9 ASEAN-India Free Trade Area (AIFTA), in ef-fect as of 1 Jan-uary 20-10$[]$ 
+ []
 
-[31
+
+
+[32
 
  <./ASEAN-China_Free_Trade_Area.svg.png>]
-
-[32]
 Chapter 8.
 
 
@@ -1385,7 +1374,7 @@ Chapter 10.
 [37
 
 ]
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 858.
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 981.
  (c:/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -1403,7 +1392,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-LaTeX Font Info:    Trying to load font information for C70+min on input line 890.
+LaTeX Font Info:    Trying to load font information for C70+min on input line 1013.
  (c:/texlive/2025/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fd
 File: c70min.fd 2021/10/16 4.8.5
 ) (c:/texlive/2025/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fdx
@@ -1467,18 +1456,18 @@ Package rerunfilecheck Info: File `Midterm.out' has not changed.
 (rerunfilecheck)             Checksum: 7726438DA5285E2E3EA662CF4AB03A5C;4892.
  ) 
 Here is how much of TeX's memory you used:
- 29784 strings out of 469738
- 554168 string characters out of 5481597
- 1048211 words of memory out of 5000000
- 57395 multiletter control sequences out of 15000+600000
+ 29815 strings out of 469738
+ 554447 string characters out of 5481597
+ 1048556 words of memory out of 5000000
+ 57424 multiletter control sequences out of 15000+600000
  659963 words of font info for 114 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  102i,26n,106p,1804b,1263s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> <c:/Users/LG/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjka.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkc.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkd.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkf.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjki.pfb><c:/texlive/2025/texmf-dist/fonts/type1/wadalab/dmj/dmjkj.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnsl10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vnti9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on Midterm.pdf (51 pages, 1397070 bytes).
+Output written on Midterm.pdf (51 pages, 1406014 bytes).
 PDF statistics:
- 1083 PDF objects out of 1200 (max. 8388607)
- 872 compressed objects within 9 object streams
- 254 named destinations out of 1000 (max. 500000)
+ 1240 PDF objects out of 1440 (max. 8388607)
+ 1022 compressed objects within 11 object streams
+ 256 named destinations out of 1000 (max. 500000)
  389 words of extra memory for PDF output out of 10000 (max. 10000000)
 

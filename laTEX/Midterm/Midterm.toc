@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {4.3}Industry and manufacturing}{17}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Services and tourism}{18}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Tourism}{18}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Export of labour}{19}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Export of labour}{18}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Banking and fiance}{20}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Banking}{20}{subsection.4.6.1}%
 \contentsline {subsubsection}{Fiance}{20}{subsubsection*.18}%
@@ -21,10 +21,10 @@
 \contentsline {chapter}{\numberline {6}Merges and acquisitions}{24}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Trade}{26}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Foreign Trade}{27}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Exports}{28}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.1}Exports}{29}{subsection.7.1.1}%
 \contentsline {subsection}{\numberline {7.1.2}Imports}{29}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}External debt, foreign aid and foreign investment}{29}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Free trade agreements}{31}{section.7.3}%
+\contentsline {section}{\numberline {7.2}External debt, foreign aid and foreign investment}{30}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Free trade agreements}{32}{section.7.3}%
 \contentsline {chapter}{\numberline {8}Economic development strategy}{33}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Trade liberalization}{33}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Domestic Reform}{33}{section.8.2}%
