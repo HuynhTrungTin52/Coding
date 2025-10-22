@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Student",
+      "request": "launch",
+      "mainClass": "lab04_524k0033.Student",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
+      "name": "Ex01",
+      "request": "launch",
+      "mainClass": "lab04_524k0033.Ex01",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
       "name": "Ex04",
       "request": "launch",
       "mainClass": "lab03_524k0033.Ex04",

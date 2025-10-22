@@ -242,3 +242,56 @@ Criteria for good collision resolution :
 2. Always find an empty slot if it exists
 3. Give different probe sequence when 2 initial probes are the same(-> NO secondary clustering)
 4. Fast
+
+BST(21/10/2025)
+- Linear structure : A structure aligned linearly(At most there can only be one item after each one)
+- Bineary Search Tree(BST) is a non-linear structure
+- Example of a BST:
+
+			  ( 8 ) [key, called root]
+			 /     \
+		( 3 )   ( 10 )
+	 /     \        \
+( 1 )   ( 6 )    ( 14 )
+			 /     \   \   
+		( 4 )   ( 7 ) ( 13 )   [leaves, infertile]
+
+- We have Key : An Attribute of BST(and Data which is the item)
+And ORT which branches out from the Key node
+
+- Left child of Key must be <, Right child of Key must be >=
+
+- Operations :
+-- Structure 
+-- Insertion 
+-- Traversal
+-- Deletion 
+
+Node :
+- Key : int 
+- Left : Node 
+- Right : Node
+
+BST has the resursive structure(which contains subtrees)[Which uses RECURSION for every operations]
+All keys to the left root <, otherwise >
+
+The minimum key is the left-most one, maximum key right-most 
+
+Insertion : Start from the root note, then search for suitable place to insert the given key
+
+With the print recursion function, we can shuffle the way we can shuffle the orders of print such as so :
+Focus on THE N 
+
+{NLR}  
+{NRL} : Pre-order 
+
+{LNR} : Asc 
+{RNL} : Desc 
+In-order 
+
+{LRN} :
+{RLN} : Post order 
+r
+
+Successor of Node n is the minimum of the right subtree 
+Predecessor 			   maximum		  left 

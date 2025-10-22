@@ -14,7 +14,7 @@
 \usepackage[table]{xcolor}
 \usepackage{array}
 \usepackage{xurl}
-\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black, citecolor=blue]{hyperref}
+\usepackage[colorlinks=true,urlcolor=black,linkcolor=black,citecolor=blue]{hyperref}
 \usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{mdframed}
@@ -23,8 +23,9 @@
 \usepackage{multirow}
 \usepackage{geometry}
 \usepackage{eso-pic}
-% \usepackage[T1]{fontenc}
-% \usepackage[utf8]{inputenc}
+\usepackage{stfloats}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 \makeatletter
 \renewcommand\mainmatter{%
@@ -35,14 +36,14 @@
 \AtBeginDocument{
     \renewcommand{\contentsname}{Contents}
     }
-\setlength\parskip{1em plus 2pt}
+% \setlength\parskip{1em plus 2pt}
 \setlength{\droptitle}{-8ex}
-\setlength{\parindent}{0pt}
+% \setlength{\parindent}{20pt}
 % \setlength{\intextsep}{0pt}
 
 \titleformat{\chapter}[display]
   {\normalfont\raggedright} 
-  {{\itshape\huge\bfseries\chaptername~\thechapter}\\[8pt]\rule{\textwidth}{10pt}} 
+  {{\itshape\huge\bfseries\chaptername~\thechapter}\\[10pt]\rule{\textwidth}{10pt}} 
   {15pt} 
   {\Huge\bfseries} 
   [\vspace{15pt}\nobreak\rule{\textwidth}{10pt}]
@@ -72,7 +73,7 @@
 \chapter*{Text Mining with
 Machine Learning
 Principles and Techniques}
-
+%AUTHOR's NAME
 \textbf{Jan \v{Z}i\v{z}ka}\\
 Machine Learning Consultant, Brno, Czech Republic
 
@@ -84,12 +85,153 @@ Mendel University, Brno, Czech Republic
 Department of Applied Mathematics \& Computer Science
 Masaryk University, Brno, Czech Republic
 
+\begin{figure}[bp]
+  \centering
+  \includegraphics[width=50mm,scale=0.5]{logo-name.png}
+  \caption*{\sffamily{A SCIENCE PUBLISHERS BOOK}}
+\end{figure}
+\clearpage 
 
+\setlength{\parindent}{0pt}
+CRC Press
+Taylor \& Francis Group
+6000 Broken Sound Parkway NW, Suite 300
+Boca Raton, FL 33487-2742
 
+© 2020 by Taylor \& Francis Group, LLC
+
+CRC Press is an imprint of Taylor \& Francis Group, an Informa business
+
+No claim to original U.S. Government works
+
+Version Date: 20190826
+
+International Standard Book Number-13: 978-1-138-60182-6 (Hardback)
+
+This book contains information obtained from authentic and highly regarded sources. Reasonable efforts have been made to publish reliable data and information, but the author and publisher cannot assume responsibility for the validity of all materials or the consequences of their use. The authors and publishers have attempted to trace the copyright holders of all material reproduced in this publication and apologize to copyright holders if permission to publish in this form has not been obtained. If any copyright material has not been acknowledged please write and let us know so we may rectify in any future reprint.
+
+Except as permitted under U.S. Copyright Law, no part of this book may be reprinted, reproduced, transmitted, or utilized in any form by any electronic, mechanical, or other means, now known or hereafter invented, including photocopying, microfilming, and recording, or in any information storage or retrieval system, without written permission from the publishers.
+
+For permission to photocopy or use material electronically from this work, please access \href{http://www.copyright.com/}{www.copyright.com}(\url{http://www.copyright.com/}) or contact the Copyright Clearance Center, Inc. (CCC), 222 Rosewood Drive, Danvers, MA 01923, 978-750-8400. CCC is a not-for-profit organization that provides licenses and registration for a variety of users. For organizations that have been granted a photocopy license by the CCC, a separate system of payment has been arranged.
+\textbf{Trademark notice:}Product or corporate names may be trademarks or registered trademarks, and are used only for identification and explanation without intent to infringe
+
+\begin{center}
+  \raggedbottom
+  \begin{minipage}{0.85\textwidth}
+    
+    \small
+    \hrule height 1pt
+    \vspace{8pt}
+    \centering\bfseries Library of Congress Cataloging-in-Publication Data
+    \vspace{8pt}
+    \hrule height 1pt
+    \vspace{10pt}
+    \raggedright\tiny
+    Names: Žižka, Jan, author. \textbar\ Dařena, František, 1979- author. \textbar\ Svoboda, Arnošt, 1949- author.
+
+    Title: Text mining with machine learning : principles and techniques / Jan Žižka, František Dařena, Arnošt Svoboda.
+
+    Description: First. \textbar\ Boca Raton : CRC Press, 2019. \textbar\ Includes bibliographical references and index. \textbar\ Summary: "This book provides a perspective on the application of machine learning-based methods in knowledge discovery from natural languages texts. By analysing various data sets, conclusions, which are not normally evident, emerge and can be used for various purposes and applications. The book provides explanations of principles of time-proven machine learning algorithms applied in text mining together with step-by-step demonstrations of how to reveal the semantic contents in real-world datasets using the popular R-language with its implemented machine learning algorithms. The book is not only aimed at IT specialists, but is meant for a wider audience that needs to process big sets of text documents and has basic knowledge of the subject, e.g. e-mail service providers, online shoppers, librarians, etc." -- Provided by publisher.
+    
+    Identifiers: LCCN 2019035868 \textbar\ ISBN 9781138601826 (hardback)
+
+    Subjects: LCSH: Machine learning. \textbar\ Computational linguistics. \textbar\ Semantics--Data processing.
+
+    Classification: LCC Q325.5 .Z59 2019 \textbar\ DDC 006.3/12--dc23
+
+    LC record available at \url{https://lccn.loc.gov/2019035868}
+    \vspace{10pt}
+    \hrule height 1pt
+  \end{minipage}
+\end{center}
+\begin{sloppypar}
+\raggedright
+Visit the Taylor \& Francis Web site at\\
+\url{http://www.taylorandfrancis.com}\\
+and the CRC Press Web site at\\
+\url{http://www.crcpress.com}\\
+
+\end{sloppypar}
+\clearpage
+\vspace*{\fill}
+\begin{center}
+  \Huge\itshape To our families
+\end{center}
+\vspace*{\fill}
+\input{informa.tex}
+\chapter*{Preface}
+The aim of this book is to make it easier for those interested in text mining -
+one of the branches of modern information technology - to enter an interesting
+area focused on analyzing texts in natural languages. Machine learning has been
+chosen as an analytical tool because it is a promising organic part of computer
+science and artificial intelligence that supports successful exploration of big
+volumes of text data using advanced classification and clustering methods.
+Machine learning now has available a large number of software tools, both
+commercial and free, so there is no need to implement them and a researcher can
+focus directly on their use for given data and applications.
+\setlength{\parindent}{20pt}
+
+The authors of this book have chosen demonstrations of certain basic as
+well as popular implementations of machine learning algorithms in an advanced
+interpreted programming language R, which is freely available for a variety of
+operating systems and provides an appropriate communication interface over
+RStudio without the need for complex learning. In no case is this book primarily
+focused on advanced computer scientists, programmers, or mathematicians,
+although basic programming skills and higher mathematical knowledge (linear
+algebra, statistics, function analysis) are required to understand algorithms, use
+them and, of course, interpret their results. For interested readers, chapters have
+references to literature which can suitably complement the topics described. Text
+mining has already come to an advanced/a well-developed form, driven by the
+need to explore texts as specific data type, in particular large text data files on
+the Internet from social networks, product or service reviews, e-mails, blogs, and
+many forums. Perhaps every e-mail user today is aware of the facility to filter
+messages (for example, spam removal or topic grouping), which is just one of
+many possible applications of the text mining industry.
+
+The book covers the introduction to text mining by machine learning,
+introduction to the R programming language, structured text representation, 
+classification and easy introduction to the most common classification algorithms
+(Bayes classifier, nearest neighbors, decision trees, random forest, support vector
+machines, and deep learning), followed by clustering. The final two chapters deal
+with word embedding and feature selection problem areas.
+The authors of this book would like to express their hope that the book will
+find a number of interested readers and will be used to familiarize them with
+the attractive sector of artificial intelligence and machine learning applied to the
+difficult area of processing data produced by humans and not by machines.
+\clearpage
 % \maketitle
 \tableofcontents
+\chapter*{Authors' Biographies}
+\setlength{\parindent}{0pt}
+\textbf{Jan \v{Z}i\v{z}ka} is currently involved in consultations in the field of machine learning
+and data mining. For many years he worked as a system programmer, developer of
+advanced software systems, and researcher. For the last 25 years, he has devoted
+himself to artificial intelligence and machine learning, especially text mining. He
+has also worked at a number of universities in the Czech Republic and abroad,
+including research institutes. He is the author and co-author of approximately
+100 international publications.
 
+\textbf{Franti\v{s}ek Da\v{r}ena} works as an associate professor, the guarantor of the
+doctoral degree program System Engineering and Informatics, and head of
+the Text Mining and Natural Language Processing group at the Department of
+Informatics, Faculty of Business and Economics, Mendel University Brno. He is
+the author of several publications in international scientific journals, conference
+proceedings, and monographs; member of the editorial boards of international
+journals, and editor-in-chief of International Journal in Foundations of Computer
+Science \& Technology. His research areas include text/data mining, intelligent
+data processing, and machine learning.
+
+\textbf{Arno\v{s}t Svoboda} is an expert in programming and his area includes programming
+languages and systems such as R, Assembler, Matlab, PL/1, Cobol, Fortran,
+Pascal, and others. He started his career as a system programmer. For the last
+20 years, Arnosˇt has worked as a teacher and researcher at Masaryk University in
+Brno (Czech Republic), Faculty of Economics and Administration, Department
+of Applied Mathematics and Computer Science. At present, he is interested in
+machine learning and data mining
+\input{informa.tex}
 \mainmatter
+\chapter{Introduction to Text Mining with Machine Learning}
+\section{Introduction}
 
 \backmatter
 % \begingroup\sloppy
