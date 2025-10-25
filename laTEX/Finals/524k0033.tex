@@ -1542,7 +1542,635 @@ An array is an object which can store data in more than two dimensions. In fact,
 [1] 1 7 13
 \end{verbatim}
 
+\section{Lists}
+A list is an object that can hold data elements of different types. It is, therefore, a heterogeneous structure that is very common in many situations. It can contain vectors, matrices, arrays, lists, or even functions. The list() function is used to create a list. A list is created from the objects that are passed as parameters similar to the case of vectors. Names can be assigned to individual elements during the creation of a list or later, using the names() function.
 
+\begin{verbatim}
+> person <- list("John", "Smith", c("Peter", "Paul"), TRUE)
+> person
+[[1]]
+[1] "John"
+[[2]]
+[1] "Smith"
+[[3]]
+[1] "Peter" "Paul"
+[[4]]
+[1] TRUE
+> person <- list(name="John", surname="Smith",
++ children=c("Peter", "Paul"),
++ insurance=TRUE)
+> person
+$'name'
+[1] "John"
+$surname
+[1] "Smith"
+$children
+[1] "Peter" "Paul"
+\end{verbatim}
+
+\begin{verbatim}
+$insurance
+[1] TRUE
+\end{verbatim}
+
+The length of a list is the number of top-level elements.
+
+\begin{verbatim}
+> length(person)
+[1] 4
+\end{verbatim}
+
+Since lists can contain objects of many different types, they have no dimensions. It does not make sense either, to carry out arithmetic operations upon lists (e.g., sum two lists). The calculations can, of course, be made on the level of individual list elements.
+
+To access list elements, the same way of indexing, as in the case of vectors, is used. We can use numeric (both positive and negative) or logical indexes or element names written within a pair of square brackets. The indexing operation using single square brackets always returns a list.
+
+\begin{verbatim}
+> person[1]
+$'name'
+[1] "John"
+> person["children"]
+$'children'
+[1] "Peter" "Paul"
+> class(person["insurance"])
+[1] "list"
+\end{verbatim}
+
+When we need to access the content of a list element, we write the number or name of the element between a pair of double square brackets.
+
+\begin{verbatim}
+> person[[2]]
+[1] "Smith"
+> person[["children"]]
+[1] "Peter" "Paul"
+> class(person[["insurance"]])
+[1] "logical"
+\end{verbatim}
+
+The same can be achieved using the notation of the dollar sign after a list name, followed by an element name. The advantage of this notation is that in many R environments, the item names are automatically filled and partial matches are also accepted.
+
+\begin{verbatim}
+> person$surname
+[1] "Smith"
+> person$child
+[1] "Peter" "Paul"
+\end{verbatim}
+
+\section{Factors}
+\textit{Factors} are used to represent data that can have a finite number of values (we can say that they are categorical or enumerated). A typical example is of class labels in a classification problem. The labels look like strings but, in fact, represent the categories of data. The different values of a factor are known as levels. To create a factor from a vector, the factor() function is used. The levels() function returns the levels of a factor.
+
+\begin{verbatim}
+> labels <- c("negative", "neutral", "positive",
++ "neutral", "positive")
+> labels
+[1] "negative" "neutral" "positive" "neutral" "positive"
+> factor(labels)
+[1] negative neutral positive neutral positive
+Levels: negative neutral positive
+> nlevels(factor(labels))
+[1] 3
+\end{verbatim}
+
+When creating a factor, the levels allowed can be supplied using the levels parameter; excluded levels are listed in the exclude parameter (other values will be transformed to NA). The level names can be defined with the labels parameter which also enables mapping multiple values to one level.
+
+Internally, factors are stored as vectors of integer values where the corresponding labels are mapped to them. This is a great improvement in efficiency, since storing integers is much more efficient than storing strings. Normally, the order of factor values is not important. In some situations, however, such an ordering makes sense (for example, positive is more than negative, February is less than April).
+
+The order of levels is given by the order of values in the levels parameter of the factor() function (when not provided, the levels are not ordered and are displayed in an alphabetical order). Ordering is visualized in the output of a factor. The ordering can be later changed by assigning new levels to the levels() function or calling the factor() function with an existing factor as a parameter together with new levels.
+
+\begin{verbatim}
+> f <- factor(labels,
++ levels=c("positive", "neutral", "negative"),
++ ordered=TRUE)
+> f
+[1] negative neutral positive neutral positive
+Levels: positive < neutral < negative
+> f <- factor((f),levels=c("negative","neutral","positive"))
+> # the same as above
+> levels(f) <- c("negative", "neutral", "positive")
+> f
+[1] positive neutral negative neutral negative
+Levels: negative < neutral < positive
+\end{verbatim}
+
+Ordering factor levels is important when we want, for example, to compare factor values.
+
+\begin{verbatim}
+> f
+[1] positive neutral negative neutral negative
+Levels: negative < neutral < positive
+> ff <- f
+> ff <- factor(f, ordered=FALSE)
+> ff
+[1] positive neutral negative neutral negative
+Levels: negative neutral positive
+> f[1]<f[2]
+[1] FALSE
+> ff[1]<ff[2]
+[1] NA
+Warning message:
+In Ops.factor(ff[1], ff[2]) : < not meaningful for factors
+\end{verbatim}
+
+To get rid of unused factor levels (when there are more levels defined than in the data), the droplevels() function can be used.
+
+To access individual factor elements, an index can be used in the same manner as in case of vectors (positive and negative integers, logical values, and names).
+
+\begin{verbatim}
+> f[1]
+[1] positive
+Levels: negative < neutral < positive
+> f[c(-1, -3)]
+[1] neutral neutral negative
+Levels: negative < neutral < positive
+> f[c(TRUE, FALSE, TRUE)]
+[1] positive negative neutral
+Levels: negative < neutral < positive
+\end{verbatim}
+
+The elements of a factor can also be modified using, for example an assignment. When we try to assign a value that is not within the allowed levels, an NA value will be inserted instead. To prevent this problem, the new level needs to be added.
+
+\begin{verbatim}
+> f[2] <- "positive"
+> f
+[1] positive positive negative neutral negative
+Levels: negative < neutral < positive
+> f[2] <- "strongly positive"
+Warning message:
+In '[<-.factor'('*tmp*', 2, value = "strongly positive") :
+    invalid factor level, NA generated
+> f
+[1] positive <NA> negative neutral negative
+> levels(f) <- c(levels(f), "strongly positive")
+> f[2] <- "strongly positive"
+> f
+[1] positive strongly positive negative neutral negative
+Levels: negative < neutral < positive < strongly positive
+\end{verbatim}
+
+\section{Data frames}
+In many situations, it is necessary to store records of data where individual elements of these records have different data types. In a scientific context, various experiments typically lead to a set of individual observations, each of which is described by the same set of measurements. This situation is also typical in relational databases and spreadsheets that both store data in a tabular format. Everyrows represents one record and the columns contain their properties. The values in every column are of the same type and all rows have the same number of data elements.
+
+\textit{Data frames} are used to store such data in R. To create a data frame, the values to be contained in the columns are provided as parameters. Each column must have the same number of elements or else, as many as can be recycled by an exact number of times (for example, if one column has 3 values, the other 4, and the last 12, everything is fine because the first column is used four times, the second three times, and the last one once).
+
+The columns usually have names. When they are not provided, R creates some column names on its own. In order to enable duplicate column names, the check.names parameter needs to be set to FALSE. Alternatively, names for the rows can be provided in the parameter row.names or taken from any of the parameters that has names. When names are not provided, the rows are numbered.
+
+\begin{verbatim}
+> data.frame(c("a", "b"), c(1, 2))
+    c..a...b.. c.1..2.
+1 a 1
+2 b 2
+> data.frame(column1 = c("a", "b"), column2 = c(1, 2))
+    column1 column2
+1 a 1
+2 b 2
+> names <- c('John', 'Paul', 'Peter')
+> ages <- c(20, 50, 25)
+> children <- c(TRUE, FALSE, TRUE)
+> df <- data.frame(names, ages, children)
+> df
+    names ages children
+1    John 20 TRUE
+2    Paul 50 FALSE
+3   Peter 25 TRUE
+> df <- data.frame(names, ages, children,
++ row.names=c("A", "B", "C"))
+> df
+    names ages children
+A    John 20 TRUE
+B    Paul 50 FALSE
+C   Peter 25 TRUE
+\end{verbatim}
+
+When a character vector is used as a part of a data frame the values are automatically converted to factors. To prevent this, the stringsAsFactors parameter needs to be set to FALSE.
+
+\begin{verbatim}
+> d <- data.frame(a=c("a", "b"))
+> class(d$a)
+[1] "factor"
+> d <- data.frame(a=c("a", "b"), stringsAsFactors=FALSE)
+> class(d$a)
+[1] "character"
+\end{verbatim}
+
+Data frames are implemented as lists where the columns are list elements. Thus, the length() function for a data frame returns the number of columns.
+
+To extract individual columns from a data frame, we can use the same principles as when accessing lists. A notation using the number or name of a column within square brackets is possible.
+
+\begin{verbatim}
+> df [1]
+    names
+A John
+B Paul
+C Peter
+> df["names"]
+    names
+A John
+B Paul
+C Peter
+> df[c("ages","names")]
+    ages names
+A 20 John
+B 50 Paul
+C 25 Peter
+\end{verbatim}
+
+The returned values are again lists. To access the content, a double square bracket or dollar notation can be used.
+
+\begin{verbatim}
+> df[["ages"]]
+[1] 20 50 25
+> df$ages
+[1] 20 50 25
+> class(df["ages"])
+[1] "data.frame"
+> class(df[["ages"]])
+[1] "numeric"
+> class(df$ages)
+[1] "numeric"
+\end{verbatim}
+
+More frequently, a pair of vectors containing indices (positive or negative integers, names, or logical values) is used to specify which rows and columns to extract. The first list refers to the extracted rows, the second vector specifies the columns.
+
+\begin{verbatim}
+> df[1:2, c("names", "children")]
+    names children
+A John TRUE
+B Paul FALSE
+> df[, c("names", "children")]
+    names children
+A John TRUE
+B Paul FALSE
+C Peter TRUE
+> df[1:2,]
+    names ages children
+A John 20 TRUE
+B Paul 50 FALSE
+\end{verbatim}
+
+The returned value is, again, a data frame because severals rows consisting of columns of different data types are generally obtained. Only in the case that one column is returned, is the value is vector.
+
+\begin{verbatim}
+> class(df[1:2,])
+[1] "data.frame"
+> class(df[, 2])
+[1] "numeric"
+\end{verbatim}
+
+To add a new column to a data frame or to replace the values of an existing column, a vector of values can be easily assigned to an appropriate index (using a number or name). An alternative is the cbind() function which combines two data frames so the resulting data frame contains the columns from both data\\
+frames (duplicate columns are not checked). The following commands have the same result.
+
+\begin{verbatim}
+> df[4] <- c("New York", "Boston", "Chicago")
+> df[[4]] <- c("New York", "Boston", "Chicago")
+> df["city"] <- c("New York", "Boston", "Chicago")
+> df[["city"]] <- c("New York", "Boston", "Chicago")
+> df$city <- c("New York", "Boston", "Chicago")
+> df <- cbind(df,
++ data.frame(city=c("New York", "Boston", "Chicago"))
+\end{verbatim}
+
+To delete a column, the NULL value is assigned to it.
+
+\begin{verbatim}
+> df["city"] <- NULL
+\end{verbatim}
+
+When we need to add a row (or multiple rows) to a data frame, we actually have to merge two data frames. Both data frames must have the same column names (the order does not have to be the same).
+
+\begin{verbatim}
+> df <- rbind(df,
++             data.frame(ages=60,
++                        names="George",
++                        children=TRUE,
++                        city="Los Angeles",
++                        row.names="D"))
+> df
+
+    names   ages  children         city
+A    John     20      TRUE     New York
+B    Paul     50     FALSE       Boston
+C   Peter     25      TRUE      Chicago
+D  George     60      TRUE  Los Angeles
+\end{verbatim}
+
+\section{Function Useful in Machine Learning}
+Besides the functions that have been mentioned in relation with objects, their classes, data types, basic operations with numbers, strings, vectors, matrices, factors, etc., R provides many built-in functions which can be useful in a text mining process.
+
+Let there be a matrix representing the frequencies of words in documents from three classes. To make the example simple, only nine different words are considered to be important. There are ten documents from classes labeled with numbers 1,2 , and 3 .
+
+\begin{verbatim}
+> # creating a data frame representing the distribution
+> # of words in documents from three classes
+> d <- data.frame(matrix(
++ c(3,0,0,0,1,0,0,0,1,1,
++ 0,1,1,1,0,0,1,0,0,1,
++ 0,0,1,0,1,0,0,1,0,1,
++ 0,0,1,0,1,0,0,1,0,1,
++ 1,0,0,2,1,1,0,0,0,2,
++ 0,0,0,1,0,1,0,0,1,2,
++ 0,0,0,0,1,2,1,0,0,2,
++ 1,0,0,0,0,0,3,0,2,3,
++ 0,0,0,1,0,0,1,2,1,3,
++ 0,0,2,0,1,0,2,0,1,3),
++ ncol=10,byrow=TRUE))
+\end{verbatim}
+
+\begin{verbatim}
+> colnames(d) <- c("football", "hockey", "run",
++ "president", "country", "Germany",
++ "software", "device", "communication",
++ "class")
+\end{verbatim}
+
+To obtain some statistical information about the frequency of word Germany in documents (maximum, minimum, mean, etc.), we can call the summary() function.
+
+\begin{verbatim}
+> summary(d["Germany"])
+    Germany
+Min. :0.00
+1st Qu.:0.00
+Median :0.00
+Mean :0.40
+3rd Qu.:0.75
+Max. :2.00
+\end{verbatim}
+
+To see how frequent are words in documents on average, means of individual columns can be calculated using the colMeans() function.
+\clearpage
+\begin{verbatim}
+> # obtaining average frequencies of all words
+> colMeans(d[, -10])
+    football hockey run president
+         0.5    0.1 0.5       0.5
+        country Germany software device
+            0.5     0.4      0.8    0.3
+communication
+          0.6
+\end{verbatim}
+
+Information about the typical document length and the variability of this property can be calculated using the functions mean() (arithmetic mean), var() (variance), and sd() (standard deviation).
+
+\begin{verbatim}
+> # obtaining the average length of a document
+> # (not considering class labels)
+> mean(rowSums(d[, -10]))
+[1] 4.4
+> var(rowSums(d[, -10]))
+[1] 1.377778
+> sd(rowSums(d[, -10]))
+[1] 1.173788
+\end{verbatim}
+
+Word frequencies and the distribution of documents in classes can be easily visualized (for more details about graphics, see 2.17).
+
+\begin{verbatim}
+> # visualizing global frequencies of all words
+barplot(sort(colSums(d[, -10]), decreasing=TRUE))
+> # a pie chart relative numbers of documents in classes
+> pie(prop.table(table(d["class"])),
++     labels=paste("class",
++                  names(prop.table(table(d["class"]))),
++                  ":",prop.table(table(d["class"]))))
+\end{verbatim}
+
+To see how individual pieces of data are related to each other, the function, table() can be used to create a contingency table of the counts at each combination of factor levels. It requires one or more objects which can be interpreted as factors, or a list (or data frame) whose components can be so interpreted. In our example, we can observe, how often the words football and president or word run and individual class labels co-occur.
+
+\begin{verbatim}
+> # how often words co-occur displayed in a contingency table
+> table(lapply(d[, c("football","president")],
++ function (x) x>0))
+    president
+football FALSE TRUE
+    FALSE 4 3
+    TRUE 2 1
+> # how often a word and class label co-occur displayed
+> # in a contingency table
+> table(d[,"class"], d[,"run"] > 0,
++ dnn=c("Class label", "Contains 'run'"))
+        Contains 'run'
+Class   label FALSE TRUE
+            1     1    3
+            2     3    0
+            3     2    1
+\end{verbatim}
+
+Sometimes, it might be useful to find whether there are duplicates in the data. Logical values denoting indices of duplicated items in vectors or data frames (data frame rows) are returned by the function duplicated(). The supplied data structure is scanned according to the value of the parameter fromLast (FALSE by default) from the first or last element. If a current value has been found before, its index is marked as TRUE. The logical values can be used to index a structure to get the duplicates. If the values are negated, only the unique values can be obtained.
+
+\begin{verbatim}
+> # getting indices of duplicated items
+> duplicated(d)
+    [1] FALSE FALSE FALSE TRUE FALSE FALSE FALSE FALSE
+    [9] FALSE FALSE
+> # removing the duplicates
+> d <- d[!duplicated(d), ]
+\end{verbatim}
+
+The function cut() is useful when the values of a numeric vector need to be divided into intervals and coded according to the interval in which they fall. The leftmost interval has level one, the next leftmost level two and so on. The values can be assigned to the given number of intervals or interval boundaries which are supplied (breaks parameter). If labels are provided, they are used to code the intervals instead of numbers. In our example, class label 1 will be converted to sport, the remaining labels to other.
+
+\begin{verbatim}
+> cut(d$class,
++ breaks=c(0, 1, 3),
++ labels=c("sport", "other"))
+[1] sport sport sport other other other other other other
+Levels: sport other
+> # replacing numeric class labels with strings
+> d$class = cut(d$class,
++               breaks=c(0, 1, 3),
++               labels=c("sport", "other"))
+\end{verbatim}
+
+For some tasks, working only with a part of a data set might be needed. An example is bagging (Bootstrap aggregating), a method for creating an ensemble of classifiers trained on samples of data [32]. Another situation is when there are so many data instances available so that they cannot fit into the memory to be processed.
+
+Sampling can be achieved using function sample(). It requires a vector of elements from which some will be chosen, or an integer (a sample will then be created from values $1: \mathrm{x}$ ). The number of elements is given by the size parameter. The elements can appear once (sampling without replacement, parameter replace is set to FALSE) or more than once in the selection (sampling with replacement, parameter replace is set to TRUE).
+\clearpage
+\begin{verbatim}
+> # creating a sample containing 50% instances from
+> # the entire data set
+> d[sample(nrow(d), size=nrow(d)*0.5, replace=FALSE),]
+  football hockey run president country Germany
+3        0      0   1         0       1       0
+9        0      0   0         1       0       0
+6        0      0   0         1       0       1
+1        3      0   0         0       1       0
+  software device communication class
+3        0      1             0 sport
+9        1      2             1 other
+6        0      0             1 other
+1        0      0             1 sport
+
+\end{verbatim}
+
+The function sample() can be easily used to randomize rows in a data frame. Shuffling, for example, training data after a few epochs of training can improve the performance of a learning system [51].
+
+\begin{verbatim}
+> # shuffling rows of d
+> d <- d[sample(nrow(d)),]
+\end{verbatim}
+
+Often, a function (transformation) needs to be applied on elements of a data structure (raising numbers in a vectors to a power of two, calculating sums of rows in a matrix, etc.). Instead of using loops to iterate over the structures, function apply() and other similar functions are a good choice.
+
+The function apply() takes an array when an object of another type is supplied; R tries to coerce it to a matrix using as .matrix() and applies a function to its elements. The elements are defined by the second parameter (MARGIN), which, in the case of matrices, is 1 for rows, 2 for columns, $\mathrm{c}(1,2)$ for both rows and columns (i.e., for each matrix element), or a list of dimension names when the dimensions have names. The function that is supplied as the third parameter (FUN) can be one of existing functions or a user defined one. Function apply() returns a vector or array or list of values according to the type of data returned by the supplied function.
+
+\begin{verbatim}
+> # counting the numbers of words in every document
+> # (applying function apply() to rows)
+> apply(d[, -10], 1, sum)
+10 5 1 6 8 3 9 7 2
+ 6 5 5 3 6 3 5 4 4
+\end{tabular}
+\end{verbatim}
+
+\begin{verbatim}
+> # counting the frequencies of words in all documents
+> # (applying function apply() to columns)
+> apply(d[, -10], 2, sum)
+        football    hockey             run
+               5         1               4
+       president   country         Germany
+               5         5               4
+        software    device   communication
+               8         3               6
+\end{verbatim}
+
+\begin{verbatim}
+> # a user defined function is used to threshold frequencies
+> # of words in documents (if a frequency is greater than 1
+> # it is set to 2)
+> apply(d[, -10], c(1, 2), function (x) if (x > 1) 2 else x)
+    football hockey run president country Germany
+10         0      0   2         0       1       0
+5          1      0   0         2       1       1
+1          2      0   0         0       1       0
+6          0      0   0         1       0       1
+8          1      0   0         0       0       0
+3          0      0   1         0       1       0
+9          0      0   0         0       0       0
+7          0      0   0         0       1       2
+2          0      1   1         1       0       0
+
+  software device communication
+10      2       0             1
+5       0       0             0
+1       0       0             1
+6       0       0             1
+8       2       0             2
+3       0       1             0
+9       1       2             1
+7       1       0             0
+2       1       0             0
+\end{verbatim}
+
+Function lapply() is able to apply a supplied function to all elements of the passed object. In comparison to apply(), it does not require the MARGIN parameter. It works with vectors or lists (other objects are coerced to lists) and returns a list of the same length as that of the object. The same functionality is provided by the sapply() function that returns a vector.
+
+Function which() returns the position where a logical object has TRUE values. If the logical object is an array, indices can be returned instead of scalar positions (parameter arr. ind must be set to TRUE).
+
+\begin{verbatim}
+> # obtaining positions of documents from class 2
+> which(d$class == "sport")
+[1] 3 6 9
+\end{verbatim}
+
+\section{Flow Control Structure}
+R provides a variety of control flow structures that are typical in many other programming languages. The flow control statements are all reserved words. A part of these statements is sometimes a condition based on which the code is executed. A condition is a logical vector of length one. If a longer vector is provided, only the first element will be processed.
+
+\subsection{Conditional Statement}
+The conditional statement is used when we need to decide whether to execute a statement or not or in the case where one of two possible statements is to be executed. The statement has a common form:
+
+\begin{center}
+if(\textit{condition}) \textit{expression}
+\end{center}
+
+or, alternatively:
+\begin{center}
+if (\textit{condition}) \textit{expression 1} else \textit{expression 2}
+\end{center}
+
+When the condition is evaluated as TRUE, expression 1 is evaluated. If the condition is evaluated as FALSE, nothing happens. If the else statement exists, expression 2 will be evaluated in this case.
+
+\begin{verbatim}
+> x <- 2
+> y <- 1
+> if (y != 0) x/y else "Cannot divide by 0"
+[1] 2
+\end{verbatim}
+
+If an expression to be evaluated consists of more than one statement, the statements must be surrounded by curly braces. It is important to note that the else keyword must be on the same line as the closing bracket of the if branch in the console mode.
+
+\begin{verbatim}
+> day <- "Saturday"
+> if (day == "Saturday" | day == "Sunday") {
++ print("It is the weekend")
++ print("It is good")
++ } else
++ {
++ print("It is a work day")
++ }
+[1] "It is the weekend"
+[1] "It is good"
+\end{verbatim}
+
+When there are more than two alternative statements to be executed, we can simply use a nested conditional statement.
+
+\begin{verbatim}
+if (conditionl) {
+    # condition 1 is TRUE
+    if (condition 2) {
+        # condition 2 is TRUE
+        ...
+    } else {
+        # condition 2 is FALSE
+        ...
+    }
+} else {
+    # condition 1 is FALSE
+    ...
+}
+\end{verbatim}
+
+But what if we have many more alternatives to choose from? A structure with many nested conditional statements will became confusing and difficult to maintain. The switch statement can handle these situations effectively. It has the following syntax:
+\begin{center}
+\begin{BVerbatim}
+switch(expression, ...),
+\end{BVerbatim}
+\end{center}
+
+where . . . represents a list of options. The switch statement accepts a string or number as the first argument (if the argument is not a string it is coerced to integer). When a number is the first argument the corresponding expression from the list of options will be evaluated and returned:
+
+\begin{verbatim}
+> day <- 2
+> switch(day,"Mon","Tue","Wed","Thu","Fri","Sat","Sun")
+[1] "Tue"
+\end{verbatim}
+
+If the first argument is a string, an exact match with the names of the elements in the option list is searched. Then, the found element is evaluated and returned:
+
+\begin{verbatim}
+> day <- "Tue"
+> switch(day,
++        Mon = "Monday",
++        Tue="Tuesday",
++        Wed="Wednedsay",
++        Thu="Thursday",
++        Fri="Friday",
++        Sat="Saturday",
++        Sun="Sunday")
+[1] "Tuesday"
+\end{verbatim}
+
+The \verb|ifelse| function can be used for vectorized decisions. The returned value has the same shape as the first parameter. Its values are filled with values from the second or third parameter depending on whether the values of the first parameter are evaluated as TRUE or FALSE.
+
+\begin{verbatim}
+> x <- 1:5
+> ifelse(x>3, 'greater than 3', 'less or equal to 3')
+[1] "less or equal to 3" "less or equal to 3"
+[3] "less or equal to 3" "greater than 3"
+[5] "greater than 3"
+> letters <- c("a", "b", "c", "d", "e")
+> digits <- c(1, 2, 3, 4, 5)
+> ifelse(c(TRUE, FALSE, TRUE, TRUE, FALSE), letters, digits)
+[1] "a" "2" "c" "d" "5"
+\end{verbatim}
+
+\subsection{Loops}
 
 \backmatter
 % \begingroup\sloppy

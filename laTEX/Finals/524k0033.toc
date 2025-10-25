@@ -34,3 +34,10 @@
 \contentsline {subsection}{\numberline {2.9.3}Operations with Vectors}{43}{subsection.2.9.3}%
 \contentsline {subsection}{\numberline {2.9.4}Acessing Vector Elements}{45}{subsection.2.9.4}%
 \contentsline {section}{\numberline {2.10}Matrices and Arrays}{47}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Lists}{51}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Factors}{53}{section.2.12}%
+\contentsline {section}{\numberline {2.13}Data frames}{56}{section.2.13}%
+\contentsline {section}{\numberline {2.14}Function Useful in Machine Learning}{60}{section.2.14}%
+\contentsline {section}{\numberline {2.15}Flow Control Structure}{67}{section.2.15}%
+\contentsline {subsection}{\numberline {2.15.1}Conditional Statement}{67}{subsection.2.15.1}%
+\contentsline {subsection}{\numberline {2.15.2}Loops}{70}{subsection.2.15.2}%

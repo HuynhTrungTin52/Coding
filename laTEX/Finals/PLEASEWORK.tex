@@ -1813,8 +1813,7 @@ Levels: negative < neutral < positive < strongly positive
 \end{verbatim}
 
 \subsection*{2.13 Data Frames}
-In many situations, it is necessary to store records of data where individual elements of these records have different data types. In a scientific context, various experiments typically lead to a set of individual observations, each of which is described by the same set of measurements. This situation is also typical in relational databases and spreadsheets that both store data in a tabular format. Every\\
-rows represents one record and the columns contain their properties. The values in every column are of the same type and all rows have the same number of data elements.
+In many situations, it is necessary to store records of data where individual elements of these records have different data types. In a scientific context, various experiments typically lead to a set of individual observations, each of which is described by the same set of measurements. This situation is also typical in relational databases and spreadsheets that both store data in a tabular format. Everyrows represents one record and the columns contain their properties. The values in every column are of the same type and all rows have the same number of data elements.
 
 Data frames are used to store such data in R. To create a data frame, the values to be contained in the columns are provided as parameters. Each column must have the same number of elements or else, as many as can be recycled by an exact number of times (for example, if one column has 3 values, the other 4, and the last 12, everything is fine because the first column is used four times, the second three times, and the last one once).
 
