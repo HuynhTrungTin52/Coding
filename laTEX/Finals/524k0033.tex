@@ -14,7 +14,7 @@
 \usepackage[table]{xcolor}
 \usepackage{array}
 \usepackage{xurl}
-\usepackage[colorlinks=true,urlcolor=black,linkcolor=black,citecolor=blue]{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage[colorlinks=true,urlcolor=black,linkcolor=black,citecolor=blue,breaklinks=true]{hyperref}
 \usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{mdframed}
@@ -2171,6 +2171,262 @@ The \verb|ifelse| function can be used for vectorized decisions. The returned va
 \end{verbatim}
 
 \subsection{Loops}
+R provides three basic types of loops. The simplest loop, repeat, only repeatedly evaluates the given expression (infinite loop). The break keyword is used to terminate the loop.
+
+\begin{verbatim}
+> i <- 1
+> repeat {print(i); i <- i+1; if (i>5) break}
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+\end{verbatim}
+
+The while loop implements a loop with the condition at the beginning. It repeats an expression as long as the loop condition is true.
+
+\begin{verbatim}
+> i <- 5
+> while (i>0) {print(i); i <- i-1}
+[1] 5
+[1] 4
+[1] 3
+[1] 2
+[1] 1
+\end{verbatim}
+
+The break command can be used inside a while loop too. It terminates the loop here as well. In addition, the next statement skips the remaining statements in the loop body and starts a new loop iteration (evaluating the condition).
+
+The for loop is used to iterate through each element of a vector or list. These elements are assigned to a variable, the name of which is a part of the for statement.
+
+\begin{verbatim}
+> a <- c(1, 2, 3)
+> b <- c("a", "b", "c")
+> for (i in a) print(i)
+[1] 1
+[1] 2
+[1] 3
+> for (i in 1:length(a)) print(a[i])
+[1] 1
+[1] 2
+[1] 3
+> for (i in c(a,b)) print(i)
+[1] "1"
+[1] "2"
+[1] "3"
+[1] "a"
+[1] "b"
+[1] "c"
+\end{verbatim}
+
+The variable is, however, not an alias for the iterated values:
+
+\begin{verbatim}
+> a <- c(1, 2, 3)
+> for (i in a) i <- i+1
+> a
+[1] 123
+\end{verbatim}
+
+\section{Packages}
+R offers many readily available functions. Sometimes, however, functions for other different tasks are needed too. The functionality other than that provided by the R core team is accessible through so called packages.
+
+A package is set of functions, data, and help files that have been bundled together in the library subdirectory (the directory containing a package is called the library).
+
+A package typically contains functions that are related to a specific task. They were written by the R community to solve problems in various disciplines. A core set of packages is already included in the installation of R. Other packages are stored and available in the official R repository known as \textit{CRAN} (Comprehensive R Archive Network). CRAN is a collection of sites which carry identical material about R , including the R distribution, extensions, documentation, and binaries. The CRAN master site (\href{https://CRAN.R-project.org/}{https://CRAN.R-project.org/}) is maintained at Wirtschaftsuniversität Wien, Austria and a complete list of mirrors can be found at \url{http://CRAN.R-project.org/mirrors.html}. CRAN includes approximately 13,000 additional packages and a list of the same can be found at \href{https://cran.rproject.org/web/packages/}{https://cran.rproject.org/web/packages/}.
+
+To see the list of packages loaded by default, use the command getOption ("defaultPackages"). The result omits the base package, which is loaded every time.
+
+In order to view the list of all packages installed by the user, the installed.packages() function can be called. Alternatively, the Packages pane in RStudio shows a table with this information.
+
+To get the list of the packages currently loaded into R , we can use the function .packages().
+
+\subsection{Installing Packages}
+To be able to use a package, it has to be downloaded and installed on a computer. Use the install.packages() function to install a CRAN package in R. The parameter is a name of the package to be installed. This function downloads the package from a repository and installs it locally. In order to install two or more packages at the same time, a list of package names can be passed as the parameter.
+
+In RStudio, it is possible to use the bottom-right pane Packages and the Install button. Be sure the Install dependencies option is checked.
+
+An example of running a code where the necessary library is not installed can be found in Section 5.6.1.
+
+Sometimes, packages are updated by their creators. To check which packages have been modified, we can use the old.packages() function. If a newer version is preferable for us, we can call update.packages(). This will update all packages interactively. If the argument ask is set to TRUE (default value), packages with a newer version are reported and for each one we can specify whether we want to update it. If we only want to update a single package, the best way to do it is to use install.packages() again. In RStudio, the Update button in the Packages pane can perform this task too.
+
+To get some basic information about a package, use the library() function with the help parameter set to the name of the package, e.g., library(help="\-tm").
+
+\subsection{Loading Packages}
+To load a package in R , we call the library() function where the parameter is the name of a package. We may also use the function require(). It is a similar function which accepts a slightly different set of arguments.
+
+Functions from a package are available after loading the package. If more functions with the same name are in more than one package, the one that has been loaded last will be called. To call another one, a function name can be preceded by a package name and :: .
+
+To unload a package, we can call the detach() function.
+
+\section{Graphics}
+R includes three graphical systems. One of them is represented by the standard graphics package, the others use the lattice package and the ggplot2 package. R includes tools for drawing most common types of charts like scatterplots, line charts, bar charts, pie charts, histograms, etc. as well as any complicated graphics. To create a graphical output, a series of functions are called. They create complete plots (high-level functions) or add some elements to existing plots (low-level functions). This approach follows the so called painters model where the graphics are created in steps and newer objects overlap the previous output [204]. The graphical output is printed on the screen (in one of the panes of RStudio) or can be saved in a wide variety of formats.
+
+In this book, we will focus on the graphics package which includes the capabilities for some basic graphics while providing a wide variety of functions for plotting data. We present only some basics that you might need to draw and customize simple graphs. To see some basic information about the graphics package and its functions, call library(help="graphics").
+
+The most important function for creating graphics is plot(). It accepts objects as parameters and tries to plot them. In the simplest case, the arguments are values on the $x$ and $y$ axes. The graph is created according to the supplied parameters. To display all the argument names and corresponding default values of the plot() function, run the args(graphics::plot.default) statement.
+
+To demonstrate some basic capabilities of the plot() function, we will use fictive data - numbers of newspaper articles from different categories (classes) published in five days of a week.
+
+\begin{verbatim}
+> articles <- matrix(c(3,10,6,8,15,9,2,9,4,6,8,3,3,7,1),
++                    nrow = 5,ncol = 3,byrow = TRUE)
+> dimnames(articles) = list(
++     c("Mon", "Tue", "Wed", "Thu", "Fri"), # row names
++     c("Economy", "Politics", "Science")) # column names
+> articles
+
+  Economy Politics Science
+Mon     3       10       6
+Tue     8       15       9
+Wed     2       9        4
+Thu     6       8        3
+Fri     3       7        1
+
+\end{verbatim}
+
+To create a simple plot with the number of released articles in the Economy category on the $y$ axis (see Figure 2.8), we can call plot (articles [, 1]) or plot(articles[, "Economy"]).
+
+We can change the way the values are displayed by providing a value for the type parameter, e.g., p for points, 1 for lines, b for both, o for both overplotted, h for histogram, or s for stair steps. The title is defined by the main argument or can be added by calling the title() function.
+
+\begin{verbatim}
+> plot(articles[,"Economy"], type = 'o')
+> title(main="Articles numbers")
+\end{verbatim}
+
+In the following example, we first display the plot with the number of articles from the Economy category. No axes are displayed (the axes parameter), they will be added later, the line color will be changed to blue (the col parameter), the $y$-axis will be in the range 0 to the highest value in articles matrix (the ylim parameter), and the axes will not be annotated (the ann parameter). Subsequently, we will add the main graph title, the x and y axes (at defines the points at which tick-marks are to be drawn, the labels parameter provides the labels), descriptions of the axes in dark grey color, and a box around the graph, see Figure 2.9).
+
+\begin{verbatim}
+> articles_range=range(articles)
+> plot(articles[, "Economy"], type="o", col="blue",
++      axes=FALSE, ann=FALSE, ylim=articles_range)
+> title(main="Numbers of articles")
+> axis(1, at=1:5, labels=rownames(articles))
+> axis(2, at=2*0:(articles_range[2]/2))
+> box()
+> title(xlab="Days", col.lab="darkgrey")
+> title(ylab="Number of released articles",
++       col.lab="darkgrey")
+\end{verbatim}
+
+\begin{figure}[ht]
+\begin{center}
+  \includegraphics[width=\textwidth]{2025_10_21_5ba6420d88ee7388cb5eg-084}
+\caption{The simplest X-Y plot.}
+\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+  \includegraphics[width=\textwidth,height=65mm]{2025_10_21_5ba6420d88ee7388cb5eg-084(1)}
+\caption{A customized X-Y plot.}
+\end{center}
+\end{figure}
+
+We can add another line for the articles from the Politics category. It will be red in color, the line will be dashed, and the points will be square in shape. To clarify what is on the graph, a legend will be added. It will be placed on a specified position in the graph (coordinates [4, 15]), the text will be slightly smaller (the cex parameter), and the same line colors (the col parameter), point types (the pch parameter), and line types (the lty parameter) used by the actual plots will be used, see Figure 2.10).
+
+\begin{figure}[ht]
+\begin{center}
+  \includegraphics[width=\textwidth,height=70mm]{2025_10_21_5ba6420d88ee7388cb5eg-085}
+\caption{A customized X-Y plot with two data segments.}
+\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+  \includegraphics[width=\textwidth,height=70mm]{2025_10_21_5ba6420d88ee7388cb5eg-085(1)}
+\caption{A customized X-Y plot with three data segments.}
+\end{center}
+\end{figure}
+
+\begin{verbatim}
+> lines(articles[,"Politics"], type="o", pch=22,
++       lty=2, col="red")
+> legend(4, 15, c("Economy","Politics"), cex=0.9,
++        col=c("blue", "red"), pch=21:22, lty=1:2)
+\end{verbatim}
+
+The plot() function is a good choice if you want to plot one or two columns in one chart. When more data segments are to be displayed in a plot, another function, matplot(), can be used instead (see Figure 2.11).
+
+\begin{verbatim}
+> matplot(articles, type ="b", pch=1:3, col=1:3,
++         axes=FALSE, ann=FALSE)
+> title(main="Released articles")
+> axis(1, at=1:5, lab=rownames(articles))
+> axis(2, las=1, at=2*0:released_articles[2])
+> box()
+> title(xlab="Days", col.lab='darkgrey')
+> title(ylab="Number of articles", col.lab='darkgrey')
+> legend(4, 15, names(articles[1,]), cex=0.9,
++        col=1:3, pch=1:3)
+\end{verbatim}
+
+A pie chart is a good option to show some proportions of a whole, for example, when we want to show how are the newspaper articles in the Economy category are distributed in a week. This type of graph is created with the pie() function. The first parameter is a vector of non-negative numbers which are displayed as areas of pie slices. Other parameters include labels to be assigned to the slices, colors of the slices, or a title for the chart.
+
+\begin{verbatim}
+> colors <- c("green", "blue", "yellow", "orange", "red")
+> pie(articles[, 1], main=names(articles[1, ])[1],
++     labels=names(articles[, 1]), col=colors)
+\end{verbatim}
+
+Slices with the specified colors, labeled with days are displayed in the chart created. In the following example, we will add also the absolute numbers of released articles together with the percentages rounded to one decimal place, and a legend, see Figure 2.12).
+
+\begin{verbatim}
+> percent <- round(articles[, 1]/sum(articles[, 1]) * 100, 1)
+> percent <- paste(percent, "%", sep="")
+> pie(articles[, 1],
+\end{verbatim}
+
+\begin{figure}[ht]
+\begin{center}
+  \includegraphics[width=\textwidth,height=75mm]{economy12.png}
+\caption{Pie chart with labels and a legend.}
+\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+  \includegraphics[width=\textwidth,height=75mm]{bar13.png}
+\caption{Bar chart.}
+\end{center}
+\end{figure}
+
+\begin{verbatim}
++ main=names(articles[1, ])[1],
++ col=colors,
++ labels=paste(paste(names(articles[, 1]),
++ articles[, 1],
++ sep=": "),
++ percent, sep="="))
+> legend("topright", names(articles[, 1]),
++ cex=0.9, fill=colors)
+\end{verbatim}
+
+A simple bar chart can be created using the barplot() function. If the first(or the height) parameter is a vector, a sequence of bars representing the numeric values of the vector will be created.
+
+\begin{verbatim}
+> barplot(articles[, 1])
+\end{verbatim}
+
+If the height parameter is a matrix, the bars correspond to the columns of the matrix. The values in the columns are either stacked in one bar or represented by a sequence of other bars (depending on the logical beside parameter). In our example, the x -axis will represent the newspaper categories and the sub-bars the days of the week. The $t()$ function can transpose the matrix so we can change the perspective on the data (i.e., days on the x -axis and categories as sub-bars).
+
+\begin{verbatim}
+> barplot(articles)
+> barplot(articles, beside=TRUE)
+> barplot(t(articles))
+\end{verbatim}
+
+We can play with many parameters, for instance, adding descriptions of axes, changing colors, or adding a legend.
+
+\begin{verbatim}
+> barplot(articles, main='Articles in caterogies',
++ ylab='Number of released articles',
++ beside=TRUE, col=colors, legend=TRUE)
+\end{verbatim}
+
+We can customize many features of the graphical output through setting graphical options using the par() function. This function, called without parameters, returns a list of the values of current parameters. To change the parameters, a list of tag=value pairs are submitted. The parameters include, for example, justification of texts, margins, font, foreground or background colors, and many others.
+\input{informa.tex}
+\chapter{Structured Text Representation}
 
 \backmatter
 % \begingroup\sloppy

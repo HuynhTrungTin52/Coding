@@ -41,3 +41,8 @@
 \contentsline {section}{\numberline {2.15}Flow Control Structure}{67}{section.2.15}%
 \contentsline {subsection}{\numberline {2.15.1}Conditional Statement}{67}{subsection.2.15.1}%
 \contentsline {subsection}{\numberline {2.15.2}Loops}{70}{subsection.2.15.2}%
+\contentsline {section}{\numberline {2.16}Packages}{72}{section.2.16}%
+\contentsline {subsection}{\numberline {2.16.1}Installing Packages}{72}{subsection.2.16.1}%
+\contentsline {subsection}{\numberline {2.16.2}Loading Packages}{73}{subsection.2.16.2}%
+\contentsline {section}{\numberline {2.17}Graphics}{73}{section.2.17}%
+\contentsline {chapter}{\numberline {3}Structured Text Representation}{82}{chapter.3}%
