@@ -26,13 +26,46 @@
 \usepackage{stfloats}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{etoolbox}
+\usepackage{fancyvrb}
+% \usepackage{fontawesome5}
 
+\graphicspath{ {./images/} }
+
+%Modify the list
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\AtBeginEnvironment{itemize}{\par\medskip\noindent\ignorespaces}
+\AtEndEnvironment{itemize}{\par\medskip}
+
+%Modify the headings
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+
+\fancyhf{} 
+\fancyhead[LE]{\thepage\hspace{8pt}$\blacksquare$\hspace{8pt} \textit{Text Mining with Machine Learning: Principles and Techniques}}
+\fancyhead[RO]{\textit{\leftmark}\hspace{8pt}$\blacksquare$\hspace{8pt}\thepage}
+\renewcommand{\headrulewidth}{0.4pt} 
+\setlength{\headheight}{13.6pt}
+
+%Modify the verbatim section
+\AtBeginEnvironment{verbatim}{\par\bigskip\bigskip\noindent\ignorespaces}
+\AtEndEnvironment{verbatim}{\par\medskip}
+
+\AtBeginEnvironment{verbatim*}{\par\medskip\noindent\ignorespaces}
+\AtEndEnvironment{verbatim*}{\par\medskip}
+
+%Modify the mainmatter
 \makeatletter
 \renewcommand\mainmatter{%
     \clearpage
   \@mainmattertrue
-  \pagenumbering{arabic}}
+  \pagenumbering{arabic}
+  
+  }
 
+%Modify the names of chapters
 \AtBeginDocument{
     \renewcommand{\contentsname}{Contents}
     }
@@ -41,6 +74,7 @@
 % \setlength{\parindent}{20pt}
 % \setlength{\intextsep}{0pt}
 
+%Modify the format of the chapters
 \titleformat{\chapter}[display]
   {\normalfont\raggedright} 
   {{\itshape\huge\bfseries\chaptername~\thechapter}\\[10pt]\rule{\textwidth}{10pt}} 
@@ -57,12 +91,12 @@
   [\vspace{-10pt}\nobreak\rule{\textwidth}{6pt}]
   
 \titlespacing*{\chapter}{0pt}{0pt}{5pt}
-
+% \titlespacing*{\section}{0pt}{15pt}{15pt}
 
 \title{Final Report\\ \normalsize Typography of Technical Documents}
-\author{Huỳnh Trung Tín-524k00033}
+\author{Huỳnh Trung Tín-524k00033\\Nguyễn Lương Gia Bảo\\ Nguyễn Jimmy Dubray}
 \date{17/10/2025}
-
+\raggedbottom
 \begin{document}
 \frontmatter
 
@@ -93,13 +127,12 @@ Masaryk University, Brno, Czech Republic
 \clearpage 
 
 \setlength{\parindent}{0pt}
-CRC Press
-Taylor \& Francis Group
-6000 Broken Sound Parkway NW, Suite 300
+CRC Press\\
+Taylor \& Francis Group\\
+6000 Broken Sound Parkway NW, Suite 300\\
 Boca Raton, FL 33487-2742
 
-© 2020 by Taylor \& Francis Group, LLC
-
+© 2020 by Taylor \& Francis Group, LLC\\
 CRC Press is an imprint of Taylor \& Francis Group, an Informa business
 
 No claim to original U.S. Government works
@@ -113,6 +146,7 @@ This book contains information obtained from authentic and highly regarded sourc
 Except as permitted under U.S. Copyright Law, no part of this book may be reprinted, reproduced, transmitted, or utilized in any form by any electronic, mechanical, or other means, now known or hereafter invented, including photocopying, microfilming, and recording, or in any information storage or retrieval system, without written permission from the publishers.
 
 For permission to photocopy or use material electronically from this work, please access \href{http://www.copyright.com/}{www.copyright.com}(\url{http://www.copyright.com/}) or contact the Copyright Clearance Center, Inc. (CCC), 222 Rosewood Drive, Danvers, MA 01923, 978-750-8400. CCC is a not-for-profit organization that provides licenses and registration for a variety of users. For organizations that have been granted a photocopy license by the CCC, a separate system of payment has been arranged.
+
 \textbf{Trademark notice:}Product or corporate names may be trademarks or registered trademarks, and are used only for identification and explanation without intent to infringe
 
 \begin{center}
@@ -158,7 +192,13 @@ and the CRC Press Web site at\\
   \Huge\itshape To our families
 \end{center}
 \vspace*{\fill}
+\cleardoublepage
+\phantomsection
+\tableofcontents
 \input{informa.tex}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Preface}
 \chapter*{Preface}
 The aim of this book is to make it easier for those interested in text mining -
 one of the branches of modern information technology - to enter an interesting
@@ -200,7 +240,11 @@ the attractive sector of artificial intelligence and machine learning applied to
 difficult area of processing data produced by humans and not by machines.
 \clearpage
 % \maketitle
-\tableofcontents
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Authors' Biographies}
+
 \chapter*{Authors' Biographies}
 \setlength{\parindent}{0pt}
 \textbf{Jan \v{Z}i\v{z}ka} is currently involved in consultations in the field of machine learning
@@ -229,9 +273,1276 @@ Brno (Czech Republic), Faculty of Economics and Administration, Department
 of Applied Mathematics and Computer Science. At present, he is interested in
 machine learning and data mining
 \input{informa.tex}
+
 \mainmatter
+\pagestyle{fancy}
 \chapter{Introduction to Text Mining with Machine Learning}
 \section{Introduction}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{20pt}
+In the last few years, we have seen an explosion in the amount of data as the result of many activities. The data comes from various sources and is available in many formats. This has been enabled, primarily, by the massive advance on the Internet. Various devices like smart phones enable communication and the use of applications anytime and anywhere; many activities like shopping, interacting with government institutions, or providing support to customers, are moving to digital environments; many documents are being digitalized; people meet and interact on virtual platforms. The transformation of the Web into Web 2.0 [26], where the content is actively created by users, has thrown open to the masses, many possible avenues to express their ideas, recommendations, or attitudes.
+
+It is obvious that texts written in a natural language are a natural way of human communication. Textual documents are thus strongly related to many human activities and they have become a source that is worth analyzing. The results of such an analysis can bring useful insights in practically all domains.
+
+As the ability of people to analyze texts remains essentially the same, the availability of more data requires new computational methods in order to find something useful in large collections of documents. Thus, a discipline known as text mining has become very popular and attractive. Text mining can be defined as a knowledge-intensive process in which a user interacts with a collection of documents by using analytic tools in order to identify and explore interesting patterns [87]. Applications can be found in marketing, competitive intelligence, banking, health care, manufacturing, security, natural sciences, and many other domains [254, 192].
+
+Computers are able to analyze only the syntactic aspect of texts, which means that they are able to recognize how words are arranged in the documents. Because texts in a natural language are written using a grammar, some syntactic patterns in a text can be more or less easily identified. Semantics refers to the meaning of a word or group of words in a context. Without perfect understanding of a language it is not possible to completely understand the meaning. Fortunately, is is possible to solve many practical problems even without the full understanding of a text because syntax and semantics are often closely related. If two texts use the same words and syntactic structures, they are likely to be semantically similar and can, for example, belong to the same class of documents [196].
+
+Documents can generally be analyzed in two different ways. The statistical or machine learning approach uses mathematical representation of texts. Linguistic methods, using natural language processing techniques, represent texts using language models where the meaning and different relationships are contained. Text mining uses both approaches to find knowledge, usually in a large number of texts [254, 271].
+\section{Relation of Text Mining to Data Mining}
+Text mining encompasses a wide variety of tasks that can bring information about different aspects of texts. The typical text mining tasks include [196, 279, 123]:
+\begin{itemize}
+  \item categorization of documents - assigning a document to one or more predefined category (e.g., assigning a newspaper article to one or more categories, labeling e-mails as spam or ham);
+  \item clustering - grouping documents according to their similarity, for example, in order to identify documents sharing a common topic;
+  \item summarization - finding the most important parts in one or more documents and creating a text that is significantly shorter than the original;
+  \item information retrieval - retrieving documents that match a query representing information needed from a large collection of documents;
+  \item extracting the meaning of documents or their parts - identifying hidden topics, analyzing sentiment, opinion, or emotions;
+  \item information extraction - extracting structured information like entities, events, or relations from unstructured texts;
+  \item association mining - finding associations between concepts or terms in texts;
+  \item trend analysis - looking at how concepts contained in documents change in time;
+  \item machine translation - converting a text written in one language to a text in another language.
+\end{itemize}
+Some of the text mining tasks are very similar to the tasks of data mining. Data mining is the automatic or semiautomatic process of finding implicit, previously unknown, and potentially useful knowledge in collections of electronically stored data. The knowledge has a form of structural patterns in data that can be also used to make predictions or provide answers in the future [280].
+
+Data mining includes many different methods, tools, algorithms, or models. All of them require the data to be in a structured form. This means that the data can be represented in a tabular form as in a relational database. The data takes the form of a set of examples (or instances, data points, observations) described by specific values of their features (or attributes, variables, fields).
+
+The features can be of several types [75, 174]:
+\begin{itemize}
+  \item categorical (nominal) - the domain is a discrete set of values where ordering does not make sense;
+  \item binary - a special type of categorical attribute with only two possible values;
+  \item ordinal - the domain is a discrete set of values that can be ordered;
+  \item numerical - the value of a feature is a number, either integer or continuous.
+\end{itemize}
+An example of a structured representation of data describing purchases in a retail store is in Table 1.1. Every purchase is characterized by a customer (described by age, education level, and gender), date of purchase, and the total price.
+
+Such a format is, however, not typical for texts. Generally, a text is a string written in a natural language consisting of parts (words) with certain meaning that are combined according to some rules (syntax). The texts can also be of a different range. A unit of a text can be a sentence, a few sentences combined in a paragraph, or much longer texts, like web pages, e-mails, articles, or books. Sometimes, a text can be just a few words that are not a valid sentence, which is quite typical, for example, for short posts on social networks.
+
+\begin{table}[ht!]
+  
+\begin{center}
+\captionsetup{labelformat=empty}
+\caption{Table 1.1: A structured representation of purchases in a retail store.}
+\begin{tabular}{ccclc}
+\hline
+Age & Gender & Education & Date & Price \\
+35 & female & primary & $2019-02-10$ & 20.0 \\
+40 & male & tertiary & $2019-02-14$ & 28.4 \\
+21 & male & secondary & $2019-01-30$ & 15.1 \\
+63 & female & secondary & $2019-03-01$ & 11.9 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\begin{sloppypar}
+\raggedbottom
+In order to be able to apply data mining methods to texts, they need to be converted to a structured representation. A classic structured representation of texts as vectors in a vector space model is known as bag-of-words and the process of inferring this representation is described in chapter 3. Another, more modern, representation that is based on embedding words to a continuous vectors space referred as to word embeddings is discussed in Chapter 13.
+
+There are a few problems related to the bag-of-words representation, which are not that typical for data mining tasks in general [134, 65, 188, 170, 202]:
+\end{sloppypar}
+\begin{itemize}
+  \item Independently of the complexity of features, the input space for text mining problems is large. It is not uncommon that the dictionaries of various natural languages contain hundreds of thousands of words. When considering not only words as features but also, for example, combinations, mutual positions, or grammatical relationships between words, the complexity further increases. Of course, not all words of a language will appear in most document collections. On the other hand, even relatively small collections can contain tens of thousands of unique words (see \ref{fig:1.1}).
+  \item The data contains a lot of noise which is often given by the nature of the data. Text documents are usually created by people that make many errors, including mistyping, grammatical errors, and incorrect labeling (e.g., assigning one star instead of five stars to a positive review).
+  \item The vectors representing documents are very sparse. If we compare the number of unique words in one document (tens of words for short messages) to the dictionary size (tens of thousands), the difference is enormous. Thus, only a small fraction of vector elements are non-zero values (see Figure 1.1).
+  \item The distribution of the probability with which the words appear in documents is strongly skewed, following so called Zipf's law (see Section 3.3). This means that the majority of the content is represented with just a few words and that most of the words appear with very small frequencies.
+  \item In many tasks, only a small fraction of the content is often relevant. For example, for a document classification task, only a few hundred words from the dictionary are needed in order to correctly assign documents to their classes with a relatively high accuracy. Many of the words are therefore redundant.  
+\begin{figure}[ht]
+  
+\begin{center}
+  \includegraphics[width=\textwidth]{numberOfDocument.png}
+\caption{The graph represents a dependency between the number of documents and the
+number of unique words in a document collection. The documents represent customer reviews
+with the minimal, maximal, and average lengths equal to 1, 400, and 24 words.}
+\label{fig:1.1}
+\end{center}
+\end{figure}
+  \item For many tasks, there often exists a scarcity of labeled data. This is because the labeling process, usually performed manually, is very demanding. A special situation is that there are instances of positive training data for a specific problem, but negative examples are missing.
+  \item In many situations, the distribution of the data in terms of classes or topics is not balanced. This means, that some classes have many more instances than the others which is generally a problem for learning. An example is the field of sentiment analysis, where the positive reviews in certain product categories are much more common than the negative ones.
+\end{itemize}
+
+\section{The Text Mining Process}
+To find useful knowledge in a collection of text documents involves many different steps. To arrange them into a meaningful order, we might look at the general text mining process. It consists of the following steps [271, 133, 196]:
+
+\begin{itemize}
+  \item Defining the problem: This step is actually independent of any actions which may subsequently be taken. Here, the problem domain needs to be understood and the questions to be answered, defined.
+  \item Collecting the necessary data: The sources of texts containing the desired information need to be identified and the documents collected. The texts can come from within a company (internal database or archive) or from external sources, from the web, for example. In this case, web scrapers need to be frequently implemented to directly grab the content of the web pages. Alternatively, the API of some web based systems can be used to retrieve the data. After retrieval, texts are stored so they are ready for further analysis.
+  \item Defining features: Features that well characterize the texts and are suitable for the given task need to be defined. The features are typically based on the content of the documents. A very simple approach, bag-of-words with binary attribute weighting, takes every word as a boolean feature. Its value indicates whether or not the word is in a document. Other methods might use more complicated weighting schemes or features that are derived from the words (modified words, combinations of words, etc.).
+  \item Analyzing the data: This is the process of finding patterns in data. According to the type of task to be solved (e.g., classification), a specific model or algorithm is selected and its properties and parameters defined. Then, the model can be applied to the data so a solution to the solved problem can be found. To solve a specific problem, more models are usually available. The choice is not explicitly given in advance. The models have different characteristics that influence the data mining process and its result. The model can be (white box) or does not have to be (black box) well interpretable by a human. Some models have higher computational complexity than the others. According to the utilization of the model, fast creation can be preferred over fast application or vice versa. The suitability of a model is often strongly dependent on the data. The same model can provide excellent results for one data set while it can completely fail for another. Thus, selecting a proper model, finding the right structure for it, and tuning the parameters often requires a lot of experimental effort.
+  \item Interpreting the results: Here, some results are obtained from the analysis. We need to carefully look at them and relate them to the problem we wanted to solve. This phase might include verification and validation steps in order to increase the reliability of the results.
+\end{itemize}
+
+\section{Machine Learning for Text Mining}
+Machine learning [199] as part of computer science and informatics is one of the most practically oriented areas of artificial intelligence [161]. It was inspired by the ability to learn - in other words, to gain new or additional knowledge, which is one of important characteristics of living organisms. Machine learning as a science focuses on looking for and developing algorithms, which can simulate or emulate mental abilities of living organisms from the learning point of view.
+
+Learned knowledge may not completely address everything - for it is something of a general nature - but, it allows us to solve future problems that did not occur frequency, in the same form and/or environment in the past. If such a future problem is similar to something which has already occured, it is often not possible to solve it using the exact instructions from the past; however, a similar solution (or procedure) can hopefully be successful in most (or ideally, all) cases that are yet to occur.
+
+Machine learning is one of the modern tools that includes anything which can be useful. Today, it consists of tens of various algorithms, and research constantly brings modified or completely new algorithms, sometimes replacing the older ones because the field of machine learning is strongly dominated by the practical needs of the real world that are growing in time. In addition to algorithms and relevant information technologies, machine learning inevitably uses mathematics, in particular the theory of probability, statistics, combinatorics, mathematical analysis, and a set of other essential disciplines.
+
+To solve problems with help of computers, machine learning differs from the traditional method, which depends on applying carefully implemented and debugged programs to input data. The traditional computer program consists of sets of instructions that process the input data and provide the output using a set of predefined parameters, which are provided externally. An example is a computer program that searches for a pre-set list of solutions to expected problems, something like a table containing results for combinations of input values or a set of mathematical equations. Such a program can be-in a simplified wayconsidered as a function $f(x)=y$, which for a given input $x$ returns an output $y$, however, provided that $f(x)$ is reliably known. Without knowing such a function, it is necessary to estimate or approximate it.
+
+If the needed conditions and rules are observed, the result is guaranteed because it is based on mathematically proved theorems and methods. Unfortunately, if there are-often even very small- changes in data or working environment, such a program is predisposed to a fundamental error or malfunction. For example, analyzed text data may begin to contain new terms that were not known when the program was created, or it becomes necessary to start analyzing such data in another language. In such a case, it is inevitable to rework, often completely, that program.
+
+Machine learning can use an existing implemented algorithm, retrain it with other examples and apply such new or extended knowledge to solving a new problem. A certain defect might be that this knowledge is not supported enough by mathematical proofs - in machine learning, the support comes from empirical proofs and heuristics.
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=45mm,height=68mm]{computerpic.png}
+\caption{Traditional programming versus machine learning - illustration of the principles.}
+\end{center}
+\end{figure}
+
+A simple illustration of the difference between traditional methods and machine learning is shown in Figure 1.2.
+
+Determining the structure of models and their parameters is the goal of the training process, which uses (often iteratively) the presented training samples for this purpose. The success rate of the training phase must be measured by testing, which uses another set of samples which are not part of the training process.
+
+\subsection{Inductive Machine Learning}
+Current methods, oriented on solving practical problems for example [221, 208, 75], are particularly based on inductive approaches. The inductive learning is based on the generalization of (many) specific samples for a given problem area. The samples are comprised of collected data. For purpose of this book, that part of data, which is relevant for solving a given problem, is called information. Then, generalized information forms knowledge. The main task of machine learning is mining knowledge hidden in large collections of data.
+
+Having a set of $n$ samples of data items, $\left\{x_{1}, x_{2}, \ldots, x_{n}\right\}$, and knowing for each sample $x_{i}$ its correct result $y_{i}$, the approximate function $\hat{f}(x) \approx f(x)$. The accuracy of such approximation depends naturally on the quality of samples how well they can cover (or represent) all possible data items. In the real world, typically, not all possible data items are available for a given moment, or there might be so high (whether final or infinite) a number of such items that it is practically impossible to process them within an available time period. At the very least, data that may occur in the future may not be known now and moreover, may not be fully represented by familiar data from the past.
+
+Unlike the traditional applications of computer programs, machine learning aims at automatically discovering the appropriate parameters of a selected algorithm, the implementation of which may already be available, but which needs its parameters adjusted to specific data.
+
+\section{Three Fundamental Learning Directions}
+Depending on information provided by collected teaching samples, the current machine learning sphere distinguishes three fundamental directions:
+
+\begin{itemize}
+  \item Supervised learning
+  \item Unsupervised learning
+  \item Semi-supervised learning
+\end{itemize}
+
+\subsection{Supervised Machine Learning}
+Known also as learning with a teacher, supervised machine learning relies on labeled training samples. Each sample $\mathbf{x}_{i}$ has its corresponding function value $y_{i}$ :
+
+$$
+y_{i}=f\left(\mathbf{x}_{i}\right) .
+$$
+
+If the function $y_{i}$ is defined as non-numerical, its values are labels of classes. For example, books may be classified according to verbal evaluation by their readers who also assign a decision (label) $y_{i} \in\{$ interesting, tedious, neutral $\}$. A classification algorithm learns using the labeled samples. This learning process is called learning with a teacher because the trained algorithm has feedback based on the knowledge of the correct answers (labels). The feedback is provided by the 'teacher' that supervises the correctness of classifications and the 'learner' knows whether its answer was right or not so that it can improve its knowledge - appropriately adjusted parameters of the algorithm.
+
+The regression methods for numeric functions are not discussed because they are not relevant here.
+
+\subsection{Unsupervised Machine Learning}
+Unlike supervised machine learning, the unsupervised version misses feedback from the absent teacher, thus the learners must learn themselves. The term 'absent teacher' means that the available training samples $\mathbf{x}_{i}$ lack their appropriate class labels, therefore it is not directly possible to reveal what is relevant for each class. In addition, it is not known what (and how many) classes exist for a given case. The task is now not only to learn how to classify correctly but also to which classes.
+
+This branch of machine learning is called learning without a teacher and employs various clustering algorithms and methods. Based on the contents of $\mathbf{x}_{i}$ 's, the clustering algorithms try to detect which samples are similar enough to establish their particular cluster. Then, each cluster represents a class. Usually, it is necessary to define (classes) in advance how many clusters should be generated; this is a frequent problem. Too few clusters can mean too vague knowledge mined from the data. The more clusters, the more specific each of them is; however, too many clusters lack the property of being generalized knowledge extracted from the samples - in the extreme case, each cluster contains only one case, which is not very useful knowledge.
+
+There exist also certain clustering algorithms that are able to discover the number of convenient clusters; for example, the EM (expectati\-on-maximizati\-on) algorithm is worth mentioning. For more details, see [112] chapter 8.5. EM assigns a probability distribution to each instance which indicates the probability of its belonging to each of the clusters. EM can decide how many clusters to create by cross validation, or it can be specified a priori how many clusters to generate.
+
+The unsupervised learning belongs to more difficult and demanding learning methods because it must work with less information. However, clustering today constitutes one of the highly needed applications in the real world. An interested reader can find more information concerning the clustering methods in [142,230, 22, 254], and many others.
+
+\subsection{Semi-supervised Machine Learning}
+A modern machine learning branch is semi-supervised machine learning, which - as its name suggests - represents something in between the extreme cases of supervised and unsupervised learning methods. In semi-supervised machine learning, the learner is given only a few labeled training samples and many unlabeled ones.
+
+The labeled samples provide some valuable initial information, which makes it easier to separate (and label) unlabeled training samples so that the correct classes can be generated.
+
+This task is typical for contemporary situations when it is relatively much easier to automatically collect and store a lot of unlabeled data than to laboriously label them all.
+
+As a result of the use of modern information and communication technologies (the Internet, social networks), while there is an increasing amount of generally valuable (and not only) textual data on a daily basis their processing, for example from a semantic point of view, is now completely beyond human 'manual' processing and research.
+
+A limited number of training samples gives a limited amount of information which can, however, be used advantageously for advanced text analysis. In any case, this limited information provides some guidance on how to deal with incomplete (unlabeled) data items. A teacher can prepare a small set of samples with answers (classification results), which may be used by the learner as a kind of clue to help solve the class assignment with respect to non-classified training items. At the same time, it makes it possible to better determine the number and types of suitable classification classes.
+
+A good introduction with examples of several algorithms (Self-training, Cotraining, and some others) can be found in [1].
+
+\section{Big Data}
+One of the problems that we can experience in text mining is that there are too many data examples available. On the one hand, it can be considered positive in terms of sufficient coverage of data with training examples. However, on the other hand, it usually leads to great difficulties due to too high computational complexity (time and memory), which the available hardware may not be able to handle. This is a problem known as Big Data (which is, however, not discussed in this book; as an introduction, a reader may refer to, for example, [147, 152]).
+
+For text mining, the mentioned big-data problem is often characteristic. The reason is that, thanks to broadly available world-wide web technologies like the Internet, textual data accumulate incredibly fast every day. Various social networks belong to most generous data providers and in principle, they represent a very valuable source of information not only for the contributors. Unfortunately, it is not known how to define a mathematical function, which would be able to process that natural-language based textual data so that the data may be properly analyzed from its semantic point of view like human researchers can. Because of the huge amount of the data, it is necessary to use informatics and computers, which is where machine learning helps.
+
+\section{About This Book}
+Today, a lot of good publications and books are already available for familiarization with machine learning, for example [199, 151, 187, 261]. Tens of books from various publishers deal with many different problem areas from the machine learning point of view, and a reader will, undoubtedly be able to find what her or his specific interests need. Our goal is, therefore, not to teach machinelearning in general. Instead, we would like to show how machine learning can be used to solve practical tasks in a specific domain, which is text data analysis.
+
+In order to obtain some real results and enable readers to implement some of the described procedures, we decided to use the R programming language. R is a great statistical software package with many advantages. It is free, it is interpreted (the same code can be run on many platforms), and provides an extensive functionality contained in many available packages. It is used by many researchers and practitioners all over the world. The solutions of problems using R are, however, often not suitable for large scale problems because R works only with data that fit to the memory of a computer and is often slow (the reduced speed is also because it is very flexible through dynamic typing).
+
+In R and its available libraries, many machine learning algorithms are already implemented. It is, therefore, necessary to provide them with prepared data in a desired format, get the results, and display, visualize, or evaluate them. All these steps are combined in computer programs (scripts) that are run on an R interpreter.
+
+In individual chapters dealing with typical text mining tasks, the code that is used to demonstrate the algorithms and solve some practical problems is also presented. To enable readers to understand the code, some of the R basics are included in the book too. We do not try to explain all aspects of the language, all available algorithm implementations, their possible parameters, inputs, and outputs, but only what is necessary for our specific examples. All other details can always be found in the newest description (manual) of the used R package.
+
+\chapter{Introduction to R}
+R is a high-level programming language and environment for statistical computing and graphics. For many years, R has belonged to the most popular programming languages, especially in the machine learning community. It is primarily focused on statistical operations, working with vectors and matrices, creating statistical models on a few lines, etc. [209].
+
+R provides facilities for effective data handling and storage, operators for calculations on multidimensional data, a collection of tools for data analysis and graphical facilities for data analysis and display. It also includes a simple and effective programming language which includes all common elements of programming languages, such as branchings, loops, user-defined functions, or input and output facilities [117]. The capabilities of R language can be augmented with compiled code written in C, C++, or Fortran [80].
+
+The language, created by Ross Ihaka and Robert Gentleman at the University of Auckland more than twenty years ago, has derived its syntax, semantics, and implementation from two other older languages - S and Scheme [125]. R is an open-source project, which means that you can see how the functionality is implemented and modify what does not work exactly according to your requirements [203]. R is very popular in science, engineering, and education, with many active communities. The R Foundation supports the R project and its development, organizes conferences, and patronizes the R Journal (\href{https://journal.rproject.org}{https://journal.rproject.org}).
+
+This book does not want to provide exhaustive information on programming in R. The language is used here as one of many options with the aim of demonstrating the principles of machine learning algorithms and getting real results from analyzing texts. An interested reader can refer to an endless resource of books (e.g., The $R$ Primer by C. T. Ekstrom $\{$ CRC Press $\}, R$ in a Nutshell: $A$
+
+Desktop Quick Reference by J. Adler \{O'Reilly\}, The R Book by M. J. Crawley \{Wiley\}, or The Art of R Programming: A Tour of Statistical Software Design by N. Matloff \{No Starch Press\}. Probably the most compete information can be found in The R Manuals available at \href{https://cran.r-project.org/manuals.html}{https://cran.r-project.org/manuals.html}.
+
+Some of the tasks can be achieved with core R functions and capabilities, some other algorithms are implemented by various packages available in the Comprehensive $R$ Archive Network (CRAN). The archive currently contains almost 14,000 packages solving problems from various domains and uploaded by many authors. To solve one specific task, multiple packages are often available. In this book, we do not consider all possible options as the main focus is not on R but the machine learning algorithms. Also only the necessary functionality (only some functions and their parameters) of the packages is used, which is sometimes only a small fraction of the package capabilities. The complete functionality and parametrization of algorithms can be always found in the package documentation.
+
+\section{Installing R}
+
+We assume that you have a PC or an Apple Mac and you want to install R on the hard disc and that you have access to the Internet. The R language is available as free software under the terms of the Free Software Foundation's GNU General Public License (\href{https://www.gnu.org}{https://www.gnu.org}) in source code form at \href{https://www.rproject.org}{https://www.rproject.org}. It can be compiled and run on a wide variety of UNIX platforms, as well as on Windows and Mac OS X.
+
+In order to get a current version of the language, go to the CRAN site (\href{https://cran.r-project.org/mirrors.html}{https://cran.r-project.org/mirrors.html}) and choose your preferred CRAN mirror. Then, you can decide the platform (Linux, Max OS X, or Windows) for which to obtain a precompiled binary distribution. You can also get the source code for all platforms (see Figure 2.1).
+
+In our example, a version for the Windows operating system will be installed. The installation process for all other supported systems is described on the website of the R project.
+
+There exist a few possibilities of the R download for Windows. The base sub-directory is preferred for the first installation.
+
+While older distributions are still accessible, the newest distribution is recommended for downloading. The executable distribution file (e.g., R-3.5.1-win.exe) can be easily downloaded and run. $R$ will be installed in an ordinary process with the assistance of an installation wizard.
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=\textwidth]{homepageR.png}
+\caption{The home page of the R project.}
+\end{center}
+\end{figure}
+\section{Running R}
+To run R under Windows, just click on the R icon. A graphical user interface, as in Figure 2.2, will be displayed.
+
+Inside the R graphical user interface, you can see a menu, toolbar, and R Console. In the console, below the header (a version of R and some initial information about the system) you will see a line with a $>$ symbol on the left. This is called a prompt and this is where you type your commands. Try to enter citation() to see how to cite the R software in your work.
+
+An easier way to use R is by using some of the integrated development environments (IDE). A list of some R IDEs includes:
+
+\begin{itemize}
+  \item R Studio,
+  \item Visual Studio for R,
+  \item Eclipse,
+  \item Red-R,
+  \item Rattle,
+  \item and many others.
+\end{itemize}
+
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=\textwidth]{2025_10_21_5ba6420d88ee7388cb5eg-031}
+\caption{Selecting a subdirectory for R installation.}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=\textwidth,height=55mm]{gettingLatestR.png}
+\caption{Getting the newest R package.}
+\end{center}
+\end{figure}
+
+RStudio has been voted the most popular R IDE by the readers of KDnuggets\footnote{\url{https://www.kdnuggets.com/polls/2011/r-gui-used.html}}. Thus, in the following text, we are using RStudio for the examples.
+\clearpage
+\begin{figure}[ht]
+\begin{center}
+  \includegraphics[width=\textwidth]{2025_10_21_5ba6420d88ee7388cb5eg-032}
+\captionsetup{labelformat=empty}
+\caption{Figure 2.4: The graphical user interface of the R system on Windows.}
+\end{center}
+\end{figure}
+
+\section{RStudio}
+RStudio is an IDE for R available in open source and commercial editions. It enables syntax highlighting, code completion, and smart indentation when writing the code that can be executed directly from the source editor. It facilitates the work of programmers by providing facilities like jumping to function definitions, integrated documentation and help, managing multiple working directories, multiple-file editing, interactive debugger for diagnosing and fixing errors, and package development tools.
+
+RStudio can be run on various operating systems like Windows, Mac OS X , and Linux. It is a very useful and powerful tool for programming in R . We suggest that readers use RStudio when learning from this book. To get RStudio, go to \href{https://www.rstudio.com/}{https://www.rstudio.com/} and follow the instructions.
+
+On launching RStudio, the following panes are displayed (see Figure 2.5):
+
+\begin{itemize}
+  \item Console where R commands/scripts can be executed and Terminal allowing the access to the system shell (top left-hand corner of the screen)
+  \item Environment and History, and Connections - information about environment, history of commands, and connections to external data sources (top right-hand corner of the screen)
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=\textwidth]{2025_10_21_5ba6420d88ee7388cb5eg-033}
+\caption{The graphical user interface of RStudio.}
+\end{center}
+\end{figure}
+  \item Files in the current working directory, installed R packages, plots, a help display screen, and a viewer of local web content (bottom right of the screen).
+\end{itemize}
+
+A new script, i.e., a code that can be saved on a disk and later reopened or executed, can be created by choosing File / New File / RScript in the main menu. A new empty editor window, ready for editing, will appear.
+
+It is always good practice to choose a working directory when programming in RStudio. The working directory is a folder where you store your R code, figures, etc. To set the working directory, go to Session / Set Working Directory / Choose Directory in the main menu.
+
+\subsection{Projects}
+RStudio provides a very useful feature known as Projects to organise your work into meaningful contexts. A project puts together R scripts, input data, analytical results, or plots, and has its own working directory, history, or workspace.
+
+A new project can be created by selection of File / New Project in the main menu. A project can be started in a new directory, associated with an existing working directory, or cloned from a version control (Git or Subversion) repository.
+
+Select the New Directory option, then New Project, choose a name for your project directory, and select its location. A new directory will be created, together with a project file (with the .Rproj extension) and a hidden directory .Rproj.user with project-specific temporary files project. The will be loaded in RStudio and its icon displayed to the right of the toolbar. RStudio will also automatically set the working directory to the project directory.
+
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=\textwidth]{2025_10_21_5ba6420d88ee7388cb5eg-034}
+\caption{A new project created in RStudio.}
+\end{center}
+\end{figure}
+
+\subsection{Getting Help}
+Help pages for a desired object (e.g., operator or function) are invoked by the help() function. The name of an object for which help should be displayed is passed as a string parameter (enclosed in single or double quotes). However, a shortcut ? is often used (quotation marks not necessary). For example, typing ?sin opens a help page containing a documentation for the $\sin ()$ function.
+
+If you do not remember the precise name of the object but know the domain to which it is related (e.g., trigonometric functions in this case) use the help.search() function. A string passed to the function will be searched for in the documentation and the possibilities associated with this query will be displayed. The same can be achieved with the ?? shorthand (e.g., ??trigonometric or ??"trigonometric functions").
+
+Another way to get help in RStudio is to select Help / R Help in the main menu or by going to the Help pane and browsing the manual pages or searching for a specific answer using the search capability.
+
+To see some examples related to, for instance, a function, use the example() function, where the appropriate name is passed as a parameter (e.g., example(help) or example('+')).
+
+\section{Writng and Executing Commands}
+When R is ready to accept commands (expressions, consisting of objects and functions) from a user, the R console displays a $>$ prompt. After it receives a command (something is typed on the keyboard and Enter is pressed) R tries to execute it. Subsequently, a result is shown \footnote{The number in square brackets is related to numbering the elements of the output and can be ignored. Here, for example, the output is a vector and the row starts with its first element.}
+ in case of a successful execution and a new > prompt is displayed again.
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=\textwidth]{2025_10_21_5ba6420d88ee7388cb5eg-035}
+\caption{Displaying a help for an existing function.}
+\end{center}
+\end{figure}
+\clearpage
+\begin{verbatim}
+> 3+8/4 # after writing the expression, Enter was pressed
+[1] 5
+> "Hello, World!"
+[1] "Hello, World!"
+>
+\end{verbatim}
+
+When the command is not complete (for example, a closing parenthesis, quote, or operand is missing) R will submit a request to finish it. The console will now display a + prompt. The user can complete the command and the result will then be displayed. To finish writing the command when the + prompt is displayed, just press \textit{Esc}.
+
+\begin{verbatim}
+> 5+ # Enter was pressed here
++ 6 # Enter was pressed here
+[1] 11
+> 5+ # Enter was pressed here
++ # Esc was pressed here
+
+>
+\end{verbatim}
+
+Two or more expressions can be placed on a single line. In that case they must be separated by semicolons with optional white spaces:
+
+\begin{verbatim}
+> 1+2;2-3; 4/5
+[1] 3
+[1] -1
+[1] 0.8
+\end{verbatim}
+
+To complete a piece of code, press Tab. A list of possible completion options (together with their short descriptions when applicable) that fit the given part of code is displayed (RStudio analyzes the code to suggest only meaningful options). By selecting one of them, the selected piece of text will be inserted to a command. If there exists only one possibility of what can be inserted no options are displayed and the code is completed immediately.
+
+By pressing the up and down arrow keys, previously entered commands can be accessed. Pressing \textit{Ctrl+Up} displays the list of all commands. They are also accessible in the History pane of RStudio.
+
+Comments are useful pieces of the code that help programmers explain what various part of the code mean. They are completely ignored by the R interpreter. A comment starts with the symbol \#. The subsequent characters until the end of line are the comment. R does not allow comments running into multiple lines. To overcome this problem, a quoted string occupying more than one line can be used. The string will be evaluated as normal but will not perform any action.
+
+\section{Variables and Data types}
+To store and access values in computer memory, so called 'objects' are used. Objects are data structures containing values of a certain type. Every such a structure might have a class attribute, which determines the class of the object, associated to it. If such an attribute does not exist, it will be computed from the type of the values stored in the object.
+
+There exist a few atomic (single-valued) data types (classes, returned by the class() function as mentioned below) that are typically used in machine learning:
+
+\begin{itemize}
+  \item character,
+  \item numeric,
+  \item integer,
+  \item logical.
+\end{itemize}
+
+The basic data structure in R, where the atomic values are combined, is a vector; there are no scalars. The other structures include matrices, arrays, factors, and data frames. A vector is an ordered collection of values of the same type. A matrix is a two dimensional structure and an array can have even more dimensions. Their values are always of the same type. Lists allow storing of values that are of different types. Factors look like strings but represent categorical values internally stored as integers. Data frames store data in a tabular format; their individual rows represent data records and the columns hold their properties (the values in one column is always of the same type).
+
+Unlike in some other programming languages, no data types need to be declared for variables. The data type of an object is given by what it contains. One object can hold a number and later, for example, a string.
+
+\section{Objects in R}
+All code in R manipulates objects [4]. Object is just something that is represented in a computer, like a vector, list, or data frame. It has a class that defines what functions can be used together with the object and how will they work. The other object classes besides the ones related to storing data include, for example, the function or expression classes.
+
+\begin{verbatim}
+> class(1)
+[1] "numeric"
+> class("hello")
+[1] "character"
+> class(class)
+[1] "function"
+> class(expression(1+2))
+[1] "expression"
+\end{verbatim}
+
+The objects usually have a name (known as a symbol) so we can later manipulate them. They thus behave like variables in other programming languages. The set of symbols is called the environment (which is also an object). The list of all objects in the current environment is returned by the objects() function. A new environment is created when a new session in R is started. A new environment is also created in the body of a function. The parent environment of the function is then the environment in which the function was created (not necessarily the same as where the function is called).
+
+Variable names in R are case-sensitive so, for example, x is not the same as X . Variable names can contain alphanumeric characters, periods, and underscores, but they cannot start with a number or an underscore or with a period followed by a digit.
+
+A list of existing objects in a specified environment (or objects defined by a user or local names in a function when called without parameters) is accessible through the ls() or objects() functions.
+
+Variables can be easily removed using the remove() function (or using a shortcut rm()):
+
+\begin{verbatim}
+> x <- 1
+> x
+[1] 1
+> remove(x)
+> x
+Error: object 'x' not found
+\end{verbatim}
+
+Objects can have properties known as attributes. The list of attributes of an object is returned by the attributes() function. The attributes that are common to many object types include, for example, class - the class of an object, dim - dimensions of an object, names - the names of data elements (e.g., in a vector), levels - levels of a factor, among others.
+
+To access or modify the value of an attribute, we usually use a function that has the same name as the attribute.
+
+\begin{verbatim}
+> x <- c(first=1, second=2, third=3)
+> x
+    first second third
+        1 2 3
+> attributes(x)
+$'names'
+[1] "first" "second" "third"
+> names(x)
+[1] "first" "second" "third"
+> names(x) <- c("1st", "2nd", "3rd")
+> x
+1st 2nd 3rd
+    1 2 3
+> names(x)
+[1] "1st" "2nd" "3rd"
+> attributes(x)
+$'names'
+[1] "1st" "2nd" "3rd"
+\end{verbatim}
+
+There are several so called \textit{generic functions}. Their names are shared across different classes and they implement different algorithms depending on the class (they enable polymorphism). There is, for example, a difference when printing a number and a character string, where the latter requires double quotes to appear around the value.
+
+There are also many functions that enable the examination of the features of different objects, for example:
+
+\begin{itemize}
+  \item \texttt{class()} - the class of an object (a vector of names of classes an object inherits from); if not known, generic classes, like matrix, array, function, numeric, or the result of typeof() are returned
+  \item \texttt{typeof ()} - the internal type of data stored in an object (e.g., integer or logical)
+  \item \texttt{length()} - the length of an object, e.g., the number of vector elements
+  \item \texttt{attributes()} - returns some metadata related to an object, like the dimensions of a matrix
+  \item \texttt{str()} - compactly displays the internal structure of an object
+  \item \texttt{exists()} - gives information about the existence of an object with a given name
+  \item \texttt{get ()} - returns an object with a name passed as the parameter
+  \item \texttt{print()}-prints the values of its arguments
+  \item \texttt{summary()} - gives some basic information about a data structure, for example, the minimum, maximum, mean, median, first quartile, and third quartile for numeric vectors or the levels and numbers of elements for each level in the case of factors.
+\end{itemize}
+
+To find out whether an object is of a given class, the is() function returning a logical value can be used:
+
+\begin{verbatim}
+> x <- 1
+> is(x,"numeric")
+[1] TRUE
+> is(x,"character")
+[1] FALSE
+\end{verbatim}
+
+Many common classes have their own functions which can answer the same question, for instance is.numeric(), is.matrix(), is.factor() etc.
+
+To change the class of an object (which is known as casting [58]), a class can be directly assigned to the object:
+
+\begin{verbatim}
+> x <- 1
+> x
+[1] 1
+> class(x) <- "character"
+> x
+[1] "1"
+\end{verbatim}
+
+This is, however, not recommended. Instead, a set of functions with the names starting with as. that are corresponding to the is.* functions is available and should be used.
+
+\begin{verbatim}
+> x <- 1
+> x <- as.character(x)
+> x
+[1] "1"
+\end{verbatim}
+
+\subsection{Assignment}
+The assignment operator <- points to the object receiving the value of the expression stated on the right side. To create an object with value 10 we can write
+
+\begin{verbatim}
+> x <- 10
+> x
+[1] 10
+\end{verbatim}
+
+In an assignment, the objects are usually immutable which means that their values are copied instead of assigning just a reference to them, as shown in the following example:
+
+\begin{verbatim}
+> a <- 1
+> b <- a
+> c <- a # both 'b' and 'c' contain the value of 'a'
+> a
+[1] 1
+> b
+[1] 1
+> c
+[1] 1 # both 'b' and 'c' have the same value 1
+> b <- 2
+> b
+[1] 2
+> c
+[1] 1 # the value of 'c' has not changed
+> a <- 2
+> c
+[1] 1 # the value of 'c' still has not changed
+\end{verbatim}
+
+There are a few other alternatives besides $<-$, such as $=,->, \ll-$, and $-\gg$. It is, however, recommended that <- is used, because it always means assignment. Assignment of a value to a variable can be also achieved with using the assign() function (a variable name is passed as a character string):
+
+\begin{verbatim}
+> assign("x", 10)
+\end{verbatim}
+
+\subsection{Logical values}
+Logical values can either be TRUE (when used as numbers, they are treated as 1) or FALSE (numerically 0 ). Shortcuts T and F can be used instead which is, however, not recommended since these names can be also used as variable names and thus easily overwritten.
+
+\begin{verbatim}
+> class(TRUE)
+[1] "logical"
+> 2*TRUE
+[1] 2
+> 2*FALSE
+[1] 0
+> T
+[1] TRUE
+> T == TRUE
+[1] TRUE
+> T <- 0
+> T == TRUE
+[1] FALSE
+\end{verbatim}
+
+\subsection{Numbers}
+Decimal values that are called numeric in R are the default computational data type. They include integers and decimals, positive, negative, and zero. The values are represented in double precision floating point. Integers which hold only whole numbers need to have an $L$ appended at the end of the value.
+
+\begin{verbatim}
+> class(1)
+[1] "numeric"
+> class(1L)
+[1] "integer"
+> class(1.5)
+[1] "numeric"
+\end{verbatim}
+
+To create an integer variable in $R$, we can also call the as .integer function.
+
+\begin{verbatim}
+> class(1)
+[1] "numeric"
+> class(as.integer(1))
+[1] "integer"
+> class(as.integer(1.8))
+[1] "integer"
+> x <- as.integer(1.8)
+> x
+[1] 1
+> class(x)
+[1] "integer"
+\end{verbatim}
+
+Optionally, numbers can be written using the semi-logarithmic notation.
+
+\begin{verbatim}
+> 1e2
+[1] 100
+> class(1e2)
+\end{verbatim}
+
+\begin{verbatim}
+[1] "numeric"
+> 1e-2
+[1] 0.01
+\end{verbatim}
+
+You may also specify the value in the hexadecimal notation by prefixing the value with 0x.
+
+\begin{verbatim}
+> 0x1
+[1] 1
+> 0xff
+[1] 255
+> class(Oxff)
+[1] "numeric"
+\end{verbatim}
+
+R can also work with complex numbers (written for example, as $1+1 \mathrm{i}$ ) but they are not very common in machine learning so far.
+
+There are a number of built-in functions for working with numbers. They represent typical operations, like the absolute value (abs()), square root (sq\-rt()), logarithm (()), exponentiation (exp()), different forms of rounding (flo\-or(), ceiling(), trunc(), round(), signif()), trigonometric and inverse trigonometric functions (sin(), cos(), tan(), asin(), acos(), atan()). Most of these functions work with one numeric vector (and are applied to its components). Some other functions require more arguments, for instance log(), which can take a base for the logarithm. Trigonometric functions in R measure angles in radians. The whole circle is $2\pi$ radians, a right angle is $\pi/2$ radians. The value of the Ludolphian number $\pi$ is known as pi in R.
+
+\subsection{Character Strings}
+A data type enabling working with text data is character. Strings constants are enclosed between a pair of single or double quotes. Double quotes are preferred as strings are also quoted by double quotes on the output (to not quote them on the output, use the noquote() function). When a single or double quote is to appear in a string, the string might be enclosed between a pair of the other quote type:
+
+\begin{verbatim}
+> "This book is published by 'CRC Press'"
+[1] "This book is published by 'CRC Press'"
+> 'This book is published by "CRC Press"'
+[1] "This book is published by \"CRC Press\""
+\end{verbatim}
+
+The quotes can also be escaped by a backslash so they are not considered terminating quotes:
+
+\begin{verbatim}
+"This book is published by \"CRC Press\""
+[1] "This book is published by \"CRC Press\"'\n"
+\end{verbatim}
+
+There are other symbols which can be inserted to strings using escaping characters by a backslash, examples being $\backslash \mathrm{n}$ (newline), $\backslash \mathrm{r}$ (carriage return), $\backslash \mathrm{t}$ (tabulator), $\backslash \mathrm{b}$ (backspace), $\backslash \backslash$ (backslash), $\backslash \mathrm{nnn}$ (character with the given octal code consisting of 1 to 3 digits), $\backslash \mathrm{xnn}$ (a character with the given hexadecimal code consisting of 1 or 2 digits), $\backslash$ unnnn (a Unicode character with the given code consisting of 1 to 4 hexadecimal digits), etc.
+
+Since string data can be a part of one of the structures where R stores data, it is necessary to understand how they behave [237]:
+
+\begin{itemize}
+  \item vector, matrix - if one or more elements are strings, all data in a vector or matrix will be treated as strings
+  \item data frames - strings are converted to factors by default; to turn this behaviour off, the stringsAsFactors parameter should be set to FALSE in the data.frame() function while creating a data frame object
+  \item list - all elements maintain their types
+\end{itemize}
+
+There are many functions which can be used to handle string data. Here are a few typical examples:
+
+\begin{itemize}
+  \item nchar () - returns number of characters of a string \footnote{The function length(), that is, in many programming languages, used to give a string length, returns the number of elements in a data structure in R .}
+  \item tolower (), toupper() - returns a string converted to lower/upper case
+  \item substr(), substring() - returns or replaces substrings in character vectors
+  \item strsplit() - splits a string to substring according to the match of one or more regular expressions
+\end{itemize}
+
+\subsection{Special values}
+Missing values are represented by a constant NA (NA stands for Not Available). The \href{http://is.na}{is.na}() or complete.cases() functions can be used to detect NA values in data structures.
+
+\begin{verbatim}
+> x <- c(1, 2, 3, NA, 5)
+> x
+[1] 1 2 3 NA 5
+> is.na(x)
+[1] FALSE FALSE FALSE TRUE FALSE
+> complete.cases(x)
+[1] TRUE TRUE TRUE FALSE TRUE
+\end{verbatim}
+
+Calculations can sometimes lead to results that are either too big or too small to be stored in a memory. Very big (i.e., positive numbers) are represented by the Inf constant and very small (i.e., negative numbers) are represented by the -Inf constant.
+
+\begin{verbatim}
+> 2^1000
+[1] 1.071509e+301
+> 2^10000
+[1] Inf
+> -2^10000
+[1] -Inf
+\end{verbatim}
+
+To detect finite and infinite numbers, the is.finite() and is.infinite() functions can be used:
+
+\begin{verbatim}
+> x <- c(1, 1/0, -2^1000)
+> x
+[1] 1.000000e+00 Inf -1.071509e+301
+> is.finite(x)
+[1] TRUE FALSE TRUE
+\end{verbatim}
+
+Other calculations can lead to results that cannot be represented as numbers. They are known as NaN ( NaN stands for Not a Number). Basically all mathematical functions in R are supposed to work properly with NaN as input or output. To test whether a value is NaN , the is.nan() function is used.
+
+\begin{verbatim}
+> Inf/Inf
+[1] NaN
+> 0/0
+[1] NaN
+> Inf-Inf
+[1] NaN
+\end{verbatim}
+
+NULL is an object that represents an undefined object or a list with zero length (all NULLs point to the same object). It is not the same as missing value. It is often used as a parameter of a function when no value for that parameter should be passed or returned by a function when the value is undefined.
+
+The function as. null() ignores its argument and returns NULL; is. null() tests whether the argument has an undefined value.
+
+Dates are internally stored as numbers of days or seconds (depending on the class) since 1\textsuperscript{\textit{st}} January 1970. There are two date classes, Data, storing only information about days, and POSIXct, which also contains information about time. To create a date value, functions asData() or as.POSIXct() are used to convert strings to dates.
+
+\begin{verbatim}
+> date1 <- as.Date('2018-01-01')
+> date1
+[1] "2018-01-01"
+> class(date1)
+[1] "Date"
+> typeof(date2)
+[1] "double"
+> date2 <- as.POSIXct('2018-01-01 10:20:30')
+> date2
+[1] "2018-01-01 10:20:30 CET"
+> class(date2)
+[1] "POSIXct" "POSIXt"
+> typeof(date2)
+[1] "double"
+\end{verbatim}
+
+\section{Functions}
+Functions are objects that accept a set of arguments, somehow process them, and return a value. They may, therefore, be used as parts of expressions.
+
+Some functions are associated to some classes. They are known as methods. Unlike in other languages (like Java), not all functions are closely tied to a particular class in R [4].
+
+Some of the methods have the same name in different classes. They are called generic functions. They enable the use of the same code for working with objects of different classes. The most visible generic function is print() which is automatically called after commands that are evaluated by R return any object. The objects are somehow printed depending on their type (e.g., a vector is printed as a list of whitespace separated values on a row, a matrix is printed as M rows and N columns).
+
+There exist a large number of built-in functions from many categories which are readily available for use. They include functions enabling working with objects of different types of data (functions for numbers, character string, factors etc.), mathematical, statistical or optimization functions, functions for generating graphics, etc.
+
+Other functions become available after a package containing their definitions is loaded.
+
+Sometimes, a programmer might need a function that is not available and needs to create a new one. In that case, the algorithm the function implements needs to be created and the interface of the function must be specified. The interface includes the parameters and the value to be returned by the function. The body of the function is a code that usually processes input parameters to produce a return value. A function often has a name, which means that the function is stored in an object with that name.
+
+To define a function, the function statement is called. Here, the parameters (arguments) of a function are defined, together with the function body.
+
+The section with argument definitions contains the names of arguments so that their names can be used in the function body. The body of a function contains some statements to be executed. If more than one statement is contained in the body, they need to be enclosed within curly brackets. The return value, which can be an object of any type, is the value of the last evaluated expression. To explicitly return a value, the return() function is used.
+
+\begin{verbatim}
+> XtoN <- function(x, n) {
++ return(x^n)
++ }
+> XtoN(2, 3)
+[1] 8
+\end{verbatim}
+
+The parameters can also have default values. The default values are used when real parameters are not supplied. Such parameters are also treated as optional.
+
+\begin{verbatim}
+> XtoN <- function(x, n=1) {
++ return(x^n)
++ }
+> XtoN(2)
+[1] 2
+\end{verbatim}
+
+Parameters in R are often of a variable length. The list of such parameters is known as an object with a special name . . . (available in a function body).
+
+\begin{verbatim}
+> sum_all <- function(...) {
++ s <- 0;
++ for (x in list(...)) {
++ s <- s+x
++ }
++ return(s)
++ }
+> sum_all(1, 2, 3, 4, 5)
+[1] 15
+\end{verbatim}
+
+Modifying a parameter inside a function does not change the value of the real parameter. The initial value of the parameter will be the one of the actual parameter, but its subsequent modifications will not affect the actual argument. In addition, a variable appearing within a function that has the same name as a variable that is global to it will be treated as local. This means that changing its value in a function will not affect the value of the global variable. Only its initial value will be that of the global [183].
+
+To modify the value of an actual parameter or of a global variable, the superassignment operator <<- is used.
+
+\begin{verbatim}
+> x <- 1
+> add_one <- function(x) x <- x+1
+> add_one(x)
+> x
+[1] 1
+> add_one <- function(x) x <<- x+1
+> add_one(x)
+> x
+[1] 2
+\end{verbatim}
+
+Let's have a function XtoN() for calculating the value of base to the power of the exponent:
+
+\begin{verbatim}
+XtoN <- function(base, exponent) return(base^exponent)
+\end{verbatim}
+
+When submitting actual parameters during when calling a function, the following possible methods, that are tried in the following order, can be used [213, 4]:
+
+\begin{enumerate}
+  \item The parameters are submitted as pairs full\_name=value. Then, the order of parameters does not matter.
+\end{enumerate}
+
+\begin{verbatim}
+> XtoN(base=2, exponent=3)
+[1] 8
+> XtoN(exponent=3, base=2)
+[1] 8
+\end{verbatim}
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item The parameters are submitted as pairs name $=$ value, where name can be only a part of a parameter name. The order of parameters is also not important.
+\end{enumerate}
+
+\begin{verbatim}
+> XtoN(exp=3, b=2)
+[1] 8
+\end{verbatim}
+
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item The values are passed in the same order as in the definition of the function. The first parameter will be stored to x and the second to n .
+\end{enumerate}
+
+\begin{verbatim}
+> XtoN(2, 3)
+[1] 8
+\end{verbatim}
+
+Information about the parameters of a function can be obtained from the documentation or by calling the args() function:
+
+\begin{verbatim}
+> args(XtoN)
+function (base, exponent)
+NULL
+> args(sum_all)
+function (...)
+NULL
+\end{verbatim}
+
+Functions can be also passed as arguments to other functions. In this case, they are often anonymous functions, which means that they do not have a name.
+
+\begin{verbatim}
+> myfunction <- function(x, f) { return(f(x)) }
+> myfunction(c(5, 2, 3, 4, 8), min)
+[1] 2
+> myfunction(c(5, 2, 3, 4, 8), max)
+[1] 8
+> myfunction(c(5, 2, 3, 4, 8),
++ function (x) {return(length(x))}
++ )
+[1] 5
+\end{verbatim}
+
+\section{Operators}
+An operator is a function working with one or two parameters which do not require writing parentheses. Some of the basic operators, which have not been discussed in much detail so far, are listed in Table 2.1. A user can also write his own binary operators. They are named \%operator\_name\% and are implemented through functions.
+\begin{table}[h]
+\caption{Some commonly used operators in R.}
+\label{tab:operators}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{cl}
+\hline
+  \multicolumn{2}{c}{Arithmetic Operators} \\
++ & addition \\
+- & subtraction (binary) or arithmetic negation (unary) \\
+* & multiplication \\
+/ & division \\
+\%\% & the modulo operation (the remainder after division of one number by another) \\
+\%/\% & integer division \\
+\textasciicircum{} & exponentiation (raising to a power) \\
+\multicolumn{2}{c}{Relational Operators} \\
+\textless{}, \textless{}= & less than, less or equal \\
+\textgreater{}, \textgreater{}= & greater than, greater or equal \\
+== & equal to \\
+!= & not equal to \\
+\multicolumn{2}{c}{Logical Operators} \\
+! & negation \\
+| & logical disjunction (OR), processes all vector elements \\
+|| & logical disjunction (OR), works only with the first vector element \\
+\& & logical conjunction (AND), processes all vector elements \\
+\&\& & logical conjunction (AND), works only with the first vector element \\
+\multicolumn{2}{c}{Colon Operator} \\
+: & sequence of numeric values \\ \hline
+
+\end{tabular}
+}
+\end{table}
+
+In order to write expressions so that they return a correct value, the precedence (priority) of operators is important. The following list contains a complete set of operators in R, placed according to their priority in descending order [260]:
+
+\begin{itemize}
+  \item function calls and groupings ( ( \{)
+  \item access variables in a namespace (:: :::)
+  \item component / slot extraction (\$ @)
+  \item indexing ([ [[)
+  \item exponentiation (right to left) $\left({ }^{\wedge}\right)$
+  \item unary plus and minus (+ -)
+  \item sequence operator (:)
+  \item special operators (\%any\%, including \% \% and \%/\%)
+  \item multiplication, division (*/)
+  \item addition, subtraction (+ -)
+  \item comparison ( $<><=>===$ !=)
+  \item negation (!)
+  \item logical conjunction (\& \&\&)
+  \item logical disjunction (|||)
+  \item separating the left and right-hand sides in a model formula $\left({ }^{\sim}\right)$
+  \item rightwards assignment (-> ->>)
+  \item assignment (right to left) ( $<-\ll-$ )
+  \item assignment (right to left) (=)
+  \item help (?)
+\end{itemize}
+
+\section{Vectors}
+The simplest data structure in R is a vector. It is an ordered collection of values of the same type (they are known as atomic structures). We can therefore distinguish, for example, numeric (integer and double-precision), logical (containing the values TRUE, FALSE, and NA), and character vectors. Even a single number in an expression (like $1+2$ ) is treated as a numeric vector with length 1 .
+
+\subsection{Creating Vectors}
+To create a vector, the function c() is typically used. The function takes its parameters and creates a vector from them. If the parameter values are of different types they are coerced into one type ( c might thus stand for coerce).
+
+\begin{verbatim}
+> x <- c(1, 2, 3, 4, 5)
+> x
+[1] 1 2 3 4 5
+> x <- c(1, 2, 3.5)
+> x
+[1] 1.0 2.0 3.5
+> x <- c(1, 2, 3, "a", "b")
+> x
+[1] "1" "2" "3" "a" "b"
+> x <- c(1, 2, 3, TRUE)
+> x
+[1] 1 2 3 1
+\end{verbatim}
+
+If you forget to write the name of function c() , which is a common problem in R beginners, you will get an error.
+
+\begin{verbatim}
+x <- (1, 2, 3)
+Error: unexpected ',' in "x <- (1,"
+> cummin(1, 2, 3)
+Error in cummin(1, 2, 3) :
+    3 arguments passed to 'cummin' which requires 1
+\end{verbatim}
+
+A vector can be also created using the vector() function. The first parameter (mode) specifies the type of the vector (numeric, logical, character, list, or expression). The second parameter (length) defines the number of elements to be created. All elements will have a value that means nothing ( 0 for numbers, "" for characters, FALSE for logical etc.).
+
+The colon operator (:) can be used to create numeric sequences too. It requires two values. If the first is less than the second, an ascending sequence of numbers starting with the first value and ending with the second value with step 1 will be created. If the first value is greater than the second, a descending sequence will be produced.
+
+\begin{verbatim}
+> x <- 1:5
+> x
+[1] 1 2 3 4 5
+> x <- 5:1
+> x
+[1] 5 4 3 2 1
+\end{verbatim}
+
+A more flexible way to create sequences is using the seq() function. It accepts a few parameters (not all of them are mandatory): from - the starting value of a sequence, to - the end value of the sequence, by - an increment of the sequence, length.out - a desired length of the sequence, along.with - an object from which the length of the sequence is taken.
+
+\begin{verbatim}
+> x <- seq(1, 5)
+> x
+[1] 12345
+> x <- seq(-1, 1, by=0.3)
+> x
+[1] -1.0 -0.7-0.4-0.1 0.2 0.5 0.8
+> x <- seq(-1, by=0.3, length=3)
+> x
+> y <- 1:3
+> x <- seq(1, 5, along.with=j)
+> x
+[1] 135
+\end{verbatim}
+
+Another useful function is rep(). It replicates an object according to the passed arguments which include: times - how many times the values should be repeated, length.out - what should be the length of the sequence, and each how many times each element will be repeated.
+
+\begin{verbatim}
+> x <- c(1, 2, 3)
+> rep(x)
+[1] 1 2 3
+> rep(x, times=2)
+[1] 123123
+> rep(x, times=2, length.out=10)
+[1] 1231231231
+> rep(x, length.out=10)
+[1] 1231231231
+> rep(x, length.out=10, each=4)
+[1] 1 1 1 1 2 2 2 2 3 3
+\end{verbatim}
+
+
+\subsection{Naming Vector Elements}
+In some situations, it is more convenient to access vector values using some names. They can usually be remembered more easily than numbers (positions).
+
+Fortunately, R provides a mechanism of naming vector elements. The names can be defined at the moment of creating a vector. The name (if it looks like a regular name, it does not have to be quoted), together with a equal sign, precedes a value. On the output, the names will be displayed above the values of the vector.
+
+\begin{verbatim}
+> x <- c(first=1, second=2, third=3)
+> x
+    first second third
+        1      2     3
+\end{verbatim}
+
+Not all values need to have names.
+
+\begin{verbatim}
+> x <- c(first=1, 2, third=3)
+> x
+    first   third
+        1 2     3
+\end{verbatim}
+
+The names of a list are returned by the names() function. When a vector has no element names, NULL is returned.
+
+\begin{verbatim}
+> x <- c(first=1, second=2, third=3)
+> names(x)
+[1] "first" "second" "third"
+\end{verbatim}
+
+The names can be at any time modified using the names attribute of a vector (through the names() function).
+
+\begin{verbatim}
+> day_names <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri',
++ 'Sat','Sun')
+> x <- 1:7
+> names(x) <- day_names
+> x
+Mon Tue Wed Thu Fri Sat Sun
+  1   2   3   4   5   6   7
+\end{verbatim}
+
+
+When enough values are not provided for the names, their value will be NA. An empty name is simply an empty string.
+
+\begin{verbatim}
+> x <- 1:5
+> names(x) <- c("a", "b", "", "d")
+> x
+    a b   d <NA>
+    1 2 3 4 5
+\end{verbatim}
+
+\subsection{Operations with Vectors}
+When vectors are used in arithmetic expressions, the operations are performed on the level of individual vector elements. The result has the same length as the longest vector. The values of the shorter vector are repeated (recycled) so there are enough values as needed for all the operations.
+
+\begin{verbatim}
+> x <- c(1, 2, 3)
+> 2*x
+[1] 246
+> x <- c(1, 1, 1, 1, 1, 1)
+> y <- c(1, 2)
+> x+y
+[1] 2 3 2 3 2 3
+\end{verbatim}
+
+There is a similar situation in the case of logical operations. The operation is performed with each element of a vector and the result will be a logical vector with the length of the original vector.
+
+\begin{verbatim}
+> x <- 1:5
+> y <- x>=3
+> y
+[1] FALSE FALSE TRUE TRUE TRUE
+> !y
+[1] TRUE TRUE FALSE FALSE FALSE
+\end{verbatim}
+
+There are many useful functions operating on vectors, like min() (finds the minimum), $\max ()$ (finds the maximum), range() (finds both extremes), sum() (calculates the sum of values), prod() (calculates the product of all values), mean() (returns the mean), var() (calculates the variance), sort() (sorts the values), order() (returns the order of sorted values in the input), or length() (counts the elements of a vector).
+
+\begin{verbatim}
+> min(c(5, 3, 4, 9, 1, 2))
+[1] 1
+> max(c(5, 3, 4, 9, 1, 2))
+[1] 9
+> range(c(5, 3, 4, 9, 1, 2))
+[1] 1 9
+> sum(c(5, 3, 4, 9, 1, 2))
+[1] 24
+> prod(c(5, 3, 4, 9, 1, 2))
+[1] 1080
+> 5*3*4*9*1*2
+[1] 1080
+> mean(c(5, 3, 4, 9, 1, 2))
+[1] 4
+> var(c(5, 3, 4, 9, 1, 2))
+[1] 8
+> length(c(5, 3, 4, 9, 1, 2))
+[1] 6
+> sort(c(5, 3, 4, 9, 1, 2))
+[1] 123459
+> order(c(5, 3, 4, 9, 1, 2))
+[1] 5 6 2 3 1 4
+\end{verbatim}
+
+The vector length can be changed using the length attribute.
+
+\begin{verbatim}
+> x <- 1:10
+> length(x) <- 5
+> x
+[1] 1 2 3 4 5
+> x <- 1:10
+> x
+[1]   1   2   3   4   5   6   7   8   9   10
+> length(x) <- 5
+> x
+[1] 12345
+> length(x) <- 10
+> x
+[1] 1 2 3 4 5 NA NA NA NA NA
+\end{verbatim}
+
+The paste() function takes an arbitrary number of character vectors and concatenates them, one by one, into one vector. All non-strings will be coerced\\
+into character strings. The sep parameter is used to connect individual concatenated strings (a space is used by default). If the collapse parameter is provided, all strings from the resulting vector are concatenated to a single string where the value of the collapse parameter is used to join the elements.
+
+\begin{verbatim}
+> paste(c("a", "b", "c"), 1:3, c("x", "y", "z"))
+[1] "a 1 x" "b 2 y" "c 3 z"
+> paste(c("a", "b"), rep(1:5, each=2), sep="-")
+[1] "a-1" "b-1" "a-2" "b-2" "a-3" "b-3" "a-4" "b-4"
+[9] "a-5" "b-5"
+> paste(c("a", "b", "c"), 1:3, sep="", collapse="+")
+[1] "a1+b2+c3"
+\end{verbatim}
+
+\subsection{Acessing Vector Elements}
+Some of the elements of a vector may be accessed using an integer vector known as an index vector (non-integer values are converted to integers by truncating the values). The index vector, which is written into a pair of square brackets, contains the positions of elements that are to be processed. The elements are counted from 1.
+
+The following example shows how to retrieve a vector member or several members.
+
+\begin{verbatim}
+> x <- 10:15
+> x
+[1] 10 11 12 13 14 15
+> x[2]
+[1] 11
+x[2:4]
+[1] 11 12 13
+> x[2.4]
+[1] 11
+> x[2.7]
+[1] 11
+\end{verbatim}
+
+If an index is out of the range of the vector, a missing value (NA) will be returned.
+
+\begin{verbatim}  
+x[c(1,20)]
+[1] 10 NA
+\end{verbatim}
+
+Using a logical vector as the index means that only the elements which correspond to the positions with TRUE values of the index will be included in the output. Both vectors should normally have the same length. If the index vector is shorter, its elements will be recycled.
+
+
+\begin{verbatim}
+> x[c(TRUE, FALSE, FALSE, TRUE)]
+[1] 10 13 14
+\end{verbatim}
+
+If the index values are negative they are understood as positions of vector elements to be excluded.
+
+\begin{verbatim}
+> x
+[1] 10 11 12 13 14 15
+> x[-1]
+[1] 11 12 13 14 15
+> x[-seq(from=2, by=2, along.with=x)]
+[1] 10 12 14
+\end{verbatim}
+
+When the elements of a vector have names and the index vector contains strings, elements corresponding to the names are returned. When no names exist or when a non-existing name is supplied the corresponding elements will have the NA value.
+
+\begin{verbatim}
+> x <- c(first=1, second=2, third=3)
+> x["first"]
+first
+        1
+> x["firs"]
+<NA>
+    NA
+\end{verbatim}
+
+\section{Matrices and Arrays}
+Matrices are two-dimensional objects that, similarly to vectors, contain values of the same type (numbers, characters, logical values). To create a matrix, the matrix() function might be used. A matrix is created from some object containing data (passed as the first parameter or a parameter named data) and is organized into two dimensions according to the parameters of the function. The\\
+parameters include: nrow - the number of rows, ncol - the number of columns, byrow - when FALSE, which is a default option, the matrix is filled by columns, otherwise by rows, and dimnames - a list with the names assigned to the rows and columns.
+
+\begin{verbatim}
+> matrix(1:9, nrow=3) # same as matrix(data=1:9, nrow=3)
+    [,1] [,2] [,3]
+[1,] 1 4 7
+[2,] 2 5 8
+[3,] 3 6 9
+> matrix(1:9, nrow=3, byrow=TRUE)
+    [,1] [,2] [,3]
+[1,] 1 2 3
+[2,] 4 5 6
+[3,] 7 8 9
+> rnames <- c("x1", "x2", "x3")
+> cnames <- c("y1", "y2", "y3")
+> matrix(1:9, nrow=3, byrow=TRUE,
++ dimnames=list(rnames, cnames))
+    y1 y2 y3
+x1    1 2 3
+x2    4 5 6
+x3    7 8 9
+\end{verbatim}
+
+Information about matrix dimensions can be obtained using the nrow, ncol, and dim functions.
+
+\begin{verbatim}
+> x <- matrix(1:10, nrow=5)
+> nrow(x)
+[1] 5
+> ncol(x)
+[1] 2
+> dim(x)
+[1] 5 2
+> length(x)
+[1] 10
+\end{verbatim}
+
+To access individual elements of a matrix, two values of an index are needed. They are again written between a pair of square brackets. When accessing a position out of the range of the two indexes, an error is caused.
+
+\begin{verbatim}
+> x <- matrix(1:10, nrow=5, byrow=TRUE)
+> x[2, 1]
+[1] 3
+> x[2,4]
+Error in x[2, 4] : subscript out of bounds
+\end{verbatim}
+
+The entire row of a matrix can be accessed by leaving the second index empty. When we want to access a column, the row index is not entered.
+
+\begin{verbatim}
+> x <- matrix(1:10, nrow=5, byrow=TRUE)
+> x[2,]
+[1] 34
+> x[, 1]
+[1] 1 3 5 7 9
+\end{verbatim}
+
+When the indices for a row, a column, or both, contain a vector, more than one rows or columns are accessed at once. The same principles apply as when accessing vector elements (you might use, for example, a logical vector).
+
+\begin{verbatim}
+> x[c(1, 3, 5), ]
+    [,1] [,2]
+[1,] 1 2
+[2,] 5 6
+[3,] 9 10
+> x[c(1, 3, 5), c(FALSE, TRUE)]
+[1] 2 6 10
+\end{verbatim}
+
+Arithmetic operations with matrices work element-wise.
+
+\begin{verbatim}
+> m1 <- matrix(rep(2, 4), nrow=2)
+> m2 <- matrix(rep(3, 4), nrow=2)
+> m1+m2
+    [,1] [,2]
+[1,] 5 5
+[2,] 5 5
+> m2-m1
+    [,1] [,2]
+[1,]   1    1
+[2,]   1    1
+> m2*m1
+    [,1] [,2]
+[1,] 6 6
+[2,] 6 6
+> m1/m2
+        [,1] [,2]
+[1,] 0.6666667 0.6666667
+[2,] 0.6666667 0.6666667
+> sin(m1)
+        [,1] [,2]
+[1,] 0.9092974 0.9092974
+[2,] 0.9092974 0.9092974
+\end{verbatim}
+
+An array is an object which can store data in more than two dimensions. In fact, arrays are very similar to matrices (arrays contain matrices - for example, a three dimensional array is like a "list" containing two dimensional matrices). When creating arrays or when accessing the elements of parts of arrays, we need more indices. An array is created using the array() function.
+
+\begin{verbatim}
+> x <- array(1:18, dim=c(3, 2, 3))
+> x
+, , 1
+    [,1] [,2]
+[1,] 1 4
+[2,] 2 5
+[3,] 3 6
+, , 2
+    [,1] [,2]
+[1,] 7 10
+[2,] 8 11
+[3,] 9 12
+, , 3
+    [,1] [,2]
+[1,] 13 16
+[2,] 14 17
+[3,] 15 18
+> x[, , 1]
+    [,1] [,2]
+[1,] 1 4
+[2,] 2 5
+[3,] 3 6
+> class(x[, , 1])
+[1] "matrix"
+> x[, 1, 1]
+[1] 1 2 3
+> x[1, 1, ]
+[1] 1 7 13
+\end{verbatim}
+
+
 
 \backmatter
 % \begingroup\sloppy
