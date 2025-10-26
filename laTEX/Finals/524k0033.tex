@@ -31,6 +31,7 @@
 \usepackage{enumitem}
 \usepackage{etoolbox}
 \usepackage{fancyvrb}
+\usepackage{amsmath }
 % \usepackage{fontawesome5}
 
 \graphicspath{ {./images/} }
@@ -428,7 +429,7 @@ This branch of machine learning is called learning without a teacher and employs
 
 There exist also certain clustering algorithms that are able to discover the number of convenient clusters; for example, the EM (expectati\-on-maximizati\-on) algorithm is worth mentioning. For more details, see [112] chapter 8.5. EM assigns a probability distribution to each instance which indicates the probability of its belonging to each of the clusters. EM can decide how many clusters to create by cross validation, or it can be specified a priori how many clusters to generate.
 
-The unsupervised learning belongs to more difficult and demanding learning methods because it must work with less information. However, clustering today constitutes one of the highly needed applications in the real world. An interested reader can find more information concerning the clustering methods in [142,230, 22, 254], and many others.
+The unsupervised learning belongs to more difficult and demanding lear\-ning methods because it must work with less information. However, clustering today constitutes one of the highly needed applications in the real world. An interested reader can find more information concerning the clustering methods in [142,230, 22, 254], and many others.
 
 \subsection{Semi-supervised Machine Learning}
 A modern machine learning branch is semi-supervised machine learning, which - as its name suggests - represents something in between the extreme cases of supervised and unsupervised learning methods. In semi-supervised machine learning, the learner is given only a few labeled training samples and many unlabeled ones.
@@ -2426,7 +2427,282 @@ We can play with many parameters, for instance, adding descriptions of axes, cha
 
 We can customize many features of the graphical output through setting graphical options using the par() function. This function, called without parameters, returns a list of the values of current parameters. To change the parameters, a list of tag=value pairs are submitted. The parameters include, for example, justification of texts, margins, font, foreground or background colors, and many others.
 \input{informa.tex}
-\chapter{Structured Text Representation}
+\chapter{Structured Text Representation}\thispagestyle{empty}
+\section{Introduction}
+
+\begin{sloppypar}
+\textit{Structured} data is usually organized in databases, particularly relational databases. The high level organization, typically represented by tables, enables easy and efficient processing, for instance, searching or filtering. Text data is usually considered to be unstructured. A newspaper article, e-mail, SMS, or a recipe in a cookbook definitely does not look like a table. However, because the texts are normally generated using the grammar of a natural language and rules of a certain linguistic style, they have some kind of structure. For example, in a scientific paper, parts like a title, authors, abstract, keywords, introduction, etc. are expected or required. Every part consists of one or more words, symbols, expressions, sentences, organized into paragraphs, sections, or subsections. Every sentence contains words from several classes (e.g., nouns, verbs, adjectives) that are combined in the form of verb, noun, or prepositional phrases so they can bear some meaningful information. The words belong to a dictionary of the given natural language and their combinations are driven by the rules of the language. The rules are known as the grammar. There exist many rules (types of a sentence or expression) in a language and it is possible to create infinite texts written in a specific language. However, the structure is very complicated and it is not possible to describe all texts from one domain for example, the newspaper articles about the Winter Olympic Games in 2018 with one structure (template). An example of a structure would be all visitors of the Grandezza hotel in Brno, where every visitor has a name, surname, data of birth, address, etc. It is obvious that the second example data (hotel visitors) distinguishes some entities where all entities from the same class have the same attributes (properties). This is not true for the newspaper article text.
+\end{sloppypar}
+
+There exists another form of data between structured and unstructured data. It is the data that has some structure but this structure does not conform to what is normally expected from structured data. It means that this structure cannot be directly converted to a structure of a relational database (tables). This data is known as semi-unstructured. Textual documents, especially those on the web, are a typical representative of this. In the semi-structured form, the structure is usually expressed by using some tags or other marks which identify and separate pieces of data and thus, enable the creation of some data records and their relationships, often hierarchical (a tree of elements). The schema of semi-structured data does not have to be fixed in advance, which provides a high flexibility; hence, all instances of the same entity do not have to share the same attributes. Redundancy or non atomic values are also allowed [173, 219]. Typical representatives of semi-structured formats are XML or JSON.
+
+It would be very complicated to process texts without some kind of simplification, i.e., giving them a better structure so they can be more easily understood by machines. In fact, most machine learning algorithms require the data to be processed in a highly structured format. A structured format, as we already mentioned, is usually something that can be represented by a table. In the rows, there are some objects to be processed. In the case of text documents, those objects might be e-mails to be classified as spam (unsolicited, junk e-mails) and ham (legitimate, relevant e-mails). In the columns of the table, there are features (properties, characteristics) of the objects and their specific values. Every object is thus represented by a feature vector that characterizes it.
+
+The question is, how to derive the features from unstructured texts. In the case of e-mails (in the spam filtering problem), those features might be a result of tests performed by the SpamAssassin filter [89]. These tests include examinations whether an e-mail contains images, an HTML code, empty lines, words like cialis, viagra, or Your Bills, whether the sender is known or not, is in different blocklists etc. We might include other properties, such as the length of a document in words, the date of publication, author, number of figures and tables, language, and so on. In a majority of problems, however, the content of the documents needs to be taken into consideration. It means that the words, their combinations and meaning are of the highest importance. The document features are thus often derived from the words in the document.
+
+A widely used format in the text mining domain is the vector space model proposed by Salton and McGill [236]. Every document is represented by a vector where the individual dimensions correspond to the features (terms) and the values are the weights (importance) of the features. All vectors then form so called a document-term matrix where the rows represent the documents and the columns correspond to the terms in the documents. The features often correspond to the\\
+words contained in the documents. In other words, the particular property of a document related to a specific word is determined by the occurrence of the word in the document.
+
+Let's take the following group of documents (fictive news headlines):
+
+\begin{itemize}
+  \itshape
+  \item The Vegas Golden Knights ice hockey team achieved the milestone of most home wins.
+  \item Germany won 1-0 over Argentina in the FIFA Wold Cup finals.
+  \item Someone has won tonight's USD 10 million jackpot in the National Lottery.
+  \item A man has won a USD 5 million jackpot on a Las Vegas slot machine.
+\end{itemize}
+
+From the words and expressions used in the sentences, one can conclude that the first two documents are about sports and the remaining two talk about gambling. How could we arrive at such a conclusion? In the first two documents, there are words like ice, hockey, and FIFA that are almost exclusively related to the sports domain. In the last two documents, words like jackpot or lottery are probably the most notable. We might therefore say that if a document contains the word hockey it is most likely related to sports. In other words, the document has the property of having the word hockey included in the text.
+
+For the purpose of assigning a document to a particular category, the position of the word is sometimes not important. We might change the first sentence to The ice hockey team of Vegas Golden Knights achieved the milestone of most home wins. The word hockey moved to the third position in the sentence from the sixth position and the context (the surroundings, a few words before and after the word) also changed. However, the meaning remains the same and it is still a sentence related to sports.
+
+It seems that treating the content of a document as a set of words appearing in it is sufficient in some situations, such as assigning document to a category. In such a set, any relations with the remaining elements are not relevant. These relations in a sentence represent the context of the words - which other words are in the same sentence, which words are before and which are after, at what distance they are, etc.
+
+Not considering these relationships, however, definitely causes some information to be lost. Let us look at the word Vegas. Without considering its context, this word is related to both topics - sports and gambling. The relations to some topics are not clear also for some other words, like ice, Golden, World, or machine. Knowing their context, the situation might change significantly. If we have expressions like ice hockey, Vegas Golden Knights, World Cup, or slot machine, their meaning is much clearer than in the case of handling each word separately. The solution might be to not consider only isolated words but also sequences of two, three, or even more words (known as n-grams) or treating some word sequences as named entities (e.g., Vegas Golden Knights is a name for an ice hockey team, Las Vegas is a name of a place).
+\begin{figure}[t]
+\begin{center}
+  \includegraphics[width=\textwidth,height=75mm]{example3.1.png}
+\caption{Examples of rules used for categorization of documents into two categories (sport and gambling).}
+\end{center}
+\end{figure}
+
+The algorithms that are used to analyze texts often work properly with a combination of documents rather than just one document. The rules used to categorize the documents can take the form shown in Figure 3.1.
+
+This means, that even when the words are treated independently, a state when their context is somehow taken into consideration can be achieved. For example, the Naïve Bayes or decision tree learners handle the features independently. After training, a representation consisting of multiple attributes (the joint probability calculation and decision tree branches) is created (see Chapter 5). The independence of attributes is also sometimes necessary for making the problem feasible, as in the case of training the Naïve Bayes classifier. Imagine that we have 1,000 unique words $(n=1000)$ and we want to use them to create a document of 50 words ( $r=50$ ), where some of the words might appear more than once. Keeping in consideration the order of the words, there exist $n^{r}$ possibilities (permutations), which is $10^{150}$. When the order of words is not important, the number of possible documents (combinations) is $(r+n-1)!/(r!(n-1)!$, which is about $1.097 * 10^{86}$. It is thus obvious that consideration of the word order significantly increases the complexity of the solved problems.
+
+Documents are therefore often treated as sets of independent words or expressions. One word might appear multiple times in one document. The number of occurrences can also play an important role. The more times a word appears, the more important it probably is. Sets generally do not allow multiple occurrences of items. An exception is so called multisets or bags that allow multiple instances of their elements. In the text mining domain, the later term is commonly used and the bag-of-words model is a model commonly used in natural language processing. It become very popular because of its simplicity and the straightforward process of creation while providing satisfactory results [135].
+
+\section{The Bag-of-Worlds Model}
+In the bag-of-words model, the features that are derived from the processed documents are based on the words contained in them. Each document is thus represented by one bag (multiset). The words that appear in the document are present in this set. The words that are not present in the document are not in the set. The sets can be converted to vectors that are a more common data representation in machine learning. This approach is depicted in Figure 3.2. We can see that different documents are represented by sets of different sizes (containing different numbers of elements). The vectors created from the sets are also of different sizes. And what is more, we can see that the vector components (table headers) have different meanings. For example, the first component of the first vector represents the presence of the word good whereas the first component of the second vector represents the presence of the word bad. This is not a desired state when we want, for example, to compare these two documents. They have the same value of the first feature but the semantic meaning is opposite. Additionally, most of the machine learning algorithms require the vectors to have a fixed length.
+\begin{figure}[ht]
+\begin{center}
+  \includegraphics[width=\textwidth]{2025_10_21_5ba6420d88ee7388cb5eg-094}
+\caption{The principle of transforming documents (here, examples of very short product reviews) to bag-of-words.}
+\end{center}
+\end{figure}
+
+These considerations lead us to the conclusion that, in the ultimate representation of individual documents to be processed, all documents must have the same number of features and we must be able to clearly identify each feature across the entire document collection. Thus, the attribute set for the collection must be able to accommodate all possible features and all documents will share the same features. Of course, some of the documents may not be characterized by some features (i.e., their value is 0 ), see Figure 3.2. Now, all documents in a collection are represented by vectors of the same type and can be arranged into a table known as the term-document matrix. Such a matrix has a highly structured format which is suitable for many machine learning algorithms.
+
+\begin{figure}[ht]
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{table3.3.png}
+\caption{The principle of transforming documents (here, examples of very short product reviews) to bag-of-words.}
+\end{center}
+\end{figure}
+
+\section{The Limitations of the Bag-of-Words Model}
+The application of the bag-of-words approach in creating the term-document matrix has a few disadvantages. First, there exist a large number of possible features which can be derived from texts. When considering words as the most natural features, even quite a small collection of documents can contain many unique words. In a data set consisting of 100 hotel accommodation reviews from \href{http://booking.com}{booking.com} where the average number of words in a review is about 25 , almost 1,000 unique words can be found. In 1,000 documents, we identified more than 3,500 unique words, a collection having 10,000 documents contained almost 13,000 unique words, and in 100,000 documents, about 45,000 distinct words could be distinguished [295]. Such a high number of features is significantly different from what is typical in classic data mining problems or in relational databases.
+
+The high number of features is often a problem from the computational complexity perspective because processing a larger number of attributes requires more time. For some algorithms, for example a decision tree induction, the computational complexity grows quadratically with the number of features [144].
+
+Another problem related to the high number of dimensions is known as the curse of dimensionality. Inductive machine learning algorithms try to find a generalization of the available data. In the case of supervised classification, the goal is to find a function that is able to assign every item to a correct category (class). Having a data set with n binary (or boolean) attributes, there exist $2^{n}$ different instances. When there are 100 binary attributes, there exist $1.27 \cdot 10^{30}$ instances. To learn a perfect function covering the entire instance space, we would need a huge number of these instances. This is, however, often neither possible nor feasible. Because of that, we expect that the classifiers will work with some errors\\[0pt]
+and not so many learning instances are needed. With the use of the PAC-learning (probably approximately correct learning) paradigm, we can even quantify the relationship between these numbers [150].
+
+The curse of dimensionality is a bigger problem for some algorithms that for others. For example, a k-nearest neighbors (k-NN) classifier uses all features to calculate a similarity between the items in a data set. Thus, the k-NN classifier is more sensitive to the high number of attributes than, for example, a decision tree or rule learners that work with only a subset of attributes when creating a generalization of the data [199].
+
+There are two famous statistical laws applicable to natural languages - the Zipf's law and Heaps' law Zipf's law says that the frequency of a word (or another linguistic unit, like a word stem) is inversely proportional to its rank derived from the frequency of the word in the collection of texts [186]. This relationship can be represented by the following equation:
+
+
+\begin{equation*}
+\operatorname{\textit{freq}}\left(w_{i}\right)=\frac{C}{i^{a}}, \tag{3.1}
+\end{equation*}
+
+
+where $\operatorname{\textit{freq}}\left(w_{i}\right)$ is the number of occurrences of the word $w_{i}$ and $i$ is the position of the word $w_{i}$ in the list of all words ordered in descending order according to their frequency (in other words, $i$ is the rank of the word $w_{i}$ ). The coefficients $C$ and $a$ can be derived from the available data having the word counts for every word appearing in the document collection. Ideally, $C=f r e q\left(w_{1}\right)$ and $a=1$. In that case, the frequency of the second most frequent word will be one half of the frequency of the most frequent word, the frequency of the third most frequent word will be one third of the frequency of the most frequent word, etc. The frequency of the $10^{\text {th }}$ most frequent word will be twice as much as the frequency of the $20^{t h}$ most frequent word and three times the frequency of the $30^{t h}$ most frequent word. Zipf's law was slightly modified by Mandelbrot [184] to better represent the law, especially for words with high and low ranks:
+
+
+\begin{equation*}
+\operatorname{\textit{freq}}\left(w_{i}\right)=\frac{P}{(i+\rho)^{B}}, \tag{3.2}
+\end{equation*}
+
+
+where $\operatorname{\textit{freq}}\left(w_{i}\right)$ is the number of occurrences of the word $w_{i}, i$ is the rank of the word $w_{i}$, and the coefficients $P, \rho$, and $B$ are derived from the data.
+
+Heaps' law [114] describes the relationship between the size of a data collection as expressed by the number of words and the number of unique words. This relationship is demonstrated by the formula:
+
+
+\begin{equation*}
+M=k \cdot N^{b}, \tag{3.3}
+\end{equation*}
+
+
+where $M$ is the number of unique words, $N$ is the total number of words, and $k$ and $b$ are coefficients derived from data. Manning, Prabhakar and Schütze [185] derived the values $k=44$ and $b=0.49$ for the Reuters-RCV1 data set. The typical values of $k$ are between 30 and $100, b$ is close to 0.5 (the number\\
+of unique words is thus proportional to the square root of the total number of words).
+
+The coefficients that appeared in the formulae representing the laws of natural languages often depend on a specific language; for example, how inflective it is [98]. However, the laws can give us at least some initial insight to the data and its statistical characteristics.
+
+For example, when considering the first 10 most frequent words, they should form about one third of all words in a document collection keeping in mind the ideal set that conforms to Zipf's law. Since the data is not ideal, this is not very exact. However, Manning, Prabhakar and Schütze [185] found that the 30 most common words account for about $30 \%$ of the tokens in Reuters-RCV1. Not using these words as features in a machine learning task will, on the one hand, decrease the number of features by a negligible amount. On the other hand, it will significantly decrease the number of non-zero attribute values. Looking at the ranked list of words from another perspective, a significant majority of words appear only a few times. These words are thus often irrelevant for many tasks (e.g., classification, clustering, or association mining) and can be ignored. They also often represent some spelling errors so they actually work as a noise. By removing these words from further processing, a substantial reduction of the number of features can be achieved.
+
+The large number of features and the implications of Zipf's law also lead to an additional problem. When the number of words in the documents is considered, it quite small compared to the number of all unique words in a document collection. Looking at the previously mentioned collection of customer reviews, we were able to identify almost 1,000 unique words for the small set consisting of 100 documents. Taking the average length of 25 words, about $2.5 \%$ of the vector elements have a non-zero value (when all words in a document are distinct). In the case of the largest collection of 100,000 documents, the percentage of non-zero items is much smaller, about $0.05 \%$. We therefore say that the vectors are very sparse which is a problem for some tasks, computing similarity in classification or clustering [177], for example. The sparsity can also be seen in the columns of the document-term matrix because a significant number of words appear only a few times. The sparsity generally means that it is, at times, quite complicated to identify some patterns in the data [87].
+
+Since word order is not considered, the bag-of-words model has several disadvantages. For example, two sentences with the same words that appear in a different order will be treated as identical. When word order in a comparative sentiment analysis task is not taken into consideration, the sentences $A$ is better than $B$ and $B$ is better than $A$ will look the same although they should lead to opposite conclusions.
+
+The representations of individual words also bear little semantics. Each word in the bag-of-words model is just one column in the document-term matrix where the order of columns is not important. When columns A and B are closer to each\\
+other than columns A and C , it does not mean that the words A and B are more similar in their meaning or grammatical form, for example, than the words A and C . In the vector space model, all words create one dimension that is equally important as the others. The distance from the beginning of the vector space of a position representing, for example, one occurrence of the word A is the same as the distances of other positions representing one occurrence of any other word.
+
+The issue of the large number of features can be solved by feature selection methods (see Chapter 14). The bag-of-words model can be also used to derive new representations (using, for instance, latent semantic analysis or neural models creating word embeddings) with fewer dimensions, thus eliminating the above mentioned problems. These methods are briefly described in Chapter 13. The loss of context can be eliminated by working with sequences of words known as n-grams (we therefore sometimes talk about bag-of-n-grams) or by introducing new attributes bearing information about the context of a word (for example, what is the preceding word, what is the following word, what is the part-of-speech of the previous word, etc.). Here, however, problems of high dimensionality and sparseness are often intensified.
+
+Despite the numerous problems and limitations of the bag-of-words mo\-del, it brings surprisingly good results in many tasks. In situations, especially when there are fewer features, where there is no correlation between them or when we do not want to take it into account, the bag-of-words approach is appropriate. Sparse vectors can be also used to learn dense embedding through training a neural network [101]. For example, combining the embedding vectors of words (through averaging them, for instance) from a document into one vector enables application of classical machine learning algorithms for classification.
+
+\section{Document Features}
+The form taken by the features characterizing documents depends on the problem to be solved. For example, using characters as features might be somehow useful for a spam filtering task where the presence of some special characters or too many identical characters can indicate a spam e-mail. On the other hand, in an information extraction problem where some kind of semantic information understandable by people is expected as the output, characters as features do not make much sense. Here, words or concepts play a more important role.
+
+In most cases, the following feature types can be distinguished [87]:
+
+\begin{itemize}
+  \item \textit{Characters, character bi-grams, tri-grams, n-grams}: In spite of being the most complete representation of textual data, characters are not often used as features. The reason is quite simple - one character does not bear much semantic information, so any interpretation is quite complicated, especially when the positional information, i.e., information about the context of a character, is lost (we can thus talk about a bag-of-characters representation).
+  \item \textit{Words}: Words are the most natural and straightforward features that can be derived from texts. A word is a sequence of symbols, typically letters, that is used in the sentences of a given language. It has a semantic, grammatical, and phonological unity and is usually separated from other words by spaces in writing [74]. This is how are words understood by most western languages. On the other hand, texts in, for instance, Chinese or Arabic do not usually contain spaces between words so it is not easy to visually identify their borders. 
+  
+  A \textit{dictionary} can be used to find out what is and what is not a word in a given text. It is quite typical that a dictionary, a list of words that are available in the given language, exists for a natural language. The dictionaries might contain only the basic form of the given word, called lemma. For example, the lemma for does, doing, done, or did is do. Therefore, the absence of a particular sequence of characters in a dictionary does not necessarily mean that it is not a proper word.
+  \bigskip
+
+  What about other parts of texts, like numbers, temporal expressions, currency symbols, and punctuation (comma, period, question mark, quotation marks, etc.)? It generally depends on the task to be performed. Sometimes, a particular number or date can be important. If the number is, for example, the price of a product, we can use a specific value to find out whether the product is expensive or cheap. Sometimes it is enough to know that the text shows specific price.
+  \bigskip
+  
+  One of the disadvantages of using words is that, without a context, the possible meaning of a word may not be obvious.
+  \bigskip
+  
+  \item \textit{Terms}: Terms are single words or multiword expressions formed of words from the text. When looking at the fictive news headlines mentioned earlier in this chapter, terms like Las Vegas, ice hockey, FIFA World Cup, or the National Lottery can be identified. Since more words are treated as one unit, the ambiguity of words is reduced.
+  \bigskip
+
+  Term extraction is related to the Named Entity Recognition (NER) problem, which is a subtask of Information Extraction. Its goal is to identify information units like names (typically persons, organizations, and location) and numeric expressions including time, date, money, and percent expressions [205].
+  \bigskip
+  
+  \item \textit{Concepts}: Concepts are features that are generated from the text based on the occurrence of words, phrases, or more complicated structures. The concepts do not have to appear directly in the text. In the case of news headlines, for example, concepts like sport or gambling can be identified.
+  \bigskip
+
+  Concepts, together with terms, have the most expressive semantic value. Concepts enable better handling of synonymy, polysemy, hyponyms, or hypernyms. On the other hand, they require more effort to be extracted. They are also often domain dependent.
+  \bigskip
+
+  Assigning correct concepts often involves cross-referencing against a source of external knowledge which can be the knowledge of a domain expert, an existing ontology or lexicon, or an annotated collection of training documents used to train an algorithm assigning concepts.
+\end{itemize}
+
+
+
+Characters or words can be combined to form character or word n -grams. A character n -gram is a sequence of n consecutive characters. A few character 3-grams created from this sentence include "A f", " fe", "few", "ew ", "w 3", etc. Word 2-grams from this sentence include "Word 2-grams", "2-grams from", "from this", etc.
+
+The character n -grams are able to capture whole words ("few") as well as word class (e.g., "ed ", "ing"). A great advantage of character n-grams when compared to word n-grams is that they do not create as many dimensions (the sparsity of data is lower) because there exist fewer character combinations than word combinations [139]. Character n-grams have been successfully used for many tasks, including language identification [38], authorship identification [118], malicious code detection [223], and plagiarism detection [17].
+
+Word n-grams can help in capturing multiword phrases [163] and have been successfully used in sentiment analysis [273].
+
+An interesting collection of word n-grams, together with their frequency of usage in books, is provided by Google. Their new edition of the Google Books Ngram Corpus provides syntactically annotated n-grams for eight languages and covers about $8 \%$ of books that have been ever published (more than 8 million books) [172].
+
+N -grams can be also understood as a simple statistical language model that models probabilities of sequences of characters or words. In other words, given a sequence of previous words, the model can help us predict a word. As such, it can be successfully used in task, such as machine translation, spelling correction, or speech recognition [138].
+
+
+\section{Standardization}
+Text data is commonly presented in some kind of semi-structured representation. A web page containing the most recent news might include several news features consisting of a heading, list of keywords, a few paragraphs of text, images with captions, etc., all enclosed within <div> or similar tags with defined classes.
+
+For example, an XML file containing news from Reuters Corpus Volume 1 (RCV1) [167] consists of elements containing the publication date, related topic, mentioned people, places or organizations and the text consisting of a title, date line, and body (see Figure 3.4).
+
+\begin{figure}[ht!]
+\begin{center}
+  \includegraphics[width=\textwidth,height=0.85\textheight]{xml3.4.png}
+\caption{An example of an XML file containing a newspaper article from the RCV1 document collection.}
+\end{center}
+\end{figure}
+
+A JSON (JavaScript Object Notation) file stores the data in a human readable format as objects consisting of name/value pairs where the value can be a scalar (string, number, logical value), another object, or a list of values [79].
+
+With a semi-structured document, only the content of some selected elements might be important for a specific task. For example, to train a classifier to categorize newspaper articles, only the content of elements <code> in the <codes class="bip:topics:1.0"> section, <title>, and <text> is relevant. The content of <title> and <text> will be the base for deriving document features, the content of <code> element will be used to specify the class labels (one or more) for the documents.
+
+The XML library can be used to process XML (and HTML) documents. The xmlToList() function converts an XML document of node to a list that directly contains the data. The list elements correspond to the children of the top-level node and the .attrs element is a character vector of attributes from the node.
+
+
+\begin{verbatim}
+> library("XML")
+> data<-xmlToList("Reuters/CD1/2286newsML.xml")
+> names(data)
+[1] "title" "headline" "byline" "dateline" "text"
+[6] "copyright" "metadata" ".attrs"
+> data["title"]
+$title
+[1] "MEXICO: Recovery excitement brings Mexican
+    markets to life."
+> data$metadata$codes$code$.attrs
+    code
+"MEX"
+\end{verbatim}
+
+The following example (from [143]) shows how to extract information about reviews of conference papers. The file with the information in the JSON format contains one object with key papers. The value associated to this key is an array where every element represents one paper. Every paper has a numeric identifier, a string value representing a preliminary decision on the paper, and the list of reviews. The reviews contain information about reviewers' confidence, evaluation of the paper on a given numeric scale, the number of the review, language, text of the review, additional remarks to the conference committee, date of the reviews, and authors' evaluation of the review. An excerpt from the JSON file can be found in Figure 3.5.
+
+The fromJSON() function from the rjson package converts a string containing a JSON object, the content of a file, or the content of a document with a given URL to an R object. The type of the object is list. Its elements are numbered when they come from a list of values in a JSON object and have names when they are converted from an object with name/value pairs.
+
+
+\begin{figure}[h!]
+\begin{center}
+  \includegraphics[width=\textwidth,height=0.85\textheight]{json3.5.png}
+\caption{An example of a JSON file containing information about reviews of papers from a conference.}
+\end{center}
+\end{figure}
+
+\begin{verbatim}
+> library("rjson")
+> data <- fromJSON(file="reviews.json")
+> names(data)
+
+
+[1] "paper"
+> names(data[['paper']][[1]])
+[1] "id" "preliminary_decision"
+[3] "review"
+
+
+> names(data[['paper']][[1]][["review" ]][[1]])
+[1] "confidence" "evaluation" "id" "lan"
+[5] "orientation" "remarks" "text" "timespan"
+\end{verbatim}
+
+\begin{verbatim}
+> # a piece of text of the first review of the first paper
+> substr(data[["paper"]][[1]][["review"]][[1]][["text"]],
++ 1, 60)
+[1] "- El articulo aborda un problema contingente y muy
+relevante"
+\end{verbatim}
+
+\begin{verbatim}
+> # the language of the first review of the first paper
+> data[["paper"]][[1]][["review"]][[1]][["lan"]]
+[1] "es"
+\end{verbatim}
+
+\begin{verbatim}
+> # a decision on the first paper
+> # same as data[[1]][[1]][[2]]
+> data[["paper"]][[1]][["preliminary_decision"]]
+[1] "accept"
+\end{verbatim}
+
+The following commands convert the data to a data frame with two columns, Text and Evaluation. The data can be used, for example, in a classification task where the evaluation will be predicted according to the text of reviews.
+
+\begin{verbatim}
+# creating an empty data frame
+d <- data.frame("Text"=c(),
+        "Evaluation"=c(),
+        stringsAsFactors=FALSE)
+for (i in 1:length(data[["paper"]])) {
+    # looking at the number of reviews of the ith paper
+\end{verbatim}
+
+\begin{verbatim}
+    nr <- length(data[["paper"]][[i]][["review"]])
+    if (nr==0) {next}
+    for (r in 1:nr) {
+        # adding the text and evaluation to the data frame d
+        d <- rbind(d,
+            data.frame(
+                "Text"=data[["paper"]][[i]][["review"]]
+                    [[r]][["text"]],
+                "Evaluation"=data[["paper"]][[i]]
+                        [["review"]][[r]]
+                        [["evaluation"]]
+                )
+            )
+    }
+}
+\end{verbatim}
 
 \backmatter
 % \begingroup\sloppy

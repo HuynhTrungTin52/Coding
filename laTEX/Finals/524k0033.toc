@@ -46,3 +46,8 @@
 \contentsline {subsection}{\numberline {2.16.2}Loading Packages}{73}{subsection.2.16.2}%
 \contentsline {section}{\numberline {2.17}Graphics}{73}{section.2.17}%
 \contentsline {chapter}{\numberline {3}Structured Text Representation}{82}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{82}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The Bag-of-Worlds Model}{86}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The Limitations of the Bag-of-Words Model}{88}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Document Features}{92}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Standardization}{94}{section.3.5}%
