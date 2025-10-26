@@ -1,0 +1,276 @@
+\chapter{Classification}
+
+\section{Sample Data}
+
+The training and testing data come from a publicly available data set containing
+customer reviews of books purchased in Amazon e-shops. That this data can be
+freely downloaded from a publicly accessible URL \cite{ref190}. Experiments, demonstrated below, use a randomly selected set from the large original database. The
+data collection for demonstrating capabilities of selected classifiers are limited
+here to just 1000 samples which are evenly split into two classes: books with
+positive reviews (five-star reviews) and books with negative reviews (one-star
+reviews). All reviews are written by customers in English.
+
+To illustrate the original reviews, here are some randomly selected data items
+from the data set coming from the URL mentioned above \cite{ref190} and used in this
+book as input for the presented classification algorithms. These demonstration
+reviews are not related to any particular book. To save space, long reviews have
+not been included here.
+
+First, five positive reviews:
+
+\begin{itemize}
+    \item Really interesting. Everything you need, the most important is inside. Clear explanation, good pictures to represent ’the move’. This books helps me to improve
+myself and I will soon read it again... I guess it can be useful for beginner too...
+    \item This book is good on many levels. I learned about Ethiopia, it’s culture and the
+struggles during this time. Excellent writing.
+
+    \item Ron Hansen is among the best writers delving into unusual real-life historical situations, and trying to make sense of them. Mariette is a pretty 17 year old drawn
+to the convent, who immediately becomes a special, vision influenced, faith inspired, stigmatized True Believer. Many of the older nuns are skeptical (to say the least), while the younger ones are in awe. Mr. Hansen guides us right into the
+heart and soul of this Catholic community, and of course Mariette. After reading this book, one feels a certain understanding of this potential saint, and how
+religion may become an obsession. I would personally agree with her physician
+/ father, the scientific skeptic, but Mariette’s story is certainly believable in the
+hands of a fine writer like Mr. Hansen!
+
+    \item Excellent book by a wonderful leader. Used it to develop a presentation on leadership for a mentoring team. Practical and excellent lessons for everyone. Thank
+you, Mr. Powell.
+
+    \item Harry Stein writes one of the most poltically honest memoirs I’ve read in a long
+time. In straightforward speak that skirts no liberl ideals, Stein chops down an
+ideology that he swore by in the 1960s but now sees as a hinderance to our
+modern-day culture. While his liberal foes cringe, every independently-minded
+American should give Stein’s views a chance. For the naysers of this book, especially hardcore liberals, I found it interesting that many of the facts Stein used to
+back up his positions were pulled out of the liberally-slanted media he so accurately portrays.
+\end{itemize}
+
+Next, five negative reviews:
+
+\begin{itemize}
+    \item For people who have some knowledge of China, the book is of NO interest. Other
+books by James Mann (About Face), Jonathan Fenby, not to forget Spence (In
+Search of Modern China), are clearly superior.Kissinger’s admiration for Mao
+is a disgrace. Mao was a murderer and Kissinger’s repetitions admiration for
+China’s civiliztion is non-sence. Over the centuries, China has been a mess, with
+short periods of success, but mostly calamities. Because of its size, China should
+have been a success, but it is not. Japan was must faster on its feet! China’s
+isolation was a huge mistake. It is only recently, thanks to Deng and Western
+support, that China at last is emerging!Kissinger acknowledges that China has
+always played one ”barbarian” against the other. It is very true but he does not
+draw any conclusion. To-day China is gaming both Europe and America: Just
+look at the ”free” transfer of thechnology. The West is stupid and we should
+unite ton face China...The last point is Climate Change. To write about China and
+not discuss the catastrophic impact of climate change, is a major failure of the
+book. China - and Asia - will be destroyed by climate change.The combination
+of bad governance, corruption, and climate change is DEADLY. It is a Chinese
+and Asian disease.
+
+    \item Let me set the scene for you:I read the first three chapters of this book a few
+years ago right before it was published, and because I was immediately hooked
+and knew that I’d blow through the book in a day (then end up miserable until
+the next one was published over a year later), I decided to put it aside until there
+were more books to read. So fast forward to last week... I had an eight hour shift taking inventory at a local retailer scheduled, so I pulled up my Kindle
+wishlist and looked for something that was also available on Audible. This book
+was the winner, and–shame on me–I was, unfortunately, too excited to bother
+with listening to the Audible sample first. Oops. Big OOPS.Within thirty seconds
+I was asking myself if the producers of the audiobook were serious. By fortyfive seconds, I was wondering if the author had approved the narrator and was
+happy with her. Then, around the sixty second mark, I decided it didn’t matter
+to me. I turned it off. I couldn’t listen to a story being read that way, no matter
+how compelling it is. So here I am; warning others away. READ the book–don’t
+bother trying to listen to it. Or, if listening is your only option, then I would
+suggest looking into using Ivona Voices to create an MP3 version of the Kindle
+book. You would be better off, in my not so humble opinion .
+
+    \item Foolishly, I purchased a copy of this book for a young mother, at her request.Now,
+I am familiar with the contents of said book, and I don’t know how to deal with
+the guilt. Oh, my God! What can I do to protect the daughter of this young
+woman? If she is naive enough to swallow this ”author’s” militant sickness, I
+have doomed an innocent child to a life of horror.On a more positive note, if I
+can convince the recipient to toss the volume into the dumpster, I will have removed one copy of it from circulation, and perhaps saved another innocent child
+from this abuse.This abomination is not recommended.
+
+    \item The Lombardi Rules attempts to provide a philosophical background of Coach
+Lombardi’s beliefs and apply them to life and business. This was written by Vince
+Lombardi Jr, not the man himself, and although you’d expect his son to also possess many of the inspiring attributes of Coach Lombardi, they are not exhibited
+in this book. It is essentially a collection of Vince Lombardi quotes turned into
+2-3 page chapters. Making matters worse is that the text supporting the quotes
+ranges from cliche to painfully obvious with nothing profound or meaningful,
+not even a decent example from Lombardi’s illustrious coaching career. Its always frustrating when you could read the chapter headings and gain as much
+value as the entire book. You would be better served just searching for Vince
+Lombardi quotes than wasting any time with this book.
+
+\item I normally adore anything and everything Victoria Alexander. This book started
+out to be good but I felt it quickly left me feeling bored and dissatisfied. The
+Princess’s character was very annoying. Although I love Weston I just couldn’t
+get passed how slow the book moved along. I would not recommend this book
+to a first time reader of Victoria Alexander. She is a wonderful writer, this book I
+feel was just a lemon out of hundreds.
+\end{itemize}
+
+Half of the examples used for the demonstration of classifiers, 500, are labeled as positive reviews, the remaining half as negative. All reviews have
+been taken as they are, including possible grammar mistakes, typing errors, and so on, as typical for contributions on social networks. No special adjustment was done except for removing irrelevant attributes (those that do not contribute to classification). Removing such attributes decreases computational complexity (by lowering the number of dimensions, that is words, therefore saving memory and time). In the package \texttt{tm}, there is a very efficient function,
+removeSparseTerms(), reducing matrix sparsity (removing columns containing too many zeros according to parameters given by a user). The parameter was
+experimentally set to 0.995. This means that attributes that appear in at least 0.5\%
+(1-0.995) of documents are retained. This setting filtered a majority of attributes
+(only 2218 left, out of 17903) while retaining the classification accuracy.
+
+The data are prepared in the pure textual form and their input format is CSV
+(comma separated values), including the first line which contains names of attributes (which are the words themselves). As for the format of the input data, it
+is represented simply as a vector for each review, where the values of elements
+are the word frequencies in individual reviews.
+
+In a simplified way, vectors can be viewed like genomes composed of genes,
+where a genome constitutes a textual document and genes represent words. The
+more genes are shared between documents, the more similar (‘related’) the documents are. A vector direction points at a subspace containing similar documents.
+
+The data representation is a matrix – every column represents an attribute,
+every row (vector) represents a textual review. The last vector element is a class
+label (which is a discrete value). In each of the following sections, the same
+demonstration data set is used to present all selected classifiers mentioned.
+
+\section{Selected Algorithms}
+
+In this book, a chosen set of algorithms consists of typical ones employed for
+text mining up to the present. Naturally, the machine-learning selected here algorithms do not cover every possibility and a reader is encouraged to experiment
+with many other existing methods. One of the problems of machine-learning is
+that there seems to be no universal, best, algorithm for any data type. In practice,
+it is often necessary to experimentally look for the best data/text mining tool.
+
+This problem has been discussed in many publications; for example, refer to
+\cite{ref281} and \cite{ref282}. Finding and presenting the final optimal algorithm as a solution
+for a given application might sometimes just be that proverbial tip of the glacier,
+while the rest can absorb the overwhelming majority of invested time and other
+resources.
+This part of the book presents machine-learning algorithms which employ
+various principles of learning:
+
+\begin{itemize}
+    \item Optimal and Na¨ıve Bayes’ Classifier – traditional and fast methods based
+on (conditional) probability theory, with excellent mathematical support,
+including uncertainty;
+    \item k-Nearest Neighbors – methods based on similarity with known entities,
+very fast during the training phase, might be appreciably slow during the
+classification process;
+    \item Decision Trees – popular ‘divide and conquer’ algorithms, which can
+provide understandable knowledge which may be transferred from a tree
+to a set of rules;
+    \item Random Forest – classification by a group of decision trees, which usually provides good results based on a noticeable reduction of possible tree
+correlations and over-fitting;
+
+    \item Support Vector Machines (SVM) – an often applied algorithm to problems where it is convenient to look for linear boundaries between classes
+in artificially enlarged spaces when the original space has just non-linear
+boundaries; SVM can give very good results but might have a high computational complexity;
+
+    \item Adaboost – a favorite method based on using a set of ‘weak learners’
+that, together, can provide excellent results, even if each of the learners
+classifies with an error only slightly less than 50%.
+
+    \item Deep Learning – one of very modern methods employing the well-known
+and time-proven artificial neural networks in many applications. This approach relies on the power of multilayered networks, where the deepness
+is given by the number of those layers; each layer makes new combinations of input values, thus creating an abstract space where the classification can work well. Deep Learning is a resource (time, memory)
+demanding method, which can, today, take advantage of powerful hardware.
+\end{itemize}
+
+All the above mentioned algorithms have many implementations, including
+the popular language R. Sometimes, in the same programming language or a system, a user can select more or less different implementations according her or his
+application needs. One of the most important matters is to learn which parameters are available for an algorithm and which values it accepts, including the
+default values. The default algorithm parameters are often set to the statistically
+most used values; however, it does not have to be the optimal ones.
+
+In this book, a reader cannot find a detailed description of all possible parameters because the intention was not to supply a manual. However, the detailed
+understandable descriptions, including samples of R-code, are available from the Internet as PDF documents and may be easily downloaded from the following
+web pages:
+
+\begin{itemize}
+    \item Optimal and Na¨ıve Bayes’ Classifier – see \cite{ref182},
+    \item k-Nearest Neighbors – see \cite{ref226},
+    \item Decision Trees – see \cite{ref154},
+    \item Random Trees and Forest – see \cite{ref171},
+    \item Support Vector Machines (SVM) – see [153] and \cite{ref193},
+    \item Adaboost – see \cite{ref60},
+    \item Deep Learning – see \cite{ref83}.
+\end{itemize}
+
+\section{Classifier Quality Measurement}
+
+After selecting and training a classifier algorithm, the supervisor needs to know
+the classifier efficiency – based on the training samples, is the mined knowledge
+sufficient enough for its successful application to future data?
+
+Once the classifier training process has reached a certain peak value (depleted
+time, or maximum number of steps, or any other appropriate criterion), which
+completes the learning, it is necessary to express the algorithm’s training quality, preferably numerically. This value can also be used to compare the mutual
+performance degree of various classifiers under investigation over the same data
+from a given application point of view.
+
+Several methods are used in practice, of which the four most commonly used
+will be mentioned here. To evaluate the quality of a classifier, it is necessary to
+use so-called test data (samples), which correspond thematically to the training
+data, but were not used during training. It is similar to teaching at a school where
+a teacher (supervisor) teaches pupils to correctly compute some examples, and
+uses other, but similar examples to test their understanding.
+
+From a binary perspective, four terms are used for the computation of classifier efficiency: 
+\textit{TP} (True Positive) for the number of data items classified correctly
+from a certain class \textit{C} point of view, 
+\textit{FP} (False Positive) for items incorrectly assigned to \textit{C}, 
+\textit{TN} (True Negative) for items correctly classified as not belonging to
+\textit{C}, and 
+\textit{FN} (False Negative) for items belonging to \textit{C} but assigned to other class
+or classes~\cite{ref107}:
+
+\begin{itemize}
+    \item \textit{Accuracy}: 
+$$
+\textit{Accuracy} = ({\textit{TP} + \textit{TN}})/({\textit{TP} + \textit{TN} + \textit{FP} + \textit{FN}})
+$$
+that is, the number of correct answers to the number of all classified samples, often expressed as a percentage.
+    \item \textit{Precision}: 
+$$
+\textit{Precision} = {\textit{TP}}/({\textit{TP} + \textit{FP}})
+$$
+that is, the number of items correctly labeled as belonging to the positive class \textit{C} divided by the total number of items labeled both correctly and incorrectly as belonging to \textit{C} (which is actually the number of relevant items in a set of items assigned to \textit{C} by the investigated classifier).
+    \item \textit{Recall}: 
+$$
+\textit{Recall} = {\textit{TP}}/({\textit{TP} + \textit{FN}})
+$$
+that is, the proportion of actual positives that was identified correctly.
+    \item \textit{F-measure}: it is the weighted harmonic mean of the precision and recall:
+$$
+F = \frac{1}{\alpha \frac{1}{\textit{precision}} + (1-\alpha) \frac{1}{\textit{recall}}}
+= \frac{(\beta^2 + 1) \cdot \textit{precision} \cdot \textit{recall}}{\beta^2 \cdot \textit{precision} + \textit{recall}}
+$$
+
+where 
+$
+\beta^2 = \frac{1-\alpha}{\alpha}.
+$
+When $\beta$ increases, the precision has a higher importance. When the precision and recall are equally weighted (have the same importance), $\beta = 1$, and the measure is also called \textit{F1} or \textit{F-score}, 
+which is the harmonic mean of the precision and recall:
+$$
+F1 = \frac{2 \cdot \textit{precision} \cdot \textit{recall}}{ 2 \cdot\textit{precision} + \textit{recall} }
+= \frac{2 \cdot \textit{TP}}{2 \cdot \textit{TP} + \textit{FP} + \textit{FN}}.
+$$
+
+It is possible to draw a graph where the horizontal axis represents the
+recall and the vertical axis represents the precision, however, sometimes
+not a curve but just a number, which expresses the classification quality,
+is needed.
+
+\end{itemize}
+
+
+Various metrics evaluating the results of classification can be calculated for
+each class. For example, the \textit{precision} for class 0 is 0.5 and the \textit{precision} for
+class 1 is 0.9. Often, we want just one number evaluating a classifier. Thus,
+the next step might be to average these two values. Using \textit{macroaveraging}, which
+simply relies on the arithmetic mean, the average precision is 0.7. Both values representing a classifier’s performance for each class have an equal weight.
+
+\textit{Microaveraging} aggregates the decisions across all classes, taking every single classified item into consideration. Thus, the classes have different weights
+depending on their size (bigger classes contribute to a higher measure value). When class 0 is predicted for 20 items and class 1 for 100 items (class 1 is predicted five times more frequently than class 0), microaveraged precision will be
+$
+{20}/({20+100})) \cdot 0.5 + {100}/({20+100}) \cdot 0.9 = 0.83.
+$
+It is obvious that the precision is then closer to the value of the precision for class 1, which is bigger.
+
+
+
+

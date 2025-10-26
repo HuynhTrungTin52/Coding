@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Recursion2",
+      "request": "launch",
+      "mainClass": "lab05_524k0033.Recursion2",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
+      "name": "Recursion1",
+      "request": "launch",
+      "mainClass": "lab05_524k0033.Recursion1",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
+      "name": "SQ3",
+      "request": "launch",
+      "mainClass": "lab05_524k0033.SQ3",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
+      "name": "SQ2",
+      "request": "launch",
+      "mainClass": "lab05_524k0033.SQ2",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
+      "name": "SQ1",
+      "request": "launch",
+      "mainClass": "lab05_524k0033.SQ1",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "lab05_524k0033.Test",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
       "name": "Student",
       "request": "launch",
       "mainClass": "lab04_524k0033.Student",

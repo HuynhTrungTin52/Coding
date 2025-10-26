@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: chapter/chapter1/chapter1.aux
+A level-1 auxiliary file: chapter/chapter2/chapter2.aux
+A level-1 auxiliary file: chapter/chapter3/chapter3.aux
+A level-1 auxiliary file: chapter/chapter4/chapter4.aux
+A level-1 auxiliary file: chapter/chapter5/chapter5.aux
+A level-1 auxiliary file: chapter/chapter6/Chapter6.aux
+A level-1 auxiliary file: chapter/chapter7/Chapter7.aux
+A level-1 auxiliary file: chapter/Chapter8/Chapter8.aux
+A level-1 auxiliary file: chapter/chapter9/chapter9.aux
+A level-1 auxiliary file: chapter/chapter10/chapter10.aux
+A level-1 auxiliary file: chapter/chapter11/chapter11.aux
+A level-1 auxiliary file: chapter/chapter12/chapter12.aux
+A level-1 auxiliary file: chapter/chapter13/chapter13.aux
+A level-1 auxiliary file: chapter/chapter14/chapter14.aux
+The style file: chicago.bst
+Reallocated field_info (elt_size=4) to 11348 items from 5000.
+Database file #1: references.bib
+You've used 295 entries,
+            2861 wiz_defined-function locations,
+            2099 strings with 47343 characters,
+and the built_in function-call counts, 207216 in all, are:
+= -- 17158
+> -- 15026
+< -- 108
++ -- 4484
+- -- 5136
+* -- 17505
+:= -- 37843
+add.period$ -- 977
+call.type$ -- 295
+change.case$ -- 2040
+chr.to.int$ -- 295
+cite$ -- 295
+duplicate$ -- 6315
+empty$ -- 12859
+format.name$ -- 5860
+if$ -- 39079
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 361
+newline$ -- 1487
+num.names$ -- 3028
+pop$ -- 1950
+preamble$ -- 1
+purify$ -- 3904
+quote$ -- 0
+skip$ -- 6499
+stack$ -- 0
+substring$ -- 10289
+swap$ -- 2216
+text.length$ -- 108
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4960
+warning$ -- 0
+while$ -- 2982
+width$ -- 0
+write$ -- 4155

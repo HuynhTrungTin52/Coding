@@ -1,0 +1,1917 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Abney}{Abney}{2007}]{ref1}
+Abney, S. (2007).
+\newblock {\em Semisupervised Learning for Computational Linguistics}.
+\newblock Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Abney}{Abney}{1991}]{ref2}
+Abney, S.~P. (1991).
+\newblock Parsing by chunks.
+\newblock In R.~C. Berwick, S.~P. Abney, and C.~Tenny (Eds.), {\em
+  Principle-Based Parsing: Computation and Psycholinguistics}, pp.\  257--278.
+  Dordrecht: Kluwer.
+
+\bibitem[\protect\citeauthoryear{Ackerman and Ben-David}{Ackerman and
+  Ben-David}{2016}]{ref3}
+Ackerman, M. and S.~Ben-David (2016).
+\newblock A characterization of linkage-based hierarchical clustering.
+\newblock {\em Journal of Machine Learning Research\/}~{\em 17}, 1--17.
+
+\bibitem[\protect\citeauthoryear{Adler}{Adler}{2010}]{ref4}
+Adler, J. (2010).
+\newblock {\em R in a Nutshell: A Desktop Quick Reference}.
+\newblock Sebastopol, CA: O’Reilly.
+
+\bibitem[\protect\citeauthoryear{Aggarwal}{Aggarwal}{2014}]{ref5}
+Aggarwal, C.~C. (2014).
+\newblock An introduction to cluster analysis.
+\newblock In C.~C. Aggarwal and C.~K. Reddy (Eds.), {\em Data Clustering:
+  Algorithms and Applications}, pp.\  1--28. Boca Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Aggarwal}{Aggarwal}{2018}]{ref6}
+Aggarwal, C.~C. (2018).
+\newblock {\em Machine Learning for Text}.
+\newblock Cham: Springer International Publishing.
+
+\bibitem[\protect\citeauthoryear{Aggarwal and Zhai}{Aggarwal and
+  Zhai}{2012}]{ref7}
+Aggarwal, C.~C. and C.~Zhai (2012).
+\newblock A survey of text clustering algorithms.
+\newblock In C.~C. Aggarwal and C.~Zhai (Eds.), {\em Mining Text Data}, pp.\
+  77--128. New York: Springer.
+
+\bibitem[\protect\citeauthoryear{Albalate and Minker}{Albalate and
+  Minker}{2011}]{ref8}
+Albalate, A. and W.~Minker (2011).
+\newblock {\em Semi-Supervised and Unsupervised Machine Learning: Novel
+  Strategies}.
+\newblock London, Hoboken, NJ: ISTE, Wiley.
+
+\bibitem[\protect\citeauthoryear{Aliguliyev}{Aliguliyev}{2009}]{ref9}
+Aliguliyev, R.~M. (2009).
+\newblock Clustering of document collection -- a weighting approach.
+\newblock {\em Expert Systems with Applications\/}~{\em 36\/}(4), 7904--7916.
+
+\bibitem[\protect\citeauthoryear{Allaire, Chollet, RStudio, and Google}{Allaire
+  et~al.}{2019}]{ref10}
+Allaire, J.~J., F.~Chollet, RStudio, and Google (2019).
+\newblock \textit{Keras for R}.
+\newblock Available at \url{https://keras.rstudio.com/}.
+\newblock Accessed May 1, 2019.
+
+\bibitem[\protect\citeauthoryear{Allan, Bradshaw, Finch, Burridge, and
+  Heydon}{Allan et~al.}{2010}]{ref11}
+Allan, K., J.~Bradshaw, G.~Finch, K.~Burridge, and G.~Heydon (2010).
+\newblock {\em The English Language and Linguistics Companion}.
+\newblock New York: Palgrave Macmillan.
+
+\bibitem[\protect\citeauthoryear{Amelio and Pizzuti}{Amelio and
+  Pizzuti}{2017}]{ref12}
+Amelio, A. and C.~Pizzuti (2017).
+\newblock Correction for closeness: Adjusting normalized mutual information
+  measure for clustering comparison.
+\newblock {\em Computational Intelligence\/}~{\em 33\/}(3), 579--601.
+
+\bibitem[\protect\citeauthoryear{Amig{\'o}, Gonzalo, Artiles, and
+  Verdejo}{Amig{\'o} et~al.}{2009}]{ref13}
+Amig{\'o}, E., J.~Gonzalo, J.~Artiles, and F.~Verdejo (2009).
+\newblock A comparison of extrinsic clustering evaluation metrics based on
+  formal constraints.
+\newblock {\em Information Retrieval\/}~{\em 12\/}(4), 461--486.
+
+\bibitem[\protect\citeauthoryear{Arakelyan, Hambardzumyan, and
+  Khachatrian}{Arakelyan et~al.}{2018}]{ref14}
+Arakelyan, G., K.~Hambardzumyan, and H.~Khachatrian (2018).
+\newblock Towards jointud: Part-of-speech tagging and lemmatization using
+  recurrent neural networks.
+\newblock In {\em Proceedings of the CoNLL 2018 Shared Task: Multilingual
+  Parsing from Raw Text to Universal Dependencies}, pp.\  180--186. Association
+  for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Bacchin, Ferro, and Melucci}{Bacchin
+  et~al.}{2005}]{ref15}
+Bacchin, M., N.~Ferro, and M.~Melucci (2005).
+\newblock A probabilistic model for stemmer generation.
+\newblock {\em Information Processing \& Management\/}~{\em 41\/}(1), 121--137.
+
+\bibitem[\protect\citeauthoryear{Bandyopadhyay and Saha}{Bandyopadhyay and
+  Saha}{2013}]{ref16}
+Bandyopadhyay, S. and S.~Saha (2013).
+\newblock {\em Unsupervised Classification: Similarity Measures, Classical and
+  Metaheuristic Approaches, and Applications}.
+\newblock Berlin Heidelberg: Springer.
+
+\bibitem[\protect\citeauthoryear{Barron-Cede{\~n}o, Basile, Di~Esposti, and
+  Rosso}{Barron-Cede{\~n}o et~al.}{2010}]{ref17}
+Barron-Cede{\~n}o, A., C.~Basile, M.~Di~Esposti, and P.~Rosso (2010).
+\newblock Word length n-grams for text re-use detection.
+\newblock In {\em Proceedings of the CICLING 2010 Conference}, Volume 6008 of
+  {\em Lecture Notes in Computer Science}, Berlin, Heidelberg, pp.\  687--699.
+  Springer.
+
+\bibitem[\protect\citeauthoryear{Basu and Davidson}{Basu and
+  Davidson}{2001}]{ref18}
+Basu, S. and I.~Davidson (2001).
+\newblock Constrained partitional clustering of text data: an overview.
+\newblock In A.~Srivastava and M.~Sahami (Eds.), {\em Text Mining:
+  Classification, Clustering, and Applications}, pp.\  155--184. Boca Raton:
+  CRC Press.
+
+\bibitem[\protect\citeauthoryear{Bayes}{Bayes}{1763}]{ref19}
+Bayes, T. (1763).
+\newblock An essay towards solving a problem in the doctrine of chances.
+\newblock {\em Philosophical Transactions of the Royal Society of
+  London\/}~{\em 53}, 370--418.
+
+\bibitem[\protect\citeauthoryear{Belbin, Faith, and Milligan}{Belbin
+  et~al.}{1992}]{ref20}
+Belbin, L., D.~P. Faith, and G.~W. Milligan (1992).
+\newblock A comparison of two approaches to betaflexible clustering.
+\newblock {\em Multivariate Behavioral Research\/}~{\em 27}, 417--433.
+
+\bibitem[\protect\citeauthoryear{Bengio, Ducharme, Vincent, and Janvin}{Bengio
+  et~al.}{2003}]{ref21}
+Bengio, Y., R.~Ducharme, P.~Vincent, and C.~Janvin (2003).
+\newblock A neural probabilistic language model.
+\newblock {\em Journal of Machine Learning Research\/}~{\em 3}, 1137--1155.
+
+\bibitem[\protect\citeauthoryear{Bessiere, Mazer, Ahuactzin, and
+  Mekhnacha}{Bessiere et~al.}{2013}]{ref23}
+Bessiere, P., E.~Mazer, J.~M. Ahuactzin, and K.~Mekhnacha (2013).
+\newblock {\em Bayesian Programming\/} (1st ed.).
+\newblock Machine Learning \& Pattern Recognition. Chapman \& Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Best}{Best}{2017}]{ref24}
+Best, M.~J. (2017).
+\newblock {\em Quadratic Programming with Computer Programs}.
+\newblock Advances in Applied Mathematics. Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Biber, Conrad, and Reppen}{Biber
+  et~al.}{1998}]{ref25}
+Biber, D., S.~Conrad, and R.~Reppen (1998).
+\newblock {\em Corpus Linguistics: Investigating Language Structure and Use}.
+\newblock New York: Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Blank and Reisdorf}{Blank and
+  Reisdorf}{2012}]{ref26}
+Blank, G. and B.~C. Reisdorf (2012).
+\newblock The participatory web.
+\newblock {\em Information, Communication \& Society\/}~{\em 15\/}(4),
+  537--554.
+
+\bibitem[\protect\citeauthoryear{Blum and Langley}{Blum and
+  Langley}{1997}]{ref27}
+Blum, A.~L. and P.~Langley (1997).
+\newblock Selection of relevant features and examples in machine learning.
+\newblock {\em Artificial Intelligence\/}~{\em 97\/}(1), 245--271.
+
+\bibitem[\protect\citeauthoryear{Bojanowski, Grave, Joulin, and
+  Mikolov}{Bojanowski et~al.}{2017}]{ref28}
+Bojanowski, P., E.~Grave, A.~Joulin, and T.~Mikolov (2017).
+\newblock Enriching word vectors with subword information.
+\newblock {\em Transactions of the Association for Computational
+  Linguistics\/}~{\em 5}, 135--146.
+
+\bibitem[\protect\citeauthoryear{Bolstad}{Bolstad}{2017}]{ref29}
+Bolstad, W.~M. (2017).
+\newblock {\em Introduction to Bayesian Statistics\/} (3rd ed.).
+\newblock Hoboken: Wiley.
+
+\bibitem[\protect\citeauthoryear{Boom, Canneyt, Demeester, and Dhoedt}{Boom
+  et~al.}{2016}]{ref66}
+Boom, C.~D., S.~V. Canneyt, T.~Demeester, and B.~Dhoedt (2016, September).
+\newblock Representation learning for very short texts using weighted word
+  embedding aggregation.
+\newblock {\em Pattern Recognition Letters\/}~{\em 80}, 150--156.
+
+\bibitem[\protect\citeauthoryear{Boser, Guyon, and Vapnik}{Boser
+  et~al.}{1992}]{ref30}
+Boser, B.~E., I.~M. Guyon, and V.~Vapnik (1992).
+\newblock A training algorithm for optimal margin classifiers.
+\newblock In {\em Proceedings of the Fifth Annual Workshop on Computational
+  Learning Theory (COLT '92)}, New York, NY, USA, pp.\  144--152. ACM.
+
+\bibitem[\protect\citeauthoryear{Boyd and Vandenberghe}{Boyd and
+  Vandenberghe}{2018}]{ref31}
+Boyd, S. and L.~Vandenberghe (2018).
+\newblock {\em Introduction to Applied Linear Algebra: Vectors, Matrices, and
+  Least Squares}.
+\newblock Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Breiman}{Breiman}{1996}]{ref32}
+Breiman, L. (1996).
+\newblock Bagging predictors.
+\newblock {\em Machine Learning\/}~{\em 24\/}(2), 123--140.
+
+\bibitem[\protect\citeauthoryear{Breiman}{Breiman}{2001}]{ref33}
+Breiman, L. (2001).
+\newblock Random forests.
+\newblock {\em Machine Learning\/}~{\em 45\/}(1), 5--31.
+
+\bibitem[\protect\citeauthoryear{Breiman}{Breiman}{2002}]{ref34}
+Breiman, L. (2002).
+\newblock Manual on setting up, using, and understanding random forests v3.1.
+\newblock
+  \url{https://www.stat.berkeley.edu/~breiman/Using_random_forests_V3.1.pdf}.
+
+\bibitem[\protect\citeauthoryear{Breiman}{Breiman}{2003}]{ref35}
+Breiman, L. (2003).
+\newblock Manual for setting up, using, and understanding random forest v4.0.
+\newblock
+  \url{https://www.stat.berkeley.edu/~breiman/Using_random_forests_v4.0.pdf}.
+
+\bibitem[\protect\citeauthoryear{Breiman, Friedman, Olshen, and Stone}{Breiman
+  et~al.}{1984}]{ref36}
+Breiman, L., J.~H. Friedman, R.~A. Olshen, and C.~J. Stone (1984).
+\newblock {\em Classification and Regression Trees}.
+\newblock Monterey, CA: Wadsworth and Brooks.
+
+\bibitem[\protect\citeauthoryear{Brill}{Brill}{1992}]{ref37}
+Brill, E. (1992).
+\newblock A simple rule-based part-of-speech tagger.
+\newblock In {\em Proceedings of ANLP-92, 3rd Conference on Applied Natural
+  Language Processing}, Trento, Italy, pp.\  152--155.
+
+\bibitem[\protect\citeauthoryear{Brown}{Brown}{2013}]{ref38}
+Brown, R.~D. (2013).
+\newblock Selecting and weighting n-grams to identify 1100 languages.
+\newblock In I.~Habernal and V.~Matousek (Eds.), {\em Text, Speech, and
+  Dialogue}, pp.\  475--483. Berlin, Heidelberg: Springer.
+
+\bibitem[\protect\citeauthoryear{Brychcín and Konopík}{Brychcín and
+  Konopík}{2015}]{ref39}
+Brychcín, T. and M.~Konopík (2015).
+\newblock Hps: High precision stemmer.
+\newblock {\em Information Processing \& Management\/}~{\em 51\/}(1), 68--91.
+
+\bibitem[\protect\citeauthoryear{Bsoul, Salim, and Zakaria}{Bsoul
+  et~al.}{2013}]{ref40}
+Bsoul, Q., J.~Salim, and L.~Q. Zakaria (2013).
+\newblock An intelligent document clustering approach to detect crime patterns.
+\newblock {\em Procedia Technology\/}~{\em 11}, 1181--1187.
+
+\bibitem[\protect\citeauthoryear{Buckley, Allan, and Salton}{Buckley
+  et~al.}{1995}]{ref41}
+Buckley, C., J.~Allan, and G.~Salton (1995).
+\newblock Automatic routing and retrieval using smart: Trec-2.
+\newblock {\em Information Processing \& Management\/}~{\em 31\/}(3), 315--326.
+
+\bibitem[\protect\citeauthoryear{Can and Ozkarahan}{Can and
+  Ozkarahan}{1990}]{ref42}
+Can, F. and E.~A. Ozkarahan (1990).
+\newblock Concepts and effectiveness of the cover-coefficient-based clustering
+  methodology for text databases.
+\newblock {\em ACM Transactions on Database Systems\/}~{\em 15\/}(4), 483--517.
+
+\bibitem[\protect\citeauthoryear{Carneiro, França, and Lima}{Carneiro
+  et~al.}{2015}]{ref43}
+Carneiro, H. C.~C., F.~M.~G. França, and P.~M.~V. Lima (2015).
+\newblock Multilingual part-of-speech tagging with weightless neural networks.
+\newblock {\em Neural Networks\/}~{\em 66}, 11--21.
+
+\bibitem[\protect\citeauthoryear{Cavnar and Trenkle}{Cavnar and
+  Trenkle}{1994}]{ref44}
+Cavnar, W.~B. and J.~M. Trenkle (1994).
+\newblock N-gram-based text categorization.
+\newblock In {\em Proceedings of the Third Annual Conference on Document
+  Analysis and Information Retrieval (SDAIR)}, pp.\  161--175.
+
+\bibitem[\protect\citeauthoryear{Charrad, Ghazzali, Boiteau, and
+  Niknafs}{Charrad et~al.}{2014}]{ref45}
+Charrad, M., N.~Ghazzali, V.~Boiteau, and A.~Niknafs (2014).
+\newblock Nbclust: An r package for determining the relevant number of clusters
+  in a data set.
+\newblock {\em Journal of Statistical Software\/}~{\em 61\/}(6), 1--36.
+
+\bibitem[\protect\citeauthoryear{Chen and Ji}{Chen and Ji}{2010}]{ref46}
+Chen, A. and H.~Ji (2010).
+\newblock Graph-based clustering for computational linguistics: A survey.
+\newblock In {\em Proceedings of the 2010 Workshop on Graph-based Methods for
+  Natural Language Processing (ACL 2010)}, pp.\  1--9. Association for
+  Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Chen, Huang, Tian, and Qu}{Chen
+  et~al.}{2009}]{ref47}
+Chen, J., H.~Huang, S.~Tian, and Y.~Qu (2009).
+\newblock Feature selection for text classification with bayes.
+\newblock {\em Expert Systems with Applications\/}~{\em 36\/}(3, Part 1),
+  5432--5435.
+
+\bibitem[\protect\citeauthoryear{Chiang}{Chiang}{2003}]{ref48}
+Chiang, C.~L. (2003).
+\newblock {\em Statistical Methods of Analysis}.
+\newblock Singapore: World Scientific.
+
+\bibitem[\protect\citeauthoryear{Chisholm and Kolda}{Chisholm and
+  Kolda}{1999}]{ref49}
+Chisholm, E. and T.~G. Kolda (1999).
+\newblock New term weighting formulas for the vector space method in
+  information retrieval.
+\newblock Technical Report ORNL/TM-13756, Computer Science and Mathematics
+  Division, Oak Ridge National Laboratory, Oak Ridge.
+
+\bibitem[\protect\citeauthoryear{Chollet and Allaire}{Chollet and
+  Allaire}{2018}]{ref50}
+Chollet, F. and J.~J. Allaire (2018).
+\newblock {\em Deep Learning with R}.
+\newblock Manning Publications.
+
+\bibitem[\protect\citeauthoryear{Chung, Lee, Pedarsani, Papailiopoulos, and
+  Ramchandran}{Chung et~al.}{2017}]{ref51}
+Chung, J., K.~Lee, R.~Pedarsani, D.~Papailiopoulos, and K.~Ramchandran (2017).
+\newblock Ubershuffle: Communication-efficient data shuffling for sgd via
+  coding theory.
+\newblock In {\em Proceedings of the 31st Conference on Neural Information
+  Processing Systems (NIPS 2017)}.
+
+\bibitem[\protect\citeauthoryear{Church and Hanks}{Church and
+  Hanks}{1990}]{ref52}
+Church, K.~W. and P.~Hanks (1990).
+\newblock Word association norms, mutual information, and lexicography.
+\newblock {\em Computational Linguistics\/}~{\em 16\/}(1), 22--29.
+
+\bibitem[\protect\citeauthoryear{Cichosz}{Cichosz}{2015}]{ref53}
+Cichosz, P. (2015).
+\newblock {\em Data Mining Algorithms: Explained Using R}.
+\newblock Chichester: Wiley.
+
+\bibitem[\protect\citeauthoryear{Clark}{Clark}{2013}]{ref54}
+Clark, S. (2013).
+\newblock Statistical parsing.
+\newblock In A.~Clark, C.~Fox, and S.~Lappin (Eds.), {\em The Handbook of
+  Computational Linguistics and Natural Language Processing}, Chapter~13, pp.\
+  333--363. Chichester: Wiley-Blackwell.
+
+\bibitem[\protect\citeauthoryear{Clarke, Fokoue, and Zhang}{Clarke
+  et~al.}{2009}]{ref55}
+Clarke, B., E.~Fokoue, and H.~H. Zhang (2009).
+\newblock {\em Principles and Theory for Data Mining and Machine Learning}.
+\newblock Springer Series in Statistics. New York: Springer.
+
+\bibitem[\protect\citeauthoryear{Clinchant and Perronnin}{Clinchant and
+  Perronnin}{2013}]{ref56}
+Clinchant, S. and F.~Perronnin (2013).
+\newblock Aggregating continuous word embeddings for information retrieval.
+\newblock In {\em Proceedings of the Workshop on Continuous Vector Space Models
+  and their Compositionality}, pp.\  100--109. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citeauthoryear{Collobert, Weston, Bottou, Karlen,
+  Kavukcuoglu, and Kuksa}{Collobert et~al.}{2011}]{ref57}
+Collobert, R., J.~Weston, L.~Bottou, M.~Karlen, K.~Kavukcuoglu, and P.~Kuksa
+  (2011).
+\newblock Natural language processing (almost) from scratch.
+\newblock {\em Journal of Machine Learning Research\/}~{\em 12}, 2493--2537.
+
+\bibitem[\protect\citeauthoryear{Cotton}{Cotton}{2013}]{ref58}
+Cotton, R. (2013).
+\newblock {\em Learning R}.
+\newblock Sebastopol, CA: O'Reilly.
+
+\bibitem[\protect\citeauthoryear{Cristianini and Taylor}{Cristianini and
+  Taylor}{2000}]{ref59}
+Cristianini, N. and J.~S. Taylor (2000).
+\newblock {\em An Introduction to Support Vector Machines (and Other
+  Kernel-based Learning Methods)}.
+\newblock Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Culp, Johnson, and Michailidis}{Culp
+  et~al.}{2016}]{ref60}
+Culp, M., K.~Johnson, and G.~Michailidis (2016).
+\newblock The r package ada for stochastic boosting.
+\newblock \url{https://cran.r-project.org/web/packages/ada/ada.pdf}.
+
+\bibitem[\protect\citeauthoryear{Cutting, Karger, Pedersen, and Tukey}{Cutting
+  et~al.}{1992}]{ref61}
+Cutting, D.~R., D.~R. Karger, J.~O. Pedersen, and J.~W. Tukey (1992).
+\newblock Scatter/gather: A cluster-based approach to browsing large document
+  collections.
+\newblock In {\em Proceedings of the 15th Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval (SIGIR '92)},
+  New York, NY, USA, pp.\  318--329. ACM.
+
+\bibitem[\protect\citeauthoryear{Das and Cakmak}{Das and Cakmak}{2018}]{ref62}
+Das, S. and U.~M. Cakmak (2018).
+\newblock {\em Hands-On Automated Machine Learning: A Beginner’s Guide to
+  Building Automated Machine Learning Systems Using AutoML and Python}.
+\newblock Packt Publishing.
+
+\bibitem[\protect\citeauthoryear{Dash and Liu}{Dash and Liu}{2000}]{ref63}
+Dash, M. and H.~Liu (2000).
+\newblock Feature selection for clustering.
+\newblock In {\em Proceedings of the 4th Pacific-Asia Conference on Knowledge
+  Discovery and Data Mining (PAKDD '00): Current Issues and New Applications},
+  London, UK, pp.\  110--121. Springer-Verlag.
+
+\bibitem[\protect\citeauthoryear{Dařena, Petrovský, Přichystal, and
+  Zížka}{Dařena et~al.}{2018}]{ref64}
+Dařena, F., J.~Petrovský, J.~Přichystal, and J.~Zížka (2018).
+\newblock Machine learning-based analysis of the association between online
+  texts and stock price movements.
+\newblock {\em Inteligencia Artificial\/}~{\em 21\/}(61), 95--110.
+
+\bibitem[\protect\citeauthoryear{Dařena and Zížka}{Dařena and
+  Zížka}{2017}]{ref65}
+Dařena, F. and J.~Zížka (2017).
+\newblock Ensembles of classifiers for parallel categorization of large number
+  of text documents expressing opinions.
+\newblock {\em Journal of Applied Economic Sciences\/}~{\em 12\/}(1), 25--35.
+
+\bibitem[\protect\citeauthoryear{de~Marneffe, Dozat, Silveira, Haverinen,
+  Ginter, Nivre, and Manning}{de~Marneffe et~al.}{2014}]{ref67}
+de~Marneffe, M.-C., T.~Dozat, N.~Silveira, K.~Haverinen, F.~Ginter, J.~Nivre,
+  and C.~D. Manning (2014).
+\newblock Universal stanford dependencies: A cross-linguistic typology.
+\newblock In {\em Proceedings of the Ninth International Conference on Language
+  Resources and Evaluation (LREC-2014)}. European Language Resources
+  Association (ELRA).
+
+\bibitem[\protect\citeauthoryear{Dey~Sarkar, Goswami, Agarwal, and
+  Aktar}{Dey~Sarkar et~al.}{2014}]{ref69}
+Dey~Sarkar, S., S.~Goswami, A.~Agarwal, and J.~Aktar (2014).
+\newblock A novel feature selection technique for text classification using
+  na{\"i}ve bayes.
+\newblock {\em International Scholarly Research Notices\/}~{\em 0\/}(0), 1--1.
+\newblock 2014.
+
+\bibitem[\protect\citeauthoryear{Dhillon and Modha}{Dhillon and
+  Modha}{2001}]{ref70}
+Dhillon, I.~S. and D.~S. Modha (2001).
+\newblock Concept decompositions for large sparse text data using clustering.
+\newblock {\em Machine Learning\/}~{\em 42\/}(1--2), 143--175.
+
+\bibitem[\protect\citeauthoryear{Dietterich}{Dietterich}{1995}]{ref71}
+Dietterich, T. (1995).
+\newblock Overfitting and undercomputing in machine learning.
+\newblock {\em Computing Surveys\/}~{\em 27}, 326--327.
+
+\bibitem[\protect\citeauthoryear{Dietterich}{Dietterich}{2000}]{ref72}
+Dietterich, T. (2000).
+\newblock An experimental comparison of three methods for constructing
+  ensembles of decision trees: Bagging, boosting, and randomization.
+\newblock {\em Machine Learning\/}~{\em 40\/}(2), 139--157.
+
+\bibitem[\protect\citeauthoryear{Ding, He, Zha, Gu, and Simon}{Ding
+  et~al.}{2001}]{ref73}
+Ding, C. H.~Q., X.~He, H.~Zha, M.~Gu, and H.~D. Simon (2001).
+\newblock Spectral min-max cut for graph partitioning and data clustering.
+\newblock In {\em Proceedings of the 2001 IEEE International Conference on Data
+  Mining}. IEEE.
+
+\bibitem[\protect\citeauthoryear{Dixon and Aikhenvald}{Dixon and
+  Aikhenvald}{2002}]{ref74}
+Dixon, R. M.~W. and A.~Y. Aikhenvald (2002).
+\newblock {\em Word: A Cross-linguistic Typology}.
+\newblock Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Dong and Liu}{Dong and Liu}{2018}]{ref75}
+Dong, G. and H.~Liu (2018).
+\newblock {\em Feature Engineering for Machine Learning and Data Analytics}.
+\newblock Chapman \& Hall/CRC Data Mining and Knowledge Discovery Series. Boca
+  Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Duda, Hart, and Stork}{Duda
+  et~al.}{2007}]{ref76}
+Duda, R.~O., P.~E. Hart, and D.~G. Stork (2007).
+\newblock {\em Pattern Classification}.
+\newblock New York: John Wiley \& Sons.
+
+\bibitem[\protect\citeauthoryear{Dumais}{Dumais}{1991}]{ref77}
+Dumais, S.~T. (1991).
+\newblock Improving the retrieval of information from external sources.
+\newblock {\em Behavior Research Methods, Instruments, \& Computers\/}~{\em
+  23\/}(2), 229--236.
+
+\bibitem[\protect\citeauthoryear{Dy}{Dy}{2008}]{ref78}
+Dy, J.~G. (2008).
+\newblock Unsupervised feature selection.
+\newblock In H.~Liu and H.~Motoda (Eds.), {\em Computational Methods of Feature
+  Selection}, Chapter~2, pp.\  19--39. Boca Raton: Chapman \& Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{{Ecma International}}{{Ecma
+  International}}{2013}]{ref79}
+{Ecma International} (2013, October).
+\newblock The json data interchange format.
+\newblock Standard ECMA-404.
+
+\bibitem[\protect\citeauthoryear{Eddelbuettel and Fran\c{c}ois}{Eddelbuettel
+  and Fran\c{c}ois}{2011}]{ref80}
+Eddelbuettel, D. and R.~Fran\c{c}ois (2011).
+\newblock Rcpp: Seamless r and c++ integration.
+\newblock {\em Journal of Statistical Software\/}~{\em 40\/}(8), 1--18.
+
+\bibitem[\protect\citeauthoryear{Everitt, Landau, and Leese}{Everitt
+  et~al.}{2001}]{ref81}
+Everitt, B.~S., S.~Landau, and M.~Leese (2001).
+\newblock {\em Cluster Analysis\/} (4th ed.).
+\newblock New York, NY: Oxford University Press.
+
+\bibitem[\protect\citeauthoryear{Eyheramendy and Madigan}{Eyheramendy and
+  Madigan}{2008}]{ref82}
+Eyheramendy, S. and D.~Madigan (2008).
+\newblock A bayesian feature selection score based on naïve bayes models.
+\newblock In H.~Liu and H.~Motoda (Eds.), {\em Computational Methods of Feature
+  Selection}, Chapter~14, pp.\  277--294. Boca Raton: Chapman \& Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Falbel}{Falbel}{2019}]{ref83}
+Falbel, D. (2019).
+\newblock R interface to 'keras'.
+\newblock \url{https://cran.r-project.org/web/packages/keras/keras.pdf}.
+
+\bibitem[\protect\citeauthoryear{Fang, Parthasarathy, and Schwartz}{Fang
+  et~al.}{2001}]{ref84}
+Fang, Y.~C., S.~Parthasarathy, and F.~W. Schwartz (2001).
+\newblock Using clustering to boost text classification.
+\newblock In {\em Workshop on Text Mining (TextDM 2001)}.
+
+\bibitem[\protect\citeauthoryear{Fano}{Fano}{1961}]{ref85}
+Fano, R.~M. (1961).
+\newblock {\em Transmission of Information: A Statistical Theory of
+  Communication}.
+\newblock Cambridge, MA: The MIT Press.
+
+\bibitem[\protect\citeauthoryear{Feinerer, Hornik, and Meyer}{Feinerer
+  et~al.}{2008}]{ref86}
+Feinerer, I., K.~Hornik, and D.~Meyer (2008).
+\newblock Text mining infrastructure in r.
+\newblock {\em Journal of Statistical Software, Articles\/}~{\em 25\/}(5),
+  1--54.
+
+\bibitem[\protect\citeauthoryear{Feldman and Sanger}{Feldman and
+  Sanger}{2007}]{ref87}
+Feldman, R. and J.~Sanger (2007).
+\newblock {\em The Text Mining Handbook: Advanced Approaches in Analyzing
+  Unstructured Data}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Ferrano and Wanner}{Ferrano and
+  Wanner}{2012}]{ref88}
+Ferrano, G. and L.~Wanner (2012).
+\newblock Labeling semantically motivated clusters of verbal relations.
+\newblock {\em Procesamiento del Lenguaje Natural\/}~{\em 49}, 129--138.
+
+\bibitem[\protect\citeauthoryear{Flach}{Flach}{2012}]{ref89}
+Flach, P. (2012).
+\newblock {\em Machine Learning: The Art and Science of Algorithms that Make
+  Sense of Data}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Flor}{Flor}{2012}]{ref90}
+Flor, M. (2012).
+\newblock Four types of context for automatic spelling correction.
+\newblock {\em TAL\/}~{\em 53\/}(3), 61--99.
+
+\bibitem[\protect\citeauthoryear{Foreman}{Foreman}{2014}]{ref91}
+Foreman, J.~W. (2014).
+\newblock {\em Data Smart: Using Data Science to Transform Information into
+  Insight}.
+\newblock Indianapolis, IN: Wiley.
+
+\bibitem[\protect\citeauthoryear{Forman}{Forman}{2008}]{ref92}
+Forman, G. (2008).
+\newblock Feature selection for text classification.
+\newblock In H.~Liu and H.~Motoda (Eds.), {\em Computational Methods of Feature
+  Selection}, Chapter~13, pp.\  257--276. Boca Raton: Chapman \& Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Frankfort-Nachmias and
+  Leon-Guerrero}{Frankfort-Nachmias and Leon-Guerrero}{2009}]{ref93}
+Frankfort-Nachmias, C. and A.~Leon-Guerrero (2009).
+\newblock {\em Social Statistics for a Diverse Society\/} (5th ed.).
+\newblock Thousand Oaks: Pine Forge Press.
+
+\bibitem[\protect\citeauthoryear{Freund and Schapire}{Freund and
+  Schapire}{1997}]{ref94}
+Freund, Y. and R.~E. Schapire (1997).
+\newblock A decision-theoretic generalization of online learning and an
+  application to boosting.
+\newblock {\em Journal of Computer and System Sciences\/}~{\em 55}, 119--139.
+
+\bibitem[\protect\citeauthoryear{Freund and Schapire}{Freund and
+  Schapire}{1999}]{ref95}
+Freund, Y. and R.~E. Schapire (1999).
+\newblock A short introduction to boosting.
+\newblock {\em Journal of Japanese Society for Artificial Intelligence\/}~{\em
+  14\/}(5), 771--780.
+
+\bibitem[\protect\citeauthoryear{Friedman and Fayyad}{Friedman and
+  Fayyad}{1997}]{ref96}
+Friedman, J.~H. and U.~Fayyad (1997).
+\newblock On bias, variance, 0/1-loss, and the curse-of-dimensionality.
+\newblock {\em Data Mining and Knowledge Discovery\/}~{\em 1}, 55--77.
+
+\bibitem[\protect\citeauthoryear{Gan, Ma, and Wu}{Gan et~al.}{2007}]{ref97}
+Gan, G., C.~Ma, and J.~Wu (2007).
+\newblock {\em Data Clustering: Theory, Algorithms, and Applications}.
+\newblock ASA-SIAM Series on Statistics and Applied Probability. Philadelphia:
+  American Statistical Association and Society for Industrial and Applied
+  Mathematics.
+
+\bibitem[\protect\citeauthoryear{Gelbukh and Sidorov}{Gelbukh and
+  Sidorov}{2001}]{ref98}
+Gelbukh, A. and G.~Sidorov (2001).
+\newblock Zipf and heaps' laws coefficients depend on language.
+\newblock In A.~Gelbukh (Ed.), {\em CICLing 2001: Computational Linguistics and
+  Intelligent Text Processing}, Volume 2004 of {\em Lecture Notes in Computer
+  Science}, pp.\  332--335. Springer.
+
+\bibitem[\protect\citeauthoryear{Gelbukh, Alexandrov, Bourek, and
+  Makagonov}{Gelbukh et~al.}{2003}]{ref99}
+Gelbukh, A.~F., M.~Alexandrov, A.~Bourek, and P.~Makagonov (2003).
+\newblock Selection of representative documents for clusters in a document
+  collection.
+\newblock In {\em Proceedings of the 8th International Conference on
+  Applications of Natural Language to Information Systems}, pp.\  120--126.
+
+\bibitem[\protect\citeauthoryear{Gelman, Carlin, Stern, Dunson, Vehtari, and
+  Rubin}{Gelman et~al.}{2013}]{ref100}
+Gelman, A., J.~B. Carlin, J.~S. Stern, D.~B. Dunson, A.~Vehtari, and D.~B.
+  Rubin (2013).
+\newblock {\em Bayesian Data Analysis\/} (3rd ed.).
+\newblock Texts in Statistical Science. Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Goldberg}{Goldberg}{2016}]{ref101}
+Goldberg, Y. (2016).
+\newblock A primer on neural network models for natural language processing.
+\newblock {\em Journal of Artificial Intelligence Research\/}~{\em 57\/}(1),
+  345--420.
+
+\bibitem[\protect\citeauthoryear{Goldszmidt, Najork, and Paparizos}{Goldszmidt
+  et~al.}{2013}]{ref102}
+Goldszmidt, M., M.~Najork, and S.~Paparizos (2013).
+\newblock Boot-strapping language identifiers for short colloquial postings.
+\newblock In H.~Blockeel, K.~Kersting, S.~Nijssen, and F.~Železný (Eds.),
+  {\em Machine Learning and Knowledge Discovery in Databases}, pp.\  95--111.
+  Berlin, Heidelberg: Springer.
+
+\bibitem[\protect\citeauthoryear{Goodfellow, Bengio, and Courville}{Goodfellow
+  et~al.}{2016}]{ref103}
+Goodfellow, I., Y.~Bengio, and A.~Courville (2016).
+\newblock {\em Deep Learning}.
+\newblock Adaptive Computation and Machine Learning. MIT Press.
+
+\bibitem[\protect\citeauthoryear{Gray}{Gray}{1990}]{ref104}
+Gray, R.~M. (1990).
+\newblock {\em Entropy and Information Theory}.
+\newblock New York: Springer Science+Business Media.
+
+\bibitem[\protect\citeauthoryear{Gross, Yellen, and Anderson}{Gross
+  et~al.}{2018}]{ref105}
+Gross, J.~K., J.~Yellen, and M.~Anderson (2018).
+\newblock {\em Graph Theory and Its Applications}.
+\newblock Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Grothe, De~Luca, and N\"urnberger}{Grothe
+  et~al.}{2008}]{ref106}
+Grothe, L., E.~W. De~Luca, and A.~N\"urnberger (2008).
+\newblock A comparative study on language identification methods.
+\newblock In {\em Proceedings of the International Conference on Language
+  Resources and Evaluation (LREC 2008)}, pp.\  980--985.
+
+\bibitem[\protect\citeauthoryear{Gu, Zhu, and Cai}{Gu et~al.}{2009}]{ref107}
+Gu, Q., L.~Zhu, and Z.~Cai (2009).
+\newblock Evaluation measures of the classification performance of imbalanced
+  data sets.
+\newblock In Z.~Cai, Z.~Li, Z.~Kang, and Y.~Liu (Eds.), {\em Computational
+  Intelligence and Intelligent Systems (ISICA 2009)}, Volume~51 of {\em Lecture
+  Notes in Computer Science}, pp.\  461--471. Berlin, Heidelberg: Springer.
+
+\bibitem[\protect\citeauthoryear{Guo and Zhang}{Guo and Zhang}{2009}]{ref108}
+Guo, Q. and M.~Zhang (2009).
+\newblock Multi-documents automatic abstracting based on text clustering and
+  semantic analysis.
+\newblock {\em Knowledge-Based Systems\/}~{\em 22\/}(6), 482--485.
+
+\bibitem[\protect\citeauthoryear{Habash}{Habash}{2010}]{ref109}
+Habash, N. (2010).
+\newblock {\em Introduction to Arabic Natural Language Processing}.
+\newblock Synthesis Lectures on Human Language Technologies. Morgan and
+  Claypool Publishers.
+
+\bibitem[\protect\citeauthoryear{Halkidi, Batistakis, and Vazirgiannis}{Halkidi
+  et~al.}{2001}]{ref110}
+Halkidi, M., Y.~Batistakis, and M.~Vazirgiannis (2001).
+\newblock On clustering validation techniques.
+\newblock {\em Journal of Intelligent Information Systems\/}~{\em 17\/}(2--3),
+  107--145.
+
+\bibitem[\protect\citeauthoryear{Hamel}{Hamel}{2009}]{ref111}
+Hamel, L. (2009).
+\newblock {\em Knowledge Discovery with Support Vector Machines}.
+\newblock John Wiley and Sons, Inc.
+
+\bibitem[\protect\citeauthoryear{Hastie, Tibshirani, and Friedman}{Hastie
+  et~al.}{2009}]{ref112}
+Hastie, T., R.~Tibshirani, and J.~Friedman (2009).
+\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction\/} (2nd ed.).
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Haykin}{Haykin}{1994}]{ref113}
+Haykin, S. (1994).
+\newblock {\em Neural Networks: A Comprehensive Foundation}.
+\newblock Upper Saddle River, NJ: Prentice Hall.
+
+\bibitem[\protect\citeauthoryear{Heaps}{Heaps}{1978}]{ref114}
+Heaps, H.~S. (1978).
+\newblock {\em Information Retrieval: Computational and Theoretical Aspects}.
+\newblock Academic Press.
+
+\bibitem[\protect\citeauthoryear{Hennig}{Hennig}{2015}]{ref115}
+Hennig, C. (2015).
+\newblock What are the true clusters?
+\newblock {\em Pattern Recognition Letters\/}~{\em 64}, 53--62.
+
+\bibitem[\protect\citeauthoryear{Hinojosa, Martín-Loeches, Casado, Muñoz,
+  Carretié, Fernández-Frías, and Pozo}{Hinojosa et~al.}{2001}]{ref116}
+Hinojosa, J.~A., M.~Martín-Loeches, P.~Casado, F.~Muñoz, L.~Carretié,
+  C.~Fernández-Frías, and M.~A. Pozo (2001).
+\newblock Semantic processing of open- and closed-class words: an event-related
+  potentials study.
+\newblock {\em Cognitive Brain Research\/}~{\em 11\/}(3), 397--407.
+
+\bibitem[\protect\citeauthoryear{Hornik}{Hornik}{2017}]{ref117}
+Hornik, K. (2017).
+\newblock R faq.
+\newblock \url{https://CRAN.R-project.org/doc/FAQ/R-FAQ.html}.
+
+\bibitem[\protect\citeauthoryear{Houvardas and Stamatatos}{Houvardas and
+  Stamatatos}{2006}]{ref118}
+Houvardas, J. and E.~Stamatatos (2006).
+\newblock N-gram feature selection for authorship identification.
+\newblock In J.~Euzenat and J.~Domingue (Eds.), {\em Proceedings of the AIMSA
+  Conference}, Volume 4183 of {\em Lecture Notes in Artificial Intelligence},
+  Berlin, pp.\  77--86. Springer.
+
+\bibitem[\protect\citeauthoryear{Hsu, Hsieh, and Lu}{Hsu et~al.}{2011}]{ref119}
+Hsu, H.-H., C.-W. Hsieh, and M.-D. Lu (2011).
+\newblock Hybrid feature selection by combining filters and wrappers.
+\newblock {\em Expert Systems with Applications\/}~{\em 38\/}(7), 8144--8150.
+
+\bibitem[\protect\citeauthoryear{Huang}{Huang}{2008}]{ref120}
+Huang, A. (2008).
+\newblock Similarity measures for text document clustering.
+\newblock In {\em Proceedings of the Sixth New Zealand Computer Science
+  Research Student Conference}, pp.\  49--56.
+
+\bibitem[\protect\citeauthoryear{Huang, Xu, Ng, and Ye}{Huang
+  et~al.}{2008}]{ref121}
+Huang, J.~Z., J.~Xu, M.~Ng, and Y.~Ye (2008).
+\newblock Weighting method for feature selection in k-means.
+\newblock In H.~Liu and H.~Motoda (Eds.), {\em Computational Methods of Feature
+  Selection}, Chapter~10, pp.\  193--209. Boca Raton, FL: Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Huang, Ng, and Cheung}{Huang
+  et~al.}{2001}]{ref122}
+Huang, Z., M.~K. Ng, and D.~W.-L. Cheung (2001).
+\newblock An empirical study on the visual cluster validation method with
+  fastmap.
+\newblock In {\em Proceedings of the 7th International Conference on Database
+  Systems for Advanced Applications (DASFAA 2001)}, Hong Kong, pp.\  84--91.
+  Springer.
+
+\bibitem[\protect\citeauthoryear{Hud{\'i}k}{Hud{\'i}k}{2015}]{ref123}
+Hud{\'i}k, T. (2015).
+\newblock Machine translation within commercial companies.
+\newblock In J.~Zi{\v{z}}ka and F.~Da{\v{r}}ena (Eds.), {\em Modern
+  Computational Models of Semantic Discovery in Natural Language}, Chapter~10,
+  pp.\  256--272. Hershey, PA: IGI Global.
+
+\bibitem[\protect\citeauthoryear{Hussein}{Hussein}{2015}]{ref124}
+Hussein, A.~S. (2015).
+\newblock A plagiarism detection system for arabic documents.
+\newblock {\em Advances in Intelligent Systems and Computing\/}~{\em 323},
+  541--552.
+
+\bibitem[\protect\citeauthoryear{Ihaka and Gentleman}{Ihaka and
+  Gentleman}{1996}]{ref125}
+Ihaka, R. and R.~Gentleman (1996).
+\newblock R: A language for data analysis and graphics.
+\newblock {\em Journal of Computational and Graphical Statistics\/}~{\em
+  5\/}(3), 299--314.
+
+\bibitem[\protect\citeauthoryear{Jackson and Amvela}{Jackson and
+  Amvela}{2000}]{ref126}
+Jackson, H. and E.~Z. Amvela (2000).
+\newblock {\em Words, Meaning and Vocabulary: An Introduction to Modern English
+  Lexicology}.
+\newblock New York: Continuum.
+
+\bibitem[\protect\citeauthoryear{Jain}{Jain}{2010}]{ref127}
+Jain, A.~K. (2010).
+\newblock Data clustering: 50 years beyond k-means.
+\newblock {\em Pattern Recognition Letters\/}~{\em 31\/}(8), 651--666.
+
+\bibitem[\protect\citeauthoryear{Jain and Dubes}{Jain and Dubes}{1988}]{ref128}
+Jain, A.~K. and R.~C. Dubes (1988).
+\newblock {\em Algorithms for Clustering Data}.
+\newblock Englewood Cliffs, NJ: Prentice Hall.
+
+\bibitem[\protect\citeauthoryear{James, Witten, Hastie, and Tibshirani}{James
+  et~al.}{2014}]{ref129}
+James, G., D.~Witten, T.~Hastie, and R.~Tibshirani (2014).
+\newblock {\em An Introduction to Statistical Learning: With Applications in
+  R}.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Janusz}{Janusz}{2014}]{ref130}
+Janusz, A. (2014).
+\newblock Algorithms for similarity relation learning from high dimensional
+  data.
+\newblock In J.~F. Peters and A.~Skowron (Eds.), {\em Transactions on Rough
+  Sets XVII}, pp.\  174--292. Berlin, Heidelberg: Springer.
+
+\bibitem[\protect\citeauthoryear{Jauhiainen, Lind{\'e}n, and
+  Jauhiainen}{Jauhiainen et~al.}{2017}]{ref131}
+Jauhiainen, T., K.~Lind{\'e}n, and H.~Jauhiainen (2017).
+\newblock Evaluation of language identification methods using 285 languages.
+\newblock In {\em Proceedings of the 21st Nordic Conference of Computational
+  Linguistics (NODALIDA 2017)}, pp.\  183--191. Link{\"o}ping University
+  Electronic Press.
+
+\bibitem[\protect\citeauthoryear{Jawlik}{Jawlik}{2016}]{ref132}
+Jawlik, A. (2016).
+\newblock {\em Statistics from A to Z: Confusing Concepts Clarified}.
+\newblock Hoboken, NJ: Wiley.
+
+\bibitem[\protect\citeauthoryear{Jo}{Jo}{2019}]{ref133}
+Jo, T. (2019).
+\newblock {\em Text Mining: Concepts, Implementation, and Big Data Challenge},
+  Volume~45 of {\em Studies in Big Data}.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Joachims}{Joachims}{2001}]{ref134}
+Joachims, T. (2001).
+\newblock A statistical learning model of text classification for support
+  vector machines.
+\newblock In {\em Proceedings of the 24th Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval (SIGIR '01)},
+  New York, NY, USA, pp.\  128--136. ACM.
+
+\bibitem[\protect\citeauthoryear{Joachims}{Joachims}{2002}]{ref135}
+Joachims, T. (2002).
+\newblock {\em Learning to Classify Text Using Support Vector Machines}.
+\newblock Norwell, MA: Kluwer Academic Publishers.
+
+\bibitem[\protect\citeauthoryear{Jongejan and Dalianis}{Jongejan and
+  Dalianis}{2009}]{ref136}
+Jongejan, B. and H.~Dalianis (2009).
+\newblock Automatic training of lemmatization rules that handle morphological
+  changes in pre-, in- and suffixes alike.
+\newblock In {\em Proceedings of the 47th Annual Meeting of the ACL and the 4th
+  IJCNLP of the AFNLP}, pp.\  145--153. ACL and AFNLP.
+
+\bibitem[\protect\citeauthoryear{Jovic, Brki{\'c}, and Bogunovi{\'c}}{Jovic
+  et~al.}{2015}]{ref137}
+Jovic, A., K.~Brki{\'c}, and N.~Bogunovi{\'c} (2015, May).
+\newblock A review of feature selection methods with applications.
+\newblock In {\em 38th International Convention on Information and
+  Communication Technology, Electronics and Microelectronics (MIPRO)}, pp.\
+  1200--1205.
+
+\bibitem[\protect\citeauthoryear{Jurafsky and Martin}{Jurafsky and
+  Martin}{2009}]{ref138}
+Jurafsky, D. and J.~H. Martin (2009).
+\newblock {\em Speech and Language Processing: An Introduction to Natural
+  Language Processing, Computational Linguistics, and Speech Recognition}.
+\newblock Prentice Hall.
+
+\bibitem[\protect\citeauthoryear{Kanaris, Kanaris, Houvardas, and
+  Stamatatos}{Kanaris et~al.}{2007}]{ref139}
+Kanaris, I., K.~Kanaris, I.~Houvardas, and E.~Stamatatos (2007).
+\newblock Words versus character n-grams for anti-spam filtering.
+\newblock {\em International Journal on Artificial Intelligence Tools\/}~{\em
+  16\/}(6), 1047--1067.
+
+\bibitem[\protect\citeauthoryear{Karanikolas}{Karanikolas}{2015}]{ref140}
+Karanikolas, N.~N. (2015).
+\newblock Supervised learning for building stemmers.
+\newblock {\em Journal of Information Science\/}~{\em 0\/}(0), 1--14.
+\newblock pages 1--14, 2015.
+
+\bibitem[\protect\citeauthoryear{Karypis}{Karypis}{2003}]{ref141}
+Karypis, G. (2003).
+\newblock Cluto: A clustering toolkit.
+\newblock Technical Report 02-017, University of Minnesota, Department of
+  Computer Science.
+
+\bibitem[\protect\citeauthoryear{Kaufman and Rousseeuw}{Kaufman and
+  Rousseeuw}{2005}]{ref142}
+Kaufman, L. and P.~J. Rousseeuw (2005).
+\newblock {\em Finding Groups in Data: An Introduction to Cluster Analysis}.
+\newblock Hoboken, NJ: Wiley.
+
+\bibitem[\protect\citeauthoryear{Keith, Fuentes, and Meneses}{Keith
+  et~al.}{2017}]{ref143}
+Keith, B., E.~Fuentes, and C.~Meneses (2017).
+\newblock A hybrid approach for sentiment analysis applied to paper reviews.
+\newblock In {\em Proceedings of ACM SIGKDD Conference}.
+
+\bibitem[\protect\citeauthoryear{Kent~Martin and Hirschberg}{Kent~Martin and
+  Hirschberg}{1995}]{ref144}
+Kent~Martin, J. and D.~S. Hirschberg (1995, August).
+\newblock The time complexity of decision tree induction.
+\newblock Technical Report 95–27, Department of Information and Computer
+  Science, University of California, Irvine, CA.
+
+\bibitem[\protect\citeauthoryear{Keogh and Mueen}{Keogh and
+  Mueen}{2017}]{ref145}
+Keogh, E. and A.~Mueen (2017).
+\newblock Curse of dimensionality.
+\newblock In C.~Sammut and G.~I. Webb (Eds.), {\em Encyclopedia of Machine
+  Learning and Data Mining}, pp.\  314--315. Boston, MA: Springer US.
+
+\bibitem[\protect\citeauthoryear{Khoury, Karray, and Kamel}{Khoury
+  et~al.}{2008}]{ref146}
+Khoury, R., F.~Karray, and M.~S. Kamel (2008).
+\newblock Keyword extraction rules based on a part-of-speech hierarchy.
+\newblock {\em International Journal of Advanced Media and
+  Communication\/}~{\em 2\/}(2), 138--153.
+
+\bibitem[\protect\citeauthoryear{Kleppmann}{Kleppmann}{2017}]{ref147}
+Kleppmann, M. (2017).
+\newblock {\em Designing Data-Intensive Applications: The Big Ideas Behind
+  Reliable, Scalable, and Maintainable Systems}.
+\newblock Sebastopol, CA: O'Reilly Media.
+
+\bibitem[\protect\citeauthoryear{Kocmi and Bojar}{Kocmi and
+  Bojar}{2017}]{ref148}
+Kocmi, T. and O.~Bojar (2017).
+\newblock An exploration of word embedding initialization in deep-learning
+  tasks.
+\newblock {\em CoRR\/}~{\em abs/1711.09160}, 1--1.
+\newblock abs/1711.09160, 2017.
+
+\bibitem[\protect\citeauthoryear{Korpela}{Korpela}{2006}]{ref149}
+Korpela, J.~K. (2006).
+\newblock {\em Unicode Explained}.
+\newblock Beijing: O'Reilly Media.
+
+\bibitem[\protect\citeauthoryear{Kubat}{Kubat}{2015}]{ref150}
+Kubat, M. (2015).
+\newblock {\em An Introduction to Machine Learning}.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Kubat}{Kubat}{2017}]{ref151}
+Kubat, M. (2017).
+\newblock {\em An Introduction to Machine Learning\/} (2 ed.).
+\newblock Springer International Publishing.
+
+\bibitem[\protect\citeauthoryear{Kudyba}{Kudyba}{2014}]{ref152}
+Kudyba, S. (2014).
+\newblock {\em Big Data, Mining, and Analytics: Components of Strategic
+  Decision Making}.
+\newblock Boca Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Kuhn}{Kuhn}{2019}]{ref153}
+Kuhn, M. (2019).
+\newblock Classification and regression training.
+\newblock \url{https://cran.r-project.org/web/packages/caret/caret.pdf}.
+
+\bibitem[\protect\citeauthoryear{Kuhn, Weston, Culp, Coulter, and Quinlan}{Kuhn
+  et~al.}{2018}]{ref154}
+Kuhn, M., S.~Weston, M.~Culp, N.~Coulter, and R.~Quinlan (2018).
+\newblock C5.0 decision trees and rule-based models.
+\newblock \url{https://cran.r-project.org/web/packages/C50/C50.pdf}.
+
+\bibitem[\protect\citeauthoryear{Kukich}{Kukich}{1992}]{ref155}
+Kukich, K. (1992).
+\newblock Techniques for automatically correcting words in text.
+\newblock {\em ACM Computing Surveys\/}~{\em 24\/}(4), 377--439.
+
+\bibitem[\protect\citeauthoryear{Kulis}{Kulis}{2012}]{ref156}
+Kulis, B. (2012).
+\newblock Metric learning: A survey.
+\newblock {\em Machine Learning\/}~{\em 5\/}(4), 287--364.
+
+\bibitem[\protect\citeauthoryear{Kusner, Sun, Kolkin, and Weinberger}{Kusner
+  et~al.}{2015}]{ref157}
+Kusner, M., Y.~Sun, N.~Kolkin, and K.~Weinberger (2015, July).
+\newblock From word embeddings to document distances.
+\newblock In F.~Bach and D.~Blei (Eds.), {\em Proceedings of the 32nd
+  International Conference on Machine Learning}, Volume~37 of {\em Proceedings
+  of Machine Learning Research}, Lille, France, pp.\  957--966. PMLR.
+
+\bibitem[\protect\citeauthoryear{Kyriakopoulou and Kalamboukis}{Kyriakopoulou
+  and Kalamboukis}{2006}]{ref158}
+Kyriakopoulou, A. and T.~Kalamboukis (2006).
+\newblock Text classification using clustering.
+\newblock In {\em Proceedings of the ECML-PKDD Discovery Challenge Workshop}.
+
+\bibitem[\protect\citeauthoryear{Labani, Moradi, Ahmadizar, and Jalili}{Labani
+  et~al.}{2018}]{ref159}
+Labani, M., P.~Moradi, F.~Ahmadizar, and M.~Jalili (2018).
+\newblock A novel multivariate filter method for feature selection in text
+  classification problems.
+\newblock {\em Engineering Applications of Artificial Intelligence\/}~{\em 70},
+  25--37.
+
+\bibitem[\protect\citeauthoryear{Lambert}{Lambert}{2018}]{ref160}
+Lambert, B. (2018).
+\newblock {\em A Student’s Guide to Bayesian Statistics}.
+\newblock SAGE Publications.
+
+\bibitem[\protect\citeauthoryear{Larranaga, Atienza, Diaz-Rozo, Ogbechie,
+  Puerto-Santana, and Bielza}{Larranaga et~al.}{2018}]{ref161}
+Larranaga, P., D.~Atienza, J.~Diaz-Rozo, A.~Ogbechie, C.~E. Puerto-Santana, and
+  C.~Bielza (2018).
+\newblock {\em Industrial Applications of Machine Learning}.
+\newblock Chapman \& Hall/CRC Data Mining and Knowledge Discovery Series. Boca
+  Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Le and Mikolov}{Le and Mikolov}{2014}]{ref162}
+Le, Q. and T.~Mikolov (2014).
+\newblock Distributed representations of sentences and documents.
+\newblock In {\em Proceedings of the 31st International Conference on Machine
+  Learning (ICML'14)}, pp.\  1188--1196. JMLR.org.
+
+\bibitem[\protect\citeauthoryear{Lebret and Collobert}{Lebret and
+  Collobert}{2015}]{ref163}
+Lebret, R. and R.~Collobert (2015).
+\newblock N-gram-based low-dimensional representation for document
+  classification.
+\newblock In {\em ICLR 2015 Workshop Track}.
+
+\bibitem[\protect\citeauthoryear{Lesne}{Lesne}{2014}]{ref164}
+Lesne, A. (2014).
+\newblock Shannon entropy: A rigorous notion at the crossroads between
+  probability, information theory, dynamical systems and statistical physics.
+\newblock {\em Mathematical Structures in Computer Science\/}~{\em 24\/}(3),
+  e240311.
+
+\bibitem[\protect\citeauthoryear{Levy and Goldberg}{Levy and
+  Goldberg}{2014}]{ref165}
+Levy, O. and Y.~Goldberg (2014).
+\newblock Neural word embedding as implicit matrix factorization.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~D. Lawrence, and K.~Q.
+  Weinberger (Eds.), {\em Advances in Neural Information Processing Systems
+  27}, pp.\  2177--2185. Curran Associates, Inc.
+
+\bibitem[\protect\citeauthoryear{Levy, Goldberg, and Dagan}{Levy
+  et~al.}{2015}]{ref166}
+Levy, O., Y.~Goldberg, and I.~Dagan (2015).
+\newblock Improving distributional similarity with lessons learned from word
+  embeddings.
+\newblock {\em Transactions of the Association for Computational
+  Linguistics\/}~{\em 3}, 211--225.
+
+\bibitem[\protect\citeauthoryear{Lewis, Yang, Rose, and Li}{Lewis
+  et~al.}{2004}]{ref167}
+Lewis, D.~D., Y.~Yang, T.~G. Rose, and F.~Li (2004).
+\newblock Rcv1: A new benchmark collection for text categorization research.
+\newblock {\em Journal of Machine Learning Research\/}~{\em 5}, 361--397.
+
+\bibitem[\protect\citeauthoryear{Li, Sun, Weng, and He}{Li
+  et~al.}{2015}]{ref168}
+Li, C., A.~Sun, J.~Weng, and Q.~He (2015).
+\newblock Tweet segmentation and its application to named entity recognition.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering\/}~{\em
+  27\/}(2), 558--570.
+
+\bibitem[\protect\citeauthoryear{Li, Xia, Zong, and Huang}{Li
+  et~al.}{2009}]{ref169}
+Li, S., R.~Xia, C.~Zong, and C.-R. Huang (2009, August).
+\newblock A framework of feature selection methods for text categorization.
+\newblock In {\em Proceedings of the 47th Annual Meeting of the ACL and the 4th
+  IJCNLP of the AFNLP}, Suntec, Singapore, pp.\  692--700. ACL and AFNLP.
+
+\bibitem[\protect\citeauthoryear{Li and Liu}{Li and Liu}{2003}]{ref170}
+Li, X. and B.~Liu (2003).
+\newblock Learning to classify texts using positive and unlabeled data.
+\newblock In {\em Proceedings of the 18th International Joint Conference on
+  Artificial Intelligence (IJCAI'03)}, San Francisco, CA, USA, pp.\  587--592.
+  Morgan Kaufmann Publishers Inc.
+
+\bibitem[\protect\citeauthoryear{Liaw and Wiener}{Liaw and
+  Wiener}{2018}]{ref171}
+Liaw, A. and M.~Wiener (2018).
+\newblock Breiman and cutler’s random forests for classification and
+  regression.
+\newblock
+  \url{https://cran.r-project.org/web/packages/randomForest/randomForest.pdf}.
+
+\bibitem[\protect\citeauthoryear{Lin, Michel, Aiden, Orwant, Brockman, and
+  Petrov}{Lin et~al.}{2012}]{ref172}
+Lin, Y., J.-B. Michel, E.~L. Aiden, J.~Orwant, W.~Brockman, and S.~Petrov
+  (2012).
+\newblock Syntactic annotations for the google books ngram corpus.
+\newblock In {\em Proceedings of the ACL 2012 System Demonstrations (ACL
+  ’12)}, Stroudsburg, PA, USA, pp.\  169--174. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citeauthoryear{Ling, Lee, and Dobbie}{Ling
+  et~al.}{2005}]{ref173}
+Ling, T.~W., M.~L. Lee, and G.~Dobbie (2005).
+\newblock {\em Semistructured Database Design}.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Liu and Motoda}{Liu and Motoda}{1998}]{ref174}
+Liu, H. and H.~Motoda (1998).
+\newblock {\em Feature Selection for Knowledge Discovery and Data Mining}.
+\newblock Norwell, MA, USA: Kluwer Academic Publishers.
+
+\bibitem[\protect\citeauthoryear{Liu and Motoda}{Liu and Motoda}{2008}]{ref175}
+Liu, H. and H.~Motoda (2008).
+\newblock Less is more.
+\newblock In H.~Liu and H.~Motoda (Eds.), {\em Computational Methods of Feature
+  Selection}, Chapter~1, pp.\  3--18. Boca Raton, FL: Chapman \& Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Liu, Sun, Liu, and Zhang}{Liu
+  et~al.}{2009}]{ref176}
+Liu, H., J.~Sun, L.~Liu, and H.~Zhang (2009).
+\newblock Feature selection with dynamic mutual information.
+\newblock {\em Pattern Recognition\/}~{\em 42\/}(7), 1330--1339.
+
+\bibitem[\protect\citeauthoryear{Liu, Bellet, and Sha}{Liu
+  et~al.}{2015}]{ref177}
+Liu, K., A.~Bellet, and F.~Sha (2015).
+\newblock Similarity learning for high-dimensional sparse data.
+\newblock In {\em Proceedings of the 18th International Conference on
+  Artificial Intelligence and Statistics (AISTATS 2015)}, Volume~38 of {\em
+  JMLR Workshop and Conference Proceedings}, pp.\  653--662. JMLR.org.
+
+\bibitem[\protect\citeauthoryear{Liu, Kang, Yu, and Wang}{Liu
+  et~al.}{2005}]{ref178}
+Liu, L., J.~Kang, J.~Yu, and Z.~Wang (2005).
+\newblock A comparative study on unsupervised feature selection methods for
+  text clustering.
+\newblock In {\em Proceedings of the 2005 International Conference on Natural
+  Language Processing and Knowledge Engineering}, pp.\  597--601. IEEE.
+
+\bibitem[\protect\citeauthoryear{Liu, Liu, Chen, and Ma}{Liu
+  et~al.}{2003}]{ref179}
+Liu, T., S.~Liu, Z.~Chen, and W.-Y. Ma (2003).
+\newblock An evaluation on feature selection for text clustering.
+\newblock In {\em Proceedings of the Twentieth International Conference on
+  Machine Learning (ICML 2003)}, Washington, DC, USA.
+
+\bibitem[\protect\citeauthoryear{Liu, Mostafa, and Ke}{Liu
+  et~al.}{2007}]{ref180}
+Liu, Y., J.~Mostafa, and W.~Ke (2007).
+\newblock A fast online clustering algorithm for scatter/gather browsing.
+\newblock Technical Report TR-2007-06, North Carolina School of Information and
+  Library Science, Chapel Hill, NC.
+
+\bibitem[\protect\citeauthoryear{Lochbaum and Streeter}{Lochbaum and
+  Streeter}{1989}]{ref181}
+Lochbaum, K.~E. and L.~A. Streeter (1989).
+\newblock Comparing and combining the effectiveness of latent semantic indexing
+  and the ordinary vector space model for information retrieval.
+\newblock {\em Information Processing \& Management\/}~{\em 25\/}(6), 665--676.
+
+\bibitem[\protect\citeauthoryear{M.~W.~Berry}{M.~W.~Berry}{2004}]{ref22}
+M.~W.~Berry, e. (2004).
+\newblock {\em Survey of Text Mining: Clustering, Classification, and
+  Retrieval}.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Majka}{Majka}{2019}]{ref182}
+Majka, M. (2019).
+\newblock High performance implementation of the naive bayes algorithm.
+\newblock
+  \url{https://cran.r-project.org/web/packages/naivebayes/naivebayes.pdf}.
+
+\bibitem[\protect\citeauthoryear{Maltoff}{Maltoff}{2011}]{ref183}
+Maltoff, N. (2011).
+\newblock {\em The Art of R Programming: A Tour of Statistical Software
+  Design}.
+\newblock San Francisco, CA: No Starch Press.
+
+\bibitem[\protect\citeauthoryear{Mandelbrot}{Mandelbrot}{1954}]{ref184}
+Mandelbrot, B. (1954).
+\newblock Structure formelle des textes et communication.
+\newblock {\em Word\/}~{\em 10}, 1--27.
+
+\bibitem[\protect\citeauthoryear{Manning, Raghavan, and Schütze}{Manning
+  et~al.}{2008}]{ref185}
+Manning, C.~D., P.~Raghavan, and H.~Schütze (2008).
+\newblock {\em Introduction to Information Retrieval}.
+\newblock Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Manning and Schütze}{Manning and
+  Schütze}{1999}]{ref186}
+Manning, C.~D. and H.~Schütze (1999).
+\newblock {\em Foundations of Statistical Natural Language Processing}.
+\newblock Cambridge, MA: MIT Press.
+
+\bibitem[\protect\citeauthoryear{Marsland}{Marsland}{2014}]{ref187}
+Marsland, S. (2014).
+\newblock {\em Machine Learning: An Algorithmic Perspective\/} (2nd ed.).
+\newblock Boca Raton, FL: Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Mayfield and Penstein-Rosé}{Mayfield and
+  Penstein-Rosé}{2010}]{ref188}
+Mayfield, E. and C.~Penstein-Rosé (2010).
+\newblock Using feature construction to avoid large feature spaces in text
+  classification.
+\newblock In {\em Proceedings of the 12th Annual Conference on Genetic and
+  Evolutionary Computation (GECCO '10)}, New York, NY, USA, pp.\  1299--1306.
+  ACM.
+
+\bibitem[\protect\citeauthoryear{Maynard, Bontcheva, and Augenstein}{Maynard
+  et~al.}{2017}]{ref189}
+Maynard, D., K.~Bontcheva, and I.~Augenstein (2017).
+\newblock {\em Natural Language Processing for the Semantic Web}.
+\newblock Morgan \& Claypool.
+
+\bibitem[\protect\citeauthoryear{McAuley}{McAuley}{2018}]{ref190}
+McAuley, J. (2018).
+\newblock Amazon product data.
+\newblock \url{http://jmcauley.ucsd.edu/data/amazon/}.
+\newblock Accessed on June 8, 2018.
+
+\bibitem[\protect\citeauthoryear{McElreath}{McElreath}{2016}]{ref191}
+McElreath, R. (2016).
+\newblock {\em Statistical Rethinking: A Bayesian Course with Examples in R and
+  Stan}.
+\newblock CRC Press.
+
+\bibitem[\protect\citeauthoryear{Mena}{Mena}{2002}]{ref192}
+Mena, J. (2002).
+\newblock {\em Investigative Data Mining for Security and Criminal Detection}.
+\newblock Newton, MA, USA: Butterworth-Heinemann.
+
+\bibitem[\protect\citeauthoryear{Meyer, Dimitriadou, Hornik, Weingessel,
+  Leisch, Chang, and Lin}{Meyer et~al.}{2019}]{ref193}
+Meyer, D., E.~Dimitriadou, K.~Hornik, F.~Weingessel, A.~Leisch, C.-C. Chang,
+  and C.-C. Lin (2019).
+\newblock Misc functions of the department of statistics, probability theory
+  group (formerly: E1071), tu wien, 2019.
+  \url{https://cran.r-project.org/web/packages/e1071/e1071.pdf.}
+
+\bibitem[\protect\citeauthoryear{Mikolov, Sutskever, Chen, Corrado, and
+  Dean}{Mikolov et~al.}{2013}]{ref194}
+Mikolov, T., I.~Sutskever, K.~Chen, G.~S. Corrado, and J.~Dean (2013).
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock In C.~J.~C. Burges, L.~Bottou, M.~Welling, Z.~Ghahramani, and K.~Q.
+  Weinberger (Eds.), {\em Advances in Neural Information Processing Systems
+  26}, pp.\  3111--3119. Curran Associates, Inc.
+
+\bibitem[\protect\citeauthoryear{Mikolov, Yih, and Zweig}{Mikolov
+  et~al.}{2013}]{ref195}
+Mikolov, T., W.-t. Yih, and G.~Zweig (2013).
+\newblock Linguistic regularities in continuous space word representations.
+\newblock In {\em Proceedings of NAACL-HLT 2013}, pp.\  746--751. Association
+  for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Miner, Elder, Hill, Nisbet, Delen, and
+  Fast}{Miner et~al.}{2012}]{ref196}
+Miner, G., J.~Elder, T.~Hill, R.~Nisbet, D.~Delen, and A.~Fast (2012).
+\newblock {\em Practical Text Mining and Statistical Analysis for
+  Non-structured Text Data Applications\/} (1st ed.).
+\newblock Orlando, FL, USA: Academic Press.
+
+\bibitem[\protect\citeauthoryear{Mirkin}{Mirkin}{1996}]{ref197}
+Mirkin, B. (1996).
+\newblock {\em Mathematical Classification and Clustering}.
+\newblock Dodrecht: Kluwer Academic Publishers.
+
+\bibitem[\protect\citeauthoryear{Mirkin}{Mirkin}{2013}]{ref198}
+Mirkin, B. (2013).
+\newblock {\em Clustering: A Data Recovery Approach\/} (2nd ed.).
+\newblock Boca Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Mitchell}{Mitchell}{1997}]{ref199}
+Mitchell, T.~M. (1997).
+\newblock {\em Machine Learning}.
+\newblock WCB/McGraw-Hill.
+
+\bibitem[\protect\citeauthoryear{Mladenic}{Mladenic}{2016}]{ref201}
+Mladenic, D. (2016).
+\newblock Feature selection in text mining.
+\newblock In C.~Sammut and G.~I. Webb (Eds.), {\em Encyclopedia of Machine
+  Learning and Data Mining}, pp.\  1--5. Boston, MA: Springer US.
+
+\bibitem[\protect\citeauthoryear{Mladenic and Grobelnik}{Mladenic and
+  Grobelnik}{1999}]{ref200}
+Mladenic, D. and M.~Grobelnik (1999).
+\newblock Feature selection for unbalanced class distribution and naive bayes.
+\newblock In {\em Proceedings of the 16th International Conference on Machine
+  Learning (ICML)}, pp.\  258--267. Morgan Kaufmann Publishers.
+
+\bibitem[\protect\citeauthoryear{Mountassir, Benbrahim, and Berrada}{Mountassir
+  et~al.}{2012}]{ref202}
+Mountassir, A., H.~Benbrahim, and I.~Berrada (2012).
+\newblock Addressing the problem of unbalanced data sets in sentiment analysis.
+\newblock In {\em Proceedings of the International Conference on Knowledge
+  Discovery and Information Retrieval (KDIR-2012)}, pp.\  306--311.
+
+\bibitem[\protect\citeauthoryear{Munzert, Rubba, Meiner, and Nyhuis}{Munzert
+  et~al.}{2014}]{ref203}
+Munzert, S., C.~Rubba, P.~Meiner, and D.~Nyhuis (2014).
+\newblock {\em Automated Data Collection with R: A Practical Guide to Web
+  Scraping and Text Mining\/} (1st ed.).
+\newblock Chichester: Wiley.
+
+\bibitem[\protect\citeauthoryear{Murrell}{Murrell}{2011}]{ref204}
+Murrell, P. (2011).
+\newblock {\em R Graphics\/} (2nd ed.).
+\newblock Boca Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Nadeau and Sekine}{Nadeau and
+  Sekine}{2007}]{ref205}
+Nadeau, D. and S.~Sekine (2007).
+\newblock A survey of named entity recognition and classification.
+\newblock {\em Lingvisticae Investigationes\/}~{\em 30\/}(1), 3--26.
+
+\bibitem[\protect\citeauthoryear{Nederhof and Satta}{Nederhof and
+  Satta}{2013}]{ref206}
+Nederhof, M.-J. and G.~Satta (2013).
+\newblock Theory of parsing.
+\newblock In A.~Clark, C.~Fox, and S.~Lappin (Eds.), {\em The Handbook of
+  Computational Linguistics and Natural Language Processing}, Chapter~4, pp.\
+  105--130. Chichester: Wiley-Blackwell.
+
+\bibitem[\protect\citeauthoryear{Nothman, Qin, and Yurchak}{Nothman
+  et~al.}{2018}]{ref207}
+Nothman, J., H.~Qin, and R.~Yurchak (2018).
+\newblock Stop word lists in free open-source software packages.
+\newblock In {\em Proceedings of Workshop for NLP Open Source Software
+  (NLP-OSS)}, pp.\  7--12. Association for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Ohsawa and Yada}{Ohsawa and
+  Yada}{2017}]{ref208}
+Ohsawa, Y. and K.~Yada (2017).
+\newblock {\em Data Mining for Design and Marketing}.
+\newblock Boca Raton, FL: Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Ozgur, Colliau, Rogers, Hughes, and
+  Myer-Tyson}{Ozgur et~al.}{2017}]{ref209}
+Ozgur, C., T.~Colliau, G.~Rogers, Z.~Hughes, and E.~Myer-Tyson (2017).
+\newblock Matlab vs. python vs. r.
+\newblock {\em Journal of Data Science\/}~{\em 15}, 355--372.
+
+\bibitem[\protect\citeauthoryear{Palmer}{Palmer}{2000}]{ref210}
+Palmer, D.~D. (2000).
+\newblock Tokenisation and sentence segmentation.
+\newblock In R.~Dale, H.~Moisl, and H.~Somers (Eds.), {\em A Handbook of
+  Natural Language Processing}, pp.\  11--36. New York: Dekker.
+
+\bibitem[\protect\citeauthoryear{Palmer}{Palmer}{2010}]{ref211}
+Palmer, D.~D. (2010).
+\newblock Text preprocessing.
+\newblock In {\em Handbook of Natural Language Processing\/} (2nd ed.)., pp.\
+  9--30. Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Pelillo}{Pelillo}{2013}]{ref212}
+Pelillo, M. (2013).
+\newblock {\em Similarity-Based Pattern Analysis and Recognition}.
+\newblock Advances in Computer Vision and Pattern Recognition. London: Springer
+  Verlag.
+
+\bibitem[\protect\citeauthoryear{Peng}{Peng}{2016}]{ref213}
+Peng, R.~D. (2016).
+\newblock {\em R Programming for Data Science}.
+\newblock lulu.com.
+
+\bibitem[\protect\citeauthoryear{Pennington, Socher, and Manning}{Pennington
+  et~al.}{2014}]{ref214}
+Pennington, J., R.~Socher, and C.~D. Manning (2014).
+\newblock Glove: Global vectors for word representation.
+\newblock In {\em Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, Volume~14, pp.\  1532--1543.
+
+\bibitem[\protect\citeauthoryear{Petho and Mozes}{Petho and
+  Mozes}{2014}]{ref215}
+Petho, G. and E.~Mozes (2014).
+\newblock An n-gram-based language identification algorithm for variable-length
+  and variable-language texts.
+\newblock {\em Argumentum\/}~{\em 10}, 56--82.
+
+\bibitem[\protect\citeauthoryear{Polettini}{Polettini}{2004}]{ref216}
+Polettini, N. (2004).
+\newblock The vector space model in information retrieval -- term.
+\newblock Unpublished manuscript.
+
+\bibitem[\protect\citeauthoryear{Porter}{Porter}{1980}]{ref217}
+Porter, M.~F. (1980).
+\newblock An algorithm for suffix stripping.
+\newblock {\em Program\/}~{\em 14\/}(3), 130--137.
+
+\bibitem[\protect\citeauthoryear{Porter}{Porter}{2001}]{ref218}
+Porter, M.~F. (2001).
+\newblock Snowball: A language for stemming algorithms.
+\newblock \url{http://snowball.tartarus.org/texts/introduction.html}.
+\newblock Accessed October 2001.
+
+\bibitem[\protect\citeauthoryear{Prigmore}{Prigmore}{2008}]{ref219}
+Prigmore, M. (2008).
+\newblock {\em An Introduction to Databases with Web Applications}.
+\newblock Harlow: Pearson Education.
+
+\bibitem[\protect\citeauthoryear{Quinlan}{Quinlan}{1993}]{ref220}
+Quinlan, J.~R. (1993).
+\newblock {\em C4.5: Programs for Machine Learning}.
+\newblock Morgan Kaufmann.
+
+\bibitem[\protect\citeauthoryear{Ratner}{Ratner}{2012}]{ref221}
+Ratner, B. (2012).
+\newblock {\em Statistical and Machine-Learning Data Mining: Techniques for
+  Better Predictive Modeling and Analysis of Big Data}.
+\newblock Boca Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Reddy and Vinzamuri}{Reddy and
+  Vinzamuri}{2014}]{ref222}
+Reddy, C.~K. and B.~Vinzamuri (2014).
+\newblock A survey of partitional and hierarchical clustering algorithms.
+\newblock In C.~C. Aggarwal and C.~K. Reddy (Eds.), {\em Data Clustering:
+  Algorithms and Applications}, pp.\  87--110. Boca Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Reddy, Dash, and Pujari}{Reddy
+  et~al.}{2006}]{ref223}
+Reddy, D. K.~S., S.~K. Dash, and A.~K. Pujari (2006).
+\newblock New malicious code detection using variable length n-grams.
+\newblock In {\em Proceedings of the Second International Conference on
+  Information Systems Security (ICISS’06)}, Berlin, Heidelberg, pp.\
+  276--288. Springer.
+
+\bibitem[\protect\citeauthoryear{Reynar and Ratnaparkhi}{Reynar and
+  Ratnaparkhi}{1997}]{ref225}
+Reynar, J.~C. and A.~Ratnaparkhi (1997).
+\newblock A maximum entropy approach to identifying sentence boundaries.
+\newblock In {\em Proceedings of the Fifth Conference on Applied Natural
+  Language Processing (ANLC ’97)}, Stroudsburg, PA, USA, pp.\  16--19.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Ripley and Venables}{Ripley and
+  Venables}{2019}]{ref226}
+Ripley, B. and W.~Venables (2019).
+\newblock Functions for classification.
+\newblock \url{https://cran.r-project.org/web/packages/class/class.pdf}.
+
+\bibitem[\protect\citeauthoryear{Robertson}{Robertson}{2004}]{ref227}
+Robertson, S. (2004).
+\newblock Understanding inverse document frequency: On theoretical arguments
+  for idf.
+\newblock {\em Journal of Documentation\/}~{\em 60\/}(5), 503--520.
+
+\bibitem[\protect\citeauthoryear{Roh, Heo, and Whang}{Roh
+  et~al.}{2018}]{ref228}
+Roh, Y., G.~Heo, and S.~E. Whang (2018).
+\newblock A survey on data collection for machine learning: A big data--ai
+  integration perspective.
+\newblock {\em CoRR\/}~{\em abs/1811.03402}, 1--1.
+\newblock abs/1811.03402, 2018.
+
+\bibitem[\protect\citeauthoryear{Rokach}{Rokach}{2010}]{ref229}
+Rokach, L. (2010).
+\newblock A survey of clustering algorithms.
+\newblock In O.~Maimon and L.~Rokach (Eds.), {\em Data Mining and Knowledge
+  Discovery Handbook\/} (2nd ed.)., pp.\  269--298. New York: Springer.
+
+\bibitem[\protect\citeauthoryear{Romesburg}{Romesburg}{2004}]{ref230}
+Romesburg, H.~C. (2004).
+\newblock {\em Cluster Analysis for Researchers}.
+\newblock Raleigh, NC: Lulu Press.
+
+\bibitem[\protect\citeauthoryear{Rousseeuw}{Rousseeuw}{1987}]{ref231}
+Rousseeuw, P.~J. (1987).
+\newblock Silhouettes: A graphical aid to the interpretation and validation of
+  cluster analysis.
+\newblock {\em Journal of Computational and Applied Mathematics\/}~{\em 20},
+  53--65.
+
+\bibitem[\protect\citeauthoryear{Roux}{Roux}{2018}]{ref232}
+Roux, M. (2018).
+\newblock A comparative study of divisive and agglomerative hierarchical
+  clustering algorithms.
+\newblock {\em Journal of Classification\/}~{\em 35\/}(2), 243--264.
+
+\bibitem[\protect\citeauthoryear{{RuleQuest Research}}{{RuleQuest
+  Research}}{2018}]{ref224}
+{RuleQuest Research} (2018).
+\newblock Free software downloads.
+\newblock \url{https://rulequest.com/download.html}.
+
+\bibitem[\protect\citeauthoryear{Salomon}{Salomon}{2007}]{ref233}
+Salomon, D. (2007).
+\newblock {\em Variable-length Codes for Data Compression}.
+\newblock London: Springer.
+
+\bibitem[\protect\citeauthoryear{Salton}{Salton}{1971}]{ref234}
+Salton, G. (1971).
+\newblock Cluster search strategies and the optimization of retrieval
+  effectiveness.
+\newblock In G.~Salton (Ed.), {\em The SMART Retrieval System – Experiments
+  in Automatic Document Processing}, pp.\  223--242. Upper Saddle River, NJ:
+  Prentice-Hall.
+
+\bibitem[\protect\citeauthoryear{Salton and Buckley}{Salton and
+  Buckley}{1988}]{ref235}
+Salton, G. and C.~Buckley (1988).
+\newblock Term-weighting approaches in automatic text retrieval.
+\newblock {\em Information Processing \& Management\/}~{\em 24\/}(5), 513--523.
+
+\bibitem[\protect\citeauthoryear{Salton and McGill}{Salton and
+  McGill}{1983}]{ref236}
+Salton, G. and M.~J. McGill (1983).
+\newblock {\em Introduction to Modern Information Retrieval}.
+\newblock New York: McGraw Hill.
+
+\bibitem[\protect\citeauthoryear{Sanchez}{Sanchez}{2013}]{ref237}
+Sanchez, G. (2013).
+\newblock Handling and processing strings in r.
+\newblock
+  \url{http://www.gastonsanchez.com/Handling\%20and\%20Processing\%20Strings\%20in\%20R.pdf}.
+
+\bibitem[\protect\citeauthoryear{Saoub}{Saoub}{2017}]{ref238}
+Saoub, K.~R. (2017).
+\newblock {\em A Tour through Graph Theory}.
+\newblock Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Saratlija, Snajder, and
+  Dalbelo~Bašić}{Saratlija et~al.}{2011}]{ref239}
+Saratlija, J., J.~Snajder, and B.~Dalbelo~Bašić (2011).
+\newblock Unsupervised topic-oriented keyphrase extraction and its application
+  to croatian.
+\newblock In I.~Habernal and V.~Matousek (Eds.), {\em 14th International
+  Conference on Text, Speech and Dialogue}, Volume 6836 of {\em Lecture Notes
+  in Artificial Intelligence}, pp.\  340--347. Springer.
+
+\bibitem[\protect\citeauthoryear{Savaresi, Boley, Bittanti, and
+  Gazzaniga}{Savaresi et~al.}{2002}]{ref240}
+Savaresi, S., D.~Boley, S.~Bittanti, and G.~Gazzaniga (2002).
+\newblock Choosing the cluster to split in bisecting divisive clustering
+  algorithms.
+\newblock In R.~Grossman, J.~Han, V.~Kumar, H.~Mannila, and R.~Motwani (Eds.),
+  {\em Second SIAM International Conference on Data Mining (SDM’2002)},
+  Arlington, VA.
+
+\bibitem[\protect\citeauthoryear{Schachter and Shopen}{Schachter and
+  Shopen}{2007}]{ref241}
+Schachter, P. and T.~Shopen (2007).
+\newblock Parts-of-speech systems.
+\newblock In T.~Shopen (Ed.), {\em Language Typology and Syntactic
+  Description\/} (2nd ed.), Volume~1, pp.\  1--60. Cambridge: Cambridge
+  University Press.
+
+\bibitem[\protect\citeauthoryear{Schaeffer}{Schaeffer}{2007}]{ref242}
+Schaeffer, S.~E. (2007).
+\newblock Graph clustering.
+\newblock {\em Computer Science Review\/}~{\em 1}, 27--64.
+
+\bibitem[\protect\citeauthoryear{Schulte~im Walde}{Schulte~im
+  Walde}{2003}]{ref244}
+Schulte~im Walde, S. (2003).
+\newblock Experiments on the automatic induction of german semantic verb
+  classes.
+\newblock {\em AIMS: Arbeitspapiere des Instituts für Maschinelle
+  Sprachverarbeitung\/}~{\em 9\/}(2), 1--1.
+\newblock 9(2), 2003.
+
+\bibitem[\protect\citeauthoryear{Schölkopf}{Schölkopf}{2001}]{ref243}
+Schölkopf, B. (2001).
+\newblock {\em Learning with Kernels: Support Vector Machines, Regularization,
+  Optimization, and Beyond}.
+\newblock Adaptive Computation and Machine Learning. The MIT Press.
+
+\bibitem[\protect\citeauthoryear{Sebastiani}{Sebastiani}{2002}]{ref245}
+Sebastiani, F. (2002).
+\newblock Machine learning in automated text categorization.
+\newblock {\em ACM Computing Surveys\/}~{\em 1}, 1--47.
+
+\bibitem[\protect\citeauthoryear{Seber}{Seber}{1984}]{ref246}
+Seber, G. A.~F. (1984).
+\newblock {\em Multivariate Observations}.
+\newblock Hoboken: John Wiley \& Sons.
+
+\bibitem[\protect\citeauthoryear{Seeger}{Seeger}{2001}]{ref247}
+Seeger, M. (2001).
+\newblock Learning with labeled and unlabeled data.
+\newblock Technical report, University of Edinburgh.
+
+\bibitem[\protect\citeauthoryear{Shafranovich}{Shafranovich}{2005}]{ref248}
+Shafranovich, Y. (2005, October).
+\newblock Common format and mime type for comma-separated values (csv) files.
+\newblock Technical Report RFC 4180, Network Working Group.
+
+\bibitem[\protect\citeauthoryear{Shannon}{Shannon}{1948}]{ref249}
+Shannon, C.~E. (1948).
+\newblock A mathematical theory of communication.
+\newblock {\em The Bell System Technical Journal\/}~{\em 27\/}(3), 379--423.
+
+\bibitem[\protect\citeauthoryear{Shmueli, Patel, and Bruce}{Shmueli
+  et~al.}{2010}]{ref250}
+Shmueli, G., N.~R. Patel, and P.~C. Bruce (2010).
+\newblock {\em Data Mining for Business Intelligence: Concepts, Techniques, and
+  Applications in Microsoft Office Excel with XLMiner}.
+\newblock Hoboken, NJ: Wiley.
+
+\bibitem[\protect\citeauthoryear{Sims}{Sims}{2014}]{ref251}
+Sims, R.~L. (2014).
+\newblock {\em Bivariate Data Analysis: A Practical Guide}.
+\newblock Hauppauge, NY: Nova Science Publishers.
+
+\bibitem[\protect\citeauthoryear{Singhal}{Singhal}{1997}]{ref252}
+Singhal, A.~K. (1997).
+\newblock {\em Term Weighting Revisited}.
+\newblock Ph.\ D. thesis, Faculty of the Graduate School, Cornell University.
+
+\bibitem[\protect\citeauthoryear{Socher, Perelygin, Wu, Chuang, Manning, Ng,
+  and Potts}{Socher et~al.}{2013}]{ref253}
+Socher, R., A.~Perelygin, J.~Wu, J.~Chuang, C.~D. Manning, A.~Ng, and C.~Potts
+  (2013).
+\newblock Recursive deep models for semantic compositionality over a sentiment
+  treebank.
+\newblock In {\em Proceedings of the 2013 Conference on Empirical Methods in
+  Natural Language Processing}, pp.\  1631--1642. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citeauthoryear{Srivastava and Sahami}{Srivastava and
+  Sahami}{2009}]{ref254}
+Srivastava, A. and M.~Sahami (2009).
+\newblock {\em Text Mining: Classification, Clustering, and Applications}.
+\newblock Boca Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Stein and zu~Eissen}{Stein and
+  zu~Eissen}{2003}]{ref255}
+Stein, B. and S.~M. zu~Eissen (2003).
+\newblock Automatic document categorization.
+\newblock In A.~G{\"u}nter, R.~Kruse, and B.~Neumann (Eds.), {\em KI 2003:
+  Advances in Artificial Intelligence}, pp.\  254--266. Berlin, Heidelberg:
+  Springer.
+
+\bibitem[\protect\citeauthoryear{Steinbach, Karypis, and Kumar}{Steinbach
+  et~al.}{2000}]{ref256}
+Steinbach, M., G.~Karypis, and V.~Kumar (2000).
+\newblock A comparison of document clustering techniques.
+\newblock In {\em KDD Workshop on Text Mining}.
+
+\bibitem[\protect\citeauthoryear{Steinley}{Steinley}{2006}]{ref257}
+Steinley, B. (2006).
+\newblock K-means clustering: a half-century synthesis.
+\newblock {\em The British Journal of Mathematical and Statistical
+  Psychology\/}~{\em 59\/}(1), 1--34.
+
+\bibitem[\protect\citeauthoryear{Stracuzzi}{Stracuzzi}{2008}]{ref258}
+Stracuzzi, D.~J. (2008).
+\newblock Randomized feature selection.
+\newblock In H.~Liu and H.~Motoda (Eds.), {\em Computational Methods of Feature
+  Selection}, Chapter~3, pp.\  41--62. Boca Raton, FL: Chapman \& Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Taylor, Marcus, and Santorini}{Taylor
+  et~al.}{2003}]{ref259}
+Taylor, A., M.~Marcus, and B.~Santorini (2003).
+\newblock The penn treebank: An overview.
+\newblock In A.~Abeill{\'e} (Ed.), {\em Treebanks: Building and Using Parsed
+  Corpora}, pp.\  5--22. Dordrecht: Springer Netherlands.
+
+\bibitem[\protect\citeauthoryear{Teetor}{Teetor}{2011}]{ref260}
+Teetor, P. (2011).
+\newblock {\em R Cookbook: Proven Recipes for Data Analysis, Statistics, and
+  Graphics}.
+\newblock Sebastopol, CA: O’Reilly.
+
+\bibitem[\protect\citeauthoryear{Torgo}{Torgo}{2017}]{ref261}
+Torgo, L. (2017).
+\newblock {\em Data Mining with R: Learning with Case Studies\/} (2nd ed.).
+\newblock Boca Raton, FL: Chapman and Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Tseng, Lin, and Lin}{Tseng
+  et~al.}{2007}]{ref262}
+Tseng, Y.-H., C.-J. Lin, and Y.-I. Lin (2007).
+\newblock Text mining techniques for patent analysis.
+\newblock {\em Information Processing \& Management\/}~{\em 43\/}(5),
+  1216--1247.
+
+\bibitem[\protect\citeauthoryear{Turney and Pantel}{Turney and
+  Pantel}{2010}]{ref263}
+Turney, P.~D. and P.~Pantel (2010).
+\newblock From frequency to meaning: Vector space models of semantics.
+\newblock {\em Journal of Artificial Intelligence Research\/}~{\em 37\/}(1),
+  141--188.
+
+\bibitem[\protect\citeauthoryear{Urdan}{Urdan}{2005}]{ref264}
+Urdan, T.~C. (2005).
+\newblock {\em Statistics in Plain English}.
+\newblock Mahwah, NJ: Lawrence Erlbaum Associates.
+
+\bibitem[\protect\citeauthoryear{Vasagar}{Vasagar}{2013}]{ref265}
+Vasagar, J. (2013).
+\newblock Germany drops its longest word: Rindfleischeti...
+\newblock
+  \url{https://www.telegraph.co.uk/news/worldnews/europe/germany/10095976/Germany-drops-its-longest-word-Rindfleischeti....html}.
+\newblock The Telegraph, June 2013.
+
+\bibitem[\protect\citeauthoryear{Vaseghi}{Vaseghi}{2006}]{ref266}
+Vaseghi, S.~V. (2006).
+\newblock {\em Advanced Digital Signal Processing and Noise Reduction}.
+\newblock Chichester: John Wiley \& Sons, Ltd.
+
+\bibitem[\protect\citeauthoryear{Vinh, Epps, and Bailey}{Vinh
+  et~al.}{2010}]{ref267}
+Vinh, N.~X., J.~Epps, and J.~Bailey (2010).
+\newblock Information theoretic measures for clusterings comparison: Variants,
+  properties, normalization and correction for chance.
+\newblock {\em Journal of Machine Learning Research\/}~{\em 11}, 2837--2854.
+
+\bibitem[\protect\citeauthoryear{von Luxburg, Williamson, and Guyon}{von
+  Luxburg et~al.}{2012}]{ref268}
+von Luxburg, U., R.~C. Williamson, and I.~Guyon (2012, July).
+\newblock Clustering: Science or art?
+\newblock In I.~Guyon, G.~Dror, V.~Lemaire, G.~Taylor, and D.~Silver (Eds.),
+  {\em Proceedings of ICML Workshop on Unsupervised and Transfer Learning},
+  Volume~27 of {\em Proceedings of Machine Learning Research}, Bellevue,
+  Washington, USA, pp.\  65--79. PMLR.
+
+\bibitem[\protect\citeauthoryear{Vries, Geva, and Trotman}{Vries
+  et~al.}{2012}]{ref68}
+Vries, C. M.~D., S.~Geva, and A.~Trotman (2012).
+\newblock Document clustering evaluation: Divergence from a random baseline.
+\newblock In {\em Information Retrieval 2012 Workshop}, Dortmund, Germany.
+
+\bibitem[\protect\citeauthoryear{Vylomova, Rimell, Cohn, and Baldwin}{Vylomova
+  et~al.}{2016}]{ref269}
+Vylomova, E., L.~Rimell, T.~Cohn, and T.~Baldwin (2016).
+\newblock Take and took, gaggle and goose, book and read: Evaluating the
+  utility of vector differences for lexical relation learning.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pp.\  1671--1682.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Wachsmuth}{Wachsmuth}{2015}]{ref271}
+Wachsmuth, H. (2015).
+\newblock {\em Text Analysis Pipelines: Towards Ad-hoc Large-Scale Text
+  Mining}, Volume 9383 of {\em Lecture Notes in Computer Science}.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Wagstaff, Cardie, Rogers, and
+  Schroedl}{Wagstaff et~al.}{2001}]{ref272}
+Wagstaff, K., C.~Cardie, S.~Rogers, and S.~Schroedl (2001).
+\newblock Constrained k-means clustering with background knowledge.
+\newblock In {\em Proceedings of the Eighteenth International Conference on
+  Machine Learning (ICML 2001)}, pp.\  577--584. Morgan Kaufmann.
+
+\bibitem[\protect\citeauthoryear{Wang and Manning}{Wang and
+  Manning}{2012}]{ref273}
+Wang, S. and C.~D. Manning (2012).
+\newblock Baselines and bigrams: Simple, good sentiment and topic
+  classification.
+\newblock In {\em Proceedings of the 50th Annual Meeting of the Association for
+  Computational Linguistics}, pp.\  90--94. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citeauthoryear{Wang and Xue}{Wang and Xue}{2014}]{ref274}
+Wang, Z. and X.~Xue (2014).
+\newblock Multi-class support vector machine.
+\newblock In Y.~Ma and G.~Guo (Eds.), {\em Support Vector Machines
+  Applications}, Chapter~2, pp.\  23--48. Cham: Springer International
+  Publishing.
+
+\bibitem[\protect\citeauthoryear{Weiss, Indurkhya, Zhang, and Damerau}{Weiss
+  et~al.}{2005}]{ref275}
+Weiss, S.~M., N.~Indurkhya, T.~Zhang, and F.~J. Damerau (2005).
+\newblock {\em Text Mining: Predictive Methods for Analyzing Unstructured
+  Information}.
+\newblock New York, NY: Springer New York.
+
+\bibitem[\protect\citeauthoryear{Weng}{Weng}{2017}]{ref276}
+Weng, L. (2017).
+\newblock Learning word embedding.
+\newblock
+  \url{https://lilianweng.github.io/lil-log/2017/10/15/learning-wordembedding.html}.
+\newblock Accessed 2019-02-14.
+
+\bibitem[\protect\citeauthoryear{Whang, Dhillon, and Gleich}{Whang
+  et~al.}{2015}]{ref277}
+Whang, J.~J., I.~S. Dhillon, and D.~F. Gleich (2015).
+\newblock {\em Non-exhaustive, Overlapping K-means}.
+\newblock Society for Industrial and Applied Mathematics Publications.
+
+\bibitem[\protect\citeauthoryear{Wilbur and Sirotkin}{Wilbur and
+  Sirotkin}{1992}]{ref278}
+Wilbur, W.~J. and K.~Sirotkin (1992, February).
+\newblock The automatic identification of stop words.
+\newblock {\em Journal of Information Science\/}~{\em 18\/}(1), 45--55.
+
+\bibitem[\protect\citeauthoryear{Witten}{Witten}{2004}]{ref279}
+Witten, I.~H. (2004).
+\newblock Text mining.
+\newblock In {\em The Practical Handbook of Internet Computing}. Chapman and
+  Hall/CRC.
+
+\bibitem[\protect\citeauthoryear{Witten, Frank, and Hall}{Witten
+  et~al.}{2011}]{ref280}
+Witten, I.~H., E.~Frank, and M.~A. Hall (2011).
+\newblock {\em Data Mining: Practical Machine Learning Tools and Techniques}.
+\newblock San Francisco: Morgan Kaufmann.
+
+\bibitem[\protect\citeauthoryear{Wolpert}{Wolpert}{1996}]{ref281}
+Wolpert, D.~H. (1996).
+\newblock The lack of a priori distinctions between learning algorithms.
+\newblock {\em Neural Computation\/}~{\em 8\/}(7), 1341--1390.
+
+\bibitem[\protect\citeauthoryear{Wolpert}{Wolpert}{2001}]{ref282}
+Wolpert, D.~H. (2001).
+\newblock The supervised learning no-free-lunch theorems.
+\newblock In {\em Proceedings of the 6th Online World Conference on Soft
+  Computing in Industrial Applications}, pp.\  25--42.
+
+\bibitem[\protect\citeauthoryear{Xing, Ng, Jordan, and Russell}{Xing
+  et~al.}{2002}]{ref283}
+Xing, E.~P., A.~Y. Ng, M.~I. Jordan, and S.~Russell (2002).
+\newblock Distance metric learning, with application to clustering with
+  side-information.
+\newblock In {\em Proceedings of the 15th International Conference on Neural
+  Information Processing Systems}, pp.\  521--528.
+
+\bibitem[\protect\citeauthoryear{Xu, Zong, and Yang}{Xu et~al.}{2013}]{ref284}
+Xu, G., Y.~Zong, and Z.~Yang (2013).
+\newblock {\em Applied Data Mining}.
+\newblock Boca Raton, FL: CRC Press.
+
+\bibitem[\protect\citeauthoryear{Xu and Wunsch}{Xu and Wunsch}{2009}]{ref285}
+Xu, R. and D.~C. Wunsch (2009).
+\newblock {\em Clustering}.
+\newblock Hoboken, NJ: Wiley.
+
+\bibitem[\protect\citeauthoryear{Yang and Pedersen}{Yang and
+  Pedersen}{1997}]{ref286}
+Yang, Y. and J.~O. Pedersen (1997).
+\newblock A comparative study on feature selection in text categorization.
+\newblock In {\em Proceedings of the Fourteenth International Conference on
+  Machine Learning (ICML’97)}, San Francisco, USA, pp.\  412--420. Morgan
+  Kaufmann Publishers.
+
+\bibitem[\protect\citeauthoryear{Zell, Mache, Hübner, Mamier, Vogt, Schmalzl,
+  and Herrmann}{Zell et~al.}{1994}]{ref287}
+Zell, A., N.~Mache, R.~Hübner, G.~Mamier, M.~Vogt, M.~Schmalzl, and K.-U.
+  Herrmann (1994).
+\newblock Snns (stuttgart neural network simulator).
+\newblock In J.~Skrzypek (Ed.), {\em Neural Network Simulation Environments},
+  pp.\  165--186. Boston, MA: Springer US.
+
+\bibitem[\protect\citeauthoryear{Zennaki, Semmar, and Besacier}{Zennaki
+  et~al.}{2015}]{ref288}
+Zennaki, O., N.~Semmar, and L.~Besacier (2015).
+\newblock Unsupervised and lightly supervised part-of-speech tagging using
+  recurrent neural networks.
+\newblock In {\em Proceedings of the 29th Pacific Asia Conference on Language,
+  Information and Computation (PACLIC)}, Shanghai, China, pp.\  133--142.
+
+\bibitem[\protect\citeauthoryear{Zha, He, Ding, Gu, and Simon}{Zha
+  et~al.}{2001}]{ref289}
+Zha, H., X.~He, C.~H.~Q. Ding, M.~Gu, and H.~D. Simon (2001).
+\newblock Bipartite graph partitioning and data clustering.
+\newblock In {\em Proceedings of the 2001 ACM CIKM International Conference on
+  Information and Knowledge Management}, pp.\  25--32. ACM.
+
+\bibitem[\protect\citeauthoryear{Zhang, Kang, Qian, and Huang}{Zhang
+  et~al.}{2014}]{ref290}
+Zhang, Q., J.~Kang, J.~Qian, and X.~Huang (2014).
+\newblock Continuous word embeddings for detecting local text reuses at the
+  semantic level.
+\newblock In {\em Proceedings of the 37th International ACM SIGIR Conference on
+  Research and Development in Information Retrieval (SIGIR ’14)}, New York,
+  NY, USA, pp.\  797--806. ACM.
+
+\bibitem[\protect\citeauthoryear{Zhao and Karypis}{Zhao and
+  Karypis}{2001}]{ref291}
+Zhao, Y. and G.~Karypis (2001).
+\newblock Criterion functions for document clustering: Experiments and
+  analysis.
+\newblock Technical Report 01-40, University of Minnesota, Department of
+  Computer Science.
+
+\bibitem[\protect\citeauthoryear{Zhao and Karypis}{Zhao and
+  Karypis}{2002}]{ref292}
+Zhao, Y. and G.~Karypis (2002).
+\newblock Comparison of agglomerative and partitional document clustering
+  algorithms.
+\newblock In I.~S. Dhillon and J.~Kogan (Eds.), {\em Proceedings of the
+  Workshop on Clustering High Dimensional Data and Its Applications at the
+  Second SIAM International Conference on Data Mining}, Philadelphia, pp.\
+  83--93. SIAM.
+
+\bibitem[\protect\citeauthoryear{Zhao and Karypis}{Zhao and
+  Karypis}{2004}]{ref293}
+Zhao, Y. and G.~Karypis (2004).
+\newblock Empirical and theoretical comparisons of selected criterion functions
+  for document clustering.
+\newblock {\em Machine Learning\/}~{\em 55\/}(3), 311--331.
+
+\bibitem[\protect\citeauthoryear{Zhao and Karypis}{Zhao and
+  Karypis}{2005}]{ref294}
+Zhao, Y. and G.~Karypis (2005).
+\newblock Hierarchical clustering algorithms for document datasets.
+\newblock {\em Data Mining and Knowledge Discovery\/}~{\em 10\/}(2), 141--168.
+
+\bibitem[\protect\citeauthoryear{Zizka and Darena}{Zizka and
+  Darena}{2011}]{ref295}
+Zizka, J. and F.~Darena (2011).
+\newblock Mining significant words from customer opinions written in different
+  natural languages.
+\newblock In I.~Habernal and V.~Matousek (Eds.), {\em Text, Speech and
+  Dialogue}, pp.\  211--218. Berlin, Heidelberg: Springer.
+
+\bibitem[\protect\citeauthoryear{Zi{\v z}ka, Svoboda, and Da{\v r}ena}{Zi{\v
+  z}ka et~al.}{2017}]{ref270}
+Zi{\v z}ka, J., A.~Svoboda, and F.~Da{\v r}ena (2017).
+\newblock Selecting characteristic patterns of text contributions to social
+  networks using instance-based learning algorithm ibl-2.
+\newblock In S.~Kapounek and V.~Kr{\v r}utilova (Eds.), {\em Enterprise and
+  Competitive Environment}, Brno, pp.\  971--980. Mendel University in Brno,
+  Faculty of Business and Economics.
+
+\end{thebibliography}

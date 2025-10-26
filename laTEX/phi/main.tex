@@ -1,0 +1,806 @@
+\documentclass[twoside,11pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{newtxtext,newtxmath}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\geometry{top=3cm,bottom=3cm,left=3cm,right=3cm}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{mdframed}  
+\setstretch{0.4}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{float}
+\geometry{margin=1in}
+\usepackage{titlesec}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{sansmath}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{verbatimbox}
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage{rotating}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{multirow}
+\usepackage{textcomp}
+% \usepackage{mathptmx}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[numbers]{natbib}
+\DeclareUnicodeCharacter{043E}{o}
+\DeclareUnicodeCharacter{0441}{c}
+\DeclareUnicodeCharacter{0430}{a}
+\captionsetup[figure]{labelfont=bf,textfont=normalfont}
+\captionsetup[table]{labelfont=bf,textfont=normalfont}
+\renewcommand{\rmdefault}{ptm}
+
+% Xóa header/footer mặc định
+\fancyhf{}
+
+% ---------- HEADER ----------
+% Trang chẵn (Left page)
+\fancyhead[LE]{\textbf{\thepage} \hspace{1em} \rule[0.5ex]{1ex}{1ex} \hspace{0.5em} 
+\textit{Text Mining with Machine Learning: Principles and Techniques}}
+
+% Trang lẻ (Right page)
+\fancyhead[RO]{\textit{\leftmark} \hspace{0.5em} \rule[0.5ex]{1ex}{1ex} \hspace{1em} \textbf{\thepage}}
+
+% ---------- FOOTER ----------
+\fancyfoot{} % đường kẻ ngang dưới header
+
+% ---------- Định dạng tên chương ----------
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+
+\renewcommand{\labelitemi}{$\blacksquare$}
+
+
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries} % font cho toàn khối chương
+  {\itshape\LARGE Chapter \thechapter} % dòng đầu: Chapter 1 (in nghiêng)
+  {10pt} % khoảng cách giữa label và tiêu đề
+  {%
+    \vspace{-1em}% điều chỉnh khoảng cách trên cùng
+    \rule{\textwidth}{6pt}\vspace{0.5em}\\% dòng kẻ trên
+    \Huge % cỡ chữ tiêu đề chương
+  }
+  [\vspace{0.2em}\rule{\textwidth}{6pt}] % dòng kẻ dưới
+
+
+\newmdenv[
+  linewidth=0.4pt,            % độ dày viền
+  roundcorner=0pt,            % góc vuông
+  innerleftmargin=8pt,        % đệm trái
+  innerrightmargin=8pt,       % đệm phải
+  innertopmargin=6pt,         % đệm trên
+  innerbottommargin=6pt,      % đệm dưới
+  backgroundcolor=white,       % không tô màu nền
+  skipabove=12pt,             % cách đoạn phía trên
+  skipbelow=12pt              % cách đoạn phía dưới
+]{crcbox}
+
+
+\begin{document}
+\frontmatter
+\thispagestyle{empty}
+
+\vspace*{1cm}
+
+
+\noindent
+\begin{minipage}{\textwidth}
+
+\rule{0.9\textwidth}{4pt}\\[0.8em]
+
+{\bfseries\fontsize{48}{54}\selectfont
+Text Mining with\\
+Machine Learning}\\[0.8em]
+
+{\bfseries\fontsize{32}{38}\selectfont
+Principles and Techniques}\\[0.8em]
+
+\rule{0.9\textwidth}{4pt}
+\end{minipage}
+
+
+\begin{flushleft}
+\textbf{Jan Žižka}\\
+Machine Learning Consultant, Brno, Czech Republic\\[1em]
+
+\textbf{František Dařena}\\
+Department of Informatics\\
+Mendel University, Brno, Czech Republic\\[1em]
+
+\textbf{Arnošt Svoboda}\\
+Department of Applied Mathematics \& Computer Science\\
+Masaryk University, Brno, Czech Republic
+\end{flushleft}
+
+\vfill
+
+% ======= Logo và thông tin nhà xuất bản ======
+\begin{figure}[!htbp]
+  \centering
+  \vspace{19em}
+  \includegraphics[width=50mm,scale=0.5]{logo-name.jpg}
+  \caption*{\sffamily{A SCIENCE PUBLISHERS BOOK}}
+\end{figure}
+
+\thispagestyle{empty}
+
+{\small
+\noindent
+CRC Press\\[0.3em]
+Taylor \& Francis Group\\
+6000 Broken Sound Parkway NW, Suite 300\\[0.3em]
+Boca Raton, FL 33487–2742\\[0.5em]
+
+{\setlength{\parindent}{0pt}
+\noindent
+\textcopyright{} 2020 by Taylor \& Francis Group, LLC\\
+CRC Press is an imprint of Taylor \& Francis Group, an Informa business\\[0.5em]
+
+No claim to original U.S. Government works\\[0.5em]
+
+Version Date: 20190826\\[0.5em]
+
+International Standard Book Number-13: 978-1-138-60182-6 (Hardback)\\
+
+This book contains information obtained from authentic and highly regarded sources. Reasonable eff orts have been
+made to publish reliable data and information, but the author and publisher cannot assume responsibility for the
+validity of all materials or the consequences of their use. Th e authors and publishers have attempted to trace the
+copyright holders of all material reproduced in this publication and apologize to copyright holders if permission to
+publish in this form has not been obtained. If any copyright material has not been acknowledged please write and let
+us know so we may rectify in any future reprint.\\[0.25em]
+
+Except as permitted under U.S. Copyright Law, no part of this book may be reprinted, reproduced, transmitted,
+or utilized in any form by any electronic, mechanical, or other means, now known or hereafter invented, including photocopying, microfi lming, and recording, or in any information storage or retrieval system, without written
+permission from the publishers.\\[0.25em]
+
+For permission to photocopy or use material electronically from this work, please access \texttt{www.copyright.com}
+or contact the Copyright Clearance Center, Inc. (CCC), 222 Rosewood Drive, Danvers, MA 01923, 978-750-8400.
+CCC is a not-for-profit organization that provides licenses and registration for a variety of users.
+For organizations that have been granted a photocopy license by the CCC, a separate system of payment has been arranged.\\[0.25em]
+
+\textbf{Trademark Notice:}
+Product or corporate names may be trademarks or registered trademarks,
+and are used only for identification and explanation without intent to infringe.\\[0.25em]
+}
+% ====== Khối Library of Congress ======
+\begin{center}
+\begin{minipage}{0.675\textwidth}  % �� toàn bộ khối có chiều rộng cố định, căn giữa
+
+% --- Tiêu đề và 2 đường kẻ ---
+\centering
+\rule{\linewidth}{0.4pt}\\[0.4em]
+Library of Congress Cataloging-in-Publication Data\\[0.4em]
+\rule{\linewidth}{0.3pt}
+
+\vspace{0.8em}
+
+% --- Nội dung bên trong (căn trái) ---
+\raggedright
+Names: Žižka, Jan, author. \textbar\ Dařena, František, 1979– author. \textbar\ Svoboda, Arnošt, 1949– author.\\
+Title: Text mining with machine learning : principles and techniques / Jan Žižka, František Dařena, Arnošt Svoboda.\\
+Description: First. \textbar\ Boca Raton : CRC Press, 2019. \textbar\ Includes bibliographical references and index. \textbar\
+Summary: “This book provides a perspective on the application of machine learning-based methods in knowledge discovery from natural language texts. By analysing various data sets, conclusions, which are not normally evident, emerge and can be used for various purposes and applications. The book provides explanations of principles of time-proven machine learning algorithms applied in text mining together with step-by-step demonstrations of how to reveal the semantic contents in real-world datasets using the popular R-language with its implemented machine learning algorithms. The book is not aimed at IT specialists, but is meant for a wider audience that needs to process big sets of text documents and has basic knowledge of the subject, e.g., e-mail service providers, online shoppers, librarians, etc.” — Provided by publisher.\\
+Identifiers: LCCN 2019035868 \textbar\ ISBN 9781138601826 (hardback)\\
+Subjects: LCSH: Machine learning. \textbar\ Computational linguistics. \textbar\ Semantics—Data processing.\\
+Classification: LCC Q325.5 .Z59 2019 \textbar\ DDC 006.3/12—dc23\\
+LC record available at \texttt{https://lccn.loc.gov/2019035868}\\[0.8em]
+
+% --- Đường kẻ cuối ---
+\rule{\linewidth}{0.4pt}
+
+\end{minipage}
+\end{center}
+
+\vspace{1em}
+{\setlength{\parindent}{0pt}
+\noindent
+\textbf{Visit the Taylor \& Francis Web site at\\
+ \texttt{http://www.taylorandfrancis.com}\\[0.5em]
+and the CRC Press Web site at \\
+ \texttt{http://www.crcpress.com}}
+}
+}
+\thispagestyle{empty}
+
+\clearpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    \textit{To our families}
+\end{center}
+\vspace*{\fill}
+
+\clearpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+\noindent
+\chapter*{Perface}
+\addcontentsline{toc}{chapter}{Preface}
+\thispagestyle{empty}
+% \begin{minipage}{\textwidth}
+
+% \rule[-0.5em]{\textwidth}{6pt}\\[0.5em]
+
+% {\fontsize{48}{54}\selectfont
+% Perface}\\[0.5em]
+
+% \rule{\textwidth}{6pt} \\ [5em]
+% \end{minipage}
+{\setlength{\parindent}{0pt}
+\noindent
+The aim of this book is to make it easier for those interested in text mining –
+one of the branches of modern information technology – to enter an interesting
+area focused on analyzing texts in natural languages. Machine learning has been
+chosen as an analytical tool because it is a promising organic part of computer
+science and artificial intelligence that supports successful exploration of big
+volumes of text data using advanced classification and clustering methods.
+Machine learning now has available a large number of software tools, both
+commercial and free, so there is no need to implement them and a researcher can
+focus directly on their use for given data and applications. \\
+
+\hspace*{0.5cm}The authors of this book have chosen demonstrations of certain basic as
+well as popular implementations of machine learning algorithms in an advanced
+interpreted programming language R, which is freely available for a variety of
+operating systems and provides an appropriate communication interface over
+RStudio without the need for complex learning. In no case is this book primarily
+focused on advanced computer scientists, programmers, or mathematicians,
+although basic programming skills and higher mathematical knowledge (linear
+algebra, statistics, function analysis) are required to understand algorithms, use
+them and, of course, interpret their results. For interested readers, chapters have
+references to literature which can suitably complement the topics described. Text
+mining has already come to an advanced/a well-developed form, driven by the
+need to explore texts as specific data type, in particular large text data files on
+the Internet from social networks, product or service reviews, e-mails, blogs, and
+many forums. Perhaps every e-mail user today is aware of the facility to filter
+messages (for example, spam removal or topic grouping), which is just one of
+many possible applications of the text mining industry.\\
+
+\hspace*{0.5cm} The book covers the introduction to text mining by machine learning,
+introduction to the R programming language, structured text representation,classification and easy introduction to the most common classification algorithms
+(Bayes classifier, nearest neighbors, decision trees, random forest, support vector
+machines, and deep learning), followed by clustering. The final two chapters deal
+with word embedding and feature selection problem areas.\\
+
+\hspace*{0.5cm} The authors of this book would like to express their hope that the book will
+find a number of interested readers and will be used to familiarize them with
+the attractive sector of artificial intelligence and machine learning applied to the
+difficult area of processing data produced by humans and not by machines.\\
+}
+
+
+
+\tableofcontents
+
+\clearpage
+\let\cleardoublepage\clearpage
+\noindent
+\chapter*{Author's Biographies}
+\addcontentsline{toc}{chapter}{Author's Biographies}
+\thispagestyle{empty}
+
+
+{\setlength{\parindent}{0pt}
+\noindent
+\textbf{Jan Zˇizˇka} is currently involved in consultations in the field of machine learning
+and data mining. For many years he worked as a system programmer, developer of
+advanced software systems, and researcher. For the last 25 years, he has devoted
+himself to artificial intelligence and machine learning, especially text mining. He
+has also worked at a number of universities in the Czech Republic and abroad,
+including research institutes. He is the author and co-author of approximately
+100 international publications. \\[0.5em]
+\textbf{Frantisˇek Darˇena} works as an associate professor, the guarantor of the
+doctoral degree program System Engineering and Informatics, and head of
+the Text Mining and Natural Language Processing group at the Department of
+Informatics, Faculty of Business and Economics, Mendel University Brno. He is
+the author of several publications in international scientific journals, conference
+proceedings, and monographs; member of the editorial boards of international
+journals, and editor-in-chief of International Journal in Foundations of Computer
+Science \& Technology. His research areas include text/data mining, intelligent
+data processing, and machine learning. \\[0.5em]
+\textbf{Arnosˇt} Svoboda is an expert in programming and his area includes programming
+languages and systems such as R, Assembler, Matlab, PL/1, Cobol, Fortran,
+Pascal, and others. He started his career as a system programmer. For the last
+20 years, Arnosˇt has worked as a teacher and researcher at Masaryk University in
+Brno (Czech Republic), Faculty of Economics and Administration, Department
+of Applied Mathematics and Computer Science. At present, he is interested in
+machine learning and data mining. \\
+}
+
+\clearpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+\mainmatter
+\nocite{*}
+\include{chapter/chapter1/chapter1} 
+% \chapter{}
+\include{chapter/chapter2/chapter2}
+% \chapter{}
+
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+
+\include{chapter/chapter3/chapter3}
+% \chapter{}
+
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+
+\include{chapter/chapter4/chapter4}
+% % \chapter{}
+
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+
+\include{chapter/chapter5/chapter5}
+% % \chapter{}
+\include{chapter/chapter6/Chapter6}
+% % \chapter{}
+\include{chapter/chapter7/Chapter7}
+% % \chapter{}
+\include{chapter/Chapter8/Chapter8}
+% % \chapter{}
+
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+
+\include{chapter/chapter9/chapter9}
+% \chapter{}
+\include{chapter/chapter10/chapter10}
+% \chapter{}
+
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+
+\include{chapter/chapter11/chapter11}
+
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+
+\include{chapter/chapter12/chapter12}
+
+\vspace*{\fill}
+\begin{center}
+
+\hspace{-15pt}\makebox[\textwidth]{\noindent\includegraphics[width=0.85\paperwidth]{informa.jpg}}
+
+\vspace{-18pt}\href{http://taylorandfrancis.com/}{\includegraphics{hyperlink.jpg}}
+\end{center}
+\vspace*{\fill}
+
+\include{chapter/chapter13/chapter13}
+\include{chapter/chapter14/chapter14}
+
+\clearpage
+\let\cleardoublepage\clearpage
+\addcontentsline{toc}{chapter}{References}
+\renewcommand{\bibname}{References}
+\bibliographystyle{chicago}
+\bibliography{references}
+
+\clearpage
+\let\cleardoublepage\clearpage
+\chapter*{Index}
+\begin{multicols}{2}
+\hspace{-1.5em}abbreviations, 93\\
+accents\\
+see diacritics, 98\\
+accuracy, 142\\
+adaboost, 201, 202\\
+annotation, 104\\
+artificial neural networks, 223\\
+bag-of-characters, 84\\
+bag-of-n-grams, 83\\
+bag-of-words, 4, 78--80, 287\\
+bagging, 59, 193\\
+Bayes\\
+classifier, 148\\
+naïve, 78, 147, 149\\
+theorem, 146\\
+big data, 11\\
+bisecting k-means, 260\\
+bit, 308\\
+boosting, 201\\
+bootstrap, 193\\
+c4.5, 175, 313\\
+c5, 117, 175\\
+c5 tree generator, 176\\
+capitalization, 99\\
+CART, tree, 195\\
+case folding, 99\\
+CBOW, 292\\
+centroid, 238\\
+characters, 83\\
+chi squared, 271, 280, 306, 317\\
+chunking\\
+see parsing, shallow, 107\\
+class label, 49\\
+classification, 97\\
+accuracy, 142\\
+F-measure, 143\\
+macroaveraging, 143\\
+precision, 143\\
+recall, 143\\
+classification result, explanation, 224\\
+CLINK, see complete linkage cluster, 235, 242\\
+labeling, 270, 280\\
+clustering, 97, 235\\
+agglomerative, 243, 253, 276\\
+bisection, 260\\
+constrained, 261\\
+criterion function, 246, 253, 262\\
+dendrogram, 243\\
+divisive, 243, 259, 279\\
+evaluation, 261\\
+flat, see clustering, partitional\\
+fuzzy, 242\\
+graph based, 245\\
+hard, 242\\
+hierarchical, 243, 244\\
+median, see WPGMC\\
+non-exhaustive, 242\\
+number of clusters, 268\\
+objective function, 243\\
+partitional, 242, 245, 249, 251, 260\\
+soft, 242\\
+CLUTO, 121\\
+complete linkage, 238, 254\\
+concept, 84\\
+context, 77, 83\\
+continuous bag-of-words, 291, 292\\
+cosine normalization, see term, weighting, cosine normalization112\\
+CRAN, 66\\
+cross-validation, 158\\
+CSV, see file formats, comma-separated values\\
+curse of dimensionality, 80\\
+data\\
+semi-structured, 76\\
+structured, 75\\
+unstructured, 75\\
+data mining, 3\\
+decision tree, 78, 80, 173\\
+deep learning, 223\\
+diacritics, 98\\
+dictionary, 84\\
+distance, 238\\
+Chebyshev, 241\\
+cosine, 165\\
+Euclidean, 164, 239, 240\\
+Hamming, 164\\
+Mahalanobis, 165\\
+Manhattan, 164, 240\\
+Minkowski, 241\\
+document frequency, 313\\
+document-term matrix, see matrix, document-term 132\\
+dot product, 239\\
+duplicates, 58\\
+elbow method, 245, 250, 280\\
+encoding, 90\\
+entropy, 174, 264, 309, 312, 315\\
+average entropy, 176\\
+c5 tree generating, 176\\
+conditional, 310\\
+definition, 175\\
+graph, 176\\
+information gain, 176\\
+joint, 310\\
+minimization, 174\\
+simple example, 177\\
+expert opinion, 269\\
+extreme, local, global, 227\\
+F-measure, 143, 265\\
+fastText, 294\\
+feature extraction, 301\\
+feature selection, 301\\
+backward elimination, 303\\
+embedded methods, 302\\
+filter methods, 302, 304\\
+forward selection, 303\\
+hybrid methods, 302\\
+supervised methods, 304\\
+unsupervised methods, 306\\
+wrapper methods, 302\\
+feature vector, 76\\
+features, 83\\
+file formats\\
+Attribute-Relation File Format, 114, 122\\
+c4.5, 123\\
+c5, 117\\
+CLUTO, 121, 123\\
+comma-separated values, 115, 123\\
+SVMlight, 121\\
+Folkes and Mallows Index, 263\\
+GloVe, 292, 298\\
+grammar, 75\\
+Heaps' law, 81, 127\\
+hierarchy, learning, 224\\
+hyperplane, binary separation, 211\\
+hyphenation, 93\\
+ID3, 174\\
+inflection, 100\\
+information, 307\\
+information extraction, 84\\
+information gain, 271, 312, 316\\
+inverse document frequency, see term, weighting, inverse document frequency110
+
+Jaccard coefficient, 241, 263\\
+JSON, 76, 87\\
+k-means, 238, 240, 247, 251, 253, 260, 272, 280\\
+k-medians, 252\\
+k-medoid, 252\\
+k-nearest neighbors, see nearest neighbors\\
+k-NN, 81\\
+kernel function, type, 213\\
+kernel transformation, 214\\
+Lance and Williams recurrence formula, 256\\
+language identification, 92\\
+Latent Dirichlet Allocation, 290\\
+Latent Semantic Analysis, 83, 290, 301\\
+learning\\
+semi-supervised, 10\\
+supervised, 9, 142\\
+unsupervised, 10, 235\\
+lemma, 84, 102\\
+lemmatization, 102\\
+linear separation, optimal, 213\\
+machine learning, 6\\
+machine translation, 106\\
+matrix\\
+document-term, 76, 114, 125, 132, 290\\
+term-document, 80, 125\\
+term-term, 290\\
+word co-occurrence, 290\\
+medoid, 238\\
+mistyping, 102\\
+morpheme, 100\\
+multiword expression, 84, 85, 97\\
+mutual information, 266, 271, 307, 310\\
+n-gram, 77, 83, 85\\
+named entity, 78\\
+named entity recognition, 84, 106\\
+nearest neighbors, 163\\
+network layers, 225\\
+network, errors, 225\\
+network, function approximation, 226\\
+neural language model, 292\\
+neural network, 225\\
+neuron, 225\\
+noise, 4\\
+normalization, 99\\
+normalized mutual information, 266\\
+numbers, 93\\
+Occam's razor rule, 174\\
+one-hot representation, 287\\
+overfitting, 97, 187, 301, 313\\
+overtraining, see overfitting\\
+Paragraph Vector, 294\\
+parsing, 106, 107\\
+shallow, 107\\
+part of speech, 104\\
+phrase, see multiword expression97\\
+pointwise mutual information, 290, 309\\
+POS tagger, 106\\
+precision, 143, 237\\
+probability, 145\\
+punctuation, 92\\
+purity, 264\\
+array, 46\\
+assignment, 25\\
+attributes, 23\\
+characters, 28\\
+class, 22\\
+condition, 61\\
+data frame, 52\\
+date, 31\\
+environment, 23\\
+factor, 49\\
+function parameters, 32\\
+functions, 31\\
+generic functions, 24, 31\\
+graphics, 67\\
+if, 61\\
+index, 42\\
+list, 47\\
+logical values, 26\\
+loop, 64\\
+matrix, 43\\
+methods, 31\\
+missing value, 29\\
+name, 22\\
+NULL, 31\\
+numbers, 27\\
+object, 22\\
+operator, 35\\
+operator priority, 35\\
+package, 65\\
+packages\\
+loading, 67\\
+polymorphism, 24\\
+strings, see R, characters 28\\
+switch, 63\\
+variable, 22\\
+vector, 22, 36\\
+R packages, 14\\
+ada, 205\\
+C50, 181\\
+class, 168\\
+cld2, 92\\
+cluster, 272, 276\\
+devtools, 295\\
+factoextra, 272\\
+FSelector, 316\\
+ggplot2, 67\\
+graphics, 67\\
+hunspell, 102\\
+keras, 233\\
+lattice, 67\\
+naivebayes, 153\\
+randomForest, 196\\
+RDRPOSTagger, 106\\
+Rgraphviz, 127\\
+rjson, 87\\
+rpart, 206\\
+RSNNS, 228\\
+RWeka, 122\\
+skmeans, 123\\
+stats, 272\\
+text2vec, 298\\
+tm, 95, 123, 271\\
+udpipe, 94, 107, 131\\
+wordVectors, 295\\
+XML, 87\\
+Rand Statistic, 263\\
+random forest, 193\\
+rare words, 98\\
+recall, 143, 237\\
+relevant attributes, automatic selection, 223\\
+Reuters Corpus, 85\\
+RStudio, 16\\
+sampling, 59\\
+Scatter-Gather, 249, 257\\
+See5, 117\\
+semantics, 2\\
+sentence detection, 93\\
+shannon, 308\\
+shuffling, 59\\
+silhouette, 251, 262, 267, 272\\
+similarity, 164, 238\\
+combination, 244\\
+cosine, 113, 238, 239\\
+single linkage, 238, 254\\
+skip-gram, 292\\
+SLINK, see single linkage
+
+SNNS, Stuttgart Neural Network Simulator, 228\\
+Snowball, 101\\
+sparse, 82, 115, 127\\
+sparsity, 4\\
+spelling correction, 102\\
+stemmer, 101\\
+Porter's, 101\\
+stemming, 97, 101\\
+stop words, 94, 290, 313\\
+stump, 204\\
+support vector machines, 121, 211\\
+support vectors, 213\\
+SVM, see support vector machines\\
+SVM, kernel functions, 214\\
+SVM, quadratic programming, 213\\
+syntax, 2\\
+term, 84\\
+weighting, 109, 125\\
+binary, 109\\
+cosine normalization, 112\\
+inverse document frequency, 110\\
+logarithm, 110\\
+presence, 109\\
+term frequency, 109\\
+tf-idf, 110\\
+term contribution, 315\\
+term strength, 314\\
+term variance, 316\\
+term-document matrix, see matrix, term-document 132\\
+testing, 8\\
+text mining, 1\\
+token, 92\\
+tokenization, 92\\
+training, 8\\
+tree\\
+decision rules, building, 189\\
+pruning, 178\\
+relevant attributes, detection, 184
+
+UPGMA, 255\\
+UPGMC, 255\\
+vector space model, 4, 76\\
+Ward Distance, 256\\
+weak learner, 201, 204\\
+weights, correction, 226\\
+weights, random definition, 226\\
+Weka, 114\\
+word, 84, 100\\
+word classes, 104\\
+word context, 289, 291\\
+word embeddings, 4, 83, 288\\
+training, 292\\
+Word Movers Distance, 289\\
+word root, 100\\
+word stem, 100\\
+word vectors, 83, 288, 289\\
+aggregation, 294\\
+word2vec, 290, 292, 295\\
+WPGMA, 255\\
+WPGMC, 256\\
+XML, 76, 85, 87\\
+Zipf's law, 4, 81, 82, 95, 127
+\end{multicols}
+\end{document}
+
+
