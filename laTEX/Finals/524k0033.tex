@@ -2706,6 +2706,488 @@ for (i in 1:length(data[["paper"]])) {
 }
 \end{verbatim}
 
+\section{Texts in Different Encodings}
+Texts are stored in computer memory as a sequence of bits. Each character then usually occupies a certain number of bytes. To order to be stored, a character needs to be encoded to a number. It needs to be decoded to display a character.
+
+In the past, seven bits enabling the storage of 128 distinct characters were needed to encode a character. This was enough for English letters, digits, and some other common symbols like punctuation.
+
+However, for some other languages, like German, Spanish, French, Czech, etc., characters with accents were needed. It was not possible to encode all these characters to a 7-bit character, so eight bits were used. Different languages had different encodings. For some languages, like Chinese, even eight bits were not enough [210]. This problem can be solved using the Unicode encoding, which is a de facto standard in simultaeously encoding many languages and scripts [109].
+
+Knowledge of text encoding is necessary for some of the preprocessing steps, like tokenization, for example. In some languages, characters encoded by some numbers are regular word characters while in others they are punctuation characters [210].
+
+Document encoding can be explicitly indicated as, for example, in some metadata or headers of a document. In certain contexts, an explicit or implicit agreement on a specific encoding might be made as well. When no such information is available, a user or computer must make a guess based on an inspection of the text [149].
+
+To guess a document encoding in R , the stri\_enc\_detect() function from package indexR packages!stringistringi can be used. The function accepts a character vector and returns a list of guessed encodings, language, and confidence level for each string. It currently supports about thirty different character sets and languages.
+
+\begin{verbatim}
+texts <- c("What is your name?",
+        "¿Cómo te llamas?",
+        "Comment tu t'apelles?")
+stri_enc_detect(texts)
+[[1]]
+    Encoding Language Confidence
+1 ISO-8859-1       en       0.47
+2 ISO-8859-2       hu       0.31
+3      UTF-8                0.15
+...
+
+[[2]]
+    Encoding Language Confidence
+1      UTF-8                0.80
+2 ISO-8859-1       es       0.47
+3 ISO-8859-2       hu       0.15
+...
+[[3]]
+    Encoding Language Confidence
+1 ISO-8859-1       fr       0.71
+2      UTF-8                0.15
+3 ISO-8859-2       hu       0.14
+\end{verbatim}
+
+Texts can be converted from one encoding to another using the standard iconv() function. The list of available encodings is provided by the iconvlist() function.
+
+\begin{verbatim}
+> x<- "Gr\xfc\xdf Gott"
+> x
+[1] "Grüß Gott"
+> Encoding(x)
+[1] "unknown"
+> Encoding(x) <- "latin1"
+> Encoding(x)
+[1] "latin1"
+> xx <- iconv(x, from="latin1", to="UTF-8")
+> Encoding(xx)
+[1] "UTF-8"
+\end{verbatim}
+
+\section{Language Identification}
+Some of the preprocessing steps, like tokenization, stemming, or part of speech tagging are language dependent. Language identification is actually a categorization problem - a language label is assigned to a text.
+
+A straightforward approach can compare words of a text with dictionaries of known languages and assign the language with the highest match as the correct one. Typically, texts are compared with only the most frequent words in a language. The accuracy of these methods is, however, not very high, especially for short texts [106].
+
+Other approaches work with variable or fixed length character n-grams. The n-grams in a text are compared to an n-grams based model of a language. The model can be based on simple frequencies of n-gram occurrences [44] or can have the form of a probabilistic Markov model [215].
+
+A comparison of some popular language identification algorithms can be found in [131].
+
+To determine a language, for example, R provides, the cld2 (Google's Compact Language Detector 2) package and its function detect\_language().
+
+\begin{verbatim}
+texts <- c("What is your name?",
+    "¿Cómo te llamas?",
+    "Comment tu t'apelles?",
+    "Wie heißt du?",
+    "Jaké je tvoje jméno?")
+detect_language(texts)
+[1] "en" "es" "fr" "de" "cs"
+\end{verbatim}
+
+\section{Tokenization}
+Tokenization is the process of splitting a document into pieces of texts known as tokens. These tokens are often the words contained in the text. In most European languages where the words are space delimited, the task seems to be quite simple - to split the text at the places where are white spaces. In some other languages, like Chinese, where there are no spaces between words, the text needs to be analyzed in greater depth.
+
+Even in European languages, the process is usually not that straightforward. Punctuation (including brackets, apostrophes, dashes, quotation marks, period, exclamation mark) is usually understood as something separating the tokens. Besides removing white spaces, punctuation marks are usually removed too which is probably the simplest tokenization approach [275,211].
+
+There are, however, many exceptions and special problems related to different languages. Even for English, tokenization is not an easy task. The following text mentions a few typical problems.
+
+A period is usually understood as the end of a sentence. It can be, however, used for other purposes, like in abbreviations (Mr., etc., U.S.A.) or in numbers in English (1.23). In such cases, the period is often a part of the tokens.
+
+Apostrophes can be used in contractions (I'm, haven't), genitive forms of nouns (Peter's), or when omitting first two digits in a year ('90s). We then need to decide whether the apostrophe should be removed (haven't $\rightarrow$ haven $+t$ ), retained, or replaced ('90s $\rightarrow$ 1990s). In many situations, it is still not clear what should happen. For example, should doesn't be transformed to doesnt, doesn $+t$, or does $+n$ 't?
+
+Several words can be also connected by hyphens to create compound words (state-of-the-art, bag-of-words, two-year-old, sugar-free, long-lasting). Should we treat each part of the compound expression separately or the whole expression as one token?
+
+Special attention should be given to numbers. Numbers can be written in many different ways, including a decimal point (comma in some languages), + or - sign, semilogarithmic notation, etc. When a phone number is treated as one token we cannot see, for example, an area code (00420-777777777 vs. $00420+777777777$ ). The same might be applied to dates, 2018-02-14 can be treated as one token as well as $2018+02+14$ so we have information about a year, month, and day.
+
+Other pieces of text that require special attention are, for example, e-mail addresses, URLs, special names ( $C++$, Bell\&Ross) among others.
+
+Some languages, like German, often use compound words that are not hyphenated. For example, the longest German word in 2013 [265] Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz refering to the law for the delegation of monitoring beef labelling consists of ten words. Some of them are prefixes, but can also be prepositions and are counted as words here. Thus, the long word consists of ten words.
+
+It is obvious that tokenization is a language specific task. The language of a text must therefore be known for tokenization that is not naive. The rules defining some specific tokens in a language must be clearly stated. The process of tokenization is also influenced by the used text encoding because delimiters and special symbols occupy different positions in different character tables [211].
+
+\section{Sentence Detection}
+In some tasks, splitting a document into smaller units, like sentences, can be beneficial. It seems that finding symbols which normally end sentences, like ., ?, or ! should be enough. These symbols can, however, also be parts of other expressions (for example, a period can be a part of an abbreviation or a number). A terminating symbol can be also omitted, like in the case when a sentence ends with an abbreviation.
+
+A human expert can define a set of rules to be used to separate sentences (e.g., the symbol, like a period, must be followed by a whitespace and an uppercase letter). As manual creation of such rules need not be the best approach, an algorithm can be trained to detect sentences from labeled data [225].
+
+In R, sentences can be extracted from a text using the udpipe() function from package udpipe. For more details, see the example at the end of this chapter.
+
+\begin{verbatim}
+> unique(udpipe("I'm Mr. Brown. I live in the U.S.A.",
++              object="english"
++              ) ['sentence']
++       )
+               sentence
+1       I'm Mr. Brown.
+6 I live in the U.S.A.
+\end{verbatim}
+
+\section{Filtering Stop Words, Common, and Rare Te\-rms}
+Some of the words that are too common do not usually contribute (or contribute only negligibly) to achieving a certain goal. For example, in the query Find $a$ hotel in Prague submitted to a web search engine, the word $a$ does not influence what will be retrieved by the search engine. The retrieved results will be the same no matter whether $a$ is or is not in the query. The reason is simple - almost all documents written in English contain at least one occurrence of the word $a$. On the other hand, the word Prague is very important because without it the search engine would return information about hotels in many other locations.
+
+Similar importance of words is apparent in other text mining tasks, such as classification or clustering. When categorizing, for example, newspaper articles to categories, the occurrence of word the will not play an important role because articles from all categories are very likely to contain this word. In a clustering process, when calculating the similarity between two documents, the occurrence of the word the will contribute to the similarity measure with the same value for almost all document pairs.
+
+It is obvious that the words not contributing to achieving a certain goal are useless and do not have to be considered in further processing.
+
+The words that are not important for a certain task are known as stop words. Very often, they are the most frequent words in a given language. Typical stop lists for English contain words like the, of, and, by, with (grammatical articles, prepositions, conjunctions, auxiliary verbs, pronouns, articles). Many stop word lists can be found on the web or incorporated in various tools and in the libraries of programming languages. Table 3.1 shows how the numbers of stop words for different languages can differ (the table is based on stop lists in python's NLTK library v. 3.4). It is, however, obvious that the number of stop words is usually around a few hundred. It should be noted that the available stop word lists sometimes suffer from surprising omissions and inclusions, or are incompatible with particular tokenizers [207]. Various stop word lists in R can be obtained from the function stopwords() from the tm package.
+
+The stop word list length, when compared to the size of the dictionary, which can be a few hundreds of thousands, is negligible. The number of features thus does not decrease significantly when stop words are removed. A massive reduction is, however, noticeable in the total number of words (which is related, for example, to the memory requirements). According to Zipf's law, ten most frequent words represent approximately one third of all words in a corpus.
+
+A stop list can also be easily created by simply counting the frequencies of words in a corpus and looking at the most frequent words. It is, however, better to carefully examine the frequent words so that important words are not lost.
+
+What is and what is not a stop word might depend on a domain. In a collection of hotel accommodation reviews, the word hotel would probably be very frequent and will not be useful in, for example, determining whether a review is negative, positive, or neutral. In the following example, reviews from \href{http://booking.com}{booking.com} (for a detailed description of the data, see [295]) are processed. The number of all words, unique words, and global words frequencies are calculated from a matrix representing the documents. The frequencies together, with relative frequencies of the ten most frequent words are printed. Subsequently, the 50 most frequent words are displayed without their frequencies. We can see that the list contains typical English stop words as well words typical for the hotel accommodation domain. From a sorted list of words together with their frequencies, a graph demonstrating Zipf's law can be easily generated (with logarithmic axes).
+
+\begin{table}[ht!]
+\begin{center}
+\caption{Numbers of stop words for different languages in stop lists in Python's NLTK library v. 3.4.}
+\begin{tabular}{l|c}
+\hline
+Language & Number of Stop Words \\
+\hline
+English & 179 \\
+German & 231 \\
+Italian & 279 \\
+French & 155 \\
+Spanish & 313 \\
+Russian & 151 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\vspace{12pt}
+
+
+\begin{verbatim}
+> library(tm)
+
+> text <- readLines("reviews-booking.txt")
+> corpus <- VCorpus(VectorSource(text))
+> corpus <- tm_map(corpus, removePunctuation)
+> corpus <- tm_map(corpus, stripWhitespace)
+> corpus <- tm_map(corpus, content_transformer(tolower))
+> dtm <- DocumentTermMatrix(corpus)
+
+> mat <- as.matrix(dtm)
+
+> word_frequency <- colSums(mat)
+> number_of_words <- sum(word_frequency)
+> unique_words <- length(word_frequency)
+> paste("The number of all words: ", number_of_words)
+[1] "The number of all words: 394993"
+> paste("The number of unique words: ", unique_words)
+[1] "The number of unique words: 19528"
+
+# printing a word together with its rank, total frequency,
+# and relative frequency
+> words_sorted <- sort(word_frequency, decreasing = TRUE)
+> for (i in 1 : 10) {
++ print(paste("word: ", i, ": ",
++             names(words_sorted[i]),
++             ", freq.: ", words_sorted[i],
++             ", rel. freq.: ",
++             round((words_sorted[i]/number_of_words),3),
++             sep=""
++            )
++     )
++ }
+[1] "word 1: the, freq.: 33313, rel. freq.: 0.084"
+[1] "word 2: and, freq.: 18681, rel. freq.: 0.047"
+[1] "word 3: was, freq.: 13445, rel. freq.: 0.034"
+[1] "word 4: very, freq.: 8644, rel. freq.: 0.022"
+[1] "word 5: room, freq.: 6969, rel. freq.: 0.018"
+[1] "word 6: hotel, freq.: 6742, rel. freq.: 0.017"
+[1] "word 7: for, freq.: 6092, rel. freq.: 0.015"
+[1] "word 8: staff, freq.: 5447, rel. freq.: 0.014"
+[1] "word 9: good, freq.: 4819, rel. freq.: 0.012"
+[1] "word 10: not, freq.: 4361, rel. freq.: 0.011"
+# printing 50 most frequent words
+> names(words_sorted[1:50])
+ [1] "the"         "and"       "was"   "very"
+ [5] "room"        "hotel"     "for"   "staff"
+ [9] "good"        "not"       "were"  "location"
+[13] "breakfast"   "with"      "but"   "clean"
+[17] "friendly"    "from"      "nice"  "had"
+[21] "there"       "helpful"   "rooms" "that"
+[25] "have"        "excellent" "you"   "this"
+[29] "great"       "our"       "are"   "all"
+[33] "comfortable" "stay"      "would" "they"
+[37] "small"       "close"     "only"  "one"
+[41] "well"        "could"     "which" "food"
+[45] "service"     "city"      "also"  "night"
+[49] "bathroom"    "when"
+# plotting the curve demonstrating the Zipf's law
+> plot(words_sorted, type="l", log="xy",
++ xlab="Rank", ylab="Frequency")
+\end{verbatim}
+
+Special attention should be paid to stop words in multiword expressions and to words that are somehow affected by the occurrence of a stop word. Consider the following phrases: room with balcony and room without balcony, or good and not good. Leaving the stop words (with, without, not) out of consideration, the meaning of the phrase will change significantly (in fact, it will be the opposite). There are also phrases consisting solely of stop words, like The One (a movie), to be or not to be (a famous phrase from Shakespeare's Hamlet), or The Who (an English rock band). Weiss et al. [275] thus recommend the removal of stop words after the features for a document set are created and other preprocessing techniques (e.g., stemming) have been applied.
+
+While stop words appear at the top of a list of words ordered by their frequency, the words at the other end of the list can also be eliminated. Consider a classification problem where there are 1,000 documents in two classes, $C_{1}$ and $C_{2}$. Only one document, $d$ from the entire collection contains one specific word $w$. The document belongs to class $A$. The word $w$ is definitely helpful and can be used when assigning documents to $A$. The rule if a document contains $w$ it should be assigned to $A$ will cover $1 / 1000$ of the training examples and is therefore not too general. Having too many such rules will very likely lead to overfitting of a classifier which is not desirable. Not considering $w$ by a classifier can cause $1 / 1000=0.1 \%$ error on the training data which is also negligible.
+
+In the calculation of the similarity of two documents during clustering, the words with low frequencies will not have an effect on the results because there is actually no similarity in the given dimension when one document contains a word and the other does not.
+
+\begin{figure}[h!]
+\begin{center}
+  \includegraphics[width=0.65\textwidth,height=0.35\textheight]{2025_10_21_5ba6420d88ee7388cb5eg-113}
+\caption{Graphical demonstration of Zipf's law.}
+\end{center}
+\end{figure}
+
+It seems that removing rare words is a good idea for most of the tasks. Sometimes, the computational complexity of a problem can be lowered significantly, especially for algorithms, where the complexity grows exponentially with the number of features. On the other hand, in an information retrieval task, not considering those rare words (for example, a specific name of a person, place, or company) can result in the failure to achieve a certain goal. Here, the document containing one specific word will not be found by a search engine. Indexing rare terms thus increases the success rate of a search engine but, on the other hand, might decrease its performance because more terms would need to be stored and processed.
+
+\section{Removing Diacritics}
+
+Diacritics (diacritical marks, accents) are symbols added to letters, usually above or below. Diacritics often changes the way a sound is pronounced (e.g., longer, with an accent). In some languages, like in Vietnamese, Czech, Spanish, or French, diacritics are quite common. In some situations, they help distinguish between two completely different words like in Spanish - cómo (how) and como (I eat), or French - cote (quota), coté (respected), côte (coast), or côté (side). The removal of accents can thus, sometimes lead to the loss of very important information.
+
+It is, therefore, necessary to look at the data and think about the process of its creation. In the past, many SMSs and e-mails were written without diacritics, so some normalization could be useful.
+
+In English, almost no accents are used and their potential removal does not usually cause major problems (e.g., naïve $\rightarrow$ naive).
+
+In R , most versions of the iconv() function enable diacritics removal by appending //TRANSLIT to the output encoding.
+
+\begin{verbatim}
+> x<- "Dobrý den, člověče!"
+> iconv(x, from="CP1250", to="ASCII//TRANSLIT")
+[1] "Dobry den, clovece!"
+\end{verbatim}
+
+\section{Normalization}
+The goal of normalization is to convert tokens that look differently (are, for example, written in a different letter case) but have the same meaning to the same form [263].
+
+\subsection{Case Folding}
+Case folding is the process of converting all characters of a word to the lower or upper case (the lower case is more common [62]). When two or more words with the same meaning are written with different casing, the number of unique words increases unnecessarily and it is, therefore, favourable to convert them to one form. The reasons why the same word is written with different casing might include the position at the beginning of a sentence, presence in a title, the intention to emphasize a word, etc.
+
+Some words, on the other hand, require capitalization and folding the case in these situations changes the meaning of the word. Typically, names of people, places, companies, etc. are written with the first letter capitalized. For example, bush in the middle of a sentence means a small, woody plant while Bush would probably mean the former American president (when Bush is at the beginning of a sentence, it could be either). After conversion to lower case and not being aware of the context, one cannot distinguish whether a text is about plants or politics according to the occurrence of word bush. Abbreviations, although sometimes looking like regular words, are written in the upper case. SMART (System for the Mechanical Analysis and Retrieval of Text) when converted to lower case is a synonym for intelligent.
+
+Case folding can be problematic in some specific languages. For example, in French, accents are optional for uppercase. The word PECHE can be converted to pêche which means fishing, peach or péché meaning sin.
+
+Capitalization plays an important role in some languages [102]. For example, all nouns are capitalized in German. For instance, Recht as a noun means law while recht as an adjective means right. The letter $\beta$ also exists only in lower case.
+
+Intelligent case folding is a machine learning problem. As an alternative, a simple approach can convert all words at the beginning of sentences as well as the words from titles and headings to lower case. The case of other words can be retained [6].
+
+\subsection{Stemming and Lemmatization}
+A word is the smallest lexical unit of a language that can be used in isolation. A morpheme is the smallest unit of a word that carries some semantic or grammatical meaning. Morphemes typically include prefixes, suffixes, and a root. For example, the word unexpected consists of three morphemes - a prefix un, a root expect, and a suffix ed. Some morphemes can be used in a language by themselves (expect) while not the others (un, ed). The former are known as free forms, the latter as bound forms [11].
+
+Stems are parts of words that carry the basic meaning. When a stem consists of a single morpheme, it is identical to the root. Free stems can occur alone whereas bound stems cannot.
+
+Words are formed in a word-formation process using several rules. For example, a plural morpheme $s$ can be added to a singular noun to create a plural noun (e.g., book $\rightarrow$ books). One major morphological operation is the use of inflection which is the addition of a plural, possessive, plural+possessive, comparative, superlative, 3rd person singular, past tense, past participle, or present participle forms to a stem. The second type of word-formation operations is derivation which includes adding adjective derivational affixes (day $\rightarrow$ daily, depend $\rightarrow$ dependent, help $\rightarrow$ helpful etc.), adverb derivational affixes (slow $\rightarrow$ slowly, or clock $\rightarrow$ clockwise and many others [126]. Inflection never changes the category of a word (e.g., a noun will be still a noun after adding a suffix) while derivation can change the category (a noun can become an adjective after adding a suffix).
+
+It is obvious that the semantic meaning of some words, when created from the same stem, is very close. When a newspaper article contains one of the words sport, sports, sporting, sported, or sporty, it is quite likely to be an article from the sports category. However, for a computer, all five words are different and to assign an article correctly to the category, all five words need to be connected to it, for example, in a classification rule.
+
+The goal of the procedure known as stemming is to convert all different forms of a word to one common form known as the stem.
+
+To find a correct stem, a morphological analysis of the word is often necessary. However, many stemmers (a stemmer is a function or a program performing stemming) employ simple rules to strip affixes. This can lead to a situation that the difference between, for example, a noun and verb disappears - a noun driver and verb driving will be stemmed to driv. We can also see that driv is not a correct dictionary word. Some of the stemmers are not constrained to produce only real words [189]. This is usually not considered a deficiency because the word is often used as a feature in a machine learning task and not as a piece of a message for a human. At the same time, when a stem changes with the addition of a suffix (e.g., index $\rightarrow$ indices), a simple stemmer will not convert different variants to a common one.
+
+It is obvious that a stemming process is not error-free. The errors include understemming (the found stem does not cover all word variants) and overstemming (a word is shortened too much so it covers words with different meanings). Understemming is usually achieved by light stemmers that prefer the precision over the recall while aggressive stemmers preferring the recall often overstem the words [39].
+
+The most famous stemming algorithm for English text, belonging to the group of rule-based stemmers, is Porter's algorithm [217]. It uses five groups of rules that are successively applied to strings, for example, SSES $\rightarrow$ SS (caresses $\rightarrow$ caress), ATIONAL $\rightarrow$ ATE (relational $\rightarrow$ relate), ALIZE $\rightarrow$ AL (formalize $\rightarrow$ formal, or $A L \rightarrow$ "" (revival $\rightarrow$ reviv). The rules can contain conditions, like whether the stem contains a vowel, ends with a double consonant, is longer than a given length etc.
+
+Porter [218] also developed a system for defining stemming algorithms. The rules of stemming algorithms are expressed in a natural way in a simple language known as Snowball. A Snowball compiler then translates a Snowball definition into an equivalent program in ANSI C or Java.
+
+Dictionary stemmers need a dictionary containing all variants (inflected forms) of a word together with their stems. This method is not suitable for languages with many words and for heavily inflected languages [140].
+
+Rule based and dictionary stemmers require that the rules be constructed by linguistic experts for a specific language. As they are not able to handle situations which are not covered by the rules or the dictionary, statistical or machine learning approaches would be better in some situations. For example, the algorithm of Bacchcin, Ferro, and Melucci et al. [15] estimates the most probable split into the stem and suffix from all possible splits for each word in the full corpus. In [39], the authors clustered together words occurring in similar contexts and sharing a common prefix of at least a minimum length. Such words are expected to be semantically and lexically similar; this can be enough to replace them by one form. They are, however, taken as the training data for a classifier which learns stemming rules so that processing unseen data is possible.
+\begin{sloppypar}  
+Lemmatization converts a word to its dictionary form known as the lemma. To be able to perform such a conversion, deeper knowledge than that required for stemming is needed. A lemmatizer usually needs a complete vocabulary and morphological analysis to correctly lemmatize words [185]. The words like better or thoughts can be converted to their correct forms good and think, which would not be achieved by a stemmer. Attempts to train a lemmatizer, like in [14, 136], have also been made but they are not error free.
+\end{sloppypar}
+
+\subsection{Spelling Correction}
+Mistypings are common problems in any written text. The problem is that they bring noise to the data which can complicate the achievement of satisfactory results in some tasks. Spelling correction is a solution to this problem. Generally, the process of spelling correction involves detection of an error, generation of candidate corrections, and ranking of candidate corrections [155].
+
+Mistypings can be detected by comparing each word to an existing dictionary or looking at every character $n$-gram ( $n$ is usually 1,2 , or 3 ) to determine whether such an n-gram exists for a given language.
+
+When an error is found, our response is to correct it. The correction can be done with or without taking into consideration, the context of the error. The methods which do not take the context into consideration suppose that most of the errors are caused by insertion, deletion, substitution, and transposition; they appear in the middle of a word, can be related to a computer keyboard arrangement, etc.
+
+Sometimes, knowledge of the context in which the error appears can help in choosing the right candidate. The context can also help in finding errors when a regular but incorrect word is used instead of a correct word. For example, in the sentence Three are two people form Prague here, only regular English words are used, but three and form should be replaced with there and from. The context specific spelling correction algorithms can rely on word association (which candidate correction has a better semantic fit with the words around the misspelling), word repetition (words occurring multiple times in a text can help in finding appropriate corrections), and topical bias (certain correction candidates could be preferred by considering words that are especially relevant to the topic of the text) [90].
+
+Package hunspell provides a functionality that can be used when identifying mistyping and correcting the mistakes. Function hunspell\_parse() tokenizes a text so it can later be checked for errors. As a parameter, the format of input text can be passed (text, latex, man, html, or xml formats are supported).
+
+\begin{verbatim}
+> t <- c("How are you these days?",
++        "I'm fine, thnx!",
++        "It is <emph>grrreat</emph>, right?")
+> words <- hunspell_parse(t, format="html")
+> words
+[[1]]
+[1] "How"   "are"   "you"   "these"   "days"
+[[2]]
+[1] "I"   "m"   "fine"    "thnx"
+[[3]]
+[1] "It"      "is"    "grrreat" "right"
+\end{verbatim}
+
+The hunspell\_analyze() function gives information about stems and suffixes of words. To get only words stems, we can use function hunspell\_stem().
+
+\begin{verbatim}
+> print(hunspell_analyze(words[[1]]))
+[[1]]
+[1] " st:how"
+[[2]]
+[1] " st:are"
+[[3]]
+[1] " st:you"
+[[4]]
+[1] " st:these"
+[[5]]
+[1] " st:day fl:S"
+\end{verbatim}
+
+To check whether a text contains misspelling, the hunspell\_check() function can be called. It returns a logical value for each character string representing the presence of an error.
+
+\begin{verbatim}
+> correct <- hunspell_check(words[[3]])
+> names(correct) <- words[[3]]
+> correct
+  It   is grrreat right
+TRUE TRUE   FALSE  TRUE
+\end{verbatim}
+
+A wrapper function hunspell() parses the text, finds incorrect words and returns a list of these words for each line. It effectively combines hun\-sp\-ell\_parse() with hun\-spell\_check() in a single step.
+
+Function hunspell\_suggest() provides a list of possible replacements for the supplied words (it is typically used to find alternatives for mistyped words).
+
+\begin{verbatim}
+> hunspell_suggest(words[[3]][!correct])
+[[1]]
+[1] "great"
+[[2]]
+[1] "right" "girth"
+\end{verbatim}
+
+Spell checking using hunspell is dictionary based. The list of all available dictionaries is returned by the list\_dictionaries() function.
+
+\begin{verbatim}
+> list_dictionaries()
+[1] "en_AU" "en_CA" "en_GB" "en_US"
+\end{verbatim}
+
+\section{Annotation}
+The purpose of annotation is to distinguish tokens that look the same but have a different meaning. The context of a token is usually needed to reveal the correct meaning [263]. Annotation is, in fact, an opposite process to normalization.
+
+\subsection{Part of Speech Tagging}
+Part of speech classes contain words with the same grammatical function [241]. Open classes contain words that carry some important meaning and can accept new words. They typically include nouns, verbs or adjectives. They usually contain more words than the closed classes. The words from closed classes are relatively constant and new words are rarely added. They usually have a structural function, providing information on the syntactic relations existing among openclass words. Close classes usually contain prepositions, conjunctions, pronouns, or determiners [116]. Part of speech categories used in the famous Penn Treebank project can be found in Table 3.2. The Penn Treebank produced approximately 7 million words of part-of-speech tagged text between the years 1989 and 1996.
+\clearpage
+\begin{table}[htbp]
+\tiny
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1}
+\begin{center}
+\caption{An alphabetical list of part of speech tags from the Penn Treebank Project [259].}
+\begin{tabular}{l|l}
+\hline
+Tag & Description \\
+\hline
+CC & Coordinating conjunction \\
+CD & Cardinal number \\
+DT & Determiner \\
+EX & Existential there \\
+FW & Foreign word \\
+IN & Preposition or subordinating conjunction \\
+JJ & Adjective \\
+JJR & Adjective, comparative \\
+JJS & Adjective, superlative \\
+LS & List item marker \\
+MD & Modal \\
+NN & Noun, singular or mass \\
+NNS & Noun, plural \\
+NNP & Proper noun, singular \\
+NNPS & Proper noun, plural \\
+PDT & Predeterminer \\
+POS & Possessive ending \\
+PRP & Personal pronoun \\
+PRP\$ & Possessive pronoun \\
+RB & Adverb \\
+RBR & Adverb, comparative \\
+RBS & Adverb, superlative \\
+RP & Particle \\
+SYM & Symbol \\
+TO & to \\
+UH & Interjection \\
+VB & Verb, base form \\
+VBD & Verb, past tense \\
+VBG & Verb, gerund or present participle \\
+VBN & Verb, past participle \\
+VBP & Verb, non-3rd person singular present \\
+VBZ & Verb, 3rd person singular present \\
+WDT & Wh-determiner \\
+WP & Wh-pronoun \\
+WP\$ & Possessive wh-pronoun \\
+WRB & Wh-adverb \\
+. & Sentence-final punctuation \\
+, & Comma \\
+: & Colon, semi-colon \\
+( & Left bracket character \\
+) & Right bracket character \\
+" & Straight double quote \\
+' & Left open single quote \\
+" & Left open double quote \\
+, & Right close single quote \\
+" & Right close double quote \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+% }
+% \end{center}
+% \end{table}
+\clearpage
+Knowing a part of speech for the words contained in a document might help in extracting information-rich keywords from sentences [146], plagiarism detection [124], named entity recognition [168] and others. Part of speech tagging is also an important part of other tasks like syntactic parsing and machine translation [43].
+
+Successful automatic part of speech taggers are usually built for resource-rich languages in a supervised way [288]. Rule-based taggers use a set of rules used to assign a correct part of speech tag. Statistical taggers try to assign a sequence of tags having the highest probability give by a language model to a text [37].
+
+The package RDRPOSTagger performs part of speech tagging and morphological tagging based on the Ripple Down Rules-based Part-Of-Speech Tagger (RDRPOS). It contains pre-trained models for 45 languages.
+
+The universal annotation (UniversalPOS) uses a reduced set of part of speech tags that is consistent across languages. Another approach (POS) uses an extended language specific tagset. The third option (MORPH) is very detailed morphological annotation. To find out which languages these options are available for, the rdr\_available\_models() can be used.
+
+In order to annotate a text, a tagger needs to be created using the function rdr\_model(). Its parameters are a language and the type of annotation. The function rdr\_pos() then takes the created model of a tagger and text, performs part of speech tagging, and returns information about words and assigned tags.
+
+\begin{verbatim}
+> library(RDRPOSTagger)
+> text <- "This book is about text mining and
+           machine learning."
+> tagger <- rdr_model(language="English",
++                     annotation="UniversalPOS")
+> rdr_pos(tagger, x=text)
+    doc_id token_id      token    pos
+1       d1        1       This   PRON
+2       d1        2       book   NOUN
+3       d1        3         is    AUX
+4       d1        4      about    ADP
+5       d1        5       text   NOUN
+6       d1        6     mining   NOUN
+7       d1        7        and  CCONJ
+8       d1        8    machine   NOUN
+9       d1        9   learning   VERB
+10      d1       10    . PUNCT  
+> tagger <- rdr_model(language="English",
++                    annotation="POS")
+> rdr_pos(tagger, x=text)
+    doc_id token_id token pos
+1 d1 1 This DT
+2 d1 2 book NN
+3 d1 3 is VBZ
+4 d1 4 about IN
+5 d1 5 text NN
+6 d1 6 mining NN
+7 d1 7 and CC
+8 d1 8 machine NN
+9 d1 9 learning VBG
+10 d1 10
+> text <- "Este libro está escrito en inglés."
+> tagger <- rdr_model(language="Spanish",
++ annotation="MORPH")
+> rdr_pos(tagger, x=text)
+
+\begin{tabular}{rrrrr} 
+& doc_id token_id & token & pos \\
+1 & d1 & 1 & Este & DDOMS0 \\
+2 & d1 & 2 & libro & NCMS000 \\
+3 & d1 & 3 & está & VAIP3S0 \\
+4 & d1 & 4 & escrito & VMP00SM \\
+5 & d1 & 5 & en & SPS00 \\
+6 & d1 & 6 & inglés & NCMS000 \\
+7 & d1 & 7 &. & Fp
+\end{tabular}
+\end{verbatim}
+
+
 \backmatter
 % \begingroup\sloppy
 % \begin{multicols}{2}
