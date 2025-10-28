@@ -57,9 +57,20 @@
 \contentsline {section}{\numberline {3.9}Sentence Detection}{103}{section.3.9}%
 \contentsline {section}{\numberline {3.10}Filtering Stop Words, Common, and Rare Te\-rms}{104}{section.3.10}%
 \contentsline {section}{\numberline {3.11}Removing Diacritics}{109}{section.3.11}%
-\contentsline {section}{\numberline {3.12}Normalization}{109}{section.3.12}%
+\contentsline {section}{\numberline {3.12}Normalization}{110}{section.3.12}%
 \contentsline {subsection}{\numberline {3.12.1}Case Folding}{110}{subsection.3.12.1}%
-\contentsline {subsection}{\numberline {3.12.2}Stemming and Lemmatization}{110}{subsection.3.12.2}%
+\contentsline {subsection}{\numberline {3.12.2}Stemming and Lemmatization}{111}{subsection.3.12.2}%
 \contentsline {subsection}{\numberline {3.12.3}Spelling Correction}{113}{subsection.3.12.3}%
 \contentsline {section}{\numberline {3.13}Annotation}{115}{section.3.13}%
 \contentsline {subsection}{\numberline {3.13.1}Part of Speech Tagging}{115}{subsection.3.13.1}%
+\contentsline {subsection}{\numberline {3.13.2}Parsing}{119}{subsection.3.13.2}%
+\contentsline {section}{\numberline {3.14}Calculating the Weights in the Bag-of-Words Model}{121}{section.3.14}%
+\contentsline {subsection}{\numberline {3.14.1}Local Weights}{121}{subsection.3.14.1}%
+\contentsline {subsection}{\numberline {3.14.2}Global Weights}{123}{subsection.3.14.2}%
+\contentsline {subsection}{\numberline {3.14.3}Normalization Factor}{124}{subsection.3.14.3}%
+\contentsline {section}{\numberline {3.15}Common Formats for Storing Structured Data}{128}{section.3.15}%
+\contentsline {subsection}{\numberline {3.15.1}Attribute-Relation File Format (ARFF)}{128}{subsection.3.15.1}%
+\contentsline {subsection}{\numberline {3.15.2}Comma-Separated Values(CSV)}{129}{subsection.3.15.2}%
+\contentsline {subsection}{\numberline {3.15.3}C5 Format}{131}{subsection.3.15.3}%
+\contentsline {subsection}{\numberline {3.15.4}Matrix Files for CLUTO}{135}{subsection.3.15.4}%
+\contentsline {subsection}{\numberline {3.15.5}SVMlight Format}{136}{subsection.3.15.5}%

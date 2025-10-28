@@ -1,0 +1,179 @@
+\contentsline {chapter}{Preface}{xv}{section*.5}%
+\contentsline {chapter}{Authors' Biographies}{xvii}{section*.7}%
+\contentsline {chapter}{\numberline {1}Introduction to Text Mining with Machine Learning}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Relation of Text Mining to Data Mining}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The Text Mining Process}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Machine Learning for Text Mining}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Inductive Machine Learning}{9}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Three Fundamental Learning Directions}{10}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Supervised Machine Learning}{10}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Unsupervised Machine Learning}{11}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Semi-supervised Machine Learning}{11}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Big Data}{12}{section.1.6}%
+\contentsline {section}{\numberline {1.7}About This Book}{13}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Introduction to R}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Installing R}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Running R}{16}{section.2.2}%
+\contentsline {section}{\numberline {2.3}RStudio}{18}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Projects}{19}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Getting Help}{19}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Writng and Executing Commands}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Variables and Data types}{22}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Objects in R}{23}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Assignment}{26}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Logical values}{27}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Numbers}{28}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Character Strings}{29}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5}Special values}{31}{subsection.2.6.5}%
+\contentsline {section}{\numberline {2.7}Functions}{33}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Operators}{37}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Vectors}{38}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Creating Vectors}{38}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Naming Vector Elements}{40}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}Operations with Vectors}{42}{subsection.2.9.3}%
+\contentsline {subsection}{\numberline {2.9.4}Acessing Vector Elements}{44}{subsection.2.9.4}%
+\contentsline {section}{\numberline {2.10}Matrices and Arrays}{46}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Lists}{50}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Factors}{52}{section.2.12}%
+\contentsline {section}{\numberline {2.13}Data frames}{55}{section.2.13}%
+\contentsline {section}{\numberline {2.14}Function Useful in Machine Learning}{59}{section.2.14}%
+\contentsline {section}{\numberline {2.15}Flow Control Structure}{66}{section.2.15}%
+\contentsline {subsection}{\numberline {2.15.1}Conditional Statement}{66}{subsection.2.15.1}%
+\contentsline {subsection}{\numberline {2.15.2}Loops}{69}{subsection.2.15.2}%
+\contentsline {section}{\numberline {2.16}Packages}{71}{section.2.16}%
+\contentsline {subsection}{\numberline {2.16.1}Installing Packages}{71}{subsection.2.16.1}%
+\contentsline {subsection}{\numberline {2.16.2}Loading Packages}{72}{subsection.2.16.2}%
+\contentsline {section}{\numberline {2.17}Graphics}{72}{section.2.17}%
+\contentsline {chapter}{\numberline {3}Structured Text Representation}{80}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{80}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The Bag-of-Worlds Model}{84}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The Limitations of the Bag-of-Words Model}{85}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Document Features}{89}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Standardization}{92}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Texts in Different Encodings}{97}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Language Identification}{99}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Tokenization}{99}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Sentence Detection}{101}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Filtering Stop Words, Common, and Rare Te\-rms}{102}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Removing Diacritics}{106}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Normalization}{107}{section.3.12}%
+\contentsline {subsection}{\numberline {3.12.1}Case Folding}{107}{subsection.3.12.1}%
+\contentsline {subsection}{\numberline {3.12.2}Stemming and Lemmatization}{108}{subsection.3.12.2}%
+\contentsline {subsection}{\numberline {3.12.3}Spelling Correction}{110}{subsection.3.12.3}%
+\contentsline {section}{\numberline {3.13}Annotation}{112}{section.3.13}%
+\contentsline {subsection}{\numberline {3.13.1}Part of Speech Tagging}{112}{subsection.3.13.1}%
+\contentsline {subsection}{\numberline {3.13.2}Parsing}{116}{subsection.3.13.2}%
+\contentsline {section}{\numberline {3.14}Calculating the Weights in the Bag-of-Words Model}{118}{section.3.14}%
+\contentsline {subsection}{\numberline {3.14.1}Local Weights}{118}{subsection.3.14.1}%
+\contentsline {subsection}{\numberline {3.14.2}Global Weights}{119}{subsection.3.14.2}%
+\contentsline {subsection}{\numberline {3.14.3}Normalization Factor}{121}{subsection.3.14.3}%
+\contentsline {section}{\numberline {3.15}Common Formats for Storing Structured Data}{124}{section.3.15}%
+\contentsline {subsection}{\numberline {3.15.1}Attribute-Relation File Format (ARFF)}{124}{subsection.3.15.1}%
+\contentsline {subsection}{\numberline {3.15.2}Comma-Separated Values(CSV)}{125}{subsection.3.15.2}%
+\contentsline {subsection}{\numberline {3.15.3}C5 Format}{127}{subsection.3.15.3}%
+\contentsline {subsection}{\numberline {3.15.4}Matrix Files for CLUTO}{131}{subsection.3.15.4}%
+\contentsline {subsection}{\numberline {3.15.5}SVMlight Format}{132}{subsection.3.15.5}%
+\contentsline {subsection}{\numberline {3.15.6}Reading Data in R}{132}{subsection.3.15.6}%
+\contentsline {section}{\numberline {3.16}A Complex Example}{134}{section.3.16}%
+\contentsline {chapter}{\numberline {4}Classification}{151}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sample Data}{151}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Selected Algorithm}{155}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Classifier Quality Measurement}{156}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Bayes Classifier}{160}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{160}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Bayes's Thereom}{161}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Optimal Bayes Classifier}{164}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Naïve Bayes Classifier}{164}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Illustrative Example of Naïve Bayes}{165}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Naïve Bayes Classifier in R}{169}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Running Naïve Bayes Classifier in RStudio}{170}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Testing with an External Dataset}{171}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Testing with 10-Fold Cross-Validation}{173}{subsection.5.6.3}%
+\contentsline {chapter}{\numberline {6}Nearest Neighbors}{178}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{178}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Similarity as Distance}{178}{section.6.2}%
+\contentsline {section}{\numberline {6.3}llustrative Example of k-NN}{181}{section.6.3}%
+\contentsline {section}{\numberline {6.4}k-NN in R}{183}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Decision Trees}{188}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{188}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Entropy Minimization-Based c5 Algorithm}{189}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}The Principle of Generating Trees}{189}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Pruning}{193}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}C5 Tree Generator in R}{194}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Generating a Tree}{195}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Information Acquired from C5-Tree}{198}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Using Testing Samples to Assess Tree Accuracy}{200}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Using Cross-Validation to Assess Tree Accuracy}{201}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Generating Decision Rules}{202}{subsection.7.3.5}%
+\contentsline {chapter}{\numberline {8}Random Forest}{206}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{206}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Bootstrap}{206}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Stability and Robustness}{207}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Which Tree Algorithm?}{208}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Stability and Robustness}{208}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Adaboost}{212}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduction}{212}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Boosting Principle}{212}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Adaboost Principle}{213}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Weak Learners}{214}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Adaboost in R}{215}{section.9.5}%
+\contentsline {chapter}{\numberline {10}Support Vector Machines}{219}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduction}{219}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Support Vector Machines Principles}{220}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Finding Optimal Separation Hyperplane}{220}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Nonlinear Classification and Kernel Functions}{221}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Multiclass SVM Classification}{222}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.2.4}SVM Summary}{222}{subsection.10.2.4}%
+\contentsline {section}{\numberline {10.3}SVM in R}{223}{section.10.3}%
+\contentsline {chapter}{\numberline {11}Deep Learning}{227}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Introduction}{227}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Artificial Neural Networks}{228}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Deep Learning in R}{230}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Clustering}{235}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Introduction to Clustering}{235}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Difficulties of Clustering}{236}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Similarity Measures}{238}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Chebyshev Distance}{240}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Minkowski Distance}{240}{subsection.12.3.2}%
+\contentsline {subsection}{\numberline {12.3.3}Jaccard Coefficient}{240}{subsection.12.3.3}%
+\contentsline {section}{\numberline {12.4}Types of Clustering Algorithms}{240}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Partitional (Flat) Clustering}{241}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Hierarchical Cluswtering}{242}{subsection.12.4.2}%
+\contentsline {section}{\numberline {12.5}Graph Based Clustering}{245}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Clustering Criterion Functions}{246}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}Internal Criterion Functions}{246}{subsection.12.6.1}%
+\contentsline {subsection}{\numberline {12.6.2}External Criterion Function}{247}{subsection.12.6.2}%
+\contentsline {subsection}{\numberline {12.6.3}Hybrid Criterion Functions}{247}{subsection.12.6.3}%
+\contentsline {subsection}{\numberline {12.6.4}Graph Based Criterion Functions}{248}{subsection.12.6.4}%
+\contentsline {section}{\numberline {12.7}Deciding on the Number of Clusters}{249}{section.12.7}%
+\contentsline {section}{\numberline {12.8}K-Means}{251}{section.12.8}%
+\contentsline {section}{\numberline {12.9}K-Medoids}{252}{section.12.9}%
+\contentsline {section}{\numberline {12.10}Criterion Function Optimization}{252}{section.12.10}%
+\contentsline {section}{\numberline {12.11}Agglomerative Hierarchical Clustering}{253}{section.12.11}%
+\contentsline {section}{\numberline {12.12}Scatter-Gather Algorithm}{257}{section.12.12}%
+\contentsline {section}{\numberline {12.13}Divisive Hierarchical Clustering}{258}{section.12.13}%
+\contentsline {section}{\numberline {12.14}Constrained Clustering}{260}{section.12.14}%
+\contentsline {section}{\numberline {12.15}Evaluating Clustering Results}{261}{section.12.15}%
+\contentsline {chapter}{\numberline {13}Word Embeddings}{290}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Introduction}{290}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Determining the Context and Word Similarity}{293}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Context Windows}{294}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Computing Word Embeddings}{295}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Aggregation of Word Vectors}{299}{section.13.5}%
+\contentsline {section}{\numberline {13.6}An Example}{299}{section.13.6}%
+\contentsline {chapter}{\numberline {14}Feature Selection}{307}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Introduction}{307}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Feature Selection as State Space Search}{309}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Feature Selection Methods}{311}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Chi Squared ($\chi ^2$)}{313}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Mutual Information}{315}{subsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.3.3}Information Gain}{319}{subsection.14.3.3}%
+\contentsline {section}{\numberline {14.4}Term Elimination Based on Frequency}{321}{section.14.4}%
+\contentsline {section}{\numberline {14.5}Term Strength}{322}{section.14.5}%
+\contentsline {section}{\numberline {14.6}Term Contribution}{323}{section.14.6}%
+\contentsline {section}{\numberline {14.7}Entropy-Based Ranking}{323}{section.14.7}%
+\contentsline {section}{\numberline {14.8}Term Variance}{324}{section.14.8}%
+\contentsline {section}{\numberline {14.9}An Example}{324}{section.14.9}%
+\contentsline {chapter}{References}{333}{figure.caption.93}%
+\contentsline {chapter}{Index}{360}{chapter*.95}%
