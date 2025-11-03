@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ex2",
+      "request": "launch",
+      "mainClass": "lab06_524k0033.Ex2",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
+      "name": "MyBST",
+      "request": "launch",
+      "mainClass": "lab06_524k0033.MyBST",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
       "name": "Sorting",
       "request": "launch",
       "mainClass": "lab05_524k0033.Sorting",
