@@ -1,4 +1,5 @@
-package lab06_524k0033;
+import java.util.*;
+
 
 public class MyBST {
 	private Node root;
@@ -82,6 +83,7 @@ public class MyBST {
 	public boolean contains(Integer key) {
 		return contains(root, key);
 	}
+
 	private Node search(Node x, Integer key) {
 		if (x == null)
 			return null;
@@ -96,6 +98,22 @@ public class MyBST {
 
 	public Node search(Integer key) {
 		return search(root, key);
+	}
+
+	private int height(Node x, Integer key,int level) {
+		if (x == null)
+			return -1;
+		int cmp = key.compareTo(x.key);
+		if (cmp < 0)
+			return height(x.left, key,level+1);
+		else if (cmp > 0)
+			return height(x.right, key,level+1);
+		else
+			return level;
+	}
+
+	public int height(Integer key) {
+		return height(root, key,0);
 	}
 
 	private Node min(Node x) {
@@ -142,14 +160,14 @@ public class MyBST {
 		root = deleteMax(root);
 	}
 
-	private Node delete(Node x, Integer key) {
+	private Node delete_succ(Node x, Integer key) {
 		if (x == null)
 			return null;
 		int cmp = key.compareTo(x.key);
 		if (cmp < 0)
-			x.left = delete(x.left, key);
+			x.left = delete_succ(x.left, key);
 		else if (cmp > 0)
-			x.right = delete(x.right, key);
+			x.right = delete_succ(x.right, key);
 		else {
 			// node with only one child or no child
 			if (x.right == null)
@@ -163,24 +181,119 @@ public class MyBST {
 		}
 		return x;
 	}
-
-	public void delete(Integer key) {
-		root=delete(root, key);
+	
+	public void delete_succ(Integer key) {
+		root=delete_succ(root, key);
 	}
 
-	public static void main(String[] args) {
-		Integer[] array = {42, 21, 62, 2, 29, 46, 93, 26, 48, 82, 96, 52, 74, 87, 94, 85};
-		MyBST bst = new MyBST();
+	private Node delete_pre(Node x, Integer key) {
+		if (x == null)
+			return null;
+		int cmp = key.compareTo(x.key);
+		if (cmp < 0)
+			x.left = delete_pre(x.left, key);
+		else if (cmp > 0)
+			x.right = delete_pre(x.right, key);
+		else {
+			// node with only one child or no child
+			if (x.right == null)
+				return x.left;
+			if (x.left == null)
+				return x.right;
 
+			// node with two children: Get the predecessor (largest in the left subtree)
+			x.key = max(x.left).key;
+			x.left = deleteMax(x.left);
+		}
+		return x;
+	}
+
+	public void delete_pre(Integer key) {
+		root=delete_pre(root, key);
+	}
+	
+	private int sum(Node x) {
+		if(x==null) {
+			return 0;
+		}
+		return x.key+sum(x.left)+sum(x.right);
+	}
+
+	public int sum() {
+		return sum(root);
+	}
+
+	private int sumEven(Node x) {
+		if(x==null) {
+			return 0;
+		}
+		if(x.key%2==0) {
+			return x.key+sumEven(x.left)+sumEven(x.right);
+		}
+		return sumEven(x.left)+sumEven(x.right);
+	}
+
+	public int sumEven() {
+		return sumEven(root);
+	}
+
+	private int countLeaves(Node x) {
+		if(x==null) {
+			return 0;
+		}
+		if(x.right==null && x.left==null) {
+			return 1;
+		}
+		return countLeaves(x.left)+countLeaves(x.right);
+	}
+
+	public int countLeaves() {
+		return countLeaves(root);
+	}
+
+	private int sumEvenKeysAtLeaves(Node x) {
+		if(x==null) {
+			return 0;
+		}
+		if(x.right==null && x.left==null && x.key%2==0) {
+			return x.key;
+		}
+		return sumEvenKeysAtLeaves(x.left)+sumEvenKeysAtLeaves(x.right);
+	}
+
+	public int sumEvenKeysAtLeaves() {
+		return sumEvenKeysAtLeaves(root);
+	}
+
+	private void bfs(Node x) {
+		if(x!=null) {
+			Queue<Node> queue = new LinkedList<Node>();
+       queue.add(root);
+       while (!queue.isEmpty()) {
+           Node temp = queue.poll();
+           System.out.print(temp.key + " ");
+
+           if (temp.left != null) {
+               queue.add(temp.left);
+           }
+
+           if (temp.right != null) {
+               queue.add(temp.right);
+           }
+       }
+		}
+	}
+	public void bfs() {
+		bfs(root);
+	}
+	public static void main(String[] args) {
+		Integer[] array = {42, 21, 62, 2, 29, 46, 93, 26, 48, 82, 52, 74,85, 87, 94, 96};
+		MyBST bst = new MyBST();
 
 		for(Integer value : array) {
 			bst.insert(value);
 		}
-		bst.LNR();
-		bst.deleteMax();
-		bst.deleteMin();
-		System.err.println();
-		bst.LNR();
+		bst.bfs();;
 	}
 
 }

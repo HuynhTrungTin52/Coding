@@ -1,5 +1,3 @@
-package lab06_524k0033;
-
 public class Ex2 {
 	
 	public static MyBST createTree(String strKey) {
