@@ -1,5 +1,3 @@
-package lab07_524k0033;
-
 import java.util.*;
 
 public class MyAVL {

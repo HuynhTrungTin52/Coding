@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ex03",
+      "request": "launch",
+      "mainClass": "lab08_524k0033.Ex03",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
+      "name": "MinHeap",
+      "request": "launch",
+      "mainClass": "lab08_524k0033.MinHeap",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
+      "name": "MaxHeap",
+      "request": "launch",
+      "mainClass": "lab08_524k0033.MaxHeap",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
       "name": "MyAVL",
       "request": "launch",
       "mainClass": "lab07_524k0033.MyAVL",
