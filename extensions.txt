@@ -1,54 +1,226 @@
-13xforever.language-x86-64-assembly
-a5hk.night-coder
-alefragnani.delphi-keybindings
-alefragnani.delphi-themes
-ancientlord.nightowl-theme
-batisteo.vscode-django
-bradlc.vscode-tailwindcss
-cnoc.fpdebug
-coderholiclt.night-owl
-ddh4r4m.night-hacker-dark-theme
-donjayamanne.python-environment-manager
-donjayamanne.python-extension-pack
-ecmel.vscode-html-css
-formulahendry.code-runner
-franneck94.c-cpp-runner
-kdarkhan.mips
-kevinrose.vsc-python-indent
-ms-mssql.data-workspace-vscode
-ms-mssql.mssql
-ms-mssql.sql-bindings-vscode
-ms-mssql.sql-database-projects-vscode
-ms-python.debugpy
-ms-python.python
-ms-python.vscode-pylance
-ms-toolsai.jupyter
-ms-toolsai.jupyter-keymap
-ms-toolsai.jupyter-renderers
-ms-toolsai.vscode-jupyter-cell-tags
-ms-toolsai.vscode-jupyter-slideshow
-ms-vscode.cmake-tools
-ms-vscode.cpptools
-ms-vscode.cpptools-extension-pack
-ms-vscode.cpptools-themes
-ms-vscode.live-server
-nguyenngoclong.terminal-keeper
-njpwerner.autodocstring
-oracle.oracle-java
-redhat.java
-ritwickdey.liveserver
-sdras.night-owl
-tonybaloney.vscode-pets
-twxs.cmake
-vadimcn.vscode-lldb
-visualstudioexptteam.intellicode-api-usage-examples
-visualstudioexptteam.vscodeintellicode
-vmssoftwareinc.vms-ide
-vscjava.vscode-gradle
-vscjava.vscode-java-debug
-vscjava.vscode-java-dependency
-vscjava.vscode-java-pack
-vscjava.vscode-java-test
-vscjava.vscode-maven
-wholroyd.jinja
-xabikos.javascriptsnippets
+1.Luật PCCC được Quốc hội khóa X nước CHXHCN Việt Nam thông qua vào ngày tháng năm nào ?
+
+
+
+A. Ngày 29/6/2001.
+B. Ngày 30/6/2001.
+C. Ngày 29/6/2002.
+D. Ngày 30/6/2002.
+2. Luật PCCC quy định những đối tượng nào phải thực hiện Bảo hiểm cháy, nổ bắt buộc đối với tài sản của mình?
+
+
+A. Tất cả các cơ sở sản xuất, kinh doanh
+B. Tổ chức và cá nhân có cơ sở có nguy hiểm về cháy nổ
+C. Cơ quan, tổ chức và cá nhân có cơ sở có nguy hiểm về cháy nổ
+D.  Cơ quan, xí nghiệp có nguy hiểm về cháy nổ
+3. Trong lĩnh vực xây dựng, Luật PCCC quy định hành vi nào bị nghiêm cấm ?
+
+
+A. Thi công những công trình có nguy hiểm về cháy nổ mà không có thiết kế về PCCC
+B. Thi công những công trình có nguy hiểm về cháy nổ mà chưa có thiết kế được duyệt về PCCC
+C. Thi công những công trình có nguy hiểm về cháy nổ gần các nhà và công trình công cộng
+D. Thi công những công trình có nguy hiểm về cháy nổ mà không có trang bị phương tiện PCCC
+4. Theo quy định của Luật PCCC hằng năm ngày nào sau đây là “Ngày toàn dân phòng cháy và chữa cháy”?
+
+
+
+A. Ngày 2/9
+B. Ngày 19/8
+C. Ngày 04/10
+D. Ngày 05/10
+5. Luật PCCC quy định trong hoạt động PCCC nhiệm vụ nào là chính?
+
+
+
+A. Trong hoạt động PCCC lấy phòng ngừa làm chính
+B. Trong hoạt động PCCC lấy phương châm 4 tại chỗ làm chính
+C. Trong hoạt động PCCC lấy chữa cháy làm chính
+D. Trong hoạt động PCCC lấy tuyên truyền là chính.
+6. Đối tượng áp dụng của Luật phòng cháy và chữa cháy được quy định tại Điều 2 như thế nào.
+
+
+A. Tất cả các cơ quan, tổ chức, hộ gia đình và cá nhân hoạt động sinh sống trên lãnh thổ Việt Nam
+B. Tất cả các cơ quan, tổ chức, hộ gia đình và cá nhân hoạt động sinh sống trong và ngoài nước
+C. Tất cả các cơ quan, tổ chức và hộ gia đình trên lãnh thổ Việt Nam
+D. Tất cả các cơ sở hoạt động, sản xuất, kinh doanh và cá nhân sinh sống trên lãnh thổ Việt Nam
+7. Luật PCCC giải thích “Chữa cháy” như thế nào?
+
+
+
+A. Gồm các công việc huy động triển khai lực lượng, phương tiện chữa cháy, cắt điện, tổ chức thoát nạn, cứu người, cứu tài sản, chống cháy lan, dập tắt đám cháy và các hoạt động khác liên quan đến chữa cháy.
+B. Gồm các công việc tổ chức thoát nạn, cứu người, cứu tài sản, huy động triển khai lực lượng, phương tiện chữa cháy dập tắt đám cháy.
+C. Gồm các công việc huy động triển khai lực lượng, phương tiện chữa cháy, cắt điện, chống cháy lan, cứu người, cứu tài sản.
+D. Câu B và C đúng.
+8. Luật PCCC quy định ai là người chịu trách nhiệm tổ chức thực hiện khắc phục hậu quả vụ cháy ?
+
+
+
+A. Chỉ huy lực lượng cảnh sát PCCC phối hợp với người đứng đầu cơ sở bị cháy
+B. Chủ tịch UBND cấp xã trở lên, người đứng đầu cơ quan, tổ chức có cơ sở bị cháy
+C. Công an phường nơi có cơ sở bị cháy
+D. Tất cả đều đúng
+9. Tại khoản 4 điều 22 của Luật PCCC quy định: Các hoạt động sản xuất, kinh doanh, dịch vụ về hàng hoá, vật tư nguy hiểm về cháy, nổ cần có điều kiện an toàn PCCC gì ?
+
+
+
+A. Phải in các thông số kỹ thuật, bản hướng dẫn an toàn về PCCC, phải trang bị phương tiện chữa cháy
+B. Phải in các thông số kỹ thuật trên nhãn hàng hóa, bản hướng dẫn an toàn về PCCC bằng tiếng việt, phải có chứng nhận đủ điều kiện về phòng cháy và chữa cháy
+C. Phải in thông số kỹ thuật, bảng hướng dẫn an toàn về PCCC bằng tiếng việt
+D. Cả A và B đúng
+10. Nội dung của Luật PCCC gồm bao nhiêu Chương, Điều?
+
+
+
+A. 9 chương, 60 Điều
+B. 9 chương, 65 Điều
+C. 9 chương, 70 Điều
+D. 9 chương, 75 Điều
+11. Khoản 4, Điều 18 Luật PCCC quy định Chủ sở hữu, người chỉ huy, người điều khiển các phương tiện giao thông phải có trách nhiệm bảo đảm an toàn PCCC với phương tiện của mình như thế nào ?
+
+
+
+A. Đảm bảo an toàn PCCC trong suốt quá trình hoạt động của xe
+B. Đảm bảo an toàn PCCC khi tham gia giao thông trên đường
+C. Đảm bảo an toàn PCCC khi tham gia giao thông trên đường, khi sửa chữa
+D. Đảm bảo an toàn PCCC khi tham gia giao thông trên đường, ở những nơi dễ cháy, nổ khi sửa chữa
+12. Trong Luật phòng cháy và chữa cháy, khái niệm “ cháy ” được hiểu như thế nào?
+
+
+
+A. Là một phản ứng hóa học có tỏa nhiệt và phát sáng.
+B. Là trường hợp xảy ra cháy ngoài ý muốn của con người có thể gây thiệt hại về tài sản và ảnh hưởng đến môi trường.
+C. Là trường hợp xảy ra cháy không kiểm soát được có thể gây thiệt hại về người, tài sản và ảnh hưởng môi trường
+D. Là trường hợp xảy ra cháy không kiểm soát được có thể gây thiệt hại về người và tài sản.
+13. Luật PCCC quy định khi có cháy yêu cầu nào được ưu tiên sử dụng cho chữa cháy?
+
+
+
+A. Mọi nguồn nước chữa cháy.
+B. Mọi nguồn nước và các vật liệu chữa cháy.
+C. Các vật liệu chữa cháy phải được ưu tiên sử dụng cho chữa cháy.
+D. Mọi nguồn nước và các vật dụng khác.
+14. Luật PCCC giải thích từ cơ sở như thế nào ?
+
+
+
+
+A. Là nhà máy, xí nghiệp, kho hàng, trụ sở làm việc, bệnh viện, trường học, rạp hát, khách sạn, chợ, trung tâm thương mại, doanh trại lực lượng vũ trang và các công trình khác
+B. Là nhà máy, xí nghiệp, kho hàng, trụ sở làm việc, bệnh viện, trường học, rạp hát, khách sạn, chợ, trung tâm thương mại và doanh trại lực lượng vũ trang có nguy cơ cháy nổ cao
+C. Là nhà máy, xí nghiệp, kho hàng, trụ sở làm việc, bệnh viện, trường học, rạp hát, khách sạn, chợ, trung tâm thương mại, doanh trại lực lượng vũ trang và các công trình khác có nguy cơ cháy, nổ cao.
+D. Là nhà máy, xí nghiệp, kho hàng, trụ sở làm việc, bênh viện, trường học, rạp hát, khách sạn, chợ, trung tâm thương mại, doanh trại lực lượng vũ trang.
+15. Phòng cháy trong sản xuất, cung ứng, sử dụng điện và thiết bị, dụng cụ điện được quy định như thế nào?
+
+
+
+A. Có biện pháp chủ động xử lý sự cố gây cháy. Khi thiết kế, thi công lắp đặt hệ thống điện phải đảm bảo tiêu chuẩn an toàn về PCCC.
+B. Thiết bị, dụng cụ điện được sử dụng trong môi trường nguy hiểm về cháy, nổ phải là loại thiết bị, dụng cụ an toàn về cháy, nổ. Cơ quan, tổ chức cá nhân cung ứng điện có trách nhiệm hướng dẫn biện pháp an toàn về PCCC cho người sử dụng điện.
+C. Cả 2 câu A + B đều đúng.
+D. Cơ sở cai nghiện ma túy tư nhân
+16. Lực lượng nòng cốt trong hoạt động PCCC của toàn dân là lực lượng nào sau đây?
+
+
+A. Lực lượng dân phòng
+B. Lực lượng PCCC cơ sở
+C. Lực lượng PCCC chuyên ngành
+D. Lực lượng Cảnh sát PCCC
+E. Tất cả các lực lượng trên
+17. Luật PCCC quy định số điện thoại báo cháy được quy định thống nhất trong cả nước, số điện thoại báo cháy của nước ta hiện nay là số nào sau đây?
+
+
+
+A. 113
+B. 114
+C. 115
+D. 116
+18. Nghị định nào sau đây quy định chế độ bảo hiểm cháy nổ bắt buộc?
+
+
+A. Nghị định số 35/2003/NĐ-CP
+B. Nghị định số 130/2006/NĐ-CP
+C. Nghị định số 123/2005/NĐ-CP
+D. Nghị định 08/2001/NĐ-CP
+19.  Nội dung sau đây, nội dung nào thuộc về một trong những nguyên tắc PCCC được quy định trong luật PCCC?
+
+
+A. Cơ quan, tổ chức, hộ gia đình và cá nhân trong hoạt động có liên quan đến PCCC phải tuân thủ các tiêu chuẩn của Việt Nam về PCCC
+B. PCCC là lấy phòng ngừa là chính, đề cao trách nhiệm của toàn dân đối với hoạt động PCCC
+C. Huy động sức mạnh tổng hợp của toàn dân tham gia hoạt động PCCC
+D. PCCC là trách nhiệm của mỗi cơ quan ,tổ chức, hộ gia đình và cá nhân
+20. Hành vi vi phạm quy định về phòng cháy và chữa cháy trong sản xuất, kinh doanh chất nguy hiểm về cháy, nổ được áp dụng xử phạt với khung hình phạt tối đa là:
+
+
+A. Phạt tiền đến 5,000,000 đồng
+B. Phạt tiền đến 10,000,000 đồng
+C. Phạt tiền đến 15,000,000 đồng
+D. Phạt tiền đến 20,000,000 đồng
+21.  Hành vi không tổ chức kiểm tra an toàn phòng cháy và chữa cháy theo quy định sẽ bị phạt tiền từ:
+
+
+A. Từ 500,000 đồng đến 1,000,000 đồng
+B. Từ 1,000,000 đồng đến 2,000,000 đồng
+C.Từ 2,000,000 đồng đến 5,000,000 đồng
+D.Tất cả đều sai
+22. Đ/c hãy cho biết mức phạt tiền đối với hành vi không lắp đặt hệ thống chống sét?
+
+
+A. Phạt tiền từ 200,000 đồng đến 1,000,000 đồng.
+B. Phạt tiền 1,000,000 đồng đến 2,000,000 đồng.
+C. Phạt tiền 2,000,000 đồng đến 3,000,000 đồng.
+D. Phạt tiền 3,000,000 đồng đến 4,000,000 đồng.
+23. Luật PCCC quy định nhiệm vụ của lực lượng dân phòng và lực lượng PCCC cơ sở, theo đó, lực lượng dân phòng và lực lượng PCCC cơ sở có mấy nhiệm vụ?
+
+
+
+A. 4
+B. 5
+C. 6
+D. 7
+24. Trong trường hợp nào thì hoạt động của cơ sở, phương tiện giao thông cơ giới, hộ gia đình và cá nhân bị tạm đình chỉ?
+
+
+A. Khi có nguy cơ trực tiếp phát sinh cháy, nổ
+B. Vi phạm đặc biệt nghiêm trọng quy định về PCCC
+C. Vi phạm nghiêm trọng quy định về PCCC đã được cơ quan quản lý nhà nước về PCCC yêu cầu khắc phục mà không thực hiện
+D. Tất cả các trường hợp trên
+25. Theo khoản 2, Điều 17 Nghị định số 35/2003/NĐ-CP, ai có trách nhiệm trình hồ sơ thẩm duyệt về PCCC :
+
+
+A. Cơ quan đơn vị tổng thầu xây dựng
+B. Chủ đầu tư
+C. Tổ chức, cá nhân do chủ đầu tư ủy quyền
+D. Đơn vị thiết kế công trình
+26. Đội dân phòng do ai thành lập, quản lý và chỉ đạo?
+
+
+A. Trưởng Công an cấp xã
+B. Chủ tịch UBND cấp xã
+C. Trưởng Phòng Cảnh sát PCCC
+D. Chủ tịch Ủy ban nhân dân cấp huyện
+27. Khi xảy ra cháy tại một cơ sở mà lực lượng cảnh sát PCCC chưa tới, theo quy định của Luật PCCC, khi có mặt những người sau đây ở đám cháy thì ai là người chỉ huy chữa cháy ?
+
+
+A. Người đứng đầu cơ sở bị cháy.
+B. Đội trưởng đội chữa cháy cơ sở.
+C. Tổ trưởng tổ sản xuất.
+D. Tổ trưởng tổ bảo vệ
+28. Điều kiện để tham gia Đội dân phòng và đội PCCC cơ sở khi có yêu cầu?
+
+
+A. Công dân từ 16 tuổi, đủ sức khỏe
+B. Công dân từ 18 tuổi trở lên
+C. Công dân từ 18 tuổi trở lên, đủ sức khỏe
+D. Công dân từ 16 tuổi đến 50 tuổi, đủ sức khỏe
+29. Các hành vi nào sau đây vi phạm quy định về việc quản lý, bảo quản và sử dụng chất nguy hiểm về cháy, nổ?
+
+
+A. Sử dụng kho, thiết bị chứa chất nguy hiểm về cháy, nổ không đảm bảo các điều kiện về phòng cháy và chữa cháy theo quy định
+B. Sử dụng thiết bị, phương tiện chứa chất nguy hiểm về cháy, nổ chưa được kiểm định hoặc đã hết hạn sử dụng theo quy định. Bố trí, sắp xếp chất nguy hiểm về cháy, nổ không theo từng nhóm riêng theo quy định
+C. Câu A và B sai
+D. Câu A và B đúng
+30. Theo Điều 13 của Luật PCCC, có bao nhiêu hành vi bị nghiêm cấm?
+
+
+A. 6 hành vi
+B. 8 hành vi
+C. 9 hành vi
+D. 10 hành vi.

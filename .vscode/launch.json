@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MyAVL",
+      "request": "launch",
+      "mainClass": "lab07_524k0033.MyAVL",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
       "name": "Ex2",
       "request": "launch",
       "mainClass": "lab06_524k0033.Ex2",

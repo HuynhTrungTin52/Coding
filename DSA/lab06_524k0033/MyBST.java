@@ -127,7 +127,7 @@ public class MyBST {
 		if (x.right == null)
 			return x;
 		else
-			return min(x.right);
+			return max(x.right);
 	}
 
 	public Node min() {
@@ -146,7 +146,7 @@ public class MyBST {
 	}
 
 	public void deleteMin() {
-		root = deleteMin(root);
+		root = deleteMax(root);
 	}
 
 	private Node deleteMax(Node x) {

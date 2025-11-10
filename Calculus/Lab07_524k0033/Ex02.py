@@ -10,7 +10,7 @@ a_n = lambda n: a1 + (n-1)*d
 a55 = a_n(55)
 print("a55=", a55)
 n=0
-while True:  # Assuming a reasonable range to find the term
+while True:
 	if a_n(n) == 230:
 		print(f"The term equal to 230 is a{n}")
 		break

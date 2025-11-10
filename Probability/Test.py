@@ -1,12 +1,16 @@
 import itertools as it
+# your code
+def cross(A, n):
+    return {a+str(b+1) for a in A for b in range(n)}
 
-dice1=[1,2,3,4,5,6]
-dice2=[1,2,3,4,5,6]
-lists=[]
-lits=[]
-for i in dice1:
-    for j in dice2:
-        sym=i+j
-        if sym ==5 and i not in lists and j not in lists:
-            lists.append(i)
-            print(i,"+",j)
+urn = cross('W', 8) | cross('B', 6) | cross('R', 9)
+
+def get_x(n):
+    return int(( n / 99 ) * 4 + 6)
+
+x = get_x(33)
+
+U = list(it.combinations(urn,x))
+for hand in U:
+    if hand[0][0]=='R':
+        print(hand)
