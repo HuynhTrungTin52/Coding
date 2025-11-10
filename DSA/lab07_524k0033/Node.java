@@ -1,5 +1,3 @@
-package lab07_524k0033;
-
 public class Node {
 	Integer key;
 	Node left, right;
