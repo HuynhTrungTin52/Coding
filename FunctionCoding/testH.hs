@@ -1,28 +1,62 @@
-squareEvens :: Integral a => [a] -> [a]
-squareEvens xs = map (\x -> x * x) (filter (\x -> even x) xs)
+-- ex01
+and :: [Bool] -> Bool
+and [] = True
+and (x:xs) =
+  if x == False
+    then False
+    else and xs
 
-sumList :: [Int] -> Int
-sumList xs = foldr (+) 0 xs
+concat :: [[a]] -> [a]
+concat [] = []
+concat (xs:xss) = xs ++ concat xss
 
-prodList :: [Int] -> Int
-prodList xs = foldr (*) 1 xs
+replicate :: Int -> a -> [a]
+replicate n x =
+  if n <= 0
+    then []
+    else x : replicate (n - 1) x
 
-applyTwice :: (a -> a) -> a -> a
-applyTwice f x = f (f x)
+(!!) :: [a] -> Int -> a
+(x:_) !! 0 = x
+(_:xs) !! n = xs !! (n - 1)
+[] !! _ = error "Index out of bounds"
 
-filterBelow :: Ord a => a -> [a] -> [a]
-filterBelow threshold xs = filter (\x -> x > threshold) xs
+elem :: Eq a => a -> [a] -> Bool
+elem _ [] = False
+elem y (x:xs) =
+  if y == x
+    then True
+    else elem y xs
 
-applyTwoFunctions :: (b -> c) -> (a -> b) -> a -> c
-applyTwoFunctions f g x = f (g x)
+subsets :: [a] -> [[a]]
+subsets [] = [[]]
+subsets (x:xs) =
+  let smaller = subsets xs
+  in smaller ++ map (\s -> x : s) smaller
 
-splitBasedOn :: (a -> Bool) -> [a] -> ([a], [a])
-splitBasedOn p [] = ([], [])
-splitBasedOn p (x:xs) =
-  let (ts, fs) = splitBasedOn p xs
-  in if p x
-       then (x:ts, fs)
-       else (ts, x:fs)
+pascal :: Int -> Int -> Int
+pascal n k =
+  if k == 0
+    then 1
+    else if n == k
+      then 1
+      else pascal (n - 1) (k - 1) + pascal (n - 1) k
 
-zipWithSum :: [Integer] -> [Integer] -> [Integer]
-zipWithSum xs ys = zipWith (+) xs ys
+sSearch :: [Int] -> Int -> Bool
+sSearch [] _ = False
+sSearch (x:xs) n =
+  if x == n
+    then True
+    else if x > n
+      then False
+      else sSearch xs n
+
+
+-- ex02
+merge :: Ord a => [a] -> [a] -> [a]
+merge [] ys = ys
+merge xs [] = xs
+merge (x:xs) (y:ys) =
+  if x <= y
+    then x : merge xs (y:ys)
+    else y : merge (x:xs) ys
