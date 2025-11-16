@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ex04",
+      "request": "launch",
+      "mainClass": "lab08_524k0033.Ex04",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
       "name": "Ex03",
       "request": "launch",
       "mainClass": "lab08_524k0033.Ex03",

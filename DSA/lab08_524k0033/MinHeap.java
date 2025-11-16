@@ -1,5 +1,3 @@
-package lab08_524k0033;
-
 import java.util.NoSuchElementException;
 
 public class MinHeap {
@@ -96,13 +94,33 @@ public class MinHeap {
 		return res;
 	}
 
+	public static void heapSortFast(int[] arr) {
+		MinHeap heap = new MinHeap(arr.length);
+		heap.buildHeapFast(arr);
+
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = heap.extractMin();
+		}
+		
+	}
+
+	public void buildHeapFast(int[] a) {
+		this.heap=new int[a.length+1];
+		for(int i=0;i<a.length;i++) {
+			this.heap[i+1]=a[i];
+		}
+		this.heapSize=a.length;
+
+		for(int i=this.heapSize/2;i>=1;i--) {
+			shiftDown(i);
+		}
+	}
+
 	public static void main(String[] args) {
 		MinHeap heap = new MinHeap(10);
 		int[] arr = { 1, 2, 3, 19, 7, 26, 25, 17, 29, 36 };
 
-		for (int value : arr) {
-			heap.insert(value);
-		}
+		heap.buildHeapFast(arr);
 		for (int value : heap.heap) {
 			System.out.print(value + " ");
 		}

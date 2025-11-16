@@ -1,5 +1,3 @@
-package lab08_524k0033;
-
 public class Ex03 {
 	public static void arrPrint(int[] arr) {
 		for(int value : arr) {
@@ -16,5 +14,17 @@ public class Ex03 {
 		System.out.println();
 		System.out.print("Using heapsort to sort ascendingly:");
 		arrPrint(MinHeap.heapSort(arr));
+
+		System.out.println();
+		System.out.print("Using heapsort to sort descendingly FAST:");
+		MaxHeap.heapSortFast(arr);
+		arrPrint(arr);
+
+		System.out.println();
+		System.out.print("Using heapsort to sort ascendingly FAST:");
+		MinHeap.heapSortFast(arr);
+		arrPrint(arr);
+
+		
 	}
 }

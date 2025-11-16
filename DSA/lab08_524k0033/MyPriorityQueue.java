@@ -1,5 +1,3 @@
-package lab08_524k0033;
-
 import java.util.NoSuchElementException;
 
 public class MyPriorityQueue {
@@ -10,7 +8,7 @@ public class MyPriorityQueue {
 	public MyPriorityQueue(int capacity) {
 		heapSize = 0;
 		this.maxSize = capacity + 1;
-		heap = (Prisoners[]) new Object[maxSize];
+		heap = new Prisoners[maxSize];
 		heap[0] = null;
 	}
 
@@ -33,7 +31,7 @@ public class MyPriorityQueue {
 	}
 
 	public void insert(Prisoners key) {
-		if (heapSize == maxSize - 1) {
+		if (heapSize == maxSize) {
 			throw new NoSuchElementException("Overflow Exception");
 		}
 		heapSize += 1;
