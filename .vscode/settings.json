@@ -63,5 +63,6 @@
   "java.search.scope": "all",
   "python.REPL.enableREPLSmartSend": false,
   "python-envs.defaultEnvManager": "ms-python.python:system",
-  "python-envs.pythonProjects": []
+  "python-envs.pythonProjects": [],
+  "C_Cpp.default.compilerPath": "C:/cygwin64/bin/gcc.exe"
 }
