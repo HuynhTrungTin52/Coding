@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "EL",
+      "request": "launch",
+      "mainClass": "lab09_524k0033.EL",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
+      "name": "AL",
+      "request": "launch",
+      "mainClass": "lab09_524k0033.AL",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
+      "name": "AM",
+      "request": "launch",
+      "mainClass": "lab09_524k0033.AM",
+      "projectName": "Coding_85d20842"
+    },
+    {
+      "type": "java",
       "name": "Ex04",
       "request": "launch",
       "mainClass": "lab08_524k0033.Ex04",

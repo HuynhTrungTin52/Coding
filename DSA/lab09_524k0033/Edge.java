@@ -1,9 +1,9 @@
 package lab09_524k0033;
 
 public class Edge {
-	private int src;
-	private int dest;
-	private int weight;
+	int src;
+	int dest;
+	int weight;
 
 	public Edge(int u, int v, int w) {
 		this.src=u;
