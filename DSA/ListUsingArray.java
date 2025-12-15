@@ -1,6 +1,6 @@
 import java.util.*;
 
-class ListUsingArray<E> implements ListInterface<E> {
+class ListUsingArray<E> implements ListInterfaces<E> {
 	private static final int MAXSIZE = 1000;
 	private int num_nodes = 0;
 	@SuppressWarnings("FieldMayBeFinal")
@@ -66,5 +66,11 @@ class ListUsingArray<E> implements ListInterface<E> {
 		}
 		System.out.print("]");
 		System.out.println();
+	}
+
+	@Override
+	public E removeLast() throws NoSuchElementException {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'removeLast'");
 	}
 }

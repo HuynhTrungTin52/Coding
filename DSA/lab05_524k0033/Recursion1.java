@@ -1,3 +1,5 @@
+package lab05_524k0033;
+
 public class Recursion1 {
 	public static void main(String[] args) {
 		System.out.println("prod_recur: " + prod_recur(5, 3));

@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PQTest",
+      "request": "launch",
+      "mainClass": "PQTest",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
+      "name": "MyBST",
+      "request": "launch",
+      "mainClass": "lab06_524k0033.MyBST",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
+      "name": "MyAVL",
+      "request": "launch",
+      "mainClass": "lab07_524k0033.MyAVL",
+      "projectName": "Coding_443d41ce"
+    },
+    {
+      "type": "java",
       "name": "EL",
       "request": "launch",
       "mainClass": "lab09_524k0033.EL",

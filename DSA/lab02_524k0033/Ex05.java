@@ -1,3 +1,5 @@
+package lab02_524k0033;
+
 import java.util.Scanner;
 
 public class Ex05 {

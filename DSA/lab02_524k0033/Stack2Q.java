@@ -1,3 +1,5 @@
+package lab02_524k0033;
+
 public class Stack2Q<E> implements QueueInterface<E>{
 	private MyStack<E> inbox = new MyStack<>();
 	private MyStack<E> outbox = new MyStack<>();

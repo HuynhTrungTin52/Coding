@@ -1,3 +1,5 @@
+package lab02_524k0033;
+
 public class MyQueue<E> extends MyLinkedList<E> implements QueueInterface<E>{
 
 		private Node<E> front=head;

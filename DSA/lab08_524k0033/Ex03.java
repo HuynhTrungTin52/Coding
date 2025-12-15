@@ -1,3 +1,5 @@
+package lab08_524k0033;
+
 public class Ex03 {
 	public static void arrPrint(int[] arr) {
 		for(int value : arr) {

@@ -1,3 +1,5 @@
+package lab05_524k0033;
+
 public class Recursion3 {
 	public static void main(String[] args) {
 		System.out.println("A(a) Recursive: " + aRecursive(3));

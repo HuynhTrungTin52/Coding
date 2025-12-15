@@ -1,3 +1,5 @@
+package lab05_524k0033;
+
 import java.util.Stack;
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,3 +1,5 @@
+package lab06_524k0033;
+
 import java.util.*;
 
 
@@ -222,7 +224,22 @@ public class MyBST {
 	public int sum() {
 		return sum(root);
 	}
+	private int sumInRange(Node x, int a, int b) {
+		if (x == null) return 0;
+		int sum = 0;
+		int key = x.key;
+		if (key >= a && key <= b) sum += key;
+		if (key > a) sum += sumInRange(x.left, a, b);
+		if (key < b) sum += sumInRange(x.right, a, b);
+		return sum;
+	}
 
+	public int sumInRange(int a, int b) {
+		if (a > b) {
+			int t = a; a = b; b = t;
+		}
+		return sumInRange(root, a, b);
+	}
 	private int sumEven(Node x) {
 		if(x==null) {
 			return 0;
@@ -249,6 +266,31 @@ public class MyBST {
 
 	public int countLeaves() {
 		return countLeaves(root);
+	}
+	private int countOneChild(Node x) {
+		if (x == null) return 0;
+		int children = (x.left != null ? 1 : 0) + (x.right != null ? 1 : 0);
+		int self = (children == 1) ? 1 : 0;
+		return self + countOneChild(x.left) + countOneChild(x.right);
+	}
+
+	public int countOneChild() {
+		return countOneChild(root);
+	}
+	// Count nodes in a subtree (helper)
+	private int count(Node x) {
+		if (x == null) return 0;
+		return 1 + count(x.left) + count(x.right);
+	}
+
+	// Size of the whole tree
+	public int count() {
+		return count(root);
+	}
+
+	// Size of the subtree rooted at the node with the given key
+	public int count(Integer key) {
+		return count(search(key));
 	}
 
 	private int sumEvenKeysAtLeaves(Node x) {
@@ -293,7 +335,8 @@ public class MyBST {
 		for(Integer value : array) {
 			bst.insert(value);
 		}
-		bst.bfs();;
+		bst.bfs();
+		System.out.print(bst.count(Node(42)));
 	}
 
 }

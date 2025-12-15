@@ -1,3 +1,5 @@
+package lab02_524k0033;
+
 public class TestStack {
 	public static void main(String[] args) {
 		MyStack<Fraction> stack = new MyStack<>();

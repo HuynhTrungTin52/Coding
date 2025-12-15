@@ -1,3 +1,5 @@
+package lab08_524k0033;
+
 import java.util.NoSuchElementException;
 
 public class MaxHeap {

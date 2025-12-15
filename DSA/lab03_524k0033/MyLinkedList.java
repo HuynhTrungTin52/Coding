@@ -1,3 +1,5 @@
+package lab03_524k0033;
+
 import java.util.NoSuchElementException;
 
 public class MyLinkedList<E> implements ListInterface<E> {

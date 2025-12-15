@@ -1,3 +1,5 @@
+package lab08_524k0033;
+
 public class Prisoners implements Comparable<Prisoners>{
 	String name;
 	int priority;

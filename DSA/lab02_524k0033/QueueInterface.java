@@ -1,3 +1,5 @@
+package lab02_524k0033;
+
 public interface QueueInterface<E> {
 	public void enQueue(E item);
 

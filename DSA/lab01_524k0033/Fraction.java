@@ -1,3 +1,5 @@
+package lab01_524k0033;
+
 public class Fraction {
     private int numer=0;
     private int denom=0;

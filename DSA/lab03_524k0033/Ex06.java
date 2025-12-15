@@ -1,3 +1,5 @@
+package lab03_524k0033;
+
 import java.util.Random;
 
 public class Ex06 {

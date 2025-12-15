@@ -1,3 +1,5 @@
+package lab04_524k0033;
+
 import java.util.Arrays;
 
 public class Ex01 {

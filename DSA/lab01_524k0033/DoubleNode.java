@@ -1,3 +1,5 @@
+package lab01_524k0033;
+
 public class DoubleNode {
 
     private Double data;

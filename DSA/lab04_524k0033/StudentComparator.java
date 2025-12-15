@@ -1,3 +1,5 @@
+package lab04_524k0033;
+
 import java.util.Comparator;
 
 public  class StudentComparator implements Comparator<Student>  {

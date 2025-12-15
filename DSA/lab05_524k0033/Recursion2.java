@@ -1,3 +1,5 @@
+package lab05_524k0033;
+
 public class Recursion2 {
 public static void main(String[] args) {
 	int n = 5;

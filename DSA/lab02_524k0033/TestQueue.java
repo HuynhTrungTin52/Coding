@@ -1,3 +1,5 @@
+package lab02_524k0033;
+
 import lab01_524k0033.Fraction;
 
 public class TestQueue {

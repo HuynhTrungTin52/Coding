@@ -1,3 +1,5 @@
+package lab08_524k0033;
+
 public class Ex04 {
 	public static void main(String[] args) {
 		MyPriorityQueue heap = new MyPriorityQueue(6);

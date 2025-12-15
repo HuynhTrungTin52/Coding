@@ -1,3 +1,5 @@
+package lab07_524k0033;
+
 import java.util.*;
 
 public class MyAVL {
@@ -342,7 +344,7 @@ public class MyAVL {
 	
 
 	public static void main(String[] args) {
-		Integer[] array = {42, 21, 62, 2, 29, 46, 93, 26, 48, 82, 52, 74, 85, 87, 94, 96};
+		Integer[] array = {40,46,55};
 		MyAVL avl = new MyAVL();
 
 		for (Integer value : array) {
@@ -351,12 +353,7 @@ public class MyAVL {
 		avl.bfs();
 		System.err.println();
 
-		avl.deleteMin();
-		avl.bfs();
-		System.out.println();
-		System.out.println(avl.max().key);
-		avl.deleteMax();
-		avl.bfs();
+		
 	}
 
 }

@@ -1,3 +1,5 @@
+package lab05_524k0033;
+
 public class Node<E> {
     
     private E data;
