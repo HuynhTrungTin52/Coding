@@ -76,6 +76,8 @@
 Funtion signature
 Homework : backtracking, tailed recursion, mutual recursion
 
+
+
 Algorithm is a step-by-step procedure for solving a specific problem 
 4 properties of an Algorithm :
 1. Exact
