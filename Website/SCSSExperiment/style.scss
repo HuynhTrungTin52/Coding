@@ -58,9 +58,9 @@ h1 {
 	@extend .container--content;
 	
 	img {
-		width: 75%;
+		width:75%;
 		height: auto;
-		margin-block-end: 8px;
+		align-self: left;
 	}
 	h4 {
 		@include gapsBetweenTexts();
