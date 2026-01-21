@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	td {
+		font-size: large;
+	}
+</style>
+<body>
+	<table border="1" style="width: 100%; text-align:center; border-collapse:collapse">
+		<tr>
+		<td>
+			1
+		</td>
+		<td rowspan="2">
+			2
+		</td>
+		<td rowspan="3">
+			3
+		</td>
+		</tr>
+		<tr>
+			<td>
+			4
+		</td>
+		</tr>
+		<tr>
+			<td>
+			5
+		</td>
+		<td>
+			6
+		</td>
+		</tr>
+	</table>
+	<form>
+		<p>Fullname: <input type="text" name="fullname"></p>
+		<p>Age: <input type="number" name="age" style="width: 45px;"></p> 
+		<p>Email: <input type="email" name="email"></p>
+		<p>Gender: Male <input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female"> </p>
+		<p>Favourite sports: Soccer <input type="checkbox" name="fsp" value="1"> 
+							Volleyball <input type="checkbox" name="fsp" value="2"> 
+							Swimming <input type="checkbox" name="fsp" value="3"> 
+							Video Games <input type="checkbox" name="fsp" value="4"> 
+							Badminton <input type="checkbox" name="fsp" value="5"> 
+							
+		</p>
+		<p>Nationality: 
+			<!-- <label for="nation">Choose a value</label> -->
+			<select name="nation" id="nation">
+			<option value="" disabled selected hidden>Choose a value</option>
+			<option value="vietnam">VIETNAM</option>
+			<option value="vietnam">Thailand</option>
+			<option value="vietnam">Japan2</option>
+			<option value="vietnam">UK</option>
+			<option value="vietnam">Trần Minh Nghĩa</option>
+		</select> </p>
+		<p>Message <textarea style="height: 200px; width:450px">
+
+		</textarea> </p>
+		<p> <button type="submit" name="register"> Registre </button>
+			<button type="reset" name="restart"> Reset </button>
+		</p>
+	</form>
+</body>
+</html>
