@@ -1,0 +1,17 @@
+
+* {
+	box-sizing: border-box;
+}
+
+.I_LOVE_YOU_NGHIA {
+	background-color: black;
+	color: white;
+	
+}
+
+.I_LOVE_YOU_NGHIA:hover {
+	background-color: gray;
+	color: white;
+	
+}
+

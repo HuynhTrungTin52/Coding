@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	margin-right:auto;
+	margin-left: auto;
+	text-align: center;
+	border-collapse: collapse;
+	border-radius: 0px;
+	border-color: rgb(159, 158, 158);
+	tr:nth-child(even) {
+  	background-color: #c2c2c2; /* White or any other color for odd rows */
+}
+
+thead {
+		background-color: #bdbbbb;
+	}
+}
+
