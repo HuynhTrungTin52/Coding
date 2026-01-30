@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const app = document.getElementById("app");
 const root = ReactDOM.createRoot(app);
 
@@ -6,11 +8,6 @@ function Header(props) {
     console.log(props.title)
     return <h1>I am currently using {props.title}</h1>
 }
-
-
-
-
-
 
 function HomePage() {
     const names = ["React", "HTML", "JS", "C", "C#", "Python"]
