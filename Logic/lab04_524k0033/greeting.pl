@@ -1,0 +1,1 @@
+greet(Name) :-write('Hello, '), write(Name), write('! Welcome to Prolog!').

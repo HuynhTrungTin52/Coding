@@ -1,0 +1,1 @@
+intro :-write('SWI-Prolog Installed Successfully').
