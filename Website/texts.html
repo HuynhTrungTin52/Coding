@@ -1,60 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, 
-                   initial-scale=1.0">
-    <title>Document</title>
+<style>
+table, td {
+  border: 1px solid black;
+}
+</style>
 </head>
-
 <body>
 
-    <body style="text-align:center;">
-        <h1 style="color:green;">
-            GeeksForGeeks
-        </h1>
+<p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
 
-        <p>
-            <b>onKeyPress Vs. onKeyUp
-                and onKeyDown Events</b>
-        </p>
+<table id="myTable">
+  <tr>
+    <td>Row1 cell1</td>
+    <td>Row1 cell2</td>
+  </tr>
+  <tr>
+    <td>Row2 cell1</td>
+    <td>Row2 cell2</td>
+  </tr>
+  <tr>
+    <td>Row3 cell1</td>
+    <td>Row3 cell2</td>
+  </tr>
+</table>
+<br>
 
-        <input type="text" id="field" placeholder="Type here">
-        <p id="status"></p>
+<button type="button" onclick="myFunction()">Try it</button>
 
-        <script>
-            // Script to test which key 
-            // event gets triggered 
-            // when a key is pressed
-            let key_pressed =
-                document.getElementById('field');
+<script>
+function myFunction() {
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "NEW CELL1";
+  cell2.innerHTML = "NEW CELL2";
+}
+</script>
 
-            key_pressed
-                .addEventListener("keydown", onKeyDown);
-            key_pressed
-                .addEventListener("keypress", onKeyPress);
-            key_pressed
-                .addEventListener("keyup", onKeyUp);
-
-            function onKeyDown(event) {
-                document.getElementById("status")
-                    .innerHTML = 'keydown: '
-                    + event.key + '<br>'
-            }
-            function onKeyPress(event) {
-                document.getElementById("status")
-                    .innerHTML += 'keypress: '
-                    + event.key + '<br>'
-            }
-            function onKeyUp(event) {
-                document.getElementById("status")
-                    .innerHTML += 'keyup: '
-                    + event.key + '<br>'
-            }
-        </script>
-    </body>
 </body>
-
 </html>
