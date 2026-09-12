@@ -357,7 +357,7 @@ def run_task2():
     raw_dataset=[]
     try:
         #If the file is not found even if it's there, paste in the absolute path
-        with open('Logic/Midterm/students.csv', 'r') as f:
+        with open('524k0033_524k0032_524k0031.csv', 'r') as f:
          reader = csv.DictReader(f) #Turn data(row) into a dict, like mentioned before
          raw_dataset=list(reader)
             
@@ -400,7 +400,7 @@ def run_task2():
     pd_start = time.perf_counter() #Starting panda/vectorized approach
 
     try:
-        df = pd.read_csv("Logic/Midterm/students.csv")
+        df = pd.read_csv("524k0033_524k0032_524k0031.csv")
         
         cols = ['Math', 'CS', 'Eng']
         for col in cols:
