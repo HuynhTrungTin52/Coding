@@ -23,9 +23,9 @@ def setup_database():
         cursor.executemany("INSERT INTO users (id, name, email) VALUES (?, ?, ?)", users_data)
         
         conn.commit()
-        print("✅ Database seeded with 5,000,000 users!")
+        print("Database seeded with 5,000,000 users!")
     else:
-        print(f"✅ Database already contains {count} users. Ready to go.")
+        print(f"Database already contains {count} users. Ready to go.")
     conn.close()
 
 @asynccontextmanager
@@ -54,7 +54,7 @@ def search_users_slow(keyword: str):
     
     api_time_ms = (time.time() - api_start_time) * 1000
     return {
-        "source": "🐌 SQLite Full Table Scan", 
+        "source": "SQLite Full Table Scan", 
         "total_api_time_ms": int(api_time_ms), 
         "db_query_time_ms": int(db_time_ms),
         "keyword": keyword,
@@ -70,7 +70,7 @@ def search_users_fast(keyword: str):
     if cached_result:
         api_time_ms = (time.time() - api_start_time) * 1000
         return {
-            "source": "⚡ Redis Cache HIT", 
+            "source": "Redis Cache HIT", 
             "total_api_time_ms": int(api_time_ms), 
             "db_query_time_ms": 0, 
             "keyword": keyword,
@@ -85,7 +85,7 @@ def search_users_fast(keyword: str):
 
     api_time_ms = (time.time() - api_start_time) * 1000
     return {
-        "source": "🔄 SQLite Full Table Scan (Cache MISS)", 
+        "source": "SQLite Full Table Scan (Cache MISS)", 
         "total_api_time_ms": int(api_time_ms), 
         "db_query_time_ms": int(db_time_ms),
         "keyword": keyword,
