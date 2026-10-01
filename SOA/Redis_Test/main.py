@@ -15,15 +15,15 @@ def setup_database():
     cursor.execute("SELECT COUNT(*) FROM users")
     count = cursor.fetchone()[0]
     
-    if count < 5000000:
-        print("⏳ Seeding 5,000,000 users into SQLite. This will take a few seconds...")
+    if count < 500000:
+        print("⏳ Seeding 500,000 users into SQLite. This will take a few seconds...")
         cursor.execute("DELETE FROM users")
         
-        users_data = [(i, f"User_{i}", f"user{i}@example.com") for i in range(1, 5000001)]
+        users_data = [(i, f"User_{i}", f"user{i}@example.com") for i in range(1, 500001)]
         cursor.executemany("INSERT INTO users (id, name, email) VALUES (?, ?, ?)", users_data)
         
         conn.commit()
-        print("Database seeded with 5,000,000 users!")
+        print("Database seeded with 500,000 users!")
     else:
         print(f"Database already contains {count} users. Ready to go.")
     conn.close()
