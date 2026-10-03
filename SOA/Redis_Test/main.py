@@ -61,7 +61,7 @@ def search_users_slow(keyword: str):
     api_start_time = time.time()
     #bắt đầu tgian GỬI cái API
     db_start_time = time.time()
-    #Bắt đầu tìm kiếm trong DB
+    #Bắt đầu tgian tìm kiếm trong DB
     match_count = perform_heavy_db_query(keyword)
     db_time_ms = (time.time() - db_start_time) * 1000
     
