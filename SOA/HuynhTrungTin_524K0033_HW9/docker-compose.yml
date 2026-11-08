@@ -1,0 +1,14 @@
+services:
+  student-service:
+    build: ./student_service
+    ports:
+      - "8000:8000"
+
+  registration-service:
+    build: ./registration_service
+    ports:
+      - "8001:8000"
+    environment:
+      STUDENT_SERVICE_URL: http://student-service:8000
+    depends_on:
+      - student-service
