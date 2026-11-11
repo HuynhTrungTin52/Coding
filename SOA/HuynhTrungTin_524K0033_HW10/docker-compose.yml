@@ -1,0 +1,21 @@
+services:
+  doctor-service:
+    build: ./doctor_service
+    ports:
+      - "8000:8000"
+
+  booking-service:
+    build: ./booking_service
+    ports:
+      - "8001:8000"
+    environment:
+      DOCTOR_SERVICE_URL: http://doctor-service:8000
+      NOTIFICATION_SERVICE_URL: http://notification-service:8000
+    depends_on:
+      - doctor-service
+      - notification-service
+
+  notification-service:
+    build: ./notification_service
+    ports:
+      - "8002:8000"
