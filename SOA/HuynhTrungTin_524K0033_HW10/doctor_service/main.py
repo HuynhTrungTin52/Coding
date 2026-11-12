@@ -9,20 +9,20 @@ app = FastAPI(title="Doctor Service")
 doctors = [
     {
         "doctor_id": 1,
-        "name": "Dr. Nguyen Van An",
-        "specialty": "Cardiology",
+        "name": "Dr. Pepper",
+        "specialty": "Pepperology",
         "available_slots": ["2026-11-12 09:00", "2026-11-12 14:00"],
     },
     {
         "doctor_id": 2,
-        "name": "Dr. Tran Thi Binh",
-        "specialty": "Dermatology",
+        "name": "Dr. Coke",
+        "specialty": "Cokology",
         "available_slots": ["2026-11-12 10:00", "2026-11-13 15:00"],
     },
     {
         "doctor_id": 3,
-        "name": "Dr. Le Minh Chau",
-        "specialty": "Pediatrics",
+        "name": "Dr. Pepsi",
+        "specialty": "Pepsiatrics",
         "available_slots": ["2026-11-14 08:30", "2026-11-14 13:30"],
     },
 ]

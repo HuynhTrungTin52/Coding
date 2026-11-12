@@ -2,7 +2,7 @@ import logging
 import os
 from datetime import datetime
 
-import httpx
+import httpx2
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
@@ -31,10 +31,10 @@ def new_id():
 @app.post("/bookings")
 def create_booking(data: BookingCreate):
     try:
-        doctor_response = httpx.get(
+        doctor_response = httpx2.get(
             f"{DOCTOR_SERVICE_URL}/doctors/{data.doctor_id}", timeout=3.0
         )
-    except httpx.RequestError:
+    except httpx2.RequestError:
         logging.error("Doctor Service is unavailable")
         raise HTTPException(status_code=503, detail="Doctor Service is unavailable")
 
@@ -69,7 +69,7 @@ def create_booking(data: BookingCreate):
     }
     notification_status = "failed"
     try:
-        notification_response = httpx.post(
+        notification_response = httpx2.post(
             f"{NOTIFICATION_SERVICE_URL}/notifications",
             json=notification,
             timeout=3.0,
@@ -78,7 +78,7 @@ def create_booking(data: BookingCreate):
             notification_status = notification_response.json().get("status", "sent")
         else:
             logging.error("Notification Service returned %s", notification_response.status_code)
-    except httpx.RequestError:
+    except httpx2.RequestError:
         logging.error("Notification Service is unavailable")
 
     return {"booking": booking, "notification_status": notification_status}
